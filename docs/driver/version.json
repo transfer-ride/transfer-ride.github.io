@@ -1,10 +1,10 @@
 {
- "versionCode": 48,
- "versionName": "3.40",
- "sha256": "5d3f93a6d1dcbb649742ad383fff45a034a2cfd118905a17fa7a2638fb4c74f1",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-48.apk",
- "notes": "Android Auto: Waze und Google Maps nach dem Annehmen, QR-Code-Karte, kurzer Ton bei Stornierung, Liste „Alle“ nach Tagen, Karte wie Google Maps",
- "notes_de": "Android Auto: Waze und Google Maps nach dem Annehmen, QR-Code-Karte, kurzer Ton bei Stornierung, Liste „Alle“ nach Tagen, Karte wie Google Maps",
- "notes_en": "Android Auto: Waze and Google Maps after accepting, QR code card, short sound on cancellation, “All” list by day, map like Google Maps",
- "notes_el": "Android Auto: Waze και Google Maps μετά την αποδοχή, κάρτα QR, σύντομος ήχος στην ακύρωση, λίστα «Όλες» ανά μέρα, χάρτης όπως στο Google Maps"
+ "versionCode": 49,
+ "versionName": "3.41",
+ "sha256": "0f2bf9c2fe74c5b424b9f71c886cd5dc23daf44bada84416c64714dbcdfa2e8f",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-49.apk",
+ "notes": "Waze und Google Maps öffnen sich im Auto jetzt auch bei gesperrtem Handy. Kein Absturz mehr bei neuen Fahrten. Unbeantwortete Anfragen bleiben in der Liste. Automatisch „Angekommen“ am Abholort. Wartezeit auf der Autokarte.",
+ "notes_de": "Waze und Google Maps öffnen sich im Auto jetzt auch bei gesperrtem Handy. Kein Absturz mehr bei neuen Fahrten. Unbeantwortete Anfragen bleiben in der Liste. Automatisch „Angekommen“ am Abholort. Wartezeit auf der Autokarte.",
+ "notes_en": "Waze and Google Maps now open from the car also with the phone locked. No more crash on new rides. Unanswered requests stay in the list. Automatic “Arrived” at the pick-up. Waiting time on the car card.",
+ "notes_el": "Το Waze και το Google Maps ανοίγουν πλέον από το αυτοκίνητο και με κλειδωμένο κινητό. Τέλος στο κλείσιμο της εφαρμογής σε νέες διαδρομές. Οι αναπάντητες παραγγελίες μένουν στη λίστα. Αυτόματο «Έφτασα» στο σημείο παραλαβής. Χρόνος αναμονής στην κάρτα του αυτοκινήτου."
 }
