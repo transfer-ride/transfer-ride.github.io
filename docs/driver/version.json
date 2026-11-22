@@ -1,10 +1,10 @@
 {
- "versionCode": 51,
- "versionName": "3.43",
- "sha256": "f753c1d5283e881d4ee393f2565dee0c46d1e6e89b08748435ad247c1e7e884b",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-51.apk",
- "notes": "Waze/Google Maps im Auto melden „unterwegs“ nur für Fahrten, die jetzt anstehen, nicht für Termine an anderen Tagen.",
- "notes_de": "Waze/Google Maps im Auto melden „unterwegs“ nur für Fahrten, die jetzt anstehen, nicht für Termine an anderen Tagen.",
- "notes_en": "Waze/Google Maps from the car report “on my way” only for rides due now, not for bookings on other days.",
- "notes_el": "Το Waze/Google Maps από το αυτοκίνητο δηλώνει «καθ' οδόν» μόνο για διαδρομές που ξεκινούν τώρα, όχι για ραντεβού άλλων ημερών."
+ "versionCode": 52,
+ "versionName": "3.44",
+ "sha256": "b78abd55da23e4e3cb02886f9ead96b0aae1e73e6cf42a647d8db71fa67a84de",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-52.apk",
+ "notes": "Wer zu früh am Abholort ist: Wartezeit und Gebühr bei Nichterscheinen zählen erst ab der gebuchten Uhrzeit. Die Wartezeit springt nicht mehr auf 0 zurück.",
+ "notes_de": "Wer zu früh am Abholort ist: Wartezeit und Gebühr bei Nichterscheinen zählen erst ab der gebuchten Uhrzeit. Die Wartezeit springt nicht mehr auf 0 zurück.",
+ "notes_en": "Arriving early: waiting time and the no-show fee count only from the booked time. The waiting clock no longer jumps back to 0.",
+ "notes_el": "Αν φτάσεις νωρίτερα: ο χρόνος αναμονής και η χρέωση μη εμφάνισης μετρούν από την ώρα της κράτησης. Ο χρόνος αναμονής δεν ξαναγυρίζει στο 0."
 }
