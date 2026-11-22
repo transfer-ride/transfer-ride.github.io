@@ -1,10 +1,10 @@
 {
- "versionCode": 55,
- "versionName": "3.47",
- "sha256": "74306f7fe8516a235362724e59f3d67a8eb8dd5d51428f3ac605426504d92adb",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-55.apk",
- "notes": "Autokarte: lange Status passen ganz ins Bild, beim Warten am Abholort stehen die Minuten groß.",
- "notes_de": "Autokarte: lange Status passen ganz ins Bild, beim Warten am Abholort stehen die Minuten groß.",
- "notes_en": "Car card: long status texts fit in the picture; waiting at the pick-up shows the minutes big.",
- "notes_el": "Κάρτα αυτοκινήτου: οι μεγάλες ετικέτες χωρούν ολόκληρες, στην αναμονή φαίνονται μεγάλα τα λεπτά."
+ "versionCode": 56,
+ "versionName": "3.48",
+ "sha256": "e48c961a0e97205f09e7f5080b85c6c3e464bc73e6893b971ec28cd61d188693",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-56.apk",
+ "notes": "Im Auto: am Abholort „Fahrt starten“, am Ziel „Fahrt beenden“ direkt auf dem Autobildschirm.",
+ "notes_de": "Im Auto: am Abholort „Fahrt starten“, am Ziel „Fahrt beenden“ direkt auf dem Autobildschirm.",
+ "notes_en": "In the car: “Start ride” at the pick-up and “End ride” at the destination right on the car screen.",
+ "notes_el": "Στο αυτοκίνητο: «Έναρξη διαδρομής» στο σημείο παραλαβής και «Τέλος διαδρομής» στον προορισμό, κατευθείαν από την οθόνη του αυτοκινήτου."
 }
