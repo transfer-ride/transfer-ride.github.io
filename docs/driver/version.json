@@ -1,10 +1,10 @@
 {
- "versionCode": 54,
- "versionName": "3.46",
- "sha256": "f315b12febace422313ba500367deb84b2bf3e80c455685feeb2a500c7ebbca9",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-54.apk",
- "notes": "Anfragen, die wegen der 90-Sekunden-Grenze versteckt waren, erscheinen wieder in der Liste.",
- "notes_de": "Anfragen, die wegen der 90-Sekunden-Grenze versteckt waren, erscheinen wieder in der Liste.",
- "notes_en": "Requests that were hidden because of the 90-second limit show in the list again.",
- "notes_el": "Οι παραγγελίες που είχαν κρυφτεί λόγω του ορίου των 90 δευτερολέπτων εμφανίζονται ξανά στη λίστα."
+ "versionCode": 55,
+ "versionName": "3.47",
+ "sha256": "74306f7fe8516a235362724e59f3d67a8eb8dd5d51428f3ac605426504d92adb",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-55.apk",
+ "notes": "Autokarte: lange Status passen ganz ins Bild, beim Warten am Abholort stehen die Minuten groß.",
+ "notes_de": "Autokarte: lange Status passen ganz ins Bild, beim Warten am Abholort stehen die Minuten groß.",
+ "notes_en": "Car card: long status texts fit in the picture; waiting at the pick-up shows the minutes big.",
+ "notes_el": "Κάρτα αυτοκινήτου: οι μεγάλες ετικέτες χωρούν ολόκληρες, στην αναμονή φαίνονται μεγάλα τα λεπτά."
 }
