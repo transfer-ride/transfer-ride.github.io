@@ -1,10 +1,10 @@
 {
- "versionCode": 49,
- "versionName": "3.41",
- "sha256": "0f2bf9c2fe74c5b424b9f71c886cd5dc23daf44bada84416c64714dbcdfa2e8f",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-49.apk",
- "notes": "Waze und Google Maps öffnen sich im Auto jetzt auch bei gesperrtem Handy. Kein Absturz mehr bei neuen Fahrten. Unbeantwortete Anfragen bleiben in der Liste. Automatisch „Angekommen“ am Abholort. Wartezeit auf der Autokarte.",
- "notes_de": "Waze und Google Maps öffnen sich im Auto jetzt auch bei gesperrtem Handy. Kein Absturz mehr bei neuen Fahrten. Unbeantwortete Anfragen bleiben in der Liste. Automatisch „Angekommen“ am Abholort. Wartezeit auf der Autokarte.",
- "notes_en": "Waze and Google Maps now open from the car also with the phone locked. No more crash on new rides. Unanswered requests stay in the list. Automatic “Arrived” at the pick-up. Waiting time on the car card.",
- "notes_el": "Το Waze και το Google Maps ανοίγουν πλέον από το αυτοκίνητο και με κλειδωμένο κινητό. Τέλος στο κλείσιμο της εφαρμογής σε νέες διαδρομές. Οι αναπάντητες παραγγελίες μένουν στη λίστα. Αυτόματο «Έφτασα» στο σημείο παραλαβής. Χρόνος αναμονής στην κάρτα του αυτοκινήτου."
+ "versionCode": 50,
+ "versionName": "3.42",
+ "sha256": "3e7a17230d91511363916d1f829e50dee7907e9416f4a0de57543b9ee462eff9",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-50.apk",
+ "notes": "„Angekommen“ und „Fahrt beenden“ bleiben nicht mehr gesperrt, wenn GPS fehlt (Tiefgarage, Tunnel). Die Sprachansage folgt dem Ton-Schalter und der gewählten Sprache.",
+ "notes_de": "„Angekommen“ und „Fahrt beenden“ bleiben nicht mehr gesperrt, wenn GPS fehlt (Tiefgarage, Tunnel). Die Sprachansage folgt dem Ton-Schalter und der gewählten Sprache.",
+ "notes_en": "“Arrived” and “End ride” no longer stay locked when GPS is lost (garage, tunnel). Voice prompts follow the sound switch and the chosen language.",
+ "notes_el": "Το «Έφτασα» και το «Τέλος διαδρομής» δεν μένουν πια κλειδωμένα όταν χάνεται το GPS (υπόγειο, τούνελ). Η φωνή ακολουθεί τον διακόπτη ήχου και τη γλώσσα."
 }
