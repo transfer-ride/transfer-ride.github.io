@@ -1,10 +1,10 @@
 {
- "versionCode": 53,
- "versionName": "3.45",
- "sha256": "f04ac113f548813fd735bdf0b216a8720a957998f0b0345753705703e838c701",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-53.apk",
- "notes": "Die Autokarte zeigt „abgemeldet“ oder „kein Internet“ statt „Online“. Hinweis auf dem Handy, wenn du abgemeldet wurdest.",
- "notes_de": "Die Autokarte zeigt „abgemeldet“ oder „kein Internet“ statt „Online“. Hinweis auf dem Handy, wenn du abgemeldet wurdest.",
- "notes_en": "The car card shows “signed out” or “no internet” instead of “Online”. A notice on the phone when you were signed out.",
- "notes_el": "Η κάρτα του αυτοκινήτου δείχνει «αποσυνδέθηκες» ή «χωρίς internet» αντί για «Online». Ειδοποίηση στο κινητό όταν αποσυνδεθείς."
+ "versionCode": 54,
+ "versionName": "3.46",
+ "sha256": "f315b12febace422313ba500367deb84b2bf3e80c455685feeb2a500c7ebbca9",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-54.apk",
+ "notes": "Anfragen, die wegen der 90-Sekunden-Grenze versteckt waren, erscheinen wieder in der Liste.",
+ "notes_de": "Anfragen, die wegen der 90-Sekunden-Grenze versteckt waren, erscheinen wieder in der Liste.",
+ "notes_en": "Requests that were hidden because of the 90-second limit show in the list again.",
+ "notes_el": "Οι παραγγελίες που είχαν κρυφτεί λόγω του ορίου των 90 δευτερολέπτων εμφανίζονται ξανά στη λίστα."
 }
