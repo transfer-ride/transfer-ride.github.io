@@ -1,10 +1,10 @@
 {
- "versionCode": 52,
- "versionName": "3.44",
- "sha256": "b78abd55da23e4e3cb02886f9ead96b0aae1e73e6cf42a647d8db71fa67a84de",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-52.apk",
- "notes": "Wer zu früh am Abholort ist: Wartezeit und Gebühr bei Nichterscheinen zählen erst ab der gebuchten Uhrzeit. Die Wartezeit springt nicht mehr auf 0 zurück.",
- "notes_de": "Wer zu früh am Abholort ist: Wartezeit und Gebühr bei Nichterscheinen zählen erst ab der gebuchten Uhrzeit. Die Wartezeit springt nicht mehr auf 0 zurück.",
- "notes_en": "Arriving early: waiting time and the no-show fee count only from the booked time. The waiting clock no longer jumps back to 0.",
- "notes_el": "Αν φτάσεις νωρίτερα: ο χρόνος αναμονής και η χρέωση μη εμφάνισης μετρούν από την ώρα της κράτησης. Ο χρόνος αναμονής δεν ξαναγυρίζει στο 0."
+ "versionCode": 53,
+ "versionName": "3.45",
+ "sha256": "f04ac113f548813fd735bdf0b216a8720a957998f0b0345753705703e838c701",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-53.apk",
+ "notes": "Die Autokarte zeigt „abgemeldet“ oder „kein Internet“ statt „Online“. Hinweis auf dem Handy, wenn du abgemeldet wurdest.",
+ "notes_de": "Die Autokarte zeigt „abgemeldet“ oder „kein Internet“ statt „Online“. Hinweis auf dem Handy, wenn du abgemeldet wurdest.",
+ "notes_en": "The car card shows “signed out” or “no internet” instead of “Online”. A notice on the phone when you were signed out.",
+ "notes_el": "Η κάρτα του αυτοκινήτου δείχνει «αποσυνδέθηκες» ή «χωρίς internet» αντί για «Online». Ειδοποίηση στο κινητό όταν αποσυνδεθείς."
 }
