@@ -1,10 +1,10 @@
 {
- "versionCode": 50,
- "versionName": "3.42",
- "sha256": "3e7a17230d91511363916d1f829e50dee7907e9416f4a0de57543b9ee462eff9",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-50.apk",
- "notes": "„Angekommen“ und „Fahrt beenden“ bleiben nicht mehr gesperrt, wenn GPS fehlt (Tiefgarage, Tunnel). Die Sprachansage folgt dem Ton-Schalter und der gewählten Sprache.",
- "notes_de": "„Angekommen“ und „Fahrt beenden“ bleiben nicht mehr gesperrt, wenn GPS fehlt (Tiefgarage, Tunnel). Die Sprachansage folgt dem Ton-Schalter und der gewählten Sprache.",
- "notes_en": "“Arrived” and “End ride” no longer stay locked when GPS is lost (garage, tunnel). Voice prompts follow the sound switch and the chosen language.",
- "notes_el": "Το «Έφτασα» και το «Τέλος διαδρομής» δεν μένουν πια κλειδωμένα όταν χάνεται το GPS (υπόγειο, τούνελ). Η φωνή ακολουθεί τον διακόπτη ήχου και τη γλώσσα."
+ "versionCode": 51,
+ "versionName": "3.43",
+ "sha256": "f753c1d5283e881d4ee393f2565dee0c46d1e6e89b08748435ad247c1e7e884b",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-51.apk",
+ "notes": "Waze/Google Maps im Auto melden „unterwegs“ nur für Fahrten, die jetzt anstehen, nicht für Termine an anderen Tagen.",
+ "notes_de": "Waze/Google Maps im Auto melden „unterwegs“ nur für Fahrten, die jetzt anstehen, nicht für Termine an anderen Tagen.",
+ "notes_en": "Waze/Google Maps from the car report “on my way” only for rides due now, not for bookings on other days.",
+ "notes_el": "Το Waze/Google Maps από το αυτοκίνητο δηλώνει «καθ' οδόν» μόνο για διαδρομές που ξεκινούν τώρα, όχι για ραντεβού άλλων ημερών."
 }
