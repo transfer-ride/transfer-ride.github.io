@@ -12,6 +12,7 @@
   /* ---------------- texts ---------------- */
   var T = {
     de: {
+      check: "Für Kontrollen", check_sub: "Zoll · Polizei · Ordnungsamt", check_note: "Zeig diese Seite bei einer Kontrolle. Ausweis oder Pass zusätzlich vorzeigen.", show_contract: "Arbeitsvertrag anzeigen", no_contract: "Der Vertrag ist noch nicht hinterlegt. Frag den Chef.", doc_ph: "Arbeitsbescheinigung, Vertrag, …",
       sec_space: "Mein Bereich", sec_cal: "Kalender", sec_wallet: "Geld", sec_dev: "Entwicklung", sec_docs: "Dokumente", sec_set: "Einstellungen", schedule: "Plan", prefs: "Wünsche", worked: "Gearbeitete Stunden", prefs_sub: "Wann arbeitest du am liebsten? Der Chef sieht das beim Planen.", can: "kann", cannot: "nicht", save: "Speichern", saved: "Gespeichert", movements: "Zahlungen", read_on: "Gelesen am {n}", unread: "Neu", support: "Hilfe", policy: "Nutzungsregeln", policy_text: "Transfer Team ist nur für Mitarbeiter von Transfer. Melde dich nicht auf fremden Geräten an, gib deinen PIN nicht weiter. Was du hier siehst, sind deine persönlichen Daten: bitte nicht weitergeben. Fragen an den HR-Assistenten werden auf dem Rechner der Personalverwaltung beantwortet; Entscheidungen trifft der Chef.", other_docs: "Weitere Dokumente",
       menu: "Menü", search: "Suche", search_ph: "Suchen: Urlaub, Schicht, Regeln …", no_hits: "Nichts gefunden.", c_news: "Neuigkeiten", c_company: "Über Transfer", c_benefits: "Vorteile", c_learning: "Lernen", c_development: "Entwicklung", c_guidelines: "Richtlinien", c_favs: "Favoriten", no_favs: "Tippe bei einem Beitrag auf ☆, um ihn hier zu sammeln.", full_plan: "Ganzer Plan", my_plan: "Mein Plan",
       app: "Team", pin: "PIN eingeben", pin_sub: "Derselbe PIN wie in der Fahrer-App", wrong: "Falscher PIN. Noch {n} Versuche.",
@@ -30,8 +31,8 @@
       from: "Von", to: "Bis", date: "Datum", msg: "Nachricht", send: "Senden", cancel: "Abbrechen", sent: "Gesendet",
       which_doc: "Welches Dokument?", which_month: "Welcher Monat?", why: "Kurz, worum es geht",
       sick_note: "Ab dem 4. Krankheitstag brauchst du eine AU vom Arzt.",
-      chat_title: "HR-Assistent", chat_sub: "Antwortet sofort · Entscheidungen trifft der Chef",
-      chat_empty: "Frag alles zu Schichten, Urlaub, Lohn, Dokumenten oder Regeln.",
+      chat_title: "HR-Assistent", chat_sub: "Versteht jede Sprache · antwortet sofort",
+      chat_empty: "Schreib in deiner Sprache – Deutsch, Englisch, Griechisch, Türkisch, Arabisch, Rumänisch oder jede andere. Frag alles zu Schichten, Urlaub, Lohn, Dokumenten oder Regeln. Über Geld, Urlaub und Verträge entscheidet der Chef.",
       typing: "HR-Assistent schreibt …", owner: "Chef", agent: "HR-Assistent", ph: "Nachricht schreiben …",
       q1: "Wie viel Urlaub habe ich noch?", q2: "Wann ist meine nächste Schicht?", q3: "Wann kommt der Lohn?",
       personal: "Persönlich", contract: "Vertrag", documents: "Dokumente", payslips: "Lohnzettel", settings: "Einstellungen",
@@ -44,6 +45,7 @@
       err: "Das ging nicht. Bitte noch einmal.", too_many: "Zu viele Nachrichten. Bitte etwas später.", signed_out: "Abgemeldet. Bitte PIN eingeben."
     },
     en: {
+      check: "For checks", check_sub: "Customs · police · public order office", check_note: "Show this page at a check. Also show your ID card or passport.", show_contract: "Show employment contract", no_contract: "The contract is not stored yet. Ask the boss.", doc_ph: "Employment certificate, contract, …",
       sec_space: "My space", sec_cal: "Calendar", sec_wallet: "Money", sec_dev: "Development", sec_docs: "Documents", sec_set: "Settings", schedule: "Schedule", prefs: "Wishes", worked: "Worked hours", prefs_sub: "When do you like to work? The boss sees this when planning.", can: "can", cannot: "no", save: "Save", saved: "Saved", movements: "Payments", read_on: "Read on {n}", unread: "New", support: "Help", policy: "Usage rules", policy_text: "Transfer Team is only for Transfer staff. Do not sign in on other people's devices and do not share your PIN. What you see here is your personal data: please keep it to yourself. HR assistant questions are answered on the HR computer; the boss makes the decisions.", other_docs: "Other documents",
       menu: "Menu", search: "Search", search_ph: "Search: leave, shift, rules …", no_hits: "Nothing found.", c_news: "News", c_company: "About Transfer", c_benefits: "Benefits", c_learning: "Learning", c_development: "Development", c_guidelines: "Guidelines", c_favs: "Favourites", no_favs: "Tap ☆ on a post to keep it here.", full_plan: "Full schedule", my_plan: "My schedule",
       app: "Team", pin: "Enter your PIN", pin_sub: "The same PIN as in the driver app", wrong: "Wrong PIN. {n} tries left.",
@@ -62,8 +64,8 @@
       from: "From", to: "To", date: "Date", msg: "Message", send: "Send", cancel: "Cancel", sent: "Sent",
       which_doc: "Which document?", which_month: "Which month?", why: "In short, what it is about",
       sick_note: "From the 4th day of sickness you need a doctor's note (AU).",
-      chat_title: "HR assistant", chat_sub: "Answers at once · the boss makes the decisions",
-      chat_empty: "Ask anything about shifts, leave, pay, documents or rules.",
+      chat_title: "HR assistant", chat_sub: "Understands every language · answers at once",
+      chat_empty: "Write in your own language – English, German, Greek, Turkish, Arabic, Romanian or any other. Ask anything about shifts, leave, pay, documents or rules. The boss decides about money, leave and contracts.",
       typing: "HR assistant is typing …", owner: "Boss", agent: "HR assistant", ph: "Write a message …",
       q1: "How much leave do I have left?", q2: "When is my next shift?", q3: "When is payday?",
       personal: "Personal", contract: "Contract", documents: "Documents", payslips: "Payslips", settings: "Settings",
@@ -76,6 +78,7 @@
       err: "That did not work. Please try again.", too_many: "Too many messages. Please wait a bit.", signed_out: "Signed out. Please enter your PIN."
     },
     el: {
+      check: "Για ελέγχους", check_sub: "Zoll · Αστυνομία · Ordnungsamt", check_note: "Δείξε αυτή τη σελίδα σε έλεγχο. Δείξε επίσης ταυτότητα ή διαβατήριο.", show_contract: "Εμφάνιση σύμβασης εργασίας", no_contract: "Η σύμβαση δεν έχει καταχωριστεί ακόμα. Ρώτα το αφεντικό.", doc_ph: "Βεβαίωση εργασίας, σύμβαση, …",
       sec_space: "Ο χώρος μου", sec_cal: "Ημερολόγιο", sec_wallet: "Χρήματα", sec_dev: "Εξέλιξη", sec_docs: "Έγγραφα", sec_set: "Ρυθμίσεις", schedule: "Πρόγραμμα", prefs: "Προτιμήσεις", worked: "Ώρες εργασίας", prefs_sub: "Πότε προτιμάς να δουλεύεις; Το αφεντικό το βλέπει όταν φτιάχνει το πρόγραμμα.", can: "μπορώ", cannot: "όχι", save: "Αποθήκευση", saved: "Αποθηκεύτηκε", movements: "Πληρωμές", read_on: "Διαβάστηκε {n}", unread: "Νέο", support: "Βοήθεια", policy: "Κανόνες χρήσης", policy_text: "Το Transfer Team είναι μόνο για το προσωπικό του Transfer. Μη συνδέεσαι σε ξένες συσκευές και μη δίνεις το PIN σου. Όσα βλέπεις εδώ είναι προσωπικά σου στοιχεία: κράτα τα για σένα. Τις ερωτήσεις στον βοηθό HR τις απαντά ο υπολογιστής του HR· τις αποφάσεις τις παίρνει το αφεντικό.", other_docs: "Άλλα έγγραφα",
       menu: "Μενού", search: "Αναζήτηση", search_ph: "Αναζήτηση: άδεια, βάρδια, κανόνες …", no_hits: "Δεν βρέθηκε τίποτα.", c_news: "Νέα", c_company: "Για το Transfer", c_benefits: "Παροχές", c_learning: "Εκπαίδευση", c_development: "Εξέλιξη", c_guidelines: "Κανόνες", c_favs: "Αγαπημένα", no_favs: "Πάτα ☆ σε μια ανάρτηση για να τη βρίσκεις εδώ.", full_plan: "Όλο το πρόγραμμα", my_plan: "Το πρόγραμμά μου",
       app: "Team", pin: "Βάλε το PIN", pin_sub: "Το ίδιο PIN με την εφαρμογή οδηγού", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
@@ -94,8 +97,8 @@
       from: "Από", to: "Έως", date: "Ημερομηνία", msg: "Μήνυμα", send: "Αποστολή", cancel: "Άκυρο", sent: "Στάλθηκε",
       which_doc: "Ποιο έγγραφο;", which_month: "Ποιος μήνας;", why: "Με λίγα λόγια, για τι πρόκειται",
       sick_note: "Από την 4η μέρα ασθένειας χρειάζεσαι βεβαίωση γιατρού (AU).",
-      chat_title: "Βοηθός HR", chat_sub: "Απαντά αμέσως · τις αποφάσεις τις παίρνει το αφεντικό",
-      chat_empty: "Ρώτα ό,τι θες για βάρδιες, άδειες, μισθό, έγγραφα ή κανόνες.",
+      chat_title: "Βοηθός HR", chat_sub: "Καταλαβαίνει κάθε γλώσσα · απαντά αμέσως",
+      chat_empty: "Γράψε στη γλώσσα σου – ελληνικά, γερμανικά, αγγλικά, τουρκικά, αραβικά, ρουμανικά ή όποια άλλη. Ρώτα ό,τι θες για βάρδιες, άδειες, μισθό, έγγραφα ή κανόνες. Για χρήματα, άδειες και συμβάσεις αποφασίζει το αφεντικό.",
       typing: "Ο βοηθός HR γράφει …", owner: "Αφεντικό", agent: "Βοηθός HR", ph: "Γράψε μήνυμα …",
       q1: "Πόση άδεια μου μένει;", q2: "Πότε είναι η επόμενη βάρδια μου;", q3: "Πότε πληρωνόμαστε;",
       personal: "Προσωπικά", contract: "Σύμβαση", documents: "Έγγραφα", payslips: "Εκκαθαριστικά", settings: "Ρυθμίσεις",
@@ -117,22 +120,79 @@
       sofortmeldung: "Δήλωση πρόσληψης", gesundheitszeugnis: "Πιστοποιητικό υγείας", fuehrungszeugnis: "Ποινικό μητρώο" }
   };
 
-  // Starter content for the menu sections until the owner posts his own (node team/bridge.mjs post … --category …).
-  var CATS = ["news", "company", "benefits", "learning", "development", "guidelines"]; var profSec = "space", calView = "schedule", calMonth = null;
+  // Starter content in three languages until the owner posts his own (node team/bridge.mjs post … --category …).
+  // Benefits and bonus rules as agreed for the drivers (from the contract drafts); binding is only the signed contract.
+  function S(id, category, de, en, el) { return { id: id, category: category, tr: { de: de, en: en, el: el } }; }
   var STARTER = [
-    { id: "s1", category: "company", title: "Transfer in Stuttgart", body: "Transfer fährt Fahrgäste in und um Stuttgart: Flughafen, Bahnhof, Messe, Termine. Buchungen kommen über die Website, WhatsApp (Tobias) und die Fahrer-App. Unser Anspruch: pünktlich, sauber, freundlich." },
-    { id: "s2", category: "company", title: "Wer hilft dir", body: "Fragen zu Schichten, Urlaub, Lohn und Dokumenten: der HR-Assistent im Chat, rund um die Uhr. Entscheidungen über Geld, Urlaub und Verträge trifft der Chef; der Assistent gibt sie weiter. Notfall unterwegs: 112, dann die Zentrale." },
-    { id: "s3", category: "guidelines", title: "Im Auto", body: "Pünktlich am Abholort, Auto innen und außen sauber, keine lauten Telefonate mit Fahrgästen im Auto. Gurtpflicht für alle. Kein Alkohol, keine Drogen: 0,0 ‰ im Dienst." },
-    { id: "s4", category: "guidelines", title: "Krank? So geht's", body: "Vor Schichtbeginn melden: in der App unter Anträge → Krank melden. Ab dem 4. Krankheitstag brauchst du eine AU vom Arzt. Gründe der Krankheit musst du nicht nennen." },
-    { id: "s5", category: "guidelines", title: "Arbeitszeit", body: "Höchstens 10 Stunden am Tag, mindestens 11 Stunden Ruhe zwischen zwei Schichten, nach 6 Stunden 30 Minuten Pause. Trag deine echten Zeiten ein: das ist die gesetzliche Zeiterfassung." },
-    { id: "s6", category: "guidelines", title: "Datenschutz", body: "Daten von Fahrgästen (Namen, Nummern, Adressen) nur für die Fahrt nutzen, nie weitergeben, keine Fotos davon. Deine eigenen Daten sieht nur du und die Personalverwaltung." },
-    { id: "s7", category: "learning", title: "Die Fahrer-App in 5 Schritten", body: "1. Anfrage kommt mit Ton → wischen zum Annehmen.\n2. „Ich fahre los“ startet Waze oder Google Maps.\n3. Am Abholort öffnet „Angekommen“ (oder automatisch nach 15 s Stillstand).\n4. Fahrgast drin → „Fahrt starten“.\n5. Am Ziel „Fahrt beenden“, bei Barzahlung den Betrag kassieren." },
-    { id: "s8", category: "learning", title: "Android Auto", body: "Die Transfer-Karte erscheint neben Waze. Neue Fahrt: ✓ annehmen, ✕ ablehnen. Danach Waze oder Google Maps. Am Abholort ▶ startet die Fahrt, am Ziel die Flagge beendet sie." },
-    { id: "s9", category: "learning", title: "Flughafen Stuttgart", body: "Abholung an Terminal 1 und 3: Kurzzeitparken P0/P14 nutzen, Flugnummer in der App prüfen (Live-Link), bei Verspätung kostenlos warten bis 30 Minuten nach Landung." },
-    { id: "s10", category: "benefits", title: "Vorteile bei Transfer", body: "Flexible Schichten nach deinen Wünschen, Bezahlung pünktlich zum Monatsanfang, Trinkgeld gehört dir. Weitere Vorteile folgen – Vorschläge gern im HR-Chat." },
-    { id: "s11", category: "development", title: "Wachsen mit Transfer", body: "Mehr Schichten, Flughafen- und Geschäftskunden, später Teamleitung: sag im HR-Chat, was du dir wünschst. P-Schein noch nicht? Wir helfen dir bei der Anmeldung." }
+    S("s1", "company", ["Transfer in Stuttgart", "Transfer fährt Fahrgäste in und um Stuttgart: Flughafen, Bahnhof, Messe, Termine. Buchungen kommen über die Website, WhatsApp und die Fahrer-App. Unser Anspruch: pünktlich, sauber, freundlich."],
+      ["Transfer in Stuttgart", "Transfer drives passengers in and around Stuttgart: airport, station, trade fair, appointments. Bookings come from the website, WhatsApp and the driver app. Our standard: on time, clean, friendly."],
+      ["Το Transfer στη Στουτγκάρδη", "Το Transfer μεταφέρει επιβάτες μέσα και γύρω από τη Στουτγκάρδη: αεροδρόμιο, σταθμός, έκθεση, ραντεβού. Οι κρατήσεις έρχονται από τη σελίδα, το WhatsApp και την εφαρμογή οδηγού. Ο στόχος μας: στην ώρα μας, καθαροί, ευγενικοί."]),
+    S("s2", "company", ["Wer hilft dir", "Fragen zu Schichten, Urlaub, Lohn und Dokumenten: der HR-Assistent im Chat, rund um die Uhr und in jeder Sprache. Entscheidungen über Geld, Urlaub und Verträge trifft der Chef; der Assistent gibt sie weiter. Notfall unterwegs: 110/112, dann der Chef."],
+      ["Who helps you", "Questions about shifts, leave, pay and documents: the HR assistant in the chat, day and night and in any language. Decisions about money, leave and contracts are made by the boss; the assistant passes them on. Emergency on the road: 110/112, then the boss."],
+      ["Ποιος σε βοηθά", "Ερωτήσεις για βάρδιες, άδειες, μισθό και έγγραφα: ο βοηθός HR στο chat, μέρα νύχτα και σε όποια γλώσσα θέλεις. Τις αποφάσεις για χρήματα, άδειες και συμβάσεις τις παίρνει το αφεντικό· ο βοηθός τις μεταφέρει. Έκτακτη ανάγκη στον δρόμο: 110/112 και μετά το αφεντικό."]),
+    S("b1", "benefits", ["Mindestens Mindestlohn – jede Stunde", "Jede Arbeitsstunde wird mindestens mit dem gesetzlichen Mindestlohn bezahlt, auch Wartezeit, Tanken und Reinigen."],
+      ["At least minimum wage – every hour", "Every working hour is paid at least the legal minimum wage, including waiting, refuelling and cleaning."],
+      ["Τουλάχιστον κατώτατος μισθός – κάθε ώρα", "Κάθε ώρα εργασίας πληρώνεται τουλάχιστον με τον νόμιμο κατώτατο μισθό, και η αναμονή, ο ανεφοδιασμός και ο καθαρισμός."]),
+    S("b2", "benefits", ["Trinkgeld gehört dir – 100 %", "Bar und in der App. App-Trinkgeld kommt mit der nächsten Abrechnung voll zu dir."],
+      ["Tips are yours – 100 %", "Cash and in the app. App tips come to you in full with the next payslip."],
+      ["Τα φιλοδωρήματα είναι δικά σου – 100 %", "Μετρητά και μέσω εφαρμογής. Τα φιλοδωρήματα της εφαρμογής έρχονται ολόκληρα με την επόμενη μισθοδοσία."]),
+    S("b3", "benefits", ["Verbrauchsbonus 30 €", "30 € brutto im Monat, wenn das Auto im Schnitt höchstens 4,5 l/100 km verbraucht (laut Tankkarte und Fahrtenprotokoll). Entfällt in einem Monat mit Bußgeld."],
+      ["Fuel-saving bonus €30", "€30 gross a month when the car uses at most 4.5 l/100 km on average (fuel card and trip log). Not in a month with a traffic fine."],
+      ["Μπόνους οικονομίας 30 €", "30 € μικτά τον μήνα όταν το αυτοκίνητο καίει κατά μέσο όρο έως 4,5 l/100 km (κάρτα καυσίμων και ημερολόγιο διαδρομών). Όχι σε μήνα με πρόστιμο."]),
+    S("b4", "benefits", ["Schadenfrei-Bonus 100 €", "100 € brutto für jedes halbe Jahr ohne selbst verschuldeten Unfall oder Schaden (auch Felgen und Reifen)."],
+      ["No-damage bonus €100", "€100 gross for every six months without an accident or damage you caused (rims and tyres included)."],
+      ["Μπόνους χωρίς ζημιά 100 €", "100 € μικτά για κάθε εξάμηνο χωρίς ατύχημα ή ζημιά από δική σου υπαιτιότητα (και ζάντες, λάστιχα)."]),
+    S("b5", "benefits", ["Tankgutscheine bis 50 € im Monat", "Steuerfrei: 25 € ab 7.200 € Umsatz im Monat, 15 € ohne Schaden, 10 € für den sparsamsten Fahrer."],
+      ["Fuel vouchers up to €50 a month", "Tax-free: €25 from €7,200 revenue a month, €15 without damage, €10 for the most economical driver."],
+      ["Κουπόνια καυσίμων έως 50 € τον μήνα", "Αφορολόγητα: 25 € από 7.200 € τζίρο τον μήνα, 15 € χωρίς ζημιά, 10 € για τον πιο οικονομικό οδηγό."]),
+    S("b6", "benefits", ["Empfehlungsbonus 200 €", "Du bringst einen Fahrer, er bleibt drei Monate: 200 € für dich."],
+      ["Referral bonus €200", "Bring a driver who stays three months: €200 for you."],
+      ["Μπόνους σύστασης 200 €", "Φέρνεις έναν οδηγό και μένει τρεις μήνες: 200 € για σένα."]),
+    S("b7", "benefits", ["Geld jeden Tag", "Bar kassierte Fahrpreise darfst du als Vorschuss auf deinen Lohn behalten; abgerechnet wird monatlich (Bargeldprotokoll führen)."],
+      ["Money every day", "You may keep cash fares as an advance on your pay; it is settled monthly (keep the cash log)."],
+      ["Χρήματα κάθε μέρα", "Τα μετρητά των διαδρομών μπορείς να τα κρατάς ως προκαταβολή μισθού· η εκκαθάριση γίνεται μηνιαία (κράτα το ημερολόγιο μετρητών)."]),
+    S("b8", "benefits", ["Premium-Fahrzeug, alles bezahlt", "Mercedes E-Klasse, Tankkarte, Wäsche und Versicherung zahlt Transfer."],
+      ["Premium car, all paid", "Mercedes E-Class; fuel card, car wash and insurance are paid by Transfer."],
+      ["Premium αυτοκίνητο, όλα πληρωμένα", "Mercedes E-Klasse· κάρτα καυσίμων, πλύσιμο και ασφάλεια τα πληρώνει το Transfer."]),
+    S("b9", "benefits", ["Schichten nach Absprache", "Wir berücksichtigen deine Wünsche (im Profil unter Kalender → Wünsche)."],
+      ["Shifts by agreement", "We take your wishes into account (Profile → Calendar → Wishes)."],
+      ["Βάρδιες κατόπιν συνεννόησης", "Λαμβάνουμε υπόψη τις προτιμήσεις σου (Προφίλ → Ημερολόγιο → Προτιμήσεις)."]),
+    S("d1", "development", ["Perspektive nach 6 Monaten", "Nach sechs Monaten ist ein unbefristeter Vertrag möglich, und nach Absprache darfst du das Auto für den Arbeitsweg mit nach Hause nehmen."],
+      ["Prospects after 6 months", "After six months a permanent contract is possible, and by agreement you may take the car home for your commute."],
+      ["Προοπτική μετά από 6 μήνες", "Μετά από έξι μήνες γίνεται σύμβαση αορίστου χρόνου, και κατόπιν συνεννόησης μπορείς να παίρνεις το αυτοκίνητο σπίτι για τη μετακίνηση."]),
+    S("d2", "development", ["Wachsen mit Transfer", "Mehr Schichten, Flughafen- und Geschäftskunden, später Teamleitung: sag im HR-Chat, was du dir wünschst. Noch kein P-Schein? Wir helfen dir bei der Anmeldung."],
+      ["Grow with Transfer", "More shifts, airport and business clients, later team lead: tell the HR chat what you would like. No P-Schein yet? We help you apply."],
+      ["Εξέλιξη με το Transfer", "Περισσότερες βάρδιες, αεροδρόμιο και επαγγελματίες πελάτες, αργότερα υπεύθυνος ομάδας: πες στο chat HR τι θέλεις. Δεν έχεις ακόμα P-Schein; Σε βοηθάμε να το βγάλεις."]),
+    S("g1", "guidelines", ["Im Auto", "Pünktlich am Abholort, Auto innen und außen sauber, gepflegtes Auftreten. Kein Rauchen, keine E-Zigarette, kein Essen im Auto. 0,0 ‰ Alkohol im Dienst. Gurtpflicht für alle."],
+      ["In the car", "On time at the pick-up, car clean inside and out, well-groomed. No smoking, no e-cigarettes, no eating in the car. 0.0 ‰ alcohol on duty. Seat belts for everyone."],
+      ["Στο αυτοκίνητο", "Στην ώρα σου στο σημείο παραλαβής, καθαρό αυτοκίνητο μέσα και έξω, περιποιημένη εμφάνιση. Όχι κάπνισμα, ηλεκτρονικό τσιγάρο ή φαγητό στο αυτοκίνητο. 0,0 ‰ αλκοόλ στη βάρδια. Ζώνη για όλους."]),
+    S("g2", "guidelines", ["Krank? So geht's", "Vor Schichtbeginn melden: in der App unter Anträge → Krank melden. Dauert es länger als drei Tage, brauchst du am vierten Tag eine AU vom Arzt. Gründe musst du nicht nennen."],
+      ["Sick? Here is how", "Report before your shift starts: in the app under Requests → Call in sick. If it lasts longer than three days, you need a doctor's note (AU) on day four. You do not have to say why."],
+      ["Άρρωστος; Έτσι γίνεται", "Δήλωσέ το πριν ξεκινήσει η βάρδια: στην εφαρμογή, Αιτήματα → Ασθένεια. Αν κρατήσει πάνω από τρεις μέρες, την τέταρτη μέρα χρειάζεσαι βεβαίωση γιατρού (AU). Δεν χρειάζεται να πεις τον λόγο."]),
+    S("g3", "guidelines", ["Arbeitszeit", "Höchstens 10 Stunden am Tag, mindestens 11 Stunden Ruhe zwischen zwei Schichten, 30 Minuten Pause nach 6 Stunden, 45 Minuten nach 9 Stunden. Zeiten bei anderen Arbeitgebern zählen mit. Trag immer deine echten Zeiten ein."],
+      ["Working time", "At most 10 hours a day, at least 11 hours rest between two shifts, a 30-minute break after 6 hours, 45 minutes after 9 hours. Hours at other employers count too. Always record your real times."],
+      ["Ώρες εργασίας", "Έως 10 ώρες τη μέρα, τουλάχιστον 11 ώρες ξεκούραση ανάμεσα σε δύο βάρδιες, 30 λεπτά διάλειμμα μετά από 6 ώρες, 45 λεπτά μετά από 9. Μετράνε και οι ώρες σε άλλους εργοδότες. Γράφε πάντα τις πραγματικές σου ώρες."]),
+    S("g4", "guidelines", ["Kontrolle durch Zoll oder Polizei", "Ruhig und kooperativ bleiben. Ausweis oder Pass immer dabei haben (§ 2a SchwarzArbG). In dieser App: Profil → Für Kontrollen zeigt deine Anmeldung, deinen Vertrag und deine Fahrerlaubnisse. Danach den Chef informieren."],
+      ["Check by customs or police", "Stay calm and cooperative. Always carry your ID card or passport (§ 2a SchwarzArbG). In this app: Profile → For checks shows your registration, your contract and your licences. Tell the boss afterwards."],
+      ["Έλεγχος από Zoll ή αστυνομία", "Μείνε ήρεμος και συνεργάσιμος. Έχε πάντα μαζί ταυτότητα ή διαβατήριο (§ 2a SchwarzArbG). Σε αυτή την εφαρμογή: Προφίλ → Για ελέγχους δείχνει την ασφάλισή σου, τη σύμβαση και τις άδειες οδήγησης. Μετά ενημέρωσε το αφεντικό."]),
+    S("g5", "guidelines", ["Sicherheit und Unfälle", "Bei Bedrohung darfst du die Fahrt ablehnen oder an einem sicheren Ort beenden, ohne Nachteile. Unfall: Stelle sichern, Verletzte versorgen, Polizei bei Personenschaden, Fotos, kein Schuldanerkenntnis, Chef sofort anrufen."],
+      ["Safety and accidents", "If threatened you may refuse or end the ride at a safe place, without any penalty. Accident: secure the scene, help the injured, police if anyone is hurt, photos, no admission of fault, call the boss at once."],
+      ["Ασφάλεια και ατυχήματα", "Αν απειληθείς, μπορείς να αρνηθείς ή να τελειώσεις τη διαδρομή σε ασφαλές σημείο, χωρίς καμία συνέπεια. Ατύχημα: ασφάλισε το σημείο, βοήθησε τους τραυματίες, αστυνομία αν υπάρχει τραυματισμός, φωτογραφίες, καμία παραδοχή ευθύνης, πάρε αμέσως τηλέφωνο το αφεντικό."]),
+    S("g6", "guidelines", ["Datenschutz", "Daten von Fahrgästen (Namen, Nummern, Ziele) nur für die Fahrt nutzen, nie weitergeben, keine Fotos oder Videos aus dem Auto in sozialen Netzwerken."],
+      ["Privacy", "Use passengers' data (names, numbers, destinations) only for the ride, never pass it on, no photos or videos from the car on social media."],
+      ["Προσωπικά δεδομένα", "Τα στοιχεία των επιβατών (ονόματα, τηλέφωνα, προορισμοί) μόνο για τη διαδρομή, ποτέ σε τρίτους, καμία φωτογραφία ή βίντεο από το αυτοκίνητο στα social."]),
+    S("l1", "learning", ["Die Fahrer-App in 5 Schritten", "1. Anfrage kommt mit Ton → wischen zum Annehmen.\n2. „Ich fahre los“ startet Waze oder Google Maps.\n3. Am Abholort „Angekommen“ (oder automatisch nach 15 s Stillstand).\n4. Fahrgast drin → „Fahrt starten“.\n5. Am Ziel „Fahrt beenden“, bei Barzahlung den Betrag kassieren."],
+      ["The driver app in 5 steps", "1. A request comes with a sound → swipe to accept.\n2. “I'm on my way” starts Waze or Google Maps.\n3. At the pick-up “Arrived” (or automatically after standing 15 s).\n4. Passenger in → “Start ride”.\n5. At the destination “End ride”; for cash, collect the amount."],
+      ["Η εφαρμογή οδηγού σε 5 βήματα", "1. Το αίτημα έρχεται με ήχο → σύρε για αποδοχή.\n2. «Ξεκινάω» ανοίγει Waze ή Google Maps.\n3. Στο σημείο παραλαβής «Έφτασα» (ή αυτόματα μετά από 15 δευτ. στάση).\n4. Επιβάτης μέσα → «Έναρξη διαδρομής».\n5. Στον προορισμό «Τέλος διαδρομής»· για μετρητά, εισπράττεις το ποσό."]),
+    S("l2", "learning", ["Android Auto", "Die Transfer-Karte erscheint neben Waze. Neue Fahrt: ✓ annehmen, ✕ ablehnen. Danach Waze oder Google Maps. Am Abholort ▶ startet die Fahrt, am Ziel die Flagge beendet sie."],
+      ["Android Auto", "The Transfer card appears next to Waze. New ride: ✓ accept, ✕ decline. Then Waze or Google Maps. At the pick-up ▶ starts the ride, at the destination the flag ends it."],
+      ["Android Auto", "Η κάρτα Transfer εμφανίζεται δίπλα στο Waze. Νέα διαδρομή: ✓ αποδοχή, ✕ απόρριψη. Μετά Waze ή Google Maps. Στο σημείο παραλαβής το ▶ ξεκινά τη διαδρομή, στον προορισμό η σημαία την τελειώνει."]),
+    S("l3", "learning", ["Bargeld und Belege", "Jede Bareinnahme täglich ins Bargeldprotokoll, Tankbelege und Fahrzeugfotos zu Schichtbeginn und -ende an den Chef. Das schützt dich bei jeder Abrechnung."],
+      ["Cash and receipts", "Every cash fare goes into the cash log daily; fuel receipts and car photos at the start and end of each shift to the boss. This protects you at every settlement."],
+      ["Μετρητά και αποδείξεις", "Κάθε είσπραξη μετρητών καθημερινά στο ημερολόγιο μετρητών· αποδείξεις καυσίμων και φωτογραφίες του αυτοκινήτου στην αρχή και στο τέλος της βάρδιας στο αφεντικό. Σε προστατεύει σε κάθε εκκαθάριση."])
   ];
-  function posts() { var own = (data && data.posts) || []; return own.concat(STARTER.filter(function (x) { return !own.some(function (o) { return o.category === x.category; }) || x.category === "news"; })); }
+  function tr(p) { if (!p.tr) return p; var x = p.tr[lang] || p.tr.de; return { id: p.id, category: p.category, title: x[0], body: x[1] }; }
+  function posts() { var own = (data && data.posts) || []; return own.concat(STARTER.map(tr)); }
   function favs() { try { return JSON.parse(load("team_favs") || "[]"); } catch (e) { return []; } }
   function toggleFav(id) { var f = favs(), i = f.indexOf(String(id)); if (i < 0) f.push(String(id)); else f.splice(i, 1); store("team_favs", JSON.stringify(f)); }
 
@@ -265,7 +325,10 @@
   function langButtons(box, redraw) {
     [["de", "DE"], ["en", "EN"], ["el", "EL"]].forEach(function (x) {
       var b = el('<button type="button" aria-pressed="' + (lang === x[0]) + '">' + x[1] + "</button>");
-      b.onclick = function () { lang = x[0]; store("team_lang", lang); document.documentElement.lang = lang; redraw(); };
+      b.onclick = function () {
+        lang = x[0]; store("team_lang", lang); document.documentElement.lang = lang; redraw();
+        if (token && data) rpc("team_prefs", { p_token: token, p_prefs: Object.assign({}, data.prefs || {}, { lang: lang }) }).then(function (h) { if (h) data = h; }).catch(function () {});
+      };
       box.appendChild(b);
     });
   }
@@ -280,7 +343,10 @@
     refresh().then(function () { render(); homeTimer = setInterval(function () { refresh().then(function () { if (tab !== "chat" && !sheet) render(); else tabsBadge(); }); }, 30000); })
       .catch(function () { if (token) { app.innerHTML = '<div class="pin"><p class="err">' + esc(t("offline")) + '</p><button class="btn ghost" style="max-width:240px" id="retry">↻</button></div>'; app.querySelector("#retry").onclick = start; } });
   }
-  function refresh() { return rpc("team_home", { p_token: token }).then(function (d) { data = d; }); }
+  function refresh() { return rpc("team_home", { p_token: token }).then(function (d) {
+    data = d;
+    if (d && (!d.prefs || d.prefs.lang !== lang)) rpc("team_prefs", { p_token: token, p_prefs: Object.assign({}, d.prefs || {}, { lang: lang }) }).catch(function () {});
+  }); }
 
   function render() {
     if (tab === "chat") return chatScreen();
@@ -307,6 +373,7 @@
     app.querySelectorAll("[data-slip]").forEach(function (b) { b.onclick = function () { slipSheet(b.dataset.slip); }; });
     app.querySelectorAll("[data-req]").forEach(function (b) { b.onclick = function () { reqSheet(+b.dataset.req); }; });
     var so = app.querySelector("#signout"); if (so) so.onclick = function () { signOut(false); };
+    var ck = app.querySelector("#check"); if (ck) ck.onclick = checkSheet;
     app.querySelectorAll("[data-sec]").forEach(function (b) { b.onclick = function () { profSec = b.dataset.sec; render(); }; });
     app.querySelectorAll("[data-cal]").forEach(function (b) { b.onclick = function () { calView = b.dataset.cal; render(); }; });
     app.querySelectorAll("[data-mon]").forEach(function (b) { b.onclick = function () { var n = new Date(), m = calMonth || new Date(n.getFullYear(), n.getMonth(), 1); calMonth = new Date(m.getFullYear(), m.getMonth() + (+b.dataset.mon), 1); render(); }; });
@@ -450,7 +517,7 @@
       (kind === "sick" ? '<p class="muted small">' + esc(t("sick_note")) + "</p>" : "");
     if (kind === "shift_swap") f = '<label class="f" for="f1">' + esc(t("date")) + '</label><input class="in" type="date" id="f1" value="' + today + '">';
     if (kind === "payslip") f = '<label class="f" for="f1">' + esc(t("which_month")) + '</label><input class="in" type="month" id="f1" value="' + today.slice(0, 7) + '">';
-    if (kind === "document") f = '<label class="f" for="f1">' + esc(t("which_doc")) + '</label><input class="in" id="f1" placeholder="Arbeitsbescheinigung, Vertrag, …">';
+    if (kind === "document") f = '<label class="f" for="f1">' + esc(t("which_doc")) + '</label><input class="in" id="f1" placeholder="' + esc(t("doc_ph")) + '">';
     openSheet("<h2 style=\"margin-top:0\">" + esc(t(k[1])) + "</h2>" + f + '<label class="f" for="txt">' + esc(kind === "other" || kind === "raise" ? t("why") : t("msg")) + '</label><textarea class="in" id="txt"></textarea>' +
       '<div style="display:grid;gap:10px;margin-top:16px"><button class="btn" id="go">' + esc(t("send")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
       s.querySelector("#go").onclick = function () {
@@ -520,6 +587,7 @@
     var p = profile(), me = data.me || {};
     var secs = [["space", "sec_space"], ["cal", "sec_cal"], ["wallet", "sec_wallet"], ["dev", "sec_dev"], ["docs", "sec_docs"], ["set", "sec_set"]];
     var h = '<div class="top"><div><h1>' + esc(me.name || "") + '</h1><div class="muted">' + esc(p.role || (p.type ? t("t_" + p.type) : "")) + '</div></div><div class="avatar" aria-hidden="true"><i></i></div></div>' +
+      '<button class="btn dark" id="check" style="margin:0 0 14px;display:flex;align-items:center;justify-content:center;gap:10px">🪪 ' + esc(t("check")) + ' <span style="font-weight:500;opacity:.7;font-size:14px">' + esc(t("check_sub")) + "</span></button>" +
       '<div class="quick" style="padding:0;margin:0 0 6px">' + secs.map(function (x) {
         return '<button type="button" data-sec="' + x[0] + '" style="' + (profSec === x[0] ? "background:var(--ink);color:#fff;border-color:var(--ink);font-weight:700" : "") + '">' + esc(t(x[1])) + "</button>"; }).join("") + "</div>";
     return h + ({ space: secSpace, cal: secCal, wallet: secWallet, dev: secDev, docs: secDocs, set: secSet }[profSec] || secSpace)(p);
@@ -533,7 +601,7 @@
       kv(t("salary"), p.monthly_salary != null ? money(p.monthly_salary) : ""), kv(t("per_week"), p.days_per_week),
       kv(t("leave_year"), p.vacation_days_per_year != null ? p.vacation_days_per_year + " " + t("days") : ""), kv(t("leave_left"), left == null ? "" : left + " " + t("days"))].filter(Boolean));
     // Every other field the owner keeps is shown too (owner's choice: employees see all of their data).
-    var known = ["name", "phone", "status", "type", "start", "hourly_wage", "monthly_salary", "days_per_week", "vacation_days_per_year", "documents", "role", "account"];
+    var known = ["name", "phone", "status", "type", "start", "hourly_wage", "monthly_salary", "days_per_week", "vacation_days_per_year", "documents", "role", "account", "employer", "contract_text", "birthdate"];
     var extra = Object.keys(p).filter(function (k) { return known.indexOf(k) < 0 && (typeof p[k] !== "object" || p[k] === null); }).map(function (k) { return kv(k.replace(/_/g, " "), String(p[k])); });
     if (extra.length) h += '<div style="margin-top:12px">' + rowsHtml(extra) + "</div>";
     h += "<h2>" + esc(t("documents")) + "</h2>" + docList(p);
@@ -618,6 +686,37 @@
     h += "<h2>" + esc(t("policy")) + '</h2><div class="card"><p style="margin:0;line-height:1.45">' + esc(t("policy_text")) + "</p></div>";
     if (/iPhone|iPad/.test(navigator.userAgent) && !navigator.standalone) h += '<div class="card"><b>' + esc(t("install")) + '</b><div class="muted small">' + esc(t("install_ios")) + "</div></div>";
     return h + '<div style="margin-top:18px"><button class="btn ghost" id="signout">' + esc(t("signout")) + '</button></div><p class="muted small" style="text-align:center;margin-top:18px">© Transfer</p>';
+  }
+  // For a road check (customs/FKS, police, Ordnungsamt): proof of employment, in German for the officer.
+  function checkSheet() {
+    var p = profile(), me = data.me || {}, emp = p.employer || {}, docs = p.documents || {};
+    function d(x) { return x ? parse(x).toLocaleDateString("de-DE") : "—"; }
+    var types = { minijob: "Geringfügige Beschäftigung (Minijob)", teilzeit: "Teilzeit", vollzeit: "Vollzeit", kurzfristig: "Kurzfristige Beschäftigung", freelance: "Freie Mitarbeit", inhaber: "Inhaber" };
+    var today = ymd(new Date()), shift = (data.shifts || []).filter(function (s) { return s.day === today; });
+    var rows = [
+      ["Arbeitgeber", [emp.name, emp.address, emp.phone].filter(Boolean).join(", ") || "—"],
+      ["Arbeitnehmer", me.name + (p.birthdate ? ", geb. " + d(p.birthdate) : "")],
+      ["Beschäftigt seit", d(p.start)],
+      ["Art der Beschäftigung", types[p.type] || p.type || "—"],
+      ["Tätigkeit", p.role || "Fahrer im Mietwagenverkehr (§ 49 Abs. 4 PBefG)"],
+      ["Arbeitszeit", p.hours_per_week ? p.hours_per_week + " Std./Woche" : p.days_per_week ? p.days_per_week + " Tage/Woche" : "—"],
+      ["Sofortmeldung (SV)", docs.sofortmeldung && docs.sofortmeldung.done ? "erfolgt am " + d(docs.sofortmeldung.done) : "—"],
+      ["Arbeitsvertrag", docs.arbeitsvertrag && docs.arbeitsvertrag.signed ? "unterschrieben am " + d(docs.arbeitsvertrag.signed) : "—"],
+      ["Führerschein", docs.fuehrerschein && docs.fuehrerschein.expires ? "gültig bis " + d(docs.fuehrerschein.expires) : "—"],
+      ["P-Schein", docs.p_schein && docs.p_schein.expires ? "gültig bis " + d(docs.p_schein.expires) : "—"],
+      ["Dienstplan heute", shift.length ? shift.map(function (s) { return s.start + "–" + s.end; }).join(", ") : "—"]
+    ];
+    openSheet('<div style="display:flex;justify-content:space-between;align-items:center"><div class="wordmark" style="font-size:18px">TRANSFER<i></i></div><span class="chip ok">' + esc(new Date().toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })) + "</span></div>" +
+      '<h2 style="margin:14px 0 2px">Nachweis über das Beschäftigungsverhältnis</h2>' + (lang !== "de" ? '<p class="muted small" style="margin:0 0 10px">' + esc(t("check_note")) + "</p>" : "") +
+      '<div class="card" style="padding:4px 14px">' + rows.map(function (r) { return '<div class="row" style="align-items:flex-start"><span class="muted" style="width:44%">' + esc(r[0]) + '</span><b style="flex:1;text-align:right">' + esc(r[1]) + "</b></div>"; }).join("") + "</div>" +
+      '<p class="small" style="margin:12px 2px">Ausweis oder Pass wird zusätzlich vorgelegt (§ 2a SchwarzArbG).</p>' +
+      '<div style="display:grid;gap:10px"><button class="btn" id="ctr">' + esc(t("show_contract")) + '</button><button class="btn ghost" data-close>OK</button></div>', function (s) {
+      s.querySelector("#ctr").onclick = function () {
+        var txt = p.contract_text;
+        openSheet('<h2 style="margin-top:0">Arbeitsvertrag</h2>' + (txt ? '<div class="card"><p style="margin:0;white-space:pre-wrap;line-height:1.5;font-size:15px">' + esc(txt) + "</p></div>" : '<div class="empty">' + esc(t("no_contract")) + "</div>") +
+          '<button class="btn ghost" style="margin-top:16px" id="back2">' + esc(t("cancel")) + "</button>", function (s2) { s2.querySelector("#back2").onclick = checkSheet; });
+      };
+    });
   }
   function docSheet(id) {
     var d = posts().filter(function (x) { return String(x.id) === String(id); })[0]; if (!d) return;
