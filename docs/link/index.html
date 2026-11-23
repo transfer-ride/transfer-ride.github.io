@@ -179,7 +179,7 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
       <a class="hit" href="https://wa.me/4915777104912?text=Hallo%20Transfer" rel="noopener"><span class="ic"><svg aria-hidden="true"><use href="#i-wa"/></svg></span><span class="label"><span data-t="wa"></span><small data-t="waSub"></small></span></a>
       <button class="more" type="button" data-share="https://wa.me/4915777104912?text=Hallo%20Transfer" data-name="wa" data-ta="share"><svg aria-hidden="true"><use href="#i-more"/></svg></button>
     </div>
-    <div class="pill" id="tobias-pill" hidden>
+    <div class="pill" id="tobias-pill">
       <button class="hit pill-btn" type="button" id="open-chat"><span class="ic ic-face"><img src="../assets/tobias.jpg" alt="" width="52" height="52" decoding="async"></span><span class="label"><span data-t="tob"></span><small data-t="tobSub"></small></span></button>
       <button class="more" type="button" data-share="https://transfer-ride.github.io/link/#tobias" data-name="tob" data-ta="share"><svg aria-hidden="true"><use href="#i-more"/></svg></button>
     </div>
@@ -517,11 +517,7 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
       try { rec.start(); } catch (e) { rec = null; micBtn.setAttribute("aria-pressed", "false"); }
     });
   }
-  // The button shows only when the chat service answers (until then customers use WhatsApp).
-  rpc("web_chat_poll", { p_chat: "00000000-0000-4000-8000-000000000000", p_after: 0 }).then(function () {
-    document.getElementById("tobias-pill").hidden = false;
-    if (location.hash === "#tobias") openChat();
-  }, function () {});
+  if (location.hash === "#tobias") setTimeout(openChat, 0);
 
   if (location.hash === "#live") setTimeout(function () { document.getElementById("open-map").click(); }, 0);
 
