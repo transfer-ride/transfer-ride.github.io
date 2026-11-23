@@ -113,6 +113,9 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
 .car.busy { background: #9a9a9a; }
 /* Chat with Tobias */
 .ic-t { font: 800 21px/1 "Archivo", sans-serif; font-stretch: 120%; color: var(--mint); }
+.ic-face { overflow: hidden; box-shadow: 0 0 0 2px var(--panel), 0 0 0 3px #3a3a3a; }
+.ic-face img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+.who .face { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex: none; }
 .chat .sheet-top { border-bottom: 1px solid var(--line); }
 .who { flex: 1; display: flex; align-items: center; gap: 10px; min-width: 0; }
 .who .ic-t { width: 40px; height: 40px; border-radius: 50%; background: #1f1f1f; display: grid; place-items: center; font-size: 18px; flex: none; }
@@ -177,7 +180,7 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
       <button class="more" type="button" data-share="https://wa.me/4915777104912?text=Hallo%20Transfer" data-name="wa" data-ta="share"><svg aria-hidden="true"><use href="#i-more"/></svg></button>
     </div>
     <div class="pill" id="tobias-pill" hidden>
-      <button class="hit pill-btn" type="button" id="open-chat"><span class="ic"><span class="ic-t" aria-hidden="true">T</span></span><span class="label"><span data-t="tob"></span><small data-t="tobSub"></small></span></button>
+      <button class="hit pill-btn" type="button" id="open-chat"><span class="ic ic-face"><img src="../assets/tobias.jpg" alt="" width="52" height="52" decoding="async"></span><span class="label"><span data-t="tob"></span><small data-t="tobSub"></small></span></button>
       <button class="more" type="button" data-share="https://transfer-ride.github.io/link/#tobias" data-name="tob" data-ta="share"><svg aria-hidden="true"><use href="#i-more"/></svg></button>
     </div>
     <div class="pill">
@@ -220,7 +223,7 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
 <section class="sheet chat" id="chat" hidden aria-labelledby="chat-title" role="dialog" aria-modal="true">
   <div class="sheet-top">
     <button class="close" type="button" id="close-chat" data-ta="close" aria-label="Schließen">×</button>
-    <div class="who"><span class="ic-t" aria-hidden="true">T</span><div><strong id="chat-title">Tobias</strong><small data-t="tobRole"></small></div></div>
+    <div class="who"><img class="face" src="../assets/tobias.jpg" alt="" width="40" height="40" decoding="async"><div><strong id="chat-title">Tobias</strong><small data-t="tobRole"></small></div></div>
   </div>
   <div class="msgs" id="msgs" aria-live="polite"></div>
   <form class="compose" id="compose">
