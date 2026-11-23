@@ -1,0 +1,9 @@
+# Transfer
+
+> Mietwagen mit Fahrer in Stuttgart (§ 49 Abs. 4 PBefG). Fahrten werden im Voraus gebucht; den Endpreis sieht man vor der Anfrage.
+
+- [Fahrt buchen](https://transfer-ride.github.io/): Preis sofort sehen, online oder per WhatsApp anfragen
+- [Flughafentransfer Stuttgart](https://transfer-ride.github.io/flughafentransfer-stuttgart/): Flughafen STR, 45 Minuten Wartezeit nach der Landung inklusive
+- [Transfer zur Messe Stuttgart](https://transfer-ride.github.io/messe-stuttgart-transfer/): vom Hotel, Hauptbahnhof oder Flughafen
+- [Chauffeurservice für Unternehmen](https://transfer-ride.github.io/chauffeurservice-stuttgart/): eine Rechnung pro Monat, kein Mindestumsatz
+- [Kontakt](https://transfer-ride.github.io/link/): WhatsApp, Kontakt speichern

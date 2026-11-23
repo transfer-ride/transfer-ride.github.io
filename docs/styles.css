@@ -84,7 +84,7 @@ a { color: inherit; }
 .scene canvas { display: block; width: 100%; height: 100%; }
 .scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.15) 35%, rgba(0,0,0,.75) 78%, #000 100%), linear-gradient(90deg, rgba(0,0,0,.65) 0%, rgba(0,0,0,0) 55%); pointer-events: none; }
 .hero-grid { display: grid; gap: 22px; align-items: start; }
-.ride-place { display: flex; align-items: center; gap: 6px; margin: 8px 0 12px; color: #cfcfcf; font-size: 15px; }
+.ride-place { display: flex; align-items: center; gap: 6px; margin: 8px 0 12px; color: #cfcfcf; font-size: 15px; font-weight: 500; line-height: 1.4; }
 .ride-place svg { width: 18px; height: 18px; flex: none; fill: var(--mint); }
 .hero-title { margin: 0 0 14px; font-size: clamp(42px, 11.5vw, 92px); line-height: .95; font-weight: 800; font-stretch: 115%; letter-spacing: -.025em; text-wrap: balance; }
 .hero-lead { margin: 0 0 20px; max-width: 30em; color: #dcdcdc; font-size: clamp(17px, 2vw, 21px); line-height: 1.4; }

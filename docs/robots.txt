@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /driver/
 Disallow: /admin/
+Disallow: /team/
+Disallow: /qr/
 
 Sitemap: https://transfer-ride.github.io/sitemap.xml
