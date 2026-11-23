@@ -1,0 +1,302 @@
+<!doctype html>
+<!-- © Transfer. Alle Rechte vorbehalten. Nutzung nur mit schriftlicher Genehmigung von Transfer. -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transfer</title>
+<meta name="description" content="Transfer, Mietwagen mit Fahrer in Stuttgart. WhatsApp, Website, Kontakt und freie Fahrzeuge live.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Transfer">
+<meta property="og:description" content="Mietwagen mit Fahrer in Stuttgart.">
+<meta property="og:image" content="https://transfer-ride.github.io/assets/og.png">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="stylesheet" href="../assets/vendor/maplibre-gl.css">
+<style>
+@font-face { font-family: "Archivo"; src: url("../assets/fonts/archivo.woff2") format("woff2"); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+:root { --mint: #3ddc84; --bg: #000; --fg: #fff; --muted: #a3a3a3; --line: #2a2a2a; --panel: #121212; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100svh; background: var(--bg); color: var(--fg); font: 400 17px/1.45 "Archivo", "Helvetica Neue", Arial, sans-serif; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+.page { width: 100%; max-width: 460px; margin-inline: auto; padding: max(28px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom)); display: flex; flex-direction: column; min-height: 100svh; }
+.lang { display: flex; justify-content: flex-end; gap: 2px; }
+.lang button { appearance: none; background: none; border: 0; color: inherit; opacity: .55; font: 600 14px/1 "Archivo", sans-serif; min-width: 40px; min-height: 40px; cursor: pointer; }
+.lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+.head { margin: 9vh 0 36px; }
+.logo { width: 76px; height: 76px; border-radius: 22px; display: block; margin-bottom: 26px; }
+h1 { margin: 0; font-size: clamp(36px, 12.4vw, 57px); line-height: .85; font-weight: 800; font-stretch: 125%; letter-spacing: -.02em; text-transform: uppercase; display: flex; align-items: baseline; }
+h1 i { flex: none; width: .2em; height: .2em; margin-left: .07em; border-radius: 50%; background: var(--mint); }
+.tag { margin: 14px 0 0; color: var(--muted); font-size: 17px; }
+.links { display: grid; gap: 12px; }
+.btn { appearance: none; display: flex; align-items: center; gap: 14px; width: 100%; min-height: 64px; padding: 0 20px; border-radius: 18px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); font: 600 18px/1.2 "Archivo", sans-serif; text-decoration: none; text-align: left; cursor: pointer; transition: transform .15s, background-color .15s; }
+.btn:active { transform: scale(.985); }
+.btn svg { width: 24px; height: 24px; flex: none; fill: currentColor; }
+.btn > span:not(.live-dot) { flex: 1; }
+.btn .live-dot { margin-inline: 7px; }
+.btn small { display: block; margin-top: 3px; font-weight: 400; font-size: 14px; color: var(--muted); }
+.btn-main { background: var(--mint); border-color: var(--mint); color: #000; }
+.btn-main small { color: rgba(0, 0, 0, .65); }
+.btn .go { width: 18px; height: 18px; opacity: .5; }
+.live-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--mint); flex: none; box-shadow: 0 0 0 0 rgba(61, 220, 132, .6); animation: pulse 2s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(61, 220, 132, 0); } 100% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0); } }
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } .btn { transition: none; } }
+.foot { margin-top: auto; padding-top: 40px; color: #8f8f8f; font-size: 13px; text-align: center; }
+.foot a { color: #b5b5b5; }
+
+/* The live map sheet */
+.sheet { position: fixed; inset: 0; z-index: 20; background: var(--bg); display: flex; flex-direction: column; }
+.sheet-top { display: flex; align-items: center; gap: 8px; padding: max(12px, env(safe-area-inset-top)) 12px 10px; }
+.close { appearance: none; flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel); color: var(--fg); font-size: 22px; line-height: 1; cursor: pointer; }
+.find { flex: 1; position: relative; }
+.find input { width: 100%; height: 44px; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); padding: 0 16px; font: 400 16px "Archivo", sans-serif; }
+.find ul { position: absolute; left: 0; right: 0; top: 48px; margin: 0; padding: 6px 0; list-style: none; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; z-index: 3; }
+.find li button { appearance: none; width: 100%; background: none; border: 0; color: var(--fg); text-align: left; padding: 10px 16px; font: 400 15px "Archivo", sans-serif; cursor: pointer; }
+.find li button:hover, .find li button:focus-visible { background: #1d1d1d; }
+.me { appearance: none; flex: none; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--mint); color: #000; cursor: pointer; display: grid; place-items: center; }
+.me svg { width: 22px; height: 22px; fill: currentColor; }
+.map { flex: 1; position: relative; }
+.count { position: absolute; left: 12px; right: 12px; bottom: calc(max(14px, env(safe-area-inset-bottom)) + 26px); z-index: 2; background: rgba(0, 0, 0, .88); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid var(--line); border-radius: 18px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+.count strong { font-size: 30px; font-weight: 800; font-stretch: 125%; line-height: 1; }
+.count p { margin: 0; font-size: 15px; line-height: 1.3; }
+.count p small { display: block; color: var(--muted); font-size: 13px; }
+.count a { margin-left: auto; flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--mint); color: #000; }
+.count a svg { width: 24px; height: 24px; fill: currentColor; }
+.car { width: 30px; height: 30px; border-radius: 50%; background: var(--mint); border: 3px solid #000; box-shadow: 0 2px 8px rgba(0, 0, 0, .35); display: grid; place-items: center; }
+.car svg { width: 16px; height: 16px; fill: #000; }
+.car.busy { background: #9a9a9a; }
+.you { width: 16px; height: 16px; border-radius: 50%; background: #2f7cff; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(47, 124, 255, .25); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5Zm5.5 13.4c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.8-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.900s.7-2 1-2.300c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.5.4.1.1.1.7-.1 1.300Z"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.900 6h-2.900a15.700 15.700 0 0 0-1.400-3.600A8 8 0 0 1 18.900 8ZM12 4c.8 1.200 1.500 2.500 1.900 4h-3.800c.4-1.500 1.100-2.800 1.900-4ZM4.300 14a8.300 8.300 0 0 1 0-4h3.400a16.500 16.500 0 0 0 0 4H4.300Zm.8 2h2.900c.3 1.300.8 2.500 1.400 3.600A8 8 0 0 1 5.100 16ZM8 8H5.100a8 8 0 0 1 4.300-3.600C8.800 5.500 8.300 6.700 8 8Zm4 12c-.8-1.200-1.500-2.500-1.900-4h3.800c-.4 1.500-1.100 2.800-1.900 4Zm2.300-6H9.700a14.700 14.700 0 0 1 0-4h4.600a14.700 14.700 0 0 1 0 4Zm.3 5.600c.6-1.100 1.100-2.300 1.400-3.600h2.900a8 8 0 0 1-4.300 3.600Zm1.700-5.600a16.500 16.500 0 0 0 0-4h3.400a8.300 8.300 0 0 1 0 4h-3.400Z"/></symbol>
+  <symbol id="i-save" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7.500 8c.5-3.700 3.500-6 7.500-6 1.300 0 2.500.2 3.500.7V20H4.500Zm15-8v3h3v2h-3v3h-2v-3h-3v-2h3v-3h2Z"/></symbol>
+  <symbol id="i-locate" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm9 3h-2.100A7 7 0 0 0 13 5.100V3h-2v2.100A7 7 0 0 0 5.100 11H3v2h2.100A7 7 0 0 0 11 18.900V21h2v-2.100A7 7 0 0 0 18.900 13H21v-2Zm-9 6a5 5 0 1 1 0-10 5 5 0 0 1 0 10Z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 11l1.500-4.500A2 2 0 0 1 8.400 5h7.200a2 2 0 0 1 1.900 1.500L19 11a2 2 0 0 1 2 2v4h-2v2h-3v-2H8v2H5v-2H3v-4a2 2 0 0 1 2-2Zm2.100 0h9.800l-1.100-3.300a1 1 0 0 0-.9-.7H9.100a1 1 0 0 0-.9.7L7.100 11ZM6.500 15.500a1.500 1.500 0 1 0 0-3 1.500 1.500 0 0 0 0 3Zm11 0a1.500 1.500 0 1 0 0-3 1.500 1.500 0 0 0 0 3Z"/></symbol>
+  <symbol id="i-go" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7-1.400-1.400L13.200 12 7.600 6.400 9 5Z"/></symbol>
+</svg>
+
+<main class="page">
+  <div class="lang" role="group" aria-label="Sprache">
+    <button type="button" data-lang="de" aria-pressed="true">DE</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-lang="el" aria-pressed="false">ΕΛ</button>
+  </div>
+
+  <header class="head">
+    <img class="logo" src="../assets/icon-192.png" alt="" width="76" height="76">
+    <h1>Transfer<i aria-hidden="true"></i></h1>
+    <p class="tag" data-t="tag">Mietwagen mit Fahrer in Stuttgart.</p>
+  </header>
+
+  <nav class="links">
+    <a class="btn btn-main" href="https://wa.me/4915777104912?text=Hallo%20Transfer" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>
+      <span><span data-t="wa">Auf WhatsApp schreiben</span><small data-t="waSub">Antwort meist in wenigen Minuten</small></span>
+    </a>
+    <a class="btn" href="../">
+      <svg aria-hidden="true"><use href="#i-web"/></svg>
+      <span><span data-t="web">Zur Website</span><small data-t="webSub">Fahrt bestellen, Preis sofort sehen</small></span>
+      <svg class="go" aria-hidden="true"><use href="#i-go"/></svg>
+    </a>
+    <a class="btn" href="../transfer.vcf" download="Transfer.vcf">
+      <svg aria-hidden="true"><use href="#i-save"/></svg>
+      <span><span data-t="save">Kontakt speichern</span><small data-t="saveSub">Nummer, WhatsApp und Website im Telefon</small></span>
+    </a>
+    <button class="btn" type="button" id="open-map">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span><span data-t="map">Freie Fahrzeuge live</span><small id="map-sub" data-t="mapSub">Auf der Karte sehen, wer in der Nähe ist</small></span>
+      <svg class="go" aria-hidden="true"><use href="#i-go"/></svg>
+    </button>
+  </nav>
+
+  <p class="foot">© Transfer</p>
+</main>
+
+<section class="sheet" id="sheet" hidden aria-labelledby="sheet-title" role="dialog" aria-modal="true">
+  <h2 id="sheet-title" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)" data-t="map">Freie Fahrzeuge live</h2>
+  <div class="sheet-top">
+    <button class="close" type="button" id="close-map" aria-label="Schließen">×</button>
+    <div class="find">
+      <input id="place" type="search" autocomplete="off" enterkeyhint="search" placeholder="Stadt oder Adresse" data-tp="find" aria-label="Stadt oder Adresse">
+      <ul id="hits" hidden></ul>
+    </div>
+    <button class="me" type="button" id="me" aria-label="Mein Standort" data-ta="me"><svg aria-hidden="true"><use href="#i-locate"/></svg></button>
+  </div>
+  <div class="map" id="map">
+    <div class="count" aria-live="polite">
+      <strong id="n">–</strong>
+      <p><span id="n-text" data-t="loading">Fahrzeuge werden gesucht …</span><small id="n-sub"></small></p>
+      <a href="https://wa.me/4915777104912?text=Hallo%20Transfer" aria-label="WhatsApp" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var API = "https://qdrwssvwlpbloqnnyrzk.supabase.co/rest/v1/rpc/cars_nearby";
+  var KEY = "sb_publishable_hLvHm_ujPZSNsEoxoiEdiw_2h7lTKjC";
+  var STYLE = "https://tiles.openfreemap.org/styles/positron";
+  var RADIUS = 25;
+  var T = {
+    de: { tag: "Mietwagen mit Fahrer in Stuttgart.", wa: "Auf WhatsApp schreiben", waSub: "Antwort meist in wenigen Minuten",
+      web: "Zur Website", webSub: "Fahrt bestellen, Preis sofort sehen", save: "Kontakt speichern", saveSub: "Nummer, WhatsApp und Website im Telefon",
+      map: "Freie Fahrzeuge live", mapSub: "Auf der Karte sehen, wer in der Nähe ist", imprint: "Impressum", find: "Stadt oder Adresse", me: "Mein Standort",
+      loading: "Fahrzeuge werden gesucht …", free1: "Fahrzeug frei", freeN: "Fahrzeuge frei", none: "Gerade kein Fahrzeug frei", noneSub: "Schreiben Sie uns, wir planen Ihre Fahrt.",
+      around: "im Umkreis von {k} km um {p}", busy: "{n} gerade unterwegs", here: "Ihren Standort", err: "Gerade nicht erreichbar. Bitte gleich nochmal.", near: "{n} in Ihrer Nähe" },
+    en: { tag: "Private hire car with driver in Stuttgart.", wa: "Message on WhatsApp", waSub: "We usually reply within minutes",
+      web: "Go to website", webSub: "Book a ride, see the price right away", save: "Save contact", saveSub: "Number, WhatsApp and website on your phone",
+      map: "Free cars live", mapSub: "See on the map who is nearby", imprint: "Imprint", find: "City or address", me: "My location",
+      loading: "Looking for cars …", free1: "car free", freeN: "cars free", none: "No car free right now", noneSub: "Message us and we will plan your ride.",
+      around: "within {k} km of {p}", busy: "{n} on a ride now", here: "your location", err: "Not reachable right now. Please try again shortly.", near: "{n} near you" },
+    el: { tag: "Ενοικίαση αυτοκινήτου με οδηγό στη Στουτγκάρδη.", wa: "Γράψτε μας στο WhatsApp", waSub: "Απαντάμε συνήθως σε λίγα λεπτά",
+      web: "Στο site μας", webSub: "Κλείστε διαδρομή, δείτε την τιμή αμέσως", save: "Αποθήκευση επαφής", saveSub: "Αριθμός, WhatsApp και site στο κινητό σας",
+      map: "Ελεύθερα αυτοκίνητα live", mapSub: "Δείτε στον χάρτη ποιος είναι κοντά", imprint: "Impressum", find: "Πόλη ή διεύθυνση", me: "Η θέση μου",
+      loading: "Ψάχνουμε αυτοκίνητα …", free1: "ελεύθερο αυτοκίνητο", freeN: "ελεύθερα αυτοκίνητα", none: "Κανένα ελεύθερο αυτοκίνητο τώρα", noneSub: "Γράψτε μας και κανονίζουμε τη διαδρομή σας.",
+      around: "σε {k} km γύρω από {p}", busy: "{n} σε διαδρομή τώρα", here: "τη θέση σας", err: "Δεν απαντά αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγο.", near: "{n} κοντά σας" }
+  };
+  var lang = "de";
+  try { lang = localStorage.getItem("t-lang") || ""; } catch (e) {}
+  if (!T[lang]) lang = (navigator.language || "de").slice(0, 2);
+  if (!T[lang]) lang = "de";
+  function t(k) { return T[lang][k] || T.de[k]; }
+  function fill(s, v) { return s.replace(/\{(\w+)\}/g, function (_, k) { return v[k]; }); }
+
+  function applyLang() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-t]").forEach(function (n) { n.textContent = t(n.getAttribute("data-t")); });
+    document.querySelectorAll("[data-tp]").forEach(function (n) { n.placeholder = t(n.getAttribute("data-tp")); n.setAttribute("aria-label", n.placeholder); });
+    document.querySelectorAll("[data-ta]").forEach(function (n) { n.setAttribute("aria-label", t(n.getAttribute("data-ta"))); });
+    document.querySelectorAll("[data-lang]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+    if (last) show(last);
+  }
+  document.querySelectorAll("[data-lang]").forEach(function (b) {
+    b.addEventListener("click", function () { lang = b.getAttribute("data-lang"); try { localStorage.setItem("t-lang", lang); } catch (e) {} applyLang(); });
+  });
+
+  var center = { lat: 48.7784, lon: 9.18, name: "Stuttgart" };
+  var map = null, markers = [], youMarker = null, timer = null, last = null;
+  var sheet = document.getElementById("sheet");
+
+  function fetchCars() {
+    return fetch(API, { method: "POST", headers: { "Content-Type": "application/json", apikey: KEY },
+      body: JSON.stringify({ p_lat: center.lat, p_lon: center.lon, p_km: RADIUS }) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+
+  function show(data) {
+    last = data;
+    var free = data.free || 0, busy = data.busy || 0;
+    document.getElementById("n").textContent = String(free);
+    document.getElementById("n-text").textContent = free ? (free === 1 ? t("free1") : t("freeN")) : t("none");
+    var sub = free ? fill(t("around"), { k: RADIUS, p: center.name }) : t("noneSub");
+    if (busy) sub += " · " + fill(t("busy"), { n: busy });
+    document.getElementById("n-sub").textContent = sub;
+    if (!map) return;
+    markers.forEach(function (m) { m.remove(); });
+    markers = (data.cars || []).map(function (c) {
+      var el = document.createElement("div");
+      el.className = "car" + (c.free ? "" : " busy");
+      el.innerHTML = '<svg aria-hidden="true"><use href="#i-car"/></svg>';
+      return new maplibregl.Marker({ element: el }).setLngLat([c.lon, c.lat]).addTo(map);
+    });
+  }
+
+  function refresh() {
+    fetchCars().then(show, function () {
+      document.getElementById("n").textContent = "–";
+      document.getElementById("n-text").textContent = t("err");
+      document.getElementById("n-sub").textContent = "";
+    });
+  }
+
+  // A quick count on the button before the map is opened.
+  fetchCars().then(function (d) {
+    if (d.free) document.getElementById("map-sub").textContent = fill(t("near"), { n: d.free + " " + (d.free === 1 ? t("free1") : t("freeN")) });
+  }, function () {});
+
+  function loadMap(done) {
+    if (window.maplibregl) return done();
+    var s = document.createElement("script");
+    s.src = "../assets/vendor/maplibre-gl.js";
+    s.onload = done;
+    document.head.appendChild(s);
+  }
+
+  function moveTo(lat, lon, name) {
+    center = { lat: lat, lon: lon, name: name };
+    if (map) map.flyTo({ center: [lon, lat], zoom: 11 });
+    refresh();
+  }
+
+  document.getElementById("open-map").addEventListener("click", function () {
+    sheet.hidden = false;
+    document.body.style.overflow = "hidden";
+    loadMap(function () {
+      if (!map) {
+        map = new maplibregl.Map({ container: "map", style: STYLE, center: [center.lon, center.lat], zoom: 10.5, attributionControl: { compact: true } });
+        map.on("load", refresh);
+      } else { refresh(); }
+    });
+    clearInterval(timer);
+    timer = setInterval(refresh, 15000);
+    document.getElementById("place").focus({ preventScroll: true });
+  });
+
+  function closeMap() {
+    sheet.hidden = true;
+    document.body.style.overflow = "";
+    clearInterval(timer);
+    document.getElementById("open-map").focus();
+  }
+  document.getElementById("close-map").addEventListener("click", closeMap);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !sheet.hidden) closeMap(); });
+
+  document.getElementById("me").addEventListener("click", function () {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(function (p) {
+      var lat = p.coords.latitude, lon = p.coords.longitude;
+      if (map) {
+        if (!youMarker) { var el = document.createElement("div"); el.className = "you"; youMarker = new maplibregl.Marker({ element: el }); }
+        youMarker.setLngLat([lon, lat]).addTo(map);
+      }
+      moveTo(lat, lon, t("here"));
+    }, function () {}, { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 });
+  });
+
+  // Search a city or address (Photon, free, no key).
+  var input = document.getElementById("place"), hits = document.getElementById("hits"), wait = null;
+  input.addEventListener("input", function () {
+    clearTimeout(wait);
+    var q = input.value.trim();
+    if (q.length < 3) { hits.hidden = true; return; }
+    wait = setTimeout(function () {
+      fetch("https://photon.komoot.io/api/?limit=5&lat=48.78&lon=9.18&lang=" + (lang === "el" ? "default" : lang) + "&q=" + encodeURIComponent(q))
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          hits.innerHTML = "";
+          (j.features || []).forEach(function (f) {
+            var p = f.properties, name = [p.name, p.city && p.city !== p.name ? p.city : null, p.country].filter(Boolean).join(", ");
+            var li = document.createElement("li"), b = document.createElement("button");
+            b.type = "button"; b.textContent = name;
+            b.addEventListener("click", function () {
+              input.value = p.name || name; hits.hidden = true; input.blur();
+              moveTo(f.geometry.coordinates[1], f.geometry.coordinates[0], p.name || name);
+            });
+            li.appendChild(b); hits.appendChild(li);
+          });
+          hits.hidden = !hits.children.length;
+        }, function () { hits.hidden = true; });
+    }, 300);
+  });
+
+  applyLang();
+})();
+</script>
+</body>
+</html>

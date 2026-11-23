@@ -6,6 +6,10 @@ ORG:Transfer
 TITLE:Mietwagen mit Fahrer
 item1.TEL;type=CELL;waid=4915777104912:+4915777104912
 item1.X-ABLabel:WhatsApp
+item2.URL:https://transfer-ride.github.io/
+item2.X-ABLabel:Website
+item3.URL:https://transfer-ride.github.io/link/
+item3.X-ABLabel:Live
 X-ABShowAs:COMPANY
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKg
  AAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABAKADAAQAAAABA
