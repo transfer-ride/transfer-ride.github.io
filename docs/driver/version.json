@@ -1,10 +1,10 @@
 {
- "versionCode": 56,
- "versionName": "3.48",
- "sha256": "e48c961a0e97205f09e7f5080b85c6c3e464bc73e6893b971ec28cd61d188693",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-56.apk",
- "notes": "Im Auto: am Abholort „Fahrt starten“, am Ziel „Fahrt beenden“ direkt auf dem Autobildschirm.",
- "notes_de": "Im Auto: am Abholort „Fahrt starten“, am Ziel „Fahrt beenden“ direkt auf dem Autobildschirm.",
- "notes_en": "In the car: “Start ride” at the pick-up and “End ride” at the destination right on the car screen.",
- "notes_el": "Στο αυτοκίνητο: «Έναρξη διαδρομής» στο σημείο παραλαβής και «Τέλος διαδρομής» στον προορισμό, κατευθείαν από την οθόνη του αυτοκινήτου."
+ "versionCode": 57,
+ "versionName": "3.49",
+ "sha256": "c6d7b09faf2ad1e6ed9b6d6e645123159ede9112dc227910386f59ff9f5ec90f",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-57.apk",
+ "notes": "QR-Code für Fahrgäste jetzt direkt in der Fahrer-App (Android Auto)",
+ "notes_de": "QR-Code für Fahrgäste jetzt direkt in der Fahrer-App (Android Auto)",
+ "notes_en": "Passenger QR code now inside the driver app (Android Auto)",
+ "notes_el": "Ο κωδικός QR για επιβάτες τώρα μέσα στην εφαρμογή οδηγού (Android Auto)"
 }
