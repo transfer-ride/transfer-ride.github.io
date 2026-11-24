@@ -546,7 +546,18 @@
     var c = s.querySelector("[data-close]"); if (c) c.onclick = closeSheet;
     if (after) after(s);
   }
-  function closeSheet() { if (sheet) { sheet.remove(); sheet = null; } }
+  // Coming back from the camera or the photo picker, the tap on their "Done" can land on our sheet
+  // (on the Fold the picker's Done sits right over "Cancel") and closed the receipt form. Taps that
+  // arrive just after returning are ignored.
+  var pickedAt = 0;
+  function picking() { pickedAt = Date.now() + 600000; }
+  function backFromPick() { if (pickedAt > Date.now()) pickedAt = Date.now() + 900; }
+  window.addEventListener("focus", backFromPick);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) backFromPick(); });
+  function closeSheet(e) {
+    if (e && e.type === "click" && Date.now() < pickedAt) { console.log("sheet: tap ignored after picker"); return; }
+    if (sheet) { console.log("sheet: closed"); sheet.remove(); sheet = null; }
+  }
 
   function askSheet(kind) {
     var k = KINDS.filter(function (x) { return x[0] === kind; })[0], today = ymd(new Date()), f = "";
@@ -812,8 +823,8 @@
       '<label class="f" for="rnote">' + esc(t("receipt_note")) + '</label><input class="in" id="rnote">' +
       '<div style="display:grid;gap:10px;margin-top:16px"><button class="btn" id="rsend" disabled>' + esc(t("send")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
       var cam = s.querySelector("#rcam"), gal = s.querySelector("#rgal"), send = s.querySelector("#rsend");
-      s.querySelector("#rtake").onclick = function () { cam.click(); };
-      s.querySelector("#rpick").onclick = function () { gal.click(); };
+      s.querySelector("#rtake").onclick = function () { picking(); cam.click(); };
+      s.querySelector("#rpick").onclick = function () { picking(); gal.click(); };
       s.querySelectorAll("[data-p]").forEach(function (b) { b.onclick = function () { paid = b.dataset.p; s.querySelectorAll("[data-p]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); }; });
       function draw() {
         s.querySelector("#rprev").innerHTML = imgs.map(function (src, i) {
@@ -825,11 +836,14 @@
         send.textContent = imgs.length > 1 ? t("send_n", imgs.length) : t("send");
       }
       function add(input) {
+        backFromPick();
+        console.log("receipt: " + (input.files ? input.files.length : 0) + " photo(s) chosen");
         var files = Array.prototype.slice.call(input.files || [], 0, 30);
         input.value = "";
         files.reduce(function (p, f) { return p.then(function () { return shrink(f).then(function (src) { imgs.push(src); draw(); }); }); }, Promise.resolve())
           .catch(function (e) { toast(e.message); });
       }
+      cam.addEventListener("cancel", backFromPick); gal.addEventListener("cancel", backFromPick);
       cam.onchange = function () { add(cam); };
       gal.onchange = function () { add(gal); };
       send.onclick = function () {
