@@ -12,6 +12,7 @@
   /* ---------------- texts ---------------- */
   var T = {
     de: {
+      dup_hint: "Schon einmal gesendet – zählt nicht doppelt.", owed2: "Bekommst du zurück",
       my_receipts: "Meine Belege", receipts_intro: "Auch alte Fotos aus der Galerie, mehrere auf einmal. Der Assistent liest jeden Beleg in etwa 30 Sekunden und zeigt hier, was er gelesen hat.", reading_hint: "Der Assistent liest Geschäft, Datum, Betrag und MwSt. – dauert etwa 30 Sekunden.", uploaded_at: "Gesendet um {n}", sent_on: "Gesendet {n}", yesterday: "Gestern", read_done: "Gelesen", vat: "MwSt.", on_receipt: "Auf dem Beleg", pm_cash: "Barzahlung", pm_card: "Karte", confirm_tap: "Tippe auf den blau markierten Beleg.", cat_fuel: "Tanken", cat_charging: "Laden", cat_wash: "Wäsche", cat_parking: "Parken", cat_toll: "Maut", cat_repair: "Werkstatt", cat_car_care: "Fahrzeugpflege", cat_office: "Büro", cat_phone: "Telefon", cat_food: "Essen", cat_other: "Sonstiges",
       receipt_gallery: "Aus der Galerie", receipt_paid_hint: "Gilt für alle gewählten Fotos. Steht auf dem Beleg etwas anderes, fragt der Assistent nach.", send_n: "{n} Belege senden", receipts_done: "{n} Belege gesendet. Der HR-Assistent liest sie gleich.", receipts_done_dup: "{n} gesendet, {d} waren schon da und zählen nicht doppelt.",
       paid_company: "Firmengeld / Firmenkarte", confirm_q: "Wessen Geld war das?", confirm_own_cash: "Mein eigenes Bargeld", confirm_own_card: "Meine eigene Karte", confirm_company: "Geld der Firma", rs_confirm: "Bitte bestätigen", confirm_home: "{n} Beleg(e) warten auf deine Bestätigung", flags_t: "Hinweis",
@@ -49,6 +50,7 @@
       err: "Das ging nicht. Bitte noch einmal.", too_many: "Zu viele Nachrichten. Bitte etwas später.", signed_out: "Abgemeldet. Bitte PIN eingeben."
     },
     en: {
+      dup_hint: "Already sent before – not counted twice.", owed2: "You get this back",
       my_receipts: "My receipts", receipts_intro: "Old photos from the gallery too, several at once. The assistant reads each receipt in about 30 seconds and shows here what it read.", reading_hint: "The assistant reads shop, date, amount and VAT – takes about 30 seconds.", uploaded_at: "Sent at {n}", sent_on: "Sent {n}", yesterday: "Yesterday", read_done: "Read", vat: "VAT", on_receipt: "On the receipt", pm_cash: "cash", pm_card: "card", confirm_tap: "Tap the receipt marked in blue.", cat_fuel: "Fuel", cat_charging: "Charging", cat_wash: "Car wash", cat_parking: "Parking", cat_toll: "Toll", cat_repair: "Garage", cat_car_care: "Car care", cat_office: "Office", cat_phone: "Phone", cat_food: "Food", cat_other: "Other",
       receipt_gallery: "From the gallery", receipt_paid_hint: "Applies to all chosen photos. If the receipt says otherwise, the assistant asks you.", send_n: "Send {n} receipts", receipts_done: "{n} receipts sent. The HR assistant reads them in a moment.", receipts_done_dup: "{n} sent, {d} were already there and are not counted twice.",
       paid_company: "Company money / card", confirm_q: "Whose money was it?", confirm_own_cash: "My own cash", confirm_own_card: "My own card", confirm_company: "Company money", rs_confirm: "Please confirm", confirm_home: "{n} receipt(s) wait for your confirmation", flags_t: "Note",
@@ -86,6 +88,7 @@
       err: "That did not work. Please try again.", too_many: "Too many messages. Please wait a bit.", signed_out: "Signed out. Please enter your PIN."
     },
     el: {
+      dup_hint: "Έχει ξανασταλεί – δεν μετράει δύο φορές.", owed2: "Θα σου επιστραφούν",
       my_receipts: "Οι αποδείξεις μου", receipts_intro: "Και παλιές φωτογραφίες από τη συλλογή, πολλές μαζί. Ο βοηθός διαβάζει κάθε απόδειξη σε περίπου 30 δευτερόλεπτα και σου δείχνει εδώ τι διάβασε.", reading_hint: "Ο βοηθός διαβάζει κατάστημα, ημερομηνία, ποσό και ΦΠΑ – περίπου 30 δευτερόλεπτα.", uploaded_at: "Στάλθηκε {n}", sent_on: "Στάλθηκαν {n}", yesterday: "Χθες", read_done: "Διαβάστηκε", vat: "ΦΠΑ", on_receipt: "Στην απόδειξη", pm_cash: "μετρητά", pm_card: "κάρτα", confirm_tap: "Πάτα την απόδειξη με το μπλε σήμα.", cat_fuel: "Καύσιμα", cat_charging: "Φόρτιση", cat_wash: "Πλύσιμο", cat_parking: "Στάθμευση", cat_toll: "Διόδια", cat_repair: "Συνεργείο", cat_car_care: "Περιποίηση", cat_office: "Γραφείο", cat_phone: "Τηλέφωνο", cat_food: "Φαγητό", cat_other: "Άλλο",
       receipt_gallery: "Από τη συλλογή", receipt_paid_hint: "Ισχύει για όλες τις φωτογραφίες. Αν η απόδειξη γράφει κάτι άλλο, ο βοηθός θα σε ρωτήσει.", send_n: "Αποστολή {n} αποδείξεων", receipts_done: "Στάλθηκαν {n} αποδείξεις. Ο βοηθός HR τις διαβάζει σε λίγο.", receipts_done_dup: "Στάλθηκαν {n}, οι {d} υπήρχαν ήδη και δεν μετράνε δύο φορές.",
       paid_company: "Χρήματα/κάρτα εταιρείας", confirm_q: "Τίνος χρήματα ήταν;", confirm_own_cash: "Δικά μου μετρητά", confirm_own_card: "Δική μου κάρτα", confirm_company: "Χρήματα της εταιρείας", rs_confirm: "Επιβεβαίωσε", confirm_home: "{n} απόδειξη(εις) περιμένουν επιβεβαίωση", flags_t: "Σημείωση",
@@ -742,13 +745,18 @@
     var up = new Date(r.at), time = up.toLocaleTimeString(loc(), { hour: "2-digit", minute: "2-digit" });
     if (r.status === "new") return '<div class="row" style="align-items:flex-start"><span class="spin" aria-hidden="true"></span><span class="grow"><span class="t">' + esc(t("rs_new")) + '…</span><br><span class="muted small">' +
       esc(t("reading_hint")) + '</span><br><span class="muted small">' + esc(t("uploaded_at", time)) + "</span></span></div>";
+    if (r.status === "duplicate") {
+      var o = (receipts.list || []).filter(function (x) { return x.id === r.dup_of; })[0], od = (o && o.data) || {};
+      d = Object.assign({}, od, d); 
+    }
     var facts = [d.date ? parse(d.date).toLocaleDateString(loc()) : "", d.category ? t("cat_" + d.category) : "", d.vat != null ? t("vat") + " " + money(d.vat) + (d.vat_rate ? " (" + d.vat_rate + " %)" : "") : ""].filter(Boolean);
     var pm = d.payment || {}, onReceipt = pm.method === "cash" ? t("pm_cash") : pm.method === "card" ? t("pm_card") + (pm.card_name ? " " + pm.card_name : "") + (pm.card_last4 ? " …" + pm.card_last4 : "") : "";
     return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start' + (fresh[r.id] ? ";background:var(--mint-soft);border-radius:12px;padding-left:8px;padding-right:8px" : "") + '" data-rimg="' + r.id + '"><span class="grow"><span class="t">' + esc(d.merchant || t("ask_receipt")) + "</span>" +
       (facts.length ? '<br><span class="small">' + esc(facts.join(" · ")) + "</span>" : "") +
       (fresh[r.id] && onReceipt ? '<br><span class="small">' + esc(t("on_receipt") + ": " + onReceipt + (d.liters ? " · " + d.liters + " l" : "")) + "</span>" : "") +
+      (r.status === "duplicate" ? '<br><span class="small" style="color:var(--bad,#b3261e)">' + esc(t("dup_hint")) + "</span>" : "") +
       '<br><span class="muted small">' + esc(t("uploaded_at", time) + " · " + t("paid_" + r.paid)) + "</span></span>" +
-      '<span style="text-align:right;white-space:nowrap"><b>' + esc(d.total != null ? money(d.total) : "") + '</b><br><span class="chip ' + cls + '">' + esc(st === "confirm" ? t("rs_confirm") : t("rs_" + st)) + "</span></span></button>";
+      '<span style="text-align:right;white-space:nowrap"><b>' + esc(d.total != null && r.status !== "duplicate" ? money(d.total) : "") + '</b><br><span class="chip ' + cls + '">' + esc(st === "confirm" ? t("rs_confirm") : t("rs_" + st)) + "</span></span></button>";
   }
   // The receipts tab: add new ones (camera or gallery) on top, then everything sent, newest first, by the day it was sent.
   function receiptsScreen() {
@@ -758,8 +766,8 @@
     h += '<p class="muted small" style="margin:10px 2px 0">' + esc(t("receipts_intro")) + "</p>";
     if (!receipts) { loadReceipts(); return h + '<div class="empty">…</div>'; }
     if (receipts.to_confirm > 0) h += '<div class="card" style="background:#e6f0fd;margin-top:14px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + '</b><div class="muted small">' + esc(t("confirm_tap")) + "</div></div>";
-    if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
-    var list = receipts.list || [];
+    if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed2")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
+    var list = (receipts.list || []).filter(function (r) { return !(r.data && r.data.removed); });
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
     var groups = [], last = null;
     list.forEach(function (r) { var k = dayLabel(new Date(r.at)); if (k !== last) { groups.push({ k: k, a: [] }); last = k; } groups[groups.length - 1].a.push(r); });
@@ -774,7 +782,7 @@
     }).join("") + "</div>" : '<div class="empty">' + esc(t("no_payslips")) + "</div>") +
       '<button class="btn ghost" style="margin-top:12px" data-ask="payslip">' + esc(t("ask_payslip")) + "</button>" +
       "<h2>" + esc(t("receipts")) + '</h2><button class="card row tap" style="width:100%;border:0" data-go="receipts"><span class="grow t" style="text-align:left">' + esc(t("my_receipts")) +
-      (receipts && receipts.owed > 0 ? " · " + esc(t("owed")) + " " + esc(money(receipts.owed)) : "") + "</span>›</button>";
+      (receipts && receipts.owed > 0 ? " · " + esc(t("owed2")) + " " + esc(money(receipts.owed)) : "") + "</span>›</button>";
   }
   function secDev() {
     var list = posts().filter(function (p) { return p.category === "development" || p.category === "learning"; });
