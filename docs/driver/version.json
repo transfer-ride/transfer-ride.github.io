@@ -1,10 +1,10 @@
 {
- "versionCode": 61,
- "versionName": "3.53",
- "sha256": "a8a5a042c994d7cb7aecf82d80f61574c214af9592eb8c26c3b85d1a831b131d",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-61.apk",
- "notes": "Zwischenstopps, Adressänderungen mit neuem Preis, Navigation auch in der App beim Start im Auto, Verdienst pro Tag (Tag antippen)",
- "notes_de": "Zwischenstopps, Adressänderungen mit neuem Preis, Navigation auch in der App beim Start im Auto, Verdienst pro Tag (Tag antippen)",
- "notes_en": "Stops, address changes with new price, in-app navigation also when starting in the car, earnings per day (tap a day)",
- "notes_el": "Στάσεις, αλλαγή διεύθυνσης με νέα τιμή, πλοήγηση και στην εφαρμογή όταν ξεκινάς από το αυτοκίνητο, κέρδη ανά ημέρα (πάτα τη μέρα)"
+ "versionCode": 62,
+ "versionName": "3.54",
+ "sha256": "71628dd28a8c9ed9daee795966b743b6ac3d1f97c6967796d0fecfeb3b997502",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-62.apk",
+ "notes": "Am Ende einer Barfahrt: Betrag groß für den Fahrgast zeigen",
+ "notes_de": "Am Ende einer Barfahrt: Betrag groß für den Fahrgast zeigen",
+ "notes_en": "End of a cash ride: show the amount big to the passenger",
+ "notes_el": "Τέλος διαδρομής με μετρητά: δείξε το ποσό μεγάλο στον επιβάτη"
 }
