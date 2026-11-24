@@ -544,3 +544,20 @@ body.riding .hero-grid > .card { grid-column: 1; grid-row: auto; animation: ride
 .live-notify[hidden] { display: none; }
 .live-notify { display: grid; gap: 6px; }
 .live-notify p { margin: 0; }
+
+/* Stops between pick-up and destination */
+.route-box .stop-field, .route-box [data-field="to"] { border-top: 1px solid #222; }
+.card .route-box .stop-field, .card .route-box [data-field="to"] { border-top-color: #e2e2e2; }
+.route-box [data-field="to"]::before { background: var(--mint); border-radius: 3px; }
+.card .route-box [data-field="to"]::before { background: #000; border-radius: 2px; }
+.route-box .field.stop-field::before { width: 9px; height: 9px; margin-top: -4.5px; left: -26.5px; border-radius: 50%; background: #f5c542; }
+.card .route-box .field.stop-field::before { background: #000; border-radius: 50%; }
+.route-box .stop-field input { padding-right: 4px; }
+.add-stop { justify-self: start; margin-top: -4px; padding: 8px 12px; border: 0; border-radius: 999px; background: none; color: var(--muted); font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; }
+.add-stop:hover, .add-stop:focus-visible { background: #2221; color: inherit; }
+.add-stop[hidden] { display: none; }
+.live-route { margin: 4px 0 12px; font-size: 14px; }
+.live-route ol { margin: 0; padding: 0 0 0 18px; display: grid; gap: 2px; }
+.live-route li::marker { color: var(--muted); }
+.live-route p { margin: 6px 0 0; font-weight: 600; }
+.live-route p.changed { color: #0a7a3f; }

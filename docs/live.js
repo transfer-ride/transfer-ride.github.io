@@ -47,11 +47,11 @@
   // Words for the ride view that only this file uses.
   var LV = {
     de: { steps: ["Gesendet", "Angenommen", "Fahrer da", "Unterwegs"], chat: "Nachrichten mit {name}", empty: "Noch keine Nachrichten. Schreiben Sie Ihrem Fahrer hier.",
-      quick: ["Ich bin da", "Ich komme gleich", "Wo sind Sie?"], newMsg: "Neue Nachricht" },
+      quick: ["Ich bin da", "Ich komme gleich", "Wo sind Sie?"], newMsg: "Neue Nachricht", price: "Preis" },
     en: { steps: ["Sent", "Accepted", "Driver here", "On the way"], chat: "Messages with {name}", empty: "No messages yet. Write to your driver here.",
-      quick: ["I'm here", "Coming now", "Where are you?"], newMsg: "New message" },
+      quick: ["I'm here", "Coming now", "Where are you?"], newMsg: "New message", price: "Price" },
     el: { steps: ["Στάλθηκε", "Αποδεκτό", "Ο οδηγός ήρθε", "Καθ' οδόν"], chat: "Μηνύματα με {name}", empty: "Δεν υπάρχουν μηνύματα. Γράψτε στον οδηγό σας εδώ.",
-      quick: ["Είμαι εδώ", "Έρχομαι αμέσως", "Πού είστε;"], newMsg: "Νέο μήνυμα" }
+      quick: ["Είμαι εδώ", "Έρχομαι αμέσως", "Πού είστε;"], newMsg: "Νέο μήνυμα", price: "Τιμή" }
   };
   function lv() { return LV[lang] || LV.de; }
   function sendChat(body) {
@@ -309,6 +309,28 @@
     el("live-share").hidden = !waitingForCar || sharing || !("geolocation" in navigator);
     el("live-shared").hidden = !waitingForCar || !sharing;
     if (!waitingForCar) stopSharing();
+
+    // The route as it is now (stops and destination can change during the ride) and its price.
+    var showRoute = !!(s.from && s.to) && ["new", "accepted", "on_the_way", "arrived", "picked_up", "done"].indexOf(s.status) >= 0;
+    el("live-route").hidden = !showRoute;
+    if (showRoute) {
+      var pts = [s.from.text].concat((s.stops || []).map(function (x) { return x.text; }), [s.to.text]);
+      var key = pts.join("|");
+      var list = el("live-route-list");
+      if (list.getAttribute("data-key") !== key) {
+        list.setAttribute("data-key", key);
+        list.innerHTML = "";
+        pts.forEach(function (text) { var li = document.createElement("li"); li.textContent = text; list.appendChild(li); });
+      }
+      var price = s.final_price != null ? s.final_price : s.price;
+      var pe = el("live-price");
+      pe.textContent = price != null ? lv().price + ": " + money(price) : "";
+      // A price that changed while this page is open is marked, so it is noticed.
+      if (current && price != null) {
+        if (current.shownPrice != null && current.shownPrice !== price) pe.classList.add("changed");
+        current.shownPrice = price;
+      }
+    }
 
     var step = { "new": 0, accepted: 1, on_the_way: 1, arrived: 2, picked_up: 3, done: 4 }[s.status];
     var steps = el("live-steps");

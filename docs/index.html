@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="preload" href="assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/vendor/maplibre-gl.css">
-<link rel="stylesheet" href="styles.css?v=20261123">
+<link rel="stylesheet" href="styles.css?v=20261124s">
 <script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("motion");setTimeout(function(){if(!window.gsap)document.documentElement.classList.remove("motion")},3500);</script>
 <link rel="canonical" href="https://transfer-ride.github.io/">
 <meta property="og:type" content="website">
@@ -37,6 +37,7 @@
   <symbol id="i-call" viewBox="0 0 24 24"><path d="M6.600 3.500 9 3l2 4.600-2 1.600a12 12 0 0 0 5.800 5.800l1.600-2 4.600 2-.5 2.400c-.2 1-1 1.600-2 1.600C10.800 19 5 13.200 5 5.500c0-1 .6-1.800 1.600-2Z"/></symbol>
   <symbol id="i-locate" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm9 3h-2.100A7 7 0 0 0 13 5.100V3h-2v2.100A7 7 0 0 0 5.100 11H3v2h2.100A7 7 0 0 0 11 18.900V21h2v-2.100A7 7 0 0 0 18.900 13H21v-2Zm-9 6a5 5 0 1 1 0-10 5 5 0 0 1 0 10Z"/></symbol>
   <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 3 2.500 7.500 4 9l2-2v10h2V7l2 2 1.500-1.500L7 3Zm10 18 4.500-4.500L20 15l-2 2V7h-2v10l-2-2-1.500 1.500L17 21Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6.400 5 5.600 5.600L17.600 5 19 6.400 13.400 12l5.600 5.600-1.400 1.400-5.600-5.600L6.400 19 5 17.600l5.600-5.600L5 6.400 6.400 5Z"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.500a2.500 2.500 0 1 1 0-5 2.500 2.500 0 0 1 0 5Z"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 11h11.200l-4.600-4.600L13 5l7 7-7 7-1.400-1.400 4.600-4.600H5v-2Z"/></symbol>
 </svg>
@@ -88,6 +89,7 @@
               <ul class="suggest" id="from-list" role="listbox" hidden data-lenis-prevent></ul>
               <button type="button" class="icon-btn locate" id="locate"><svg aria-hidden="true"><use href="#i-locate"/></svg><span class="sr" data-i18n="locate">Meinen Standort verwenden</span></button>
             </div>
+            <div id="stops"></div>
             <div class="field" data-field="to">
               <label for="to" data-i18n="to">Ziel</label>
               <input id="to" name="to" required role="combobox" aria-expanded="false" aria-controls="to-list" aria-autocomplete="list" data-i18n-ph="addrPh" placeholder="Adresse eingeben">
@@ -95,6 +97,7 @@
               <button type="button" class="icon-btn swap" id="swap"><svg aria-hidden="true"><use href="#i-swap"/></svg><span class="sr" data-i18n="swap">Abholung und Ziel tauschen</span></button>
             </div>
           </div>
+          <button type="button" class="add-stop f-wide" id="add-stop" data-i18n="addStop">+ Zwischenstopp</button>
 
           <div class="chips f-wide" role="group" aria-label="Häufige Ziele">
             <button type="button" data-place="fra1" data-i18n="chipAir">Flughafen</button>
@@ -172,6 +175,7 @@
           <div class="live-head"><span class="sent-dot" aria-hidden="true"></span><h2 id="live-title"></h2></div>
           <p id="live-sub"></p>
           <ol class="live-steps" id="live-steps" aria-hidden="true"><li></li><li></li><li></li><li></li></ol>
+          <div class="live-route" id="live-route" hidden><ol id="live-route-list"></ol><p id="live-price"></p></div>
           <div class="live-driver" id="live-driver" hidden>
             <strong id="live-name"></strong><span id="live-plate"></span><span id="live-stars"></span>
           </div>
@@ -395,10 +399,10 @@
 </div>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="site.js?v=20261118u"></script>
+<script src="site.js?v=20261124s"></script>
 <script src="classes.js?v=20261118u"></script>
 <script src="plan.js?v=20261118u"></script>
-<script src="live.js?v=20261118u"></script>
+<script src="live.js?v=20261124s"></script>
 <script src="account.js?v=20261118u"></script>
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>

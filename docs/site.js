@@ -118,6 +118,9 @@ var EN = {
   from: "Pick-up",
   to: "Destination",
   addrPh: "Enter an address",
+  addStop: "+ Stop",
+  stop: "Stop",
+  removeStop: "Remove stop",
   locate: "Use my location",
   chipAir: "Airport",
   chipCity: "Schlossplatz",
@@ -271,6 +274,9 @@ var EL = {
   from: "Παραλαβή",
   to: "Προορισμός",
   addrPh: "Πληκτρολογήστε διεύθυνση",
+  addStop: "+ Στάση",
+  stop: "Στάση",
+  removeStop: "Αφαίρεση στάσης",
   locate: "Χρήση της τοποθεσίας μου",
   chipAir: "Αεροδρόμιο",
   chipCity: "Schlossplatz",
@@ -389,7 +395,7 @@ var statusEl = document.getElementById("status");
 var resultEl = document.getElementById("result");
 var lang = "de";
 var DICT = { en: EN, el: EL };
-var german = {};
+var german = { stop: "Zwischenstopp", removeStop: "Zwischenstopp entfernen" };
 var picked = { from: null, to: null };
 var trip = null;
 var routeRun = 0;
@@ -423,6 +429,7 @@ function setLang(next) {
     var dict = DICT[next];
     el.placeholder = dict && dict[key] ? dict[key] : german[key];
   });
+  if (typeof stopKeys !== "undefined" && stopKeys.length) relabelStops();
   document.querySelectorAll("[data-lang]").forEach(function (b) {
     b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === next));
   });
@@ -632,7 +639,7 @@ function drawMap() {
   if (!map) return;
   var features = [];
   var bounds = new maplibregl.LngLatBounds();
-  [["from", "#ffffff"], ["to", "#3ddc84"]].forEach(function (pair) {
+  [["from", "#ffffff"]].concat(stopKeys.map(function (k) { return [k, "#f5c542"]; }), [["to", "#3ddc84"]]).forEach(function (pair) {
     var place = picked[pair[0]];
     if (!place) return;
     features.push({ type: "Feature", properties: { color: pair[1] }, geometry: { type: "Point", coordinates: [place.lon, place.lat] } });
@@ -669,11 +676,75 @@ function departure() {
   return when.getTime() > Date.now() + 120000 ? form.date.value + "T" + form.time.value + ":00" : null;
 }
 
+/* Stops between pick-up and destination: keys "stop1", "stop2", … in driving order (at most 5). */
+var stopKeys = [];
+
+function stopWord(key) {
+  return (DICT[lang] && DICT[lang][key]) || german[key];
+}
+
+// The places the car drives through, in order: pick-up, the stops, the destination.
+function routePoints() {
+  return [picked.from].concat(stopKeys.map(function (k) { return picked[k]; }), [picked.to]);
+}
+
+// Stops with an address that is typed but not found yet: no price until they are.
+function stopsPending() {
+  return stopKeys.some(function (k) { return !picked[k] && document.getElementById(k).value.trim(); });
+}
+
+function chosenStops() {
+  return stopKeys.filter(function (k) { return picked[k]; }).map(function (k) {
+    return { text: document.getElementById(k).value.trim(), lat: picked[k].lat, lon: picked[k].lon };
+  });
+}
+
+function relabelStops() {
+  stopKeys.forEach(function (k, i) {
+    var label = document.querySelector('label[for="' + k + '"]');
+    label.textContent = stopWord("stop") + (stopKeys.length > 1 ? " " + (i + 1) : "");
+  });
+  var add = document.getElementById("add-stop");
+  if (add) add.hidden = stopKeys.length >= 5;
+}
+
+var stopSeq = 0;
+function addStop() {
+  if (stopKeys.length >= 5) return null;
+  var key = "stop" + (++stopSeq);
+  var field = document.createElement("div");
+  field.className = "field stop-field";
+  field.setAttribute("data-field", key);
+  field.innerHTML = '<label for="' + key + '"></label>' +
+    '<input id="' + key + '" name="' + key + '" role="combobox" aria-expanded="false" aria-controls="' + key + '-list" aria-autocomplete="list" data-i18n-ph="addrPh">' +
+    '<ul class="suggest" id="' + key + '-list" role="listbox" hidden data-lenis-prevent></ul>' +
+    '<button type="button" class="icon-btn remove-stop"><svg aria-hidden="true"><use href="#i-x"/></svg><span class="sr"></span></button>';
+  document.getElementById("stops").appendChild(field);
+  var input = field.querySelector("input");
+  input.placeholder = document.getElementById("to").placeholder;
+  field.querySelector(".sr").textContent = stopWord("removeStop");
+  field.querySelector(".remove-stop").addEventListener("click", function () { removeStop(key); });
+  stopKeys.push(key);
+  picked[key] = null;
+  wireField(key);
+  relabelStops();
+  return key;
+}
+
+function removeStop(key) {
+  var field = document.querySelector('[data-field="' + key + '"]');
+  if (field) field.remove();
+  stopKeys = stopKeys.filter(function (k) { return k !== key; });
+  delete picked[key];
+  relabelStops();
+  updateRoute();
+}
+
 function fetchTrip() {
-  var s = CONFIG.services, a = picked.from, b = picked.to;
+  var s = CONFIG.services, pts = routePoints();
   if (s.trafficKey) {
     var when = departure();
-    var url = s.traffic + a.lat + "," + a.lon + ":" + b.lat + "," + b.lon + "/json?traffic=true&travelMode=car&computeTravelTimeFor=all&key=" + encodeURIComponent(s.trafficKey) + (when ? "&departAt=" + encodeURIComponent(when) : "");
+    var url = s.traffic + pts.map(function (p) { return p.lat + "," + p.lon; }).join(":") + "/json?traffic=true&travelMode=car&computeTravelTimeFor=all&key=" + encodeURIComponent(s.trafficKey) + (when ? "&departAt=" + encodeURIComponent(when) : "");
     return fetch(url).then(function (r) {
       if (!r.ok) throw new Error("route");
       return r.json();
@@ -689,7 +760,7 @@ function fetchTrip() {
     });
   }
   if (!CONFIG.preview) return Promise.reject(new Error("no route service"));
-  return fetch(s.demoRoute + a.lon + "," + a.lat + ";" + b.lon + "," + b.lat + "?overview=simplified&geometries=geojson").then(function (r) {
+  return fetch(s.demoRoute + pts.map(function (p) { return p.lon + "," + p.lat; }).join(";") + "?overview=simplified&geometries=geojson").then(function (r) {
     if (!r.ok) throw new Error("route");
     return r.json();
   }).then(function (data) {
@@ -706,7 +777,7 @@ function updateRoute() {
   stickySync();
   drawMap();
   routeDone = Promise.resolve();
-  if (!picked.from || !picked.to) return;
+  if (!picked.from || !picked.to || stopsPending()) return;
   // Without a price the addresses are still shown on the map; there is nothing to calculate.
   if (!priceOn) return;
   statusEl.textContent = TEXT[lang].working;
@@ -847,7 +918,7 @@ function resolveTyped(key, force) {
   });
 }
 
-["from", "to"].forEach(function (key) {
+function wireField(key) {
   var input = document.getElementById(key);
   var timer;
   input.addEventListener("input", function () {
@@ -902,7 +973,17 @@ function resolveTyped(key, force) {
       resolveTyped(key);
     }, 120);
   });
-});
+  // An emptied stop no longer holds the price back.
+  if (/^stop/.test(key)) input.addEventListener("change", function () { if (!input.value.trim()) updateRoute(); });
+}
+["from", "to"].forEach(wireField);
+(function () {
+  var add = document.getElementById("add-stop");
+  if (add) add.addEventListener("click", function () {
+    var key = addStop();
+    if (key) document.getElementById(key).focus();
+  });
+})();
 
 document.querySelectorAll("[data-place]").forEach(function (b) {
   b.addEventListener("click", function () {
@@ -922,6 +1003,10 @@ document.getElementById("swap").addEventListener("click", function () {
   from.value = to.value;
   picked.to = place;
   to.value = text;
+  // The way back passes the stops the other way round.
+  stopKeys.reverse();
+  stopKeys.forEach(function (k) { document.getElementById("stops").appendChild(document.querySelector('[data-field="' + k + '"]')); });
+  if (stopKeys.length) relabelStops();
   updateRoute();
 });
 
@@ -997,9 +1082,10 @@ function sendRequest() {
     t.request,
     t.name + ": " + form.name.value.trim(),
     t.phone + ": " + form.phone.value.trim(),
-    t.from + ": " + form.from.value.trim(),
-    t.to + ": " + form.to.value.trim()
-  ];
+    t.from + ": " + form.from.value.trim()
+  ].concat(stopKeys.filter(function (k) { return document.getElementById(k).value.trim(); }).map(function (k, i, all) {
+    return stopWord("stop") + (all.length > 1 ? " " + (i + 1) : "") + ": " + document.getElementById(k).value.trim();
+  }), [t.to + ": " + form.to.value.trim()]);
   if (later) {
     lines.push(t.date + ": " + form.date.value, t.time + ": " + form.time.value);
   } else {
@@ -1060,6 +1146,7 @@ function sendToApp(later, fl, park) {
           .filter(Boolean).join(" · ") || null,
     from: { text: form.from.value.trim(), lat: picked.from && picked.from.lat, lon: picked.from && picked.from.lon },
     to: { text: form.to.value.trim(), lat: picked.to && picked.to.lat, lon: picked.to && picked.to.lon },
+    stops: chosenStops(),
     when: later ? form.date.value + "T" + form.time.value : "asap",
     people: Number(form.people.value),
     flight: fl ? fl.label : null,
@@ -1091,7 +1178,7 @@ function sendToApp(later, fl, park) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   // A typed address may still be on its way to a route: wait briefly so the price is in the message.
-  var ready = Promise.all([resolveTyped("from", true), resolveTyped("to", true)]).then(function () { return routeDone; });
+  var ready = Promise.all(["from", "to"].concat(stopKeys).map(function (k) { return resolveTyped(k, true); })).then(function () { return routeDone; });
   var limit = new Promise(function (done) { setTimeout(done, 4000); });
   Promise.race([ready, limit]).then(sendRequest, sendRequest);
 });
