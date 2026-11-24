@@ -207,21 +207,35 @@
   document.documentElement.lang = lang;
 
   /* ---------------- server ---------------- */
-  function rpc(fn, args) {
+  // One call to the server. Retries twice on a network failure (mobile signal, a sleeping WebView) and
+  // keeps the real reason, so "no connection" can say what actually went wrong.
+  var lastError = "";
+  function rpc(fn, args, tries) {
     if (DEMO) return Demo.rpc(fn, args);
-    return fetch(API + fn, { method: "POST", headers: { "Content-Type": "application/json", apikey: KEY, Authorization: "Bearer " + KEY },
-      body: JSON.stringify(args) }).then(function (r) {
+    tries = tries == null ? 2 : tries;
+    var ctl = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = ctl ? setTimeout(function () { ctl.abort(); }, 20000) : null;
+    return fetch(API + fn, { method: "POST", headers: { "Content-Type": "application/json", apikey: KEY },
+      body: JSON.stringify(args), signal: ctl ? ctl.signal : undefined, cache: "no-store" }).then(function (r) {
+      clearTimeout(timer);
       return r.text().then(function (txt) {
         var j = null; try { j = JSON.parse(txt); } catch (e) {}
         if (!r.ok) {
           var code = j && j.code;
+          lastError = fn + " " + r.status + (code ? " " + code : "") + (j && j.message ? " " + j.message : "");
           if (code === "28000") { signOut(true); }
-          var e2 = new Error(code === "KB429" ? t("too_many") : t("err")); e2.code = code; throw e2;
+          var e2 = new Error(code === "KB429" ? t("too_many") : t("err")); e2.code = code; e2.http = r.status; throw e2;
         }
         return j;
       });
+    }, function (err) {
+      clearTimeout(timer);
+      lastError = fn + " " + (err && (err.name + ": " + err.message) || "network");
+      if (tries > 0) return new Promise(function (ok) { setTimeout(ok, 1200); }).then(function () { return rpc(fn, args, tries - 1); });
+      var e3 = new Error(t("offline")); e3.network = true; throw e3;
     });
   }
+  function why() { return lastError ? '<div class="muted small" style="margin-top:6px;word-break:break-all">' + esc(lastError) + "</div>" : ""; }
 
   /* ---------------- helpers ---------------- */
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
@@ -319,7 +333,7 @@
       rpc("driver_login", { p_pin: p }).then(function (o) {
         if (o && o.error) { pin = ""; dots(); app.querySelector(".err").textContent = o.error === "locked" ? t("locked") : t("wrong", o.left); return; }
         token = o.token; store("team_token", token); document.onkeydown = null; start();
-      }).catch(function () { pin = ""; dots(); app.querySelector(".err").textContent = t("offline"); });
+      }).catch(function (e) { pin = ""; dots(); var box = app.querySelector(".err"); box.innerHTML = esc(e.network ? t("offline") : (e.message || t("err"))) + why(); });
     }
   }
   function langButtons(box, redraw) {
@@ -340,8 +354,16 @@
   /* ---------------- main ---------------- */
   function stopTimers() { clearInterval(chatTimer); clearInterval(homeTimer); chatTimer = homeTimer = null; }
   function start() {
+    stopTimers();
     refresh().then(function () { render(); homeTimer = setInterval(function () { refresh().then(function () { if (tab !== "chat" && !sheet) render(); else tabsBadge(); }); }, 30000); })
-      .catch(function () { if (token) { app.innerHTML = '<div class="pin"><p class="err">' + esc(t("offline")) + '</p><button class="btn ghost" style="max-width:240px" id="retry">↻</button></div>'; app.querySelector("#retry").onclick = start; } });
+      .catch(function (e) {
+        if (!token) return;
+        app.innerHTML = '<div class="pin"><p class="err">' + esc(e.network ? t("offline") : (e.message || t("err"))) + "</p>" + why() +
+          '<button class="btn ghost" style="max-width:240px;margin-top:16px" id="retry">↻</button>' +
+          '<button class="btn ghost" style="max-width:240px;margin-top:10px" id="relog">' + esc(t("signout")) + "</button></div>";
+        app.querySelector("#retry").onclick = start;
+        app.querySelector("#relog").onclick = function () { signOut(false); };
+      });
   }
   function refresh() { return rpc("team_home", { p_token: token }).then(function (d) {
     data = d;
