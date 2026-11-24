@@ -12,6 +12,7 @@
   /* ---------------- texts ---------------- */
   var T = {
     de: {
+      paid_company: "Firmengeld / Firmenkarte", confirm_q: "Wessen Geld war das?", confirm_own_cash: "Mein eigenes Bargeld", confirm_own_card: "Meine eigene Karte", confirm_company: "Geld der Firma", rs_confirm: "Bitte bestätigen", confirm_home: "{n} Beleg(e) warten auf deine Bestätigung", flags_t: "Hinweis",
       ask_receipt: "Beleg", receipt_title: "Beleg fotografieren", receipt_take: "Foto aufnehmen", receipt_again: "Anderes Foto", paid_how: "Wie bezahlt?", paid_cash: "Bar (eigenes Geld)", paid_card: "Eigene Karte", paid_fuelcard: "Tankkarte", receipt_note: "Wofür? (optional)", receipt_sent: "Beleg gesendet. Der HR-Assistent liest ihn gleich.", receipt_dup: "Diesen Beleg hast du schon am {n} gesendet. Er wird nicht doppelt gezählt.", receipts: "Belege", owed: "Bar ausgelegt – bekommst du zurück", no_receipts: "Noch keine Belege.", rs_new: "Wird gelesen", rs_read: "Gelesen", rs_duplicate: "Doppelt", rs_approved: "Bestätigt", rs_rejected: "Abgelehnt", rs_settled: "Ausgezahlt", receipt_hint: "Ganzen Beleg flach und gut beleuchtet fotografieren.",
       check: "Für Kontrollen", check_sub: "Zoll · Polizei · Ordnungsamt", check_note: "Zeig diese Seite bei einer Kontrolle. Ausweis oder Pass zusätzlich vorzeigen.", show_contract: "Arbeitsvertrag anzeigen", no_contract: "Der Vertrag ist noch nicht hinterlegt. Frag den Chef.", doc_ph: "Arbeitsbescheinigung, Vertrag, …",
       sec_space: "Mein Bereich", sec_cal: "Kalender", sec_wallet: "Geld", sec_dev: "Entwicklung", sec_docs: "Dokumente", sec_set: "Einstellungen", schedule: "Plan", prefs: "Wünsche", worked: "Gearbeitete Stunden", prefs_sub: "Wann arbeitest du am liebsten? Der Chef sieht das beim Planen.", can: "kann", cannot: "nicht", save: "Speichern", saved: "Gespeichert", movements: "Zahlungen", read_on: "Gelesen am {n}", unread: "Neu", support: "Hilfe", policy: "Nutzungsregeln", policy_text: "Transfer Team ist nur für Mitarbeiter von Transfer. Melde dich nicht auf fremden Geräten an, gib deinen PIN nicht weiter. Was du hier siehst, sind deine persönlichen Daten: bitte nicht weitergeben. Fragen an den HR-Assistenten werden auf dem Rechner der Personalverwaltung beantwortet; Entscheidungen trifft der Chef.", other_docs: "Weitere Dokumente",
@@ -46,6 +47,7 @@
       err: "Das ging nicht. Bitte noch einmal.", too_many: "Zu viele Nachrichten. Bitte etwas später.", signed_out: "Abgemeldet. Bitte PIN eingeben."
     },
     en: {
+      paid_company: "Company money / card", confirm_q: "Whose money was it?", confirm_own_cash: "My own cash", confirm_own_card: "My own card", confirm_company: "Company money", rs_confirm: "Please confirm", confirm_home: "{n} receipt(s) wait for your confirmation", flags_t: "Note",
       ask_receipt: "Receipt", receipt_title: "Photograph a receipt", receipt_take: "Take photo", receipt_again: "Another photo", paid_how: "How was it paid?", paid_cash: "Cash (my own money)", paid_card: "My own card", paid_fuelcard: "Fuel card", receipt_note: "What for? (optional)", receipt_sent: "Receipt sent. The HR assistant reads it in a moment.", receipt_dup: "You already sent this receipt on {n}. It is not counted twice.", receipts: "Receipts", owed: "Paid in cash – you get it back", no_receipts: "No receipts yet.", rs_new: "Being read", rs_read: "Read", rs_duplicate: "Duplicate", rs_approved: "Approved", rs_rejected: "Declined", rs_settled: "Paid back", receipt_hint: "Photograph the whole receipt, flat and well lit.",
       check: "For checks", check_sub: "Customs · police · public order office", check_note: "Show this page at a check. Also show your ID card or passport.", show_contract: "Show employment contract", no_contract: "The contract is not stored yet. Ask the boss.", doc_ph: "Employment certificate, contract, …",
       sec_space: "My space", sec_cal: "Calendar", sec_wallet: "Money", sec_dev: "Development", sec_docs: "Documents", sec_set: "Settings", schedule: "Schedule", prefs: "Wishes", worked: "Worked hours", prefs_sub: "When do you like to work? The boss sees this when planning.", can: "can", cannot: "no", save: "Save", saved: "Saved", movements: "Payments", read_on: "Read on {n}", unread: "New", support: "Help", policy: "Usage rules", policy_text: "Transfer Team is only for Transfer staff. Do not sign in on other people's devices and do not share your PIN. What you see here is your personal data: please keep it to yourself. HR assistant questions are answered on the HR computer; the boss makes the decisions.", other_docs: "Other documents",
@@ -80,6 +82,7 @@
       err: "That did not work. Please try again.", too_many: "Too many messages. Please wait a bit.", signed_out: "Signed out. Please enter your PIN."
     },
     el: {
+      paid_company: "Χρήματα/κάρτα εταιρείας", confirm_q: "Τίνος χρήματα ήταν;", confirm_own_cash: "Δικά μου μετρητά", confirm_own_card: "Δική μου κάρτα", confirm_company: "Χρήματα της εταιρείας", rs_confirm: "Επιβεβαίωσε", confirm_home: "{n} απόδειξη(εις) περιμένουν επιβεβαίωση", flags_t: "Σημείωση",
       ask_receipt: "Απόδειξη", receipt_title: "Φωτογράφισε απόδειξη", receipt_take: "Λήψη φωτογραφίας", receipt_again: "Άλλη φωτογραφία", paid_how: "Πώς πληρώθηκε;", paid_cash: "Μετρητά (δικά μου)", paid_card: "Δική μου κάρτα", paid_fuelcard: "Κάρτα καυσίμων", receipt_note: "Για τι; (προαιρετικά)", receipt_sent: "Η απόδειξη στάλθηκε. Ο βοηθός HR τη διαβάζει σε λίγο.", receipt_dup: "Αυτή την απόδειξη την έστειλες ήδη στις {n}. Δεν μετράει δύο φορές.", receipts: "Αποδείξεις", owed: "Πλήρωσες μετρητά – σου επιστρέφονται", no_receipts: "Καμία απόδειξη ακόμα.", rs_new: "Διαβάζεται", rs_read: "Διαβάστηκε", rs_duplicate: "Διπλή", rs_approved: "Εγκρίθηκε", rs_rejected: "Απορρίφθηκε", rs_settled: "Επιστράφηκε", receipt_hint: "Φωτογράφισε όλη την απόδειξη, ίσια και με καλό φως.",
       check: "Για ελέγχους", check_sub: "Zoll · Αστυνομία · Ordnungsamt", check_note: "Δείξε αυτή τη σελίδα σε έλεγχο. Δείξε επίσης ταυτότητα ή διαβατήριο.", show_contract: "Εμφάνιση σύμβασης εργασίας", no_contract: "Η σύμβαση δεν έχει καταχωριστεί ακόμα. Ρώτα το αφεντικό.", doc_ph: "Βεβαίωση εργασίας, σύμβαση, …",
       sec_space: "Ο χώρος μου", sec_cal: "Ημερολόγιο", sec_wallet: "Χρήματα", sec_dev: "Εξέλιξη", sec_docs: "Έγγραφα", sec_set: "Ρυθμίσεις", schedule: "Πρόγραμμα", prefs: "Προτιμήσεις", worked: "Ώρες εργασίας", prefs_sub: "Πότε προτιμάς να δουλεύεις; Το αφεντικό το βλέπει όταν φτιάχνει το πρόγραμμα.", can: "μπορώ", cannot: "όχι", save: "Αποθήκευση", saved: "Αποθηκεύτηκε", movements: "Πληρωμές", read_on: "Διαβάστηκε {n}", unread: "Νέο", support: "Βοήθεια", policy: "Κανόνες χρήσης", policy_text: "Το Transfer Team είναι μόνο για το προσωπικό του Transfer. Μη συνδέεσαι σε ξένες συσκευές και μη δίνεις το PIN σου. Όσα βλέπεις εδώ είναι προσωπικά σου στοιχεία: κράτα τα για σένα. Τις ερωτήσεις στον βοηθό HR τις απαντά ο υπολογιστής του HR· τις αποφάσεις τις παίρνει το αφεντικό.", other_docs: "Άλλα έγγραφα",
@@ -360,7 +363,7 @@
   function stopTimers() { clearInterval(chatTimer); clearInterval(homeTimer); chatTimer = homeTimer = null; }
   function start() {
     stopTimers();
-    refresh().then(function () { render(); homeTimer = setInterval(function () { refresh().then(function () { if (tab !== "chat" && !sheet) render(); else tabsBadge(); }); }, 30000); })
+    refresh().then(function () { render(); loadReceipts().then(function () { if (tab === "home" && !sheet) render(); }); homeTimer = setInterval(function () { refresh().then(function () { if (tab !== "chat" && !sheet) render(); else tabsBadge(); }); }, 30000); })
       .catch(function (e) {
         if (!token) return;
         app.innerHTML = '<div class="pin"><p class="err">' + esc(e.network ? t("offline") : (e.message || t("err"))) + "</p>" + why() +
@@ -401,6 +404,7 @@
     app.querySelectorAll("[data-req]").forEach(function (b) { b.onclick = function () { reqSheet(+b.dataset.req); }; });
     var so = app.querySelector("#signout"); if (so) so.onclick = function () { signOut(false); };
     var ck = app.querySelector("#check"); if (ck) ck.onclick = checkSheet;
+    app.querySelectorAll("[data-wallet]").forEach(function (b) { b.onclick = function () { tab = "profile"; profSec = "wallet"; render(); }; });
     app.querySelectorAll("[data-receipt]").forEach(function (b) { b.onclick = receiptSheet; });
     app.querySelectorAll("[data-rimg]").forEach(function (b) { b.onclick = function () { receiptView(+b.dataset.rimg); }; });
     app.querySelectorAll("[data-sec]").forEach(function (b) { b.onclick = function () { profSec = b.dataset.sec; render(); }; });
@@ -430,6 +434,7 @@
           : '<div class="big">' + esc(t("no_shift")) + "</div>") + '<div style="margin-top:12px;color:var(--mint);font-weight:700">' + esc(t("full_plan")) + " ›</div></section>";
     h += '<div class="grid2"><div class="card kpi"><div class="muted small">' + esc(t("leave_left")) + '</div><div class="n">' + (left == null ? "—" : left.toLocaleString(loc())) + '</div><div class="muted small">' + esc(t("days")) + "</div></div>" +
       '<div class="card kpi"><div class="muted small">' + esc(t("hours_month")) + '</div><div class="n">' + (Math.round(monthMinutes() / 6) / 10).toLocaleString(loc()) + '</div><div class="muted small">' + esc(t("h")) + "</div></div></div>";
+    if (receipts && receipts.to_confirm > 0) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0;background:#e6f0fd" data-wallet="1"><span class="grow t" style="text-align:left">' + esc(t("confirm_home", receipts.to_confirm)) + '</span><span class="chip info">' + receipts.to_confirm + "</span></button>";
     if (open) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0" data-go="requests"><span class="grow t" style="text-align:left">' + esc(t("open_req")) + '</span><span class="chip wait">' + open + "</span></button>";
     h += '<div class="actions">' + [["leave", "ask_leave", "leave"], ["sick", "ask_sick", "sick"], ["shift_swap", "ask_swap", "swap"]].map(function (k) {
       return '<button class="action" data-ask="' + k[0] + '">' + ICON[k[2]] + esc(t(k[1])) + "</button>"; }).join("") +
@@ -616,7 +621,8 @@
     var p = profile(), me = data.me || {};
     var secs = [["space", "sec_space"], ["cal", "sec_cal"], ["wallet", "sec_wallet"], ["dev", "sec_dev"], ["docs", "sec_docs"], ["set", "sec_set"]];
     var h = '<div class="top"><div><h1>' + esc(me.name || "") + '</h1><div class="muted">' + esc(p.role || (p.type ? t("t_" + p.type) : "")) + '</div></div><div class="avatar" aria-hidden="true"><i></i></div></div>' +
-      '<button class="btn dark" id="check" style="margin:0 0 14px;display:flex;align-items:center;justify-content:center;gap:10px">🪪 ' + esc(t("check")) + ' <span style="font-weight:500;opacity:.7;font-size:14px">' + esc(t("check_sub")) + "</span></button>" +
+      '<button class="btn dark" id="check" style="margin:0 0 14px;height:auto;padding:12px 16px;display:flex;flex-direction:column;align-items:center;gap:2px">' +
+        '<span>🪪 ' + esc(t("check")) + '</span><span style="font-weight:500;opacity:.7;font-size:13px">' + esc(t("check_sub")) + "</span></button>" +
       '<div class="quick" style="padding:0;margin:0 0 6px">' + secs.map(function (x) {
         return '<button type="button" data-sec="' + x[0] + '" style="' + (profSec === x[0] ? "background:var(--ink);color:#fff;border-color:var(--ink);font-weight:700" : "") + '">' + esc(t(x[1])) + "</button>"; }).join("") + "</div>";
     return h + ({ space: secSpace, cal: secCal, wallet: secWallet, dev: secDev, docs: secDocs, set: secSet }[profSec] || secSpace)(p);
@@ -694,15 +700,16 @@
   function receiptsHtml() {
     if (!receipts) { loadReceipts(); return '<div class="empty">…</div>'; }
     var h = "";
+    if (receipts.to_confirm > 0) h += '<div class="card" style="background:#e6f0fd;margin-top:12px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + "</b></div>";
     if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:12px"><div class="muted small">' + esc(t("owed")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
     var list = receipts.list || [];
     h += "<h2>" + esc(t("receipts")) + '</h2><button class="btn" data-receipt="1" style="margin-bottom:12px">' + esc(t("receipt_title")) + "</button>";
     h += list.length ? '<div class="card" style="padding:4px 14px">' + list.map(function (r) {
-      var d = r.data || {}, st = r.settled_at ? "settled" : r.status;
-      var cls = { new: "wait", read: "ok", approved: "ok", settled: "ok", duplicate: "bad", rejected: "bad" }[st] || "";
+      var d = r.data || {}, st = r.settled_at ? "settled" : d.confirm === "pending" ? "confirm" : r.status;
+      var cls = { new: "wait", confirm: "info", read: "ok", approved: "ok", settled: "ok", duplicate: "bad", rejected: "bad" }[st] || "";
       return '<button class="row tap" style="width:100%;text-align:left" data-rimg="' + r.id + '"><span class="grow"><span class="t">' + esc(d.merchant || t("ask_receipt")) + '</span><br><span class="muted small">' +
         esc([d.date ? parse(d.date).toLocaleDateString(loc()) : new Date(r.at).toLocaleDateString(loc()), t("paid_" + r.paid)].join(" · ")) + '</span></span><span style="text-align:right"><b>' + esc(d.total != null ? money(d.total) : "") +
-        '</b><br><span class="chip ' + cls + '">' + esc(t("rs_" + st)) + "</span></span></button>";
+        '</b><br><span class="chip ' + cls + '">' + esc(st === "confirm" ? t("rs_confirm") : t("rs_" + st)) + "</span></span></button>";
     }).join("") + "</div>" : '<div class="empty">' + esc(t("no_receipts")) + "</div>";
     return h;
   }
@@ -773,7 +780,7 @@
     openSheet('<h2 style="margin-top:0">' + esc(t("receipt_title")) + '</h2><p class="muted small">' + esc(t("receipt_hint")) + "</p>" +
       '<input type="file" accept="image/*" capture="environment" id="rfile" style="display:none">' +
       '<div id="rprev" class="card" style="text-align:center;min-height:120px;display:grid;place-items:center"><button class="btn dark" id="rtake" style="max-width:260px">📷 ' + esc(t("receipt_take")) + "</button></div>" +
-      '<label class="f">' + esc(t("paid_how")) + '</label><div class="seg" id="rpaid">' + ["fuelcard", "cash", "card"].map(function (k) {
+      '<label class="f">' + esc(t("paid_how")) + '</label><div class="seg" id="rpaid" style="flex-wrap:wrap">' + ["fuelcard", "company", "cash", "card"].map(function (k) {
         return '<button type="button" data-p="' + k + '" aria-pressed="' + (k === paid) + '">' + esc(t("paid_" + k)) + "</button>"; }).join("") + "</div>" +
       '<label class="f" for="rnote">' + esc(t("receipt_note")) + '</label><input class="in" id="rnote">' +
       '<div style="display:grid;gap:10px;margin-top:16px"><button class="btn" id="rsend" disabled>' + esc(t("send")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
@@ -817,7 +824,14 @@
     openSheet('<h2 style="margin-top:0">' + esc(d.merchant || t("ask_receipt")) + '</h2><div id="rimg" class="card" style="text-align:center">…</div>' +
       '<div class="card" style="padding:4px 14px;margin-top:12px">' + rows.map(function (x) { return kv(x[0], x[1]); }).join("") + "</div>" +
       (d.items ? '<p class="muted small" style="margin:10px 2px">' + esc([].concat(d.items).join(", ")) + "</p>" : "") +
+      (d.confirm === "pending" ? '<h2>' + esc(t("confirm_q")) + '</h2><div style="display:grid;gap:8px">' + [["cash", "confirm_own_cash"], ["card", "confirm_own_card"], ["company", "confirm_company"]].map(function (x) {
+        return '<button class="btn ' + (x[0] === "company" ? "dark" : "ghost") + '" data-conf="' + x[0] + '">' + esc(t(x[1])) + "</button>"; }).join("") + "</div>" : "") +
       '<button class="btn ghost" style="margin-top:12px" data-close>OK</button>', function (s) {
+      s.querySelectorAll("[data-conf]").forEach(function (b) { b.onclick = function () {
+        b.disabled = true;
+        rpc("team_receipt_confirm", { p_token: token, p_id: id, p_paid: b.dataset.conf }).then(function (rr) { receipts = rr; closeSheet(); toast(t("saved")); render(); })
+          .catch(function (e) { b.disabled = false; toast(e.message); });
+      }; });
       rpc("team_receipt_image", { p_token: token, p_id: id }).then(function (src) {
         if (src && /^data:image\//.test(src)) s.querySelector("#rimg").innerHTML = '<img src="' + src + '" alt="" style="max-width:100%;max-height:420px;border-radius:12px">';
       }).catch(function () {});
@@ -843,7 +857,8 @@
   var Demo = (function () {
     function d(n) { var x = new Date(); x.setDate(x.getDate() + n); return ymd(x); }
     var demoReceipts = { owed: 62.4, list: [{ id: 1, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Shell Stuttgart-Feuerbach", date: d(-1), total: 62.4, vat: 9.96, vat_rate: 19, number: "4711" } },
-      { id: 2, at: new Date().toISOString(), paid: "fuelcard", status: "read", data: { merchant: "Aral Flughafen", date: d(-3), total: 71.1, vat: 11.35, vat_rate: 19 } }] };
+      { id: 2, at: new Date().toISOString(), paid: "fuelcard", status: "read", data: { merchant: "Aral Flughafen", date: d(-3), total: 71.1, vat: 11.35, vat_rate: 19 } },
+      { id: 3, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Waschpark Stuttgart", date: d(0), total: 14.9, vat: 2.38, vat_rate: 19, confirm: "pending" } }], to_confirm: 1 };
     var msgs = [], reqs = [{ id: 1, at: new Date(Date.now() - 2 * 864e5).toISOString(), kind: "leave", text: "Urlaub für Familienbesuch", details: { from: d(20), to: d(24) }, status: "with_owner", answer: "Danke, ich habe deinen Urlaub an den Chef weitergegeben. Du bekommst Bescheid, sobald er entschieden hat." }];
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
@@ -872,6 +887,7 @@
         if (fn === "team_receipts") return ok(demoReceipts);
         if (fn === "team_receipt_add") { var dup = demoReceipts.list.some(function (x) { return x.sha === a.p_sha; }); demoReceipts.list.unshift({ id: demoReceipts.list.length + 10, at: new Date().toISOString(), paid: a.p_paid, note: a.p_note, status: dup ? "duplicate" : "new", data: {}, sha: a.p_sha }); return ok({ duplicate: dup, duplicate_at: new Date().toISOString(), receipts: demoReceipts }); }
         if (fn === "team_receipt_image") return ok(null);
+        if (fn === "team_receipt_confirm") { demoReceipts.list.forEach(function (x) { if (x.id === a.p_id) { x.paid = a.p_paid; x.data.confirm = "done"; } }); demoReceipts.to_confirm = 0; if (a.p_paid !== "company") demoReceipts.owed += 14.9; return ok(demoReceipts); }
         if (fn === "team_prefs") { home.prefs = a.p_prefs; return ok(JSON.parse(JSON.stringify(home))); }
         if (fn === "team_read") { home.posts.forEach(function (p) { if (p.id === a.p_post) p.read_at = new Date().toISOString(); }); return ok({ ok: true }); }
         if (fn === "team_request") { reqs.unshift({ id: reqs.length + 1, at: new Date().toISOString(), kind: a.p_kind, text: a.p_text, details: a.p_details, status: "open" }); return ok(JSON.parse(JSON.stringify(home))); }
