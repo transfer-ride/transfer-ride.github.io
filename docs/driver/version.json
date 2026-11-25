@@ -1,10 +1,10 @@
 {
- "versionCode": 64,
- "versionName": "3.56",
- "sha256": "3a6196a3fe5f1402967a030ab20219a65fd434de5e227a19cc83b563c60c1a7d",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-64.apk",
- "notes": "Fahrgast woanders abgeholt: Einsteigen auch weg von der Abholadresse, mit Prüfung",
- "notes_de": "Fahrgast woanders abgeholt: Einsteigen auch weg von der Abholadresse, mit Prüfung",
- "notes_en": "Passenger picked up elsewhere: let them in away from the pick-up address, with a check",
- "notes_el": "Παραλαβή από άλλο σημείο: ο επιβάτης μπαίνει και μακριά από τη διεύθυνση, με επιβεβαίωση"
+ "versionCode": 65,
+ "versionName": "3.57",
+ "sha256": "b85c3b72eb1f22559ee30c775ed3b77ecd735dd77e7022daaef3b7f3dd88fd89",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-65.apk",
+ "notes": "Ganze Fahrt antippen öffnet sie; Stornieren in der Fahrt, mit Warnung",
+ "notes_de": "Ganze Fahrt antippen öffnet sie; Stornieren in der Fahrt, mit Warnung",
+ "notes_en": "Tap the whole ride to open it; cancel inside the ride, with a warning",
+ "notes_el": "Πατάς όλη τη διαδρομή και ανοίγει· ακύρωση μέσα στη διαδρομή, με προειδοποίηση"
 }
