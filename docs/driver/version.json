@@ -1,10 +1,10 @@
 {
- "versionCode": 67,
- "versionName": "3.59",
- "sha256": "57b1ff0fd6920eab2858aa065b25222045cff4c6b71a298294cb026d388da0a5",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-67.apk",
- "notes": "Stornieren in der Fahrt unter der Uhrzeit, ohne Scrollen",
- "notes_de": "Stornieren in der Fahrt unter der Uhrzeit, ohne Scrollen",
- "notes_en": "Cancel inside the ride under the time, no scrolling",
- "notes_el": "Η ακύρωση μέσα στη σελίδα κάτω από την ώρα, χωρίς scroll"
+ "versionCode": 68,
+ "versionName": "3.60",
+ "sha256": "519ddd4c7d714b196eca29126db306584a7617741e72df69f0f2a72fb04baf1a",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-68.apk",
+ "notes": "Testfahrten verschwinden nach dem Stornieren",
+ "notes_de": "Testfahrten verschwinden nach dem Stornieren",
+ "notes_en": "Test rides disappear once cancelled",
+ "notes_el": "Οι δοκιμαστικές παραγγελίες εξαφανίζονται μετά την ακύρωση"
 }
