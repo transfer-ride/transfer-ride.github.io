@@ -13,10 +13,12 @@
   var T = {
     de: {
       dup_hint: "Schon einmal gesendet – zählt nicht doppelt.", owed2: "Bekommst du zurück",
+      up_tab: "Hochladen", up_title: "Belege & Dokumente", up_intro: "Beleg, Krankmeldung, TÜV-Bericht, Werkstattrechnung, Führerschein, Brief – einfach fotografieren. Der Assistent erkennt, was es ist, und gibt es an die richtige Person.", up_list: "Meine Uploads", up_what: "Was ist es?", up_receipt: "Beleg (Geld ausgegeben)", up_doc: "Anderes Dokument", up_doc_hint: "Krankmeldung, TÜV, Brief, Führerschein … Der Assistent erkennt es selbst.", rs_filed: "Abgelegt", goes_to: "Geht an {n}", to_hr: "Lisa (HR)", to_fleet: "Daniel (Fahrzeuge)", to_owner: "den Chef", photo_gone: "Foto aus Datenschutzgründen gelöscht", reading_doc: "Der Assistent erkennt, was es ist, und gibt es weiter – etwa 30 Sekunden.", sick_from_to: "Krank {n}", valid_until: "Gültig bis {n}", hu_next: "Nächste HU {n}", deadline: "Frist {n}", signed_on: "Unterschrieben {n}", paid_none: "Nichts bezahlt", cat_inspection: "TÜV / HU", leave_this_year: "Urlaub {n} (gesetzlich)", leave_calc: "{d} Tage/Woche × 4 = {f} Tage im Jahr", leave_part: "{m} volle Monate → {n} Tage in diesem Jahr",
+      dk_receipt: "Beleg", dk_car_invoice: "Werkstattrechnung", dk_hu_report: "TÜV-/HU-Bericht", dk_sick_note: "Krankmeldung", dk_licence: "Führerschein", dk_p_schein: "P-Schein", dk_id_card: "Ausweis", dk_work_permit: "Aufenthaltstitel", dk_contract: "Arbeitsvertrag", dk_insurance: "Versicherungsbrief", dk_fine: "Bußgeld / Anhörung", dk_car_letter: "Fahrzeug-Schreiben", dk_hr_letter: "Brief (Krankenkasse/Behörde)", dk_other: "Dokument",
       my_receipts: "Meine Belege", receipts_intro: "Auch alte Fotos aus der Galerie, mehrere auf einmal. Der Assistent liest jeden Beleg in etwa 30 Sekunden und zeigt hier, was er gelesen hat.", reading_hint: "Der Assistent liest Geschäft, Datum, Betrag und MwSt. – dauert etwa 30 Sekunden.", uploaded_at: "Gesendet um {n}", sent_on: "Gesendet {n}", yesterday: "Gestern", read_done: "Gelesen", vat: "MwSt.", on_receipt: "Auf dem Beleg", pm_cash: "Barzahlung", pm_card: "Karte", confirm_tap: "Tippe auf den blau markierten Beleg.", cat_fuel: "Tanken", cat_charging: "Laden", cat_wash: "Wäsche", cat_parking: "Parken", cat_toll: "Maut", cat_repair: "Werkstatt", cat_car_care: "Fahrzeugpflege", cat_office: "Büro", cat_phone: "Telefon", cat_food: "Essen", cat_other: "Sonstiges",
       receipt_gallery: "Aus der Galerie", receipt_paid_hint: "Gilt für alle gewählten Fotos. Steht auf dem Beleg etwas anderes, fragt der Assistent nach.", send_n: "{n} Belege senden", receipts_done: "{n} Belege gesendet. Der HR-Assistent liest sie gleich.", receipts_done_dup: "{n} gesendet, {d} waren schon da und zählen nicht doppelt.",
       paid_company: "Firmengeld / Firmenkarte", confirm_q: "Wessen Geld war das?", confirm_own_cash: "Mein eigenes Bargeld", confirm_own_card: "Meine eigene Karte", confirm_company: "Geld der Firma", rs_confirm: "Bitte bestätigen", confirm_home: "{n} Beleg(e) warten auf deine Bestätigung", flags_t: "Hinweis",
-      ask_receipt: "Beleg", receipt_title: "Beleg hinzufügen", receipt_take: "Foto aufnehmen", receipt_again: "Anderes Foto", paid_how: "Wie bezahlt?", paid_cash: "Bar (eigenes Geld)", paid_card: "Eigene Karte", paid_fuelcard: "Tankkarte", receipt_note: "Wofür? (optional)", receipt_sent: "Beleg gesendet. Der HR-Assistent liest ihn gleich.", receipt_dup: "Diesen Beleg hast du schon am {n} gesendet. Er wird nicht doppelt gezählt.", receipts: "Belege", owed: "Bar ausgelegt – bekommst du zurück", no_receipts: "Noch keine Belege.", rs_new: "Wird gelesen", rs_read: "Gelesen", rs_duplicate: "Doppelt", rs_approved: "Bestätigt", rs_rejected: "Abgelehnt", rs_settled: "Ausgezahlt", receipt_hint: "Ganzen Beleg flach und gut beleuchtet fotografieren.",
+      ask_receipt: "Beleg", receipt_title: "Beleg hinzufügen", receipt_take: "Foto aufnehmen", receipt_again: "Anderes Foto", paid_how: "Wie bezahlt?", paid_cash: "Bar (eigenes Geld)", paid_card: "Eigene Karte", paid_fuelcard: "Tankkarte", receipt_note: "Wofür? (optional)", receipt_sent: "Beleg gesendet. Der HR-Assistent liest ihn gleich.", receipt_dup: "Diesen Beleg hast du schon am {n} gesendet. Er wird nicht doppelt gezählt.", receipts: "Belege", owed: "Bar ausgelegt – bekommst du zurück", no_receipts: "Noch keine Belege.", rs_new: "Wird gelesen", rs_read: "Gelesen", rs_duplicate: "Doppelt", rs_approved: "Bestätigt", rs_rejected: "Abgelehnt", rs_settled: "Ausgezahlt", receipt_hint: "Das ganze Blatt flach und gut beleuchtet fotografieren.",
       check: "Für Kontrollen", check_sub: "Zoll · Polizei · Ordnungsamt", check_note: "Zeig diese Seite bei einer Kontrolle. Ausweis oder Pass zusätzlich vorzeigen.", show_contract: "Arbeitsvertrag anzeigen", no_contract: "Der Vertrag ist noch nicht hinterlegt. Frag den Chef.", doc_ph: "Arbeitsbescheinigung, Vertrag, …",
       sec_space: "Mein Bereich", sec_cal: "Kalender", sec_wallet: "Geld", sec_dev: "Entwicklung", sec_docs: "Dokumente", sec_set: "Einstellungen", schedule: "Plan", prefs: "Wünsche", worked: "Gearbeitete Stunden", prefs_sub: "Wann arbeitest du am liebsten? Der Chef sieht das beim Planen.", can: "kann", cannot: "nicht", save: "Speichern", saved: "Gespeichert", movements: "Zahlungen", read_on: "Gelesen am {n}", unread: "Neu", support: "Hilfe", policy: "Nutzungsregeln", policy_text: "Transfer Team ist nur für Mitarbeiter von Transfer. Melde dich nicht auf fremden Geräten an, gib deinen PIN nicht weiter. Was du hier siehst, sind deine persönlichen Daten: bitte nicht weitergeben. Fragen an den HR-Assistenten werden auf dem Rechner der Personalverwaltung beantwortet; Entscheidungen trifft der Chef.", other_docs: "Weitere Dokumente",
       menu: "Menü", search: "Suche", search_ph: "Suchen: Urlaub, Schicht, Regeln …", no_hits: "Nichts gefunden.", c_news: "Neuigkeiten", c_company: "Über Transfer", c_benefits: "Vorteile", c_learning: "Lernen", c_development: "Entwicklung", c_guidelines: "Richtlinien", c_favs: "Favoriten", no_favs: "Tippe bei einem Beitrag auf ☆, um ihn hier zu sammeln.", full_plan: "Ganzer Plan", my_plan: "Mein Plan",
@@ -51,10 +53,12 @@
     },
     en: {
       dup_hint: "Already sent before – not counted twice.", owed2: "You get this back",
+      up_tab: "Upload", up_title: "Receipts & documents", up_intro: "Receipt, sick note, TÜV report, workshop invoice, driving licence, letter – just take a photo. The assistant sees what it is and passes it to the right person.", up_list: "My uploads", up_what: "What is it?", up_receipt: "Receipt (money spent)", up_doc: "Other document", up_doc_hint: "Sick note, TÜV, letter, licence … The assistant recognises it.", rs_filed: "Filed", goes_to: "Goes to {n}", to_hr: "Lisa (HR)", to_fleet: "Daniel (vehicles)", to_owner: "the boss", photo_gone: "Photo deleted for data protection", reading_doc: "The assistant sees what it is and passes it on – about 30 seconds.", sick_from_to: "Sick {n}", valid_until: "Valid until {n}", hu_next: "Next TÜV {n}", deadline: "Deadline {n}", signed_on: "Signed {n}", paid_none: "Nothing paid", cat_inspection: "TÜV / HU", leave_this_year: "Leave {n} (by law)", leave_calc: "{d} days/week × 4 = {f} days a year", leave_part: "{m} full months → {n} days this year",
+      dk_receipt: "Receipt", dk_car_invoice: "Workshop invoice", dk_hu_report: "TÜV/HU report", dk_sick_note: "Sick note", dk_licence: "Driving licence", dk_p_schein: "P-Schein", dk_id_card: "ID card", dk_work_permit: "Residence permit", dk_contract: "Employment contract", dk_insurance: "Insurance letter", dk_fine: "Fine / hearing", dk_car_letter: "Vehicle letter", dk_hr_letter: "Letter (insurer/authority)", dk_other: "Document",
       my_receipts: "My receipts", receipts_intro: "Old photos from the gallery too, several at once. The assistant reads each receipt in about 30 seconds and shows here what it read.", reading_hint: "The assistant reads shop, date, amount and VAT – takes about 30 seconds.", uploaded_at: "Sent at {n}", sent_on: "Sent {n}", yesterday: "Yesterday", read_done: "Read", vat: "VAT", on_receipt: "On the receipt", pm_cash: "cash", pm_card: "card", confirm_tap: "Tap the receipt marked in blue.", cat_fuel: "Fuel", cat_charging: "Charging", cat_wash: "Car wash", cat_parking: "Parking", cat_toll: "Toll", cat_repair: "Garage", cat_car_care: "Car care", cat_office: "Office", cat_phone: "Phone", cat_food: "Food", cat_other: "Other",
       receipt_gallery: "From the gallery", receipt_paid_hint: "Applies to all chosen photos. If the receipt says otherwise, the assistant asks you.", send_n: "Send {n} receipts", receipts_done: "{n} receipts sent. The HR assistant reads them in a moment.", receipts_done_dup: "{n} sent, {d} were already there and are not counted twice.",
       paid_company: "Company money / card", confirm_q: "Whose money was it?", confirm_own_cash: "My own cash", confirm_own_card: "My own card", confirm_company: "Company money", rs_confirm: "Please confirm", confirm_home: "{n} receipt(s) wait for your confirmation", flags_t: "Note",
-      ask_receipt: "Receipt", receipt_title: "Add a receipt", receipt_take: "Take photo", receipt_again: "Another photo", paid_how: "How was it paid?", paid_cash: "Cash (my own money)", paid_card: "My own card", paid_fuelcard: "Fuel card", receipt_note: "What for? (optional)", receipt_sent: "Receipt sent. The HR assistant reads it in a moment.", receipt_dup: "You already sent this receipt on {n}. It is not counted twice.", receipts: "Receipts", owed: "Paid in cash – you get it back", no_receipts: "No receipts yet.", rs_new: "Being read", rs_read: "Read", rs_duplicate: "Duplicate", rs_approved: "Approved", rs_rejected: "Declined", rs_settled: "Paid back", receipt_hint: "Photograph the whole receipt, flat and well lit.",
+      ask_receipt: "Receipt", receipt_title: "Add a receipt", receipt_take: "Take photo", receipt_again: "Another photo", paid_how: "How was it paid?", paid_cash: "Cash (my own money)", paid_card: "My own card", paid_fuelcard: "Fuel card", receipt_note: "What for? (optional)", receipt_sent: "Receipt sent. The HR assistant reads it in a moment.", receipt_dup: "You already sent this receipt on {n}. It is not counted twice.", receipts: "Receipts", owed: "Paid in cash – you get it back", no_receipts: "No receipts yet.", rs_new: "Being read", rs_read: "Read", rs_duplicate: "Duplicate", rs_approved: "Approved", rs_rejected: "Declined", rs_settled: "Paid back", receipt_hint: "Photograph the whole page, flat and well lit.",
       check: "For checks", check_sub: "Customs · police · public order office", check_note: "Show this page at a check. Also show your ID card or passport.", show_contract: "Show employment contract", no_contract: "The contract is not stored yet. Ask the boss.", doc_ph: "Employment certificate, contract, …",
       sec_space: "My space", sec_cal: "Calendar", sec_wallet: "Money", sec_dev: "Development", sec_docs: "Documents", sec_set: "Settings", schedule: "Schedule", prefs: "Wishes", worked: "Worked hours", prefs_sub: "When do you like to work? The boss sees this when planning.", can: "can", cannot: "no", save: "Save", saved: "Saved", movements: "Payments", read_on: "Read on {n}", unread: "New", support: "Help", policy: "Usage rules", policy_text: "Transfer Team is only for Transfer staff. Do not sign in on other people's devices and do not share your PIN. What you see here is your personal data: please keep it to yourself. HR assistant questions are answered on the HR computer; the boss makes the decisions.", other_docs: "Other documents",
       menu: "Menu", search: "Search", search_ph: "Search: leave, shift, rules …", no_hits: "Nothing found.", c_news: "News", c_company: "About Transfer", c_benefits: "Benefits", c_learning: "Learning", c_development: "Development", c_guidelines: "Guidelines", c_favs: "Favourites", no_favs: "Tap ☆ on a post to keep it here.", full_plan: "Full schedule", my_plan: "My schedule",
@@ -89,10 +93,12 @@
     },
     el: {
       dup_hint: "Έχει ξανασταλεί – δεν μετράει δύο φορές.", owed2: "Θα σου επιστραφούν",
+      up_tab: "Ανέβασμα", up_title: "Αποδείξεις & έγγραφα", up_intro: "Απόδειξη, αναρρωτική, έκθεση TÜV, τιμολόγιο συνεργείου, δίπλωμα, γράμμα – απλώς βγάλε φωτογραφία. Ο βοηθός καταλαβαίνει τι είναι και το δίνει στον σωστό άνθρωπο.", up_list: "Τι ανέβασα", up_what: "Τι είναι;", up_receipt: "Απόδειξη (ξόδεψα χρήματα)", up_doc: "Άλλο έγγραφο", up_doc_hint: "Αναρρωτική, TÜV, γράμμα, δίπλωμα … Ο βοηθός το αναγνωρίζει μόνος του.", rs_filed: "Αρχειοθετήθηκε", goes_to: "Πηγαίνει {n}", to_hr: "στη Lisa (HR)", to_fleet: "στον Daniel (οχήματα)", to_owner: "στο αφεντικό", photo_gone: "Η φωτογραφία σβήστηκε για προστασία δεδομένων", reading_doc: "Ο βοηθός καταλαβαίνει τι είναι και το προωθεί – περίπου 30 δευτερόλεπτα.", sick_from_to: "Άρρωστος {n}", valid_until: "Ισχύει έως {n}", hu_next: "Επόμενο TÜV {n}", deadline: "Προθεσμία {n}", signed_on: "Υπογράφηκε {n}", paid_none: "Δεν πληρώθηκε τίποτα", cat_inspection: "TÜV / HU", leave_this_year: "Άδεια {n} (κατά τον νόμο)", leave_calc: "{d} μέρες/εβδομάδα × 4 = {f} μέρες τον χρόνο", leave_part: "{m} πλήρεις μήνες → {n} μέρες φέτος",
+      dk_receipt: "Απόδειξη", dk_car_invoice: "Τιμολόγιο συνεργείου", dk_hu_report: "Έκθεση TÜV/HU", dk_sick_note: "Αναρρωτική", dk_licence: "Δίπλωμα οδήγησης", dk_p_schein: "P-Schein", dk_id_card: "Ταυτότητα", dk_work_permit: "Άδεια διαμονής", dk_contract: "Σύμβαση εργασίας", dk_insurance: "Επιστολή ασφάλειας", dk_fine: "Πρόστιμο / ακρόαση", dk_car_letter: "Έγγραφο οχήματος", dk_hr_letter: "Επιστολή (ταμείο/αρχή)", dk_other: "Έγγραφο",
       my_receipts: "Οι αποδείξεις μου", receipts_intro: "Και παλιές φωτογραφίες από τη συλλογή, πολλές μαζί. Ο βοηθός διαβάζει κάθε απόδειξη σε περίπου 30 δευτερόλεπτα και σου δείχνει εδώ τι διάβασε.", reading_hint: "Ο βοηθός διαβάζει κατάστημα, ημερομηνία, ποσό και ΦΠΑ – περίπου 30 δευτερόλεπτα.", uploaded_at: "Στάλθηκε {n}", sent_on: "Στάλθηκαν {n}", yesterday: "Χθες", read_done: "Διαβάστηκε", vat: "ΦΠΑ", on_receipt: "Στην απόδειξη", pm_cash: "μετρητά", pm_card: "κάρτα", confirm_tap: "Πάτα την απόδειξη με το μπλε σήμα.", cat_fuel: "Καύσιμα", cat_charging: "Φόρτιση", cat_wash: "Πλύσιμο", cat_parking: "Στάθμευση", cat_toll: "Διόδια", cat_repair: "Συνεργείο", cat_car_care: "Περιποίηση", cat_office: "Γραφείο", cat_phone: "Τηλέφωνο", cat_food: "Φαγητό", cat_other: "Άλλο",
       receipt_gallery: "Από τη συλλογή", receipt_paid_hint: "Ισχύει για όλες τις φωτογραφίες. Αν η απόδειξη γράφει κάτι άλλο, ο βοηθός θα σε ρωτήσει.", send_n: "Αποστολή {n} αποδείξεων", receipts_done: "Στάλθηκαν {n} αποδείξεις. Ο βοηθός HR τις διαβάζει σε λίγο.", receipts_done_dup: "Στάλθηκαν {n}, οι {d} υπήρχαν ήδη και δεν μετράνε δύο φορές.",
       paid_company: "Χρήματα/κάρτα εταιρείας", confirm_q: "Τίνος χρήματα ήταν;", confirm_own_cash: "Δικά μου μετρητά", confirm_own_card: "Δική μου κάρτα", confirm_company: "Χρήματα της εταιρείας", rs_confirm: "Επιβεβαίωσε", confirm_home: "{n} απόδειξη(εις) περιμένουν επιβεβαίωση", flags_t: "Σημείωση",
-      ask_receipt: "Απόδειξη", receipt_title: "Προσθήκη απόδειξης", receipt_take: "Λήψη φωτογραφίας", receipt_again: "Άλλη φωτογραφία", paid_how: "Πώς πληρώθηκε;", paid_cash: "Μετρητά (δικά μου)", paid_card: "Δική μου κάρτα", paid_fuelcard: "Κάρτα καυσίμων", receipt_note: "Για τι; (προαιρετικά)", receipt_sent: "Η απόδειξη στάλθηκε. Ο βοηθός HR τη διαβάζει σε λίγο.", receipt_dup: "Αυτή την απόδειξη την έστειλες ήδη στις {n}. Δεν μετράει δύο φορές.", receipts: "Αποδείξεις", owed: "Πλήρωσες μετρητά – σου επιστρέφονται", no_receipts: "Καμία απόδειξη ακόμα.", rs_new: "Διαβάζεται", rs_read: "Διαβάστηκε", rs_duplicate: "Διπλή", rs_approved: "Εγκρίθηκε", rs_rejected: "Απορρίφθηκε", rs_settled: "Επιστράφηκε", receipt_hint: "Φωτογράφισε όλη την απόδειξη, ίσια και με καλό φως.",
+      ask_receipt: "Απόδειξη", receipt_title: "Προσθήκη απόδειξης", receipt_take: "Λήψη φωτογραφίας", receipt_again: "Άλλη φωτογραφία", paid_how: "Πώς πληρώθηκε;", paid_cash: "Μετρητά (δικά μου)", paid_card: "Δική μου κάρτα", paid_fuelcard: "Κάρτα καυσίμων", receipt_note: "Για τι; (προαιρετικά)", receipt_sent: "Η απόδειξη στάλθηκε. Ο βοηθός HR τη διαβάζει σε λίγο.", receipt_dup: "Αυτή την απόδειξη την έστειλες ήδη στις {n}. Δεν μετράει δύο φορές.", receipts: "Αποδείξεις", owed: "Πλήρωσες μετρητά – σου επιστρέφονται", no_receipts: "Καμία απόδειξη ακόμα.", rs_new: "Διαβάζεται", rs_read: "Διαβάστηκε", rs_duplicate: "Διπλή", rs_approved: "Εγκρίθηκε", rs_rejected: "Απορρίφθηκε", rs_settled: "Επιστράφηκε", receipt_hint: "Φωτογράφισε ολόκληρη τη σελίδα, ίσια και με καλό φως.",
       check: "Για ελέγχους", check_sub: "Zoll · Αστυνομία · Ordnungsamt", check_note: "Δείξε αυτή τη σελίδα σε έλεγχο. Δείξε επίσης ταυτότητα ή διαβατήριο.", show_contract: "Εμφάνιση σύμβασης εργασίας", no_contract: "Η σύμβαση δεν έχει καταχωριστεί ακόμα. Ρώτα το αφεντικό.", doc_ph: "Βεβαίωση εργασίας, σύμβαση, …",
       sec_space: "Ο χώρος μου", sec_cal: "Ημερολόγιο", sec_wallet: "Χρήματα", sec_dev: "Εξέλιξη", sec_docs: "Έγγραφα", sec_set: "Ρυθμίσεις", schedule: "Πρόγραμμα", prefs: "Προτιμήσεις", worked: "Ώρες εργασίας", prefs_sub: "Πότε προτιμάς να δουλεύεις; Το αφεντικό το βλέπει όταν φτιάχνει το πρόγραμμα.", can: "μπορώ", cannot: "όχι", save: "Αποθήκευση", saved: "Αποθηκεύτηκε", movements: "Πληρωμές", read_on: "Διαβάστηκε {n}", unread: "Νέο", support: "Βοήθεια", policy: "Κανόνες χρήσης", policy_text: "Το Transfer Team είναι μόνο για το προσωπικό του Transfer. Μη συνδέεσαι σε ξένες συσκευές και μη δίνεις το PIN σου. Όσα βλέπεις εδώ είναι προσωπικά σου στοιχεία: κράτα τα για σένα. Τις ερωτήσεις στον βοηθό HR τις απαντά ο υπολογιστής του HR· τις αποφάσεις τις παίρνει το αφεντικό.", other_docs: "Άλλα έγγραφα",
       menu: "Μενού", search: "Αναζήτηση", search_ph: "Αναζήτηση: άδεια, βάρδια, κανόνες …", no_hits: "Δεν βρέθηκε τίποτα.", c_news: "Νέα", c_company: "Για το Transfer", c_benefits: "Παροχές", c_learning: "Εκπαίδευση", c_development: "Εξέλιξη", c_guidelines: "Κανόνες", c_favs: "Αγαπημένα", no_favs: "Πάτα ☆ σε μια ανάρτηση για να τη βρίσκεις εδώ.", full_plan: "Όλο το πρόγραμμα", my_plan: "Το πρόγραμμά μου",
@@ -208,7 +214,10 @@
       ["Μετρητά και αποδείξεις", "Κάθε είσπραξη μετρητών καθημερινά στο ημερολόγιο μετρητών· αποδείξεις καυσίμων και φωτογραφίες του αυτοκινήτου στην αρχή και στο τέλος της βάρδιας στο αφεντικό. Σε προστατεύει σε κάθε εκκαθάριση."])
   ];
   function tr(p) { if (!p.tr) return p; var x = p.tr[lang] || p.tr.de; return { id: p.id, category: p.category, title: x[0], body: x[1] }; }
-  function posts() { var own = (data && data.posts) || []; return own.concat(STARTER.map(tr)); }
+  function posts() {
+    var own = ((data && data.posts) || []).map(function (p) { var x = p.i18n && p.i18n[lang]; return x && x.title ? Object.assign({}, p, { title: x.title, body: x.body || p.body }) : p; });
+    return own.concat(STARTER.map(tr));
+  }
   function favs() { try { return JSON.parse(load("team_favs") || "[]"); } catch (e) { return []; } }
   function toggleFav(id) { var f = favs(), i = f.indexOf(String(id)); if (i < 0) f.push(String(id)); else f.splice(i, 1); store("team_favs", JSON.stringify(f)); }
 
@@ -304,7 +313,7 @@
   /* ---------------- derived numbers ---------------- */
   function profile() { return (data && data.profile) || {}; }
   function leaveLeft() {
-    var p = profile(), per = p.vacation_days_per_year; if (per == null) return null;
+    var p = profile(), per = p.vacation_days_this_year != null ? p.vacation_days_this_year : p.vacation_days_per_year; if (per == null) return null;
     var y = String(new Date().getFullYear()), used = 0;
     (data.leave || []).forEach(function (l) {
       if (l.kind === "urlaub" && l.status === "approved" && String(l.from).slice(0, 4) === y) used += l.days != null ? +l.days : weekdays(l.from, l.to);
@@ -399,7 +408,7 @@
       var n = k === "chat" ? data && data.unread : k === "receipts" ? receipts && receipts.to_confirm : 0;
       var badge = n > 0 ? '<span class="badge">' + n + "</span>" : "";
       var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu"));
-      return '<button type="button" data-tab="' + k + '"' + (cur ? ' aria-current="page"' : "") + ">" + ICON[k] + "<span>" + esc(t(k)) + "</span>" + badge + "</button>";
+      return '<button type="button" data-tab="' + k + '"' + (cur ? ' aria-current="page"' : "") + ">" + ICON[k] + "<span>" + esc(t(k === "receipts" ? "up_tab" : k)) + "</span>" + badge + "</button>";
     }).join("") + "</nav>";
   }
   function tabsBadge() { var n = app.querySelector(".tabs"); if (n) { n.outerHTML = tabsHtml(); bindTabs(); } }
@@ -657,9 +666,12 @@
     var left = leaveLeft();
     h += "<h2>" + esc(t("contract")) + "</h2>" + rowsHtml([kv(t("type"), p.type ? t("t_" + p.type) : ""), kv(t("role"), p.role), kv(t("wage"), p.hourly_wage != null ? money(p.hourly_wage) : ""),
       kv(t("salary"), p.monthly_salary != null ? money(p.monthly_salary) : ""), kv(t("per_week"), p.days_per_week),
-      kv(t("leave_year"), p.vacation_days_per_year != null ? p.vacation_days_per_year + " " + t("days") : ""), kv(t("leave_left"), left == null ? "" : left + " " + t("days"))].filter(Boolean));
+      kv(t("leave_year"), p.vacation_days_per_year != null ? p.vacation_days_per_year + " " + t("days") : ""),
+      p.vacation_calc ? kv(t("leave_this_year", p.vacation_calc.year), t("leave_calc").replace("{d}", String(p.vacation_calc.days_per_week).replace(".", lang === "en" ? "." : ",")).replace("{f}", p.vacation_calc.full) +
+        (p.vacation_calc.months < 12 ? " · " + t("leave_part").replace("{m}", p.vacation_calc.months).replace("{n}", p.vacation_calc.this_year) : "")) : "",
+      kv(t("leave_left"), left == null ? "" : left + " " + t("days"))].filter(Boolean));
     // Every other field the owner keeps is shown too (owner's choice: employees see all of their data).
-    var known = ["name", "phone", "status", "type", "start", "hourly_wage", "monthly_salary", "days_per_week", "vacation_days_per_year", "documents", "role", "account", "employer", "contract_text", "birthdate"];
+    var known = ["name", "phone", "status", "type", "start", "hourly_wage", "monthly_salary", "days_per_week", "vacation_days_per_year", "vacation_days_this_year", "vacation_calc", "vacation_contract_days", "documents", "role", "account", "employer", "contract_text", "birthdate"];
     var extra = Object.keys(p).filter(function (k) { return known.indexOf(k) < 0 && (typeof p[k] !== "object" || p[k] === null); }).map(function (k) { return kv(k.replace(/_/g, " "), String(p[k])); });
     if (extra.length) h += '<div style="margin-top:12px">' + rowsHtml(extra) + "</div>";
     h += "<h2>" + esc(t("documents")) + "</h2>" + docList(p);
@@ -741,29 +753,37 @@
   }
   function receiptRow(r) {
     var d = r.data || {}, st = r.settled_at ? "settled" : d.confirm === "pending" ? "confirm" : r.status;
-    var cls = { new: "wait", confirm: "info", read: "ok", approved: "ok", settled: "ok", duplicate: "bad", rejected: "bad" }[st] || "";
+    var cls = { new: "wait", confirm: "info", read: "ok", approved: "ok", settled: "ok", filed: "ok", duplicate: "bad", rejected: "bad" }[st] || "";
     var up = new Date(r.at), time = up.toLocaleTimeString(loc(), { hour: "2-digit", minute: "2-digit" });
     if (r.status === "new") return '<div class="row" style="align-items:flex-start"><span class="spin" aria-hidden="true"></span><span class="grow"><span class="t">' + esc(t("rs_new")) + '…</span><br><span class="muted small">' +
-      esc(t("reading_hint")) + '</span><br><span class="muted small">' + esc(t("uploaded_at", time)) + "</span></span></div>";
+      esc(t(r.hint === "doc" ? "reading_doc" : "reading_hint")) + '</span><br><span class="muted small">' + esc(t("uploaded_at", time)) + "</span></span></div>";
     if (r.status === "duplicate") {
       var o = (receipts.list || []).filter(function (x) { return x.id === r.dup_of; })[0], od = (o && o.data) || {};
       d = Object.assign({}, od, d); 
     }
-    var facts = [d.date ? parse(d.date).toLocaleDateString(loc()) : "", d.category ? t("cat_" + d.category) : "", d.vat != null ? t("vat") + " " + money(d.vat) + (d.vat_rate ? " (" + d.vat_rate + " %)" : "") : ""].filter(Boolean);
+    var dt = function (x) { return x ? parse(x).toLocaleDateString(loc()) : ""; }, kind = d.kind || "receipt", isDoc = kind !== "receipt";
+    var facts = r.status === "filed" ? [d.sick && d.sick.from ? t("sick_from_to", dt(d.sick.from) + " – " + dt(d.sick.to || d.sick.from)) : "", d.expires ? t("valid_until", dt(d.expires)) : "",
+        d.hu_next ? t("hu_next", parse(d.hu_next + "-15").toLocaleDateString(loc(), { month: "long", year: "numeric" })) : "", d.hu_result || "",
+        d.deadline ? t("deadline", dt(d.deadline)) : "", d.signed ? t("signed_on", dt(d.signed)) : "", !d.sick && !d.expires && !d.signed ? dt(d.date) : ""].filter(Boolean)
+      : [dt(d.date), d.category ? t("cat_" + d.category) : "", d.vat != null ? t("vat") + " " + money(d.vat) + (d.vat_rate ? " (" + d.vat_rate + " %)" : "") : ""].filter(Boolean);
+    var route = (d.route || []).map(function (x) { return t("to_" + x); }).join(" + ");
+    var title = isDoc ? t("dk_" + kind) + (d.merchant && r.status !== "filed" ? " · " + d.merchant : "") : d.merchant || t("ask_receipt");
     var pm = d.payment || {}, onReceipt = pm.method === "cash" ? t("pm_cash") : pm.method === "card" ? t("pm_card") + (pm.card_name ? " " + pm.card_name : "") + (pm.card_last4 ? " …" + pm.card_last4 : "") : "";
-    return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start' + (fresh[r.id] ? ";background:var(--mint-soft);border-radius:12px;padding-left:8px;padding-right:8px" : "") + '" data-rimg="' + r.id + '"><span class="grow"><span class="t">' + esc(d.merchant || t("ask_receipt")) + "</span>" +
+    return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start' + (fresh[r.id] ? ";background:var(--mint-soft);border-radius:12px;padding-left:8px;padding-right:8px" : "") + '" data-rimg="' + r.id + '"><span class="grow"><span class="t">' + esc(title) + "</span>" +
       (facts.length ? '<br><span class="small">' + esc(facts.join(" · ")) + "</span>" : "") +
       (fresh[r.id] && onReceipt ? '<br><span class="small">' + esc(t("on_receipt") + ": " + onReceipt + (d.liters ? " · " + d.liters + " l" : "")) + "</span>" : "") +
       (r.status === "duplicate" ? '<br><span class="small" style="color:var(--bad,#b3261e)">' + esc(t("dup_hint")) + "</span>" : "") +
-      '<br><span class="muted small">' + esc(t("uploaded_at", time) + " · " + t("paid_" + r.paid)) + "</span></span>" +
+      (isDoc && d.summary && r.status === "filed" ? '<br><span class="small">' + esc(d.summary) + "</span>" : "") +
+      (route ? '<br><span class="small" style="font-weight:700">→ ' + esc(t("goes_to", route)) + "</span>" : "") +
+      '<br><span class="muted small">' + esc(t("uploaded_at", time) + (r.status === "filed" || r.paid === "none" ? "" : " · " + t("paid_" + r.paid))) + "</span></span>" +
       '<span style="text-align:right;white-space:nowrap"><b>' + esc(d.total != null && r.status !== "duplicate" ? money(d.total) : "") + '</b><br><span class="chip ' + cls + '">' + esc(st === "confirm" ? t("rs_confirm") : t("rs_" + st)) + "</span></span></button>";
   }
   // The receipts tab: add new ones (camera or gallery) on top, then everything sent, newest first, by the day it was sent.
   function receiptsScreen() {
-    var h = '<div class="top"><h1>' + esc(t("receipts")) + "</h1></div>";
+    var h = '<div class="top"><h1>' + esc(t("up_title")) + "</h1></div>";
     h += '<div class="grid2" style="margin-top:0"><button class="btn dark" style="height:auto;padding:18px 8px" data-rnew="cam"><span style="font-size:28px">📷</span><br>' + esc(t("receipt_take")) + '</button>' +
       '<button class="btn ghost" style="height:auto;padding:18px 8px" data-rnew="gal"><span style="font-size:28px">🖼️</span><br>' + esc(t("receipt_gallery")) + "</button></div>";
-    h += '<p class="muted small" style="margin:10px 2px 0">' + esc(t("receipts_intro")) + "</p>";
+    h += '<p class="muted small" style="margin:10px 2px 0">' + esc(t("up_intro")) + "</p>";
     if (!receipts) { loadReceipts(); return h + '<div class="empty">…</div>'; }
     if (receipts.to_confirm > 0) h += '<div class="card" style="background:#e6f0fd;margin-top:14px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + '</b><div class="muted small">' + esc(t("confirm_tap")) + "</div></div>";
     if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed2")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
@@ -771,7 +791,7 @@
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
     var groups = [], last = null;
     list.forEach(function (r) { var k = dayLabel(new Date(r.at)); if (k !== last) { groups.push({ k: k, a: [] }); last = k; } groups[groups.length - 1].a.push(r); });
-    h += "<h2>" + esc(t("my_receipts")) + " (" + list.length + ")</h2>";
+    h += "<h2>" + esc(t("up_list")) + " (" + list.length + ")</h2>";
     return h + groups.map(function (g) { return '<div class="muted small" style="margin:14px 2px 6px;font-weight:700">' + esc(g.k) + '</div><div class="card" style="padding:4px 14px">' + g.a.map(receiptRow).join("") + "</div>"; }).join("");
   }
   function secWallet() {
@@ -860,20 +880,25 @@
     });
   }
   function receiptSheet(mode) {
-    var imgs = [], paid = "fuelcard";
-    openSheet('<h2 style="margin-top:0">' + esc(t("receipt_title")) + '</h2><p class="muted small">' + esc(t("receipt_hint")) + "</p>" +
+    var imgs = [], paid = "fuelcard", hint = "receipt";
+    openSheet('<h2 style="margin-top:0">' + esc(t("up_title")) + '</h2><p class="muted small">' + esc(t("receipt_hint")) + "</p>" +
       '<input type="file" accept="image/*" capture="environment" id="rcam" style="display:none">' +
       '<input type="file" accept="image/*" multiple id="rgal" style="display:none">' +
       '<div class="two"><button class="btn dark" id="rtake">📷 ' + esc(t("receipt_take")) + '</button><button class="btn ghost" id="rpick">🖼️ ' + esc(t("receipt_gallery")) + "</button></div>" +
       '<div id="rprev" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px"></div>' +
-      '<label class="f">' + esc(t("paid_how")) + '</label><div class="seg" id="rpaid" style="flex-wrap:wrap">' + ["fuelcard", "company", "cash", "card"].map(function (k) {
+      '<label class="f">' + esc(t("up_what")) + '</label><div class="seg" id="rhint">' + ["receipt", "doc"].map(function (k) {
+        return '<button type="button" data-h="' + k + '" aria-pressed="' + (k === hint) + '">' + esc(t("up_" + k)) + "</button>"; }).join("") + "</div>" +
+      '<p class="muted small" id="rdochint" style="margin:6px 2px 0;display:none">' + esc(t("up_doc_hint")) + "</p>" +
+      '<div id="rpaybox"><label class="f">' + esc(t("paid_how")) + '</label><div class="seg" id="rpaid" style="flex-wrap:wrap">' + ["fuelcard", "company", "cash", "card"].map(function (k) {
         return '<button type="button" data-p="' + k + '" aria-pressed="' + (k === paid) + '">' + esc(t("paid_" + k)) + "</button>"; }).join("") + "</div>" +
-      '<p class="muted small" style="margin:6px 2px 0">' + esc(t("receipt_paid_hint")) + "</p>" +
+      '<p class="muted small" style="margin:6px 2px 0">' + esc(t("receipt_paid_hint")) + "</p></div>" +
       '<label class="f" for="rnote">' + esc(t("receipt_note")) + '</label><input class="in" id="rnote">' +
       '<div style="display:grid;gap:10px;margin-top:16px"><button class="btn" id="rsend" disabled>' + esc(t("send")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
       var cam = s.querySelector("#rcam"), gal = s.querySelector("#rgal"), send = s.querySelector("#rsend");
       s.querySelector("#rtake").onclick = function () { picking(); cam.click(); };
       s.querySelector("#rpick").onclick = function () { picking(); gal.click(); };
+      s.querySelectorAll("[data-h]").forEach(function (b) { b.onclick = function () { hint = b.dataset.h; s.querySelectorAll("[data-h]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        s.querySelector("#rpaybox").style.display = hint === "doc" ? "none" : ""; s.querySelector("#rdochint").style.display = hint === "doc" ? "" : "none"; }; });
       s.querySelectorAll("[data-p]").forEach(function (b) { b.onclick = function () { paid = b.dataset.p; s.querySelectorAll("[data-p]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); }; });
       function draw() {
         s.querySelector("#rprev").innerHTML = imgs.map(function (src, i) {
@@ -904,7 +929,7 @@
           return p.then(function () {
             send.textContent = (i + 1) + " / " + list.length + " …";
             return sha256(src).then(function (sha) {
-              return rpc("team_receipt_add", { p_token: token, p_image: src, p_sha: sha, p_paid: paid, p_note: note });
+              return rpc("team_receipt_add", { p_token: token, p_image: src, p_sha: sha, p_paid: hint === "doc" ? "none" : paid, p_note: note, p_hint: hint });
             }).then(function (r) { receipts = r.receipts; if (r.duplicate) dups++; else sent++; });
           });
         }, Promise.resolve()).then(function () {
@@ -920,7 +945,14 @@
     var d = r.data || {}, rows = [[t("date"), d.date ? parse(d.date).toLocaleDateString(loc()) : ""], ["€", d.total != null ? money(d.total) : ""],
       [lang === "de" ? "MwSt." : lang === "el" ? "ΦΠΑ" : "VAT", d.vat != null ? money(d.vat) + (d.vat_rate ? " (" + d.vat_rate + " %)" : "") : ""], ["Nr.", d.number || ""],
       [t("paid_how"), t("paid_" + r.paid)], [t("receipt_note"), r.note || ""]].filter(function (x) { return x[1]; });
-    openSheet('<h2 style="margin-top:0">' + esc(d.merchant || t("ask_receipt")) + '</h2><div id="rimg" class="card" style="text-align:center">…</div>' +
+    var kind = d.kind || "receipt", route = (d.route || []).map(function (x) { return t("to_" + x); }).join(" + ");
+    if (d.sick && d.sick.from) rows.unshift([t("dk_sick_note"), parse(d.sick.from).toLocaleDateString(loc()) + " – " + parse(d.sick.to || d.sick.from).toLocaleDateString(loc())]);
+    if (d.expires) rows.unshift([t("valid_until", ""), parse(d.expires).toLocaleDateString(loc())]);
+    if (d.hu_next) rows.unshift([t("hu_next", ""), d.hu_next.split("-").reverse().join("/")]);
+    if (d.deadline) rows.unshift([t("deadline", ""), parse(d.deadline).toLocaleDateString(loc())]);
+    if (route) rows.push(["→", t("goes_to", route)]);
+    if (r.paid === "none") rows = rows.filter(function (x) { return x[0] !== t("paid_how"); });
+    openSheet('<h2 style="margin-top:0">' + esc(kind !== "receipt" ? t("dk_" + kind) : d.merchant || t("ask_receipt")) + '</h2>' + (d.summary && kind !== "receipt" ? '<p class="small">' + esc(d.summary) + "</p>" : "") + '<div id="rimg" class="card" style="text-align:center">…</div>' +
       '<div class="card" style="padding:4px 14px;margin-top:12px">' + rows.map(function (x) { return kv(x[0], x[1]); }).join("") + "</div>" +
       (d.items ? '<p class="muted small" style="margin:10px 2px">' + esc([].concat(d.items).join(", ")) + "</p>" : "") +
       (d.confirm === "pending" ? '<h2>' + esc(t("confirm_q")) + '</h2><div style="display:grid;gap:8px">' + [["cash", "confirm_own_cash"], ["card", "confirm_own_card"], ["company", "confirm_company"]].map(function (x) {
@@ -933,6 +965,7 @@
       }; });
       rpc("team_receipt_image", { p_token: token, p_id: id }).then(function (src) {
         if (src && /^data:image\//.test(src)) s.querySelector("#rimg").innerHTML = '<img src="' + src + '" alt="" style="max-width:100%;max-height:420px;border-radius:12px">';
+        else s.querySelector("#rimg").innerHTML = '<span class="muted small">🔒 ' + esc(t("photo_gone")) + "</span>";
       }).catch(function () {});
     });
   }
@@ -957,7 +990,9 @@
     function d(n) { var x = new Date(); x.setDate(x.getDate() + n); return ymd(x); }
     var demoReceipts = { owed: 62.4, list: [{ id: 1, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Shell Stuttgart-Feuerbach", date: d(-1), total: 62.4, vat: 9.96, vat_rate: 19, number: "4711" } },
       { id: 2, at: new Date().toISOString(), paid: "fuelcard", status: "read", data: { merchant: "Aral Flughafen", date: d(-3), total: 71.1, vat: 11.35, vat_rate: 19 } },
-      { id: 3, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Waschpark Stuttgart", date: d(0), total: 14.9, vat: 2.38, vat_rate: 19, confirm: "pending" } }], to_confirm: 1 };
+      { id: 3, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Waschpark Stuttgart", date: d(0), total: 14.9, vat: 2.38, vat_rate: 19, confirm: "pending" } },
+      { id: 4, at: new Date().toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "sick_note", sick: { from: d(0), to: d(2) }, route: ["hr"], summary: "Arbeitsunfähigkeitsbescheinigung" } },
+      { id: 5, at: new Date(Date.now() - 864e5).toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "hu_report", hu_next: "2027-11", hu_result: "ohne Mängel", route: ["fleet"], summary: "HU-Prüfbericht, keine Mängel" } }], to_confirm: 1 };
     var msgs = [], reqs = [{ id: 1, at: new Date(Date.now() - 2 * 864e5).toISOString(), kind: "leave", text: "Urlaub für Familienbesuch", details: { from: d(20), to: d(24) }, status: "with_owner", answer: "Danke, ich habe deinen Urlaub an den Chef weitergegeben. Du bekommst Bescheid, sobald er entschieden hat." }];
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
@@ -984,7 +1019,7 @@
           return ok(msgs.slice());
         }
         if (fn === "team_receipts") return ok(demoReceipts);
-        if (fn === "team_receipt_add") { var dup = demoReceipts.list.some(function (x) { return x.sha === a.p_sha; }); demoReceipts.list.unshift({ id: demoReceipts.list.length + 10, at: new Date().toISOString(), paid: a.p_paid, note: a.p_note, status: dup ? "duplicate" : "new", data: {}, sha: a.p_sha }); return ok({ duplicate: dup, duplicate_at: new Date().toISOString(), receipts: demoReceipts }); }
+        if (fn === "team_receipt_add") { var dup = demoReceipts.list.some(function (x) { return x.sha === a.p_sha; }); demoReceipts.list.unshift({ id: demoReceipts.list.length + 10, at: new Date().toISOString(), paid: a.p_paid, note: a.p_note, status: dup ? "duplicate" : "new", hint: a.p_hint, data: {}, sha: a.p_sha }); return ok({ duplicate: dup, duplicate_at: new Date().toISOString(), receipts: demoReceipts }); }
         if (fn === "team_receipt_image") return ok(null);
         if (fn === "team_receipt_confirm") { demoReceipts.list.forEach(function (x) { if (x.id === a.p_id) { x.paid = a.p_paid; x.data.confirm = "done"; } }); demoReceipts.to_confirm = 0; if (a.p_paid !== "company") demoReceipts.owed += 14.9; return ok(demoReceipts); }
         if (fn === "team_prefs") { home.prefs = a.p_prefs; return ok(JSON.parse(JSON.stringify(home))); }
