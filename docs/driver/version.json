@@ -1,10 +1,10 @@
 {
- "versionCode": 69,
- "versionName": "3.61",
- "sha256": "c0b6c666e6a1d4a55d85e9892388621ca0c563c1f35172c2c68e901fcc3175c9",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-69.apk",
- "notes": "Termin wird aktiv, wenn du losfahren musst: Fahrzeit zum Kunden + 15 Minuten",
- "notes_de": "Termin wird aktiv, wenn du losfahren musst: Fahrzeit zum Kunden + 15 Minuten",
- "notes_en": "A booking becomes current when it is time to leave: drive to the customer + 15 minutes",
- "notes_el": "Η κράτηση γίνεται ενεργή όταν πρέπει να ξεκινήσεις: χρόνος μέχρι τον πελάτη + 15 λεπτά"
+ "versionCode": 70,
+ "versionName": "3.62",
+ "sha256": "2f619af8d40fdf01b1da54b59c038e7ecc124bc67e65a68172d9f2d19e5e008a",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-70.apk",
+ "notes": "Discover neu: Karussell, Karten zum Wischen, Bewegung; Sperrbildschirm-Erlaubnis bleibt nach Updates",
+ "notes_de": "Discover neu: Karussell, Karten zum Wischen, Bewegung; Sperrbildschirm-Erlaubnis bleibt nach Updates",
+ "notes_en": "New Discover: carousel, swipe cards, motion; lock-screen permission stays after updates",
+ "notes_el": "Νέο Discover: carousel, κάρτες, κίνηση· η άδεια πλήρους οθόνης δεν ζητιέται ξανά μετά από update"
 }
