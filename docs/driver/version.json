@@ -1,10 +1,10 @@
 {
- "versionCode": 65,
- "versionName": "3.57",
- "sha256": "b85c3b72eb1f22559ee30c775ed3b77ecd735dd77e7022daaef3b7f3dd88fd89",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-65.apk",
- "notes": "Ganze Fahrt antippen öffnet sie; Stornieren in der Fahrt, mit Warnung",
- "notes_de": "Ganze Fahrt antippen öffnet sie; Stornieren in der Fahrt, mit Warnung",
- "notes_en": "Tap the whole ride to open it; cancel inside the ride, with a warning",
- "notes_el": "Πατάς όλη τη διαδρομή και ανοίγει· ακύρωση μέσα στη διαδρομή, με προειδοποίηση"
+ "versionCode": 66,
+ "versionName": "3.58",
+ "sha256": "5b51540ffa56d635124e0d13cbd6fa58e32831a9be115bc4c073bbeed7ef2e36",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-66.apk",
+ "notes": "Stornieren jetzt oben in der Fahrt, ohne Scrollen",
+ "notes_de": "Stornieren jetzt oben in der Fahrt, ohne Scrollen",
+ "notes_en": "Cancel now at the top of the ride, no scrolling",
+ "notes_el": "Η ακύρωση είναι πλέον πάνω πάνω στη διαδρομή, χωρίς scroll"
 }
