@@ -1,10 +1,10 @@
 {
- "versionCode": 63,
- "versionName": "3.55",
- "sha256": "2b2b6d145e952912e1885ddb9f4cb003f2bd7b7ec5a3cbb06139c795756b7247",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-63.apk",
- "notes": "Info bei einer gebuchten Fahrt: eigene Seite mit Karte, Uhrzeiten, Losfahrzeit, Stopps und Fahrgast",
- "notes_de": "Info bei einer gebuchten Fahrt: eigene Seite mit Karte, Uhrzeiten, Losfahrzeit, Stopps und Fahrgast",
- "notes_en": "Info on a booked ride: its own page with map, times, leave-by time, stops and passenger",
- "notes_el": "Info σε κλεισμένη διαδρομή: δική της σελίδα με χάρτη, ώρες, ώρα αναχώρησης, στάσεις και επιβάτη"
+ "versionCode": 64,
+ "versionName": "3.56",
+ "sha256": "3a6196a3fe5f1402967a030ab20219a65fd434de5e227a19cc83b563c60c1a7d",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-64.apk",
+ "notes": "Fahrgast woanders abgeholt: Einsteigen auch weg von der Abholadresse, mit Prüfung",
+ "notes_de": "Fahrgast woanders abgeholt: Einsteigen auch weg von der Abholadresse, mit Prüfung",
+ "notes_en": "Passenger picked up elsewhere: let them in away from the pick-up address, with a check",
+ "notes_el": "Παραλαβή από άλλο σημείο: ο επιβάτης μπαίνει και μακριά από τη διεύθυνση, με επιβεβαίωση"
 }
