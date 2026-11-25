@@ -1,10 +1,10 @@
 {
- "versionCode": 68,
- "versionName": "3.60",
- "sha256": "519ddd4c7d714b196eca29126db306584a7617741e72df69f0f2a72fb04baf1a",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-68.apk",
- "notes": "Testfahrten verschwinden nach dem Stornieren",
- "notes_de": "Testfahrten verschwinden nach dem Stornieren",
- "notes_en": "Test rides disappear once cancelled",
- "notes_el": "Οι δοκιμαστικές παραγγελίες εξαφανίζονται μετά την ακύρωση"
+ "versionCode": 69,
+ "versionName": "3.61",
+ "sha256": "c0b6c666e6a1d4a55d85e9892388621ca0c563c1f35172c2c68e901fcc3175c9",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-69.apk",
+ "notes": "Termin wird aktiv, wenn du losfahren musst: Fahrzeit zum Kunden + 15 Minuten",
+ "notes_de": "Termin wird aktiv, wenn du losfahren musst: Fahrzeit zum Kunden + 15 Minuten",
+ "notes_en": "A booking becomes current when it is time to leave: drive to the customer + 15 minutes",
+ "notes_el": "Η κράτηση γίνεται ενεργή όταν πρέπει να ξεκινήσεις: χρόνος μέχρι τον πελάτη + 15 λεπτά"
 }
