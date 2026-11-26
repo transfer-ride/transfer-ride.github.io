@@ -1,10 +1,10 @@
 {
- "versionCode": 71,
- "versionName": "3.63",
- "sha256": "93e1d88bc2be6847e2cccc99feb214f5570849b5718010cd8b909f3fd5bb3224",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-71.apk",
- "notes": "Weniger Akku: GPS nur bei Fahrten, App schläft wenn geschlossen. Erinnerungen auch ohne Netz. Nachrichten mit Text. Fehler behoben.",
- "notes_de": "Weniger Akku: GPS nur bei Fahrten, App schläft wenn geschlossen. Erinnerungen auch ohne Netz. Nachrichten mit Text. Fehler behoben.",
- "notes_en": "Less battery: GPS only near rides, app sleeps when closed. Reminders work offline. Messages show the text. Bug fixes.",
- "notes_el": "Λιγότερη μπαταρία: GPS μόνο κοντά σε διαδρομή, η εφαρμογή κοιμάται όταν είναι κλειστή. Υπενθυμίσεις και χωρίς ίντερνετ. Μηνύματα με κείμενο. Διορθώσεις."
+ "versionCode": 72,
+ "versionName": "3.64",
+ "sha256": "8254ef6cca1120e2cd386fa5e81bd455bd340a5f558c21061c0a5c9ba183920f",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-72.apk",
+ "notes": "Schönere Übergänge: Karte blendet weich ein, Karten gleiten, Tagesverdienst zählt hoch. Tagesverdienst aktualisiert sich auch wenn die Fahrt woanders endet.",
+ "notes_de": "Schönere Übergänge: Karte blendet weich ein, Karten gleiten, Tagesverdienst zählt hoch. Tagesverdienst aktualisiert sich auch wenn die Fahrt woanders endet.",
+ "notes_en": "Smoother: the map fades in, cards slide, today's earnings count up and update even when a ride ends elsewhere.",
+ "notes_el": "Πιο ομαλή εμφάνιση: ο χάρτης εμφανίζεται απαλά, οι κάρτες γλιστράνε, τα σημερινά κέρδη μετράνε προς τα πάνω και ενημερώνονται και όταν η διαδρομή τελειώνει αλλού."
 }
