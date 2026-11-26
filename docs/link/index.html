@@ -140,13 +140,10 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
 .jobs a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #3a3a3a; text-decoration: none; font-weight: 600; font-size: 15px; transition: border-color .2s, background .2s; }
 .jobs a:hover { border-color: var(--mint); background: rgba(61, 220, 132, .08); }
 .jobs a svg { width: 18px; height: 18px; fill: var(--mint); }
-.jobs .roles { display: flex; gap: 8px; overflow: hidden; margin: 0 -18px 14px; padding: 0 18px;
-  -webkit-mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
-.jobs .roles div { display: flex; gap: 8px; flex: none; animation: slide 18s linear infinite; }
+.jobs .roles { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
 .jobs .roles span { flex: none; font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; white-space: nowrap; }
-@keyframes slide { to { transform: translateX(calc(-100% - 8px)); } }
 @media (prefers-reduced-motion: reduce) {
-  .bg::before, .bg::after, .ring::before, .pill-main::after, .jobs, .jobs::before, .jobs .soon, .jobs .roles div { animation: none; }
+  .bg::before, .bg::after, .ring::before, .pill-main::after, .jobs, .jobs::before, .jobs .soon { animation: none; }
   .pill-main::after { display: none; }
   .pill .ic { transition: none; }
 }
@@ -262,7 +259,7 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
   <section class="jobs" aria-labelledby="jobs-title">
     <div class="top"><h2 id="jobs-title" data-t="jobT"></h2><span class="soon" data-t="jobSoon"></span></div>
     <p data-t="jobP"></p>
-    <div class="roles" aria-hidden="true"><div><span data-t="r1"></span><span data-t="r2"></span><span data-t="r3"></span><span data-t="r4"></span></div><div><span data-t="r1"></span><span data-t="r2"></span><span data-t="r3"></span><span data-t="r4"></span></div></div>
+    <div class="roles"><span data-t="r1"></span><span data-t="r2"></span><span data-t="r3"></span><span data-t="r4"></span></div>
     <a href="https://wa.me/4915777104912?text=Hallo%20Transfer%2C%20ich%20m%C3%B6chte%20in%20Zukunft%20bei%20Transfer%20mitarbeiten." id="job-link" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-t="jobBtn"></span></a>
   </section>
 
