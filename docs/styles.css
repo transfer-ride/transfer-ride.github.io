@@ -561,3 +561,19 @@ body.riding .hero-grid > .card { grid-column: 1; grid-row: auto; animation: ride
 .live-route li::marker { color: var(--muted); }
 .live-route p { margin: 6px 0 0; font-weight: 600; }
 .live-route p.changed { color: #0a7a3f; }
+
+/* "Transfer as an app" hint (install.js): slides up from the bottom, above the safe area. */
+.ins { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 30; display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 14px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 50px rgba(0,0,0,.55); transform: translateY(140%); opacity: 0; transition: transform .45s var(--ease), opacity .3s; max-width: 520px; margin: 0 auto; }
+.ins.on { transform: none; opacity: 1; }
+.ins img { border-radius: 11px; flex: none; }
+.ins-txt { display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.35; flex: 1; min-width: 0; }
+.ins-txt strong { font-size: 15px; }
+.ins-txt span { color: var(--muted); }
+.ins-txt b { color: var(--fg); font-weight: 600; }
+.ins-share { display: inline-block; width: 14px; height: 17px; vertical-align: -3px; background: no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 18' fill='none' stroke='%233ddc84' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 11V1M3.5 4.5 7 1l3.5 3.5M4 7H2v10h10V7h-2'/%3E%3C/svg%3E"); }
+.ins button { flex: none; border: 0; border-radius: 12px; font: inherit; font-weight: 600; padding: 10px 12px; cursor: pointer; }
+.ins-add { background: var(--mint); color: #000; }
+.ins-no { background: transparent; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .ins { transition: none; } }
+/* Opened from the home screen: room for the iPhone status bar. */
+.as-app .nav { padding-top: env(safe-area-inset-top); background: #000; }
