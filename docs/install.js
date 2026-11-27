@@ -7,7 +7,8 @@
   // ?ins=1 shows the iPhone hint anywhere (for testing).
   var ios = /[?&]ins=1/.test(location.search) || (/iPhone|iPad|iPod/.test(ua) && /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS/.test(ua));
   var key = "transfer-install-later";
-  function later() { try { return Date.now() < +(localStorage.getItem(key) || 0); } catch (e) { return false; } }
+  var now = /[?&]install=1/.test(location.search); // from the app buttons on /link: show at once
+  function later() { if (now) return false; try { return Date.now() < +(localStorage.getItem(key) || 0); } catch (e) { return false; } }
   function hide(el) { el.classList.remove("on"); setTimeout(function () { el.remove(); }, 400);
     try { localStorage.setItem(key, String(Date.now() + 14 * 864e5)); } catch (e) {} }
   var lang = (document.documentElement.lang || navigator.language || "de").slice(0, 2);
@@ -36,6 +37,7 @@
   // Not at once: after 12 seconds or the first scroll down, when the visitor has seen what Transfer is.
   function soon(fn) {
     var done = false; function go() { if (done) return; done = true; fn(); }
+    if (now) return setTimeout(go, 600);
     setTimeout(go, 12000);
     window.addEventListener("scroll", function s() { if (window.scrollY > 600) { window.removeEventListener("scroll", s); go(); } }, { passive: true });
   }
