@@ -1614,5 +1614,21 @@
     } };
   })();
 
+  // Pull down at the top of a screen to reload (the Android app has no reload button).
+  (function () {
+    var y0 = null, pulled = 0, tip = null;
+    document.addEventListener("touchstart", function (e) { y0 = (window.scrollY <= 0 && token && tab !== "chat" && !sheet && e.touches.length === 1) ? e.touches[0].clientY : null; pulled = 0; }, { passive: true });
+    document.addEventListener("touchmove", function (e) {
+      if (y0 == null) return; pulled = e.touches[0].clientY - y0;
+      if (pulled > 20) {
+        if (!tip) { tip = document.createElement("div"); tip.style.cssText = "position:fixed;left:50%;top:calc(var(--safe-t) + 8px);transform:translateX(-50%);z-index:60;background:var(--ink-bg);color:#fff;border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px;transition:opacity .2s"; document.body.appendChild(tip); }
+        tip.textContent = pulled > 80 ? "↻" : "↓"; tip.style.opacity = Math.min(1, pulled / 80);
+      }
+    }, { passive: true });
+    document.addEventListener("touchend", function () {
+      var go2 = y0 != null && pulled > 80; y0 = null;
+      if (tip) { var x = tip; tip = null; if (!go2) x.remove(); else { x.textContent = "↻ …"; refresh().then(function () { return loadReceipts(); }).then(function () { if (tab === "team") { tmList = null; tmPerson = null; } if (tab === "bills" || tab === "reports") ownAll = null; if (!sheet) render(); }).catch(function () {}).then(function () { x.remove(); }); } }
+    }, { passive: true });
+  })();
   if (token) start(); else pinScreen();
 })();
