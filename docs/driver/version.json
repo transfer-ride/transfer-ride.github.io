@@ -1,10 +1,10 @@
 {
- "versionCode": 77,
- "versionName": "3.69",
- "sha256": "9bdebd97ac61d5d4b771e97d77ce1da0228e9ddb7ceada538aad6d1f85d3dcd9",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-77.apk",
- "notes": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke – jetzt auch, wenn die App schläft.",
- "notes_de": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke – jetzt auch, wenn die App schläft.",
- "notes_en": "A new request rings once as usual; still open after 10 minutes, it rings twice at full volume – now also while the app sleeps.",
- "notes_el": "Νέο αίτημα: μία φορά κανονικά· αν μείνει ανοιχτό 10 λεπτά, δύο φορές στη μέγιστη ένταση – τώρα και όταν η εφαρμογή κοιμάται."
+ "versionCode": 78,
+ "versionName": "3.70",
+ "sha256": "8f9460cb73eade6c4088ca1de9d83a7d78e8c9068e0d40ec71254bb10927b17d",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-78.apk",
+ "notes": "Offline wie bei Uber: auf 'Bereit' tippen oder nach oben wischen, dann der runde Knopf. Keine falsche 'GPS verloren'-Meldung mehr im Stand. Die App weckt das Handy nur noch für eine Anfrage.",
+ "notes_de": "Offline wie bei Uber: auf 'Bereit' tippen oder nach oben wischen, dann der runde Knopf. Keine falsche 'GPS verloren'-Meldung mehr im Stand. Die App weckt das Handy nur noch für eine Anfrage.",
+ "notes_en": "Offline like Uber: tap or swipe up on 'Ready', then the round button. No more false 'GPS lost' while standing still. The app only wakes the phone for a request.",
+ "notes_el": "Εκτός σύνδεσης όπως στο Uber: πάτα ή σύρε πάνω το «Έτοιμος» και μετά το στρογγυλό κουμπί. Τέλος το ψεύτικο «χάθηκε το GPS» όταν στέκεσαι. Η εφαρμογή ξυπνάει το κινητό μόνο για αίτημα."
 }
