@@ -25,7 +25,7 @@
       app: "Team", pin: "PIN eingeben", pin_sub: "Dein 4-stelliger PIN", mobile_no: "Deine Handynummer", phone_bad: "Bitte die Handynummer prüfen.", wrong: "Falscher PIN. Noch {n} Versuche.",
       locked: "Zu viele Versuche. Bitte später noch einmal.", offline: "Keine Verbindung. Bitte später noch einmal.",
       home: "Start", plan: "Plan", requests: "Anträge", chat: "HR-Chat", profile: "Profil",
-      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
+      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", seg_rcpt: "Belege", seg_docs: "Unterlagen", seg_proof: "Nachweise", all_months: "Alle", sum_total: "Summe", sum_vat: "davon MwSt", sum_counted: "zählt", inv_missing: "Rechnung fehlt", inv_missing_top: "Hier fehlt noch die echte Rechnung", seg_empty: "Hier ist noch nichts.", dk_payment_confirmation: "Zahlungsnachweis", dk_order_confirmation: "Bestellbestätigung", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
       leave_left: "Urlaub übrig", days: "Tage", hours_month: "Stunden diesen Monat", open_req: "Offene Anträge",
       ask_leave: "Urlaub", ask_sick: "Krank melden", ask_swap: "Schicht tauschen", ask_raise: "Gehalt", ask_doc: "Dokument",
       ask_payslip: "Lohnzettel", ask_other: "Sonstiges", ask_chat: "Frag HR",
@@ -65,7 +65,7 @@
       app: "Team", pin: "Enter your PIN", pin_sub: "Your 4-digit PIN", mobile_no: "Your mobile number", phone_bad: "Please check the mobile number.", wrong: "Wrong PIN. {n} tries left.",
       locked: "Too many tries. Please try later.", offline: "No connection. Please try later.",
       home: "Home", plan: "Schedule", requests: "Requests", chat: "HR chat", profile: "Profile",
-      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
+      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", seg_rcpt: "Receipts", seg_docs: "Documents", seg_proof: "Proofs", all_months: "All", sum_total: "Total", sum_vat: "VAT in it", sum_counted: "counted", inv_missing: "Invoice missing", inv_missing_top: "The real invoice is still missing", seg_empty: "Nothing here yet.", dk_payment_confirmation: "Proof of payment", dk_order_confirmation: "Order confirmation", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
       leave_left: "Leave left", days: "days", hours_month: "Hours this month", open_req: "Open requests",
       ask_leave: "Leave", ask_sick: "Call in sick", ask_swap: "Swap shift", ask_raise: "Pay", ask_doc: "Document",
       ask_payslip: "Payslip", ask_other: "Other", ask_chat: "Ask HR",
@@ -105,7 +105,7 @@
       app: "Team", pin: "Βάλε το PIN", pin_sub: "Το 4ψήφιο PIN σου", mobile_no: "Το κινητό σου", phone_bad: "Έλεγξε τον αριθμό του κινητού.", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
       locked: "Πολλές προσπάθειες. Δοκίμασε αργότερα.", offline: "Χωρίς σύνδεση. Δοκίμασε αργότερα.",
       home: "Αρχική", plan: "Πρόγραμμα", requests: "Αιτήματα", chat: "Chat HR", profile: "Προφίλ",
-      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
+      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", seg_rcpt: "Αποδείξεις", seg_docs: "Δικαιολογητικά", seg_proof: "Αποδεικτικά", all_months: "Όλα", sum_total: "Σύνολο", sum_vat: "από αυτά ΦΠΑ", sum_counted: "μετράνε", inv_missing: "Λείπει τιμολόγιο", inv_missing_top: "Εδώ λείπει ακόμα το κανονικό τιμολόγιο", seg_empty: "Δεν υπάρχει τίποτα εδώ ακόμα.", dk_payment_confirmation: "Αποδεικτικό πληρωμής", dk_order_confirmation: "Επιβεβαίωση παραγγελίας", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
       leave_left: "Άδεια που απομένει", days: "μέρες", hours_month: "Ώρες αυτόν τον μήνα", open_req: "Ανοιχτά αιτήματα",
       ask_leave: "Άδεια", ask_sick: "Ασθένεια", ask_swap: "Αλλαγή βάρδιας", ask_raise: "Μισθός", ask_doc: "Έγγραφο",
       ask_payslip: "Μισθοδοσία", ask_other: "Άλλο", ask_chat: "Ρώτα το HR",
@@ -421,6 +421,8 @@
   function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; } tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts") loadReceipts(); }
   function bind() {
     bindTabs(); bindTeam();
+    app.querySelectorAll("[data-rseg]").forEach(function (b) { b.onclick = function () { rSeg = b.dataset.rseg; rMonth = ""; store("team_rseg", rSeg); render(); }; });
+    app.querySelectorAll("[data-rmonth]").forEach(function (b) { b.onclick = function () { rMonth = b.dataset.rmonth; render(); }; });
     app.querySelectorAll("[data-ask]").forEach(function (b) { b.onclick = function () { askSheet(b.dataset.ask); }; });
     app.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { go(b.dataset.go); }; });
     app.querySelectorAll("[data-q]").forEach(function (b) { b.onclick = function () { go("chat"); setTimeout(function () { sendChat(b.dataset.q); }, 50); }; });
@@ -830,6 +832,7 @@
   function receiptRow(r) {
     var d = r.data || {}, st = r.settled_at ? "settled" : d.approve === "pending" && r.status !== "rejected" ? "approve" : d.confirm === "pending" ? "confirm" : r.status;
     var cls = { new: "wait", approve: "info", confirm: "info", read: "ok", approved: "ok", settled: "ok", filed: "ok", duplicate: "bad", rejected: "bad" }[st] || "";
+    if (d.invoice_missing && r.status !== "rejected") cls = "wait";
     var up = new Date(r.at), time = up.toLocaleTimeString(loc(), { hour: "2-digit", minute: "2-digit" });
     if (r.status === "new") return '<div class="row" style="align-items:flex-start"><span class="spin" aria-hidden="true"></span><span class="grow"><span class="t">' + esc(t("rs_new")) + '…</span><br><span class="muted small">' +
       esc(t(r.hint === "doc" ? "reading_doc" : "reading_hint")) + '</span><br><span class="muted small">' + esc(t("uploaded_at", time)) + "</span></span></div>";
@@ -853,7 +856,7 @@
       (isDoc && d.summary && r.status === "filed" ? '<br><span class="small">' + esc(d.summary) + "</span>" : "") +
       (route ? '<br><span class="small" style="font-weight:700">→ ' + esc(t("goes_to", route)) + "</span>" : "") +
       '<br><span class="muted small">' + esc(t("uploaded_at", time) + (r.status === "filed" || r.paid === "none" ? "" : " · " + t("paid_" + r.paid))) + "</span></span>" +
-      '<span style="text-align:right;white-space:nowrap"><b>' + esc(d.total != null && r.status !== "duplicate" ? money(d.total) : "") + '</b><br><span class="chip ' + cls + '">' + esc(st === "confirm" ? t("rs_confirm") : st === "approve" ? t("rs_approve") : d.approve === "no" ? t("ap_cancelled") : t("rs_" + st)) + "</span></span></button>";
+      '<span style="text-align:right;white-space:nowrap"><b>' + esc(d.total != null && r.status !== "duplicate" ? money(d.total) : "") + '</b><br><span class="chip ' + cls + '">' + esc(d.invoice_missing && r.status !== "rejected" ? t("inv_missing") : st === "confirm" ? t("rs_confirm") : st === "approve" ? t("rs_approve") : d.approve === "no" ? t("ap_cancelled") : t("rs_" + st)) + "</span></span></button>";
   }
   // The receipts tab: add new ones (camera or gallery) on top, then everything sent, newest first, by the day it was sent.
   function receiptsScreen() {
@@ -866,10 +869,50 @@
     if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed2")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
     var list = (receipts.list || []).filter(function (r) { return !(r.data && r.data.removed); });
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
+    // Three kinds, each its own list: receipts (money spent), documents (licences, insurance, letters, sick notes),
+    // proofs (payment / order confirmations waiting for their real invoice). Proofs without an invoice stay on top.
+    var cnt = { rcpt: 0, docs: 0, proof: 0 }; list.forEach(function (r) { cnt[rKind(r)]++; });
+    if (!cnt[rSeg]) rSeg = cnt.rcpt ? "rcpt" : cnt.docs ? "docs" : cnt.proof ? "proof" : "rcpt";
+    var missing = list.filter(function (r) { return r.data && r.data.invoice_missing && r.status !== "rejected"; });
+    if (missing.length) h += '<h2>' + esc(t("inv_missing_top")) + '</h2><div class="card" style="padding:4px 14px;background:#fff4e5">' + missing.map(receiptRow).join("") + "</div>";
+    h += '<div class="seg" role="tablist" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:18px;padding:4px;border-radius:14px;background:var(--soft,#eef2f0)">' +
+      ["rcpt", "docs", "proof"].map(function (k) {
+        var on = rSeg === k;
+        return '<button type="button" role="tab" aria-selected="' + on + '" data-rseg="' + k + '" style="padding:10px 4px;border-radius:10px;border:0;font:inherit;font-weight:' + (on ? 800 : 600) +
+          ';background:' + (on ? "var(--card,#fff)" : "transparent") + ';color:inherit;box-shadow:' + (on ? "0 1px 3px rgba(0,0,0,.12)" : "none") + '">' + esc(t("seg_" + k)) +
+          '<span class="muted small" style="display:block;font-weight:600">' + cnt[k] + "</span></button>";
+      }).join("") + "</div>";
+    var seg = list.filter(function (r) { return rKind(r) === rSeg; });
+    var month = function (r) { return String((r.data && r.data.date) || r.at).slice(0, 7); };
+    var months = []; seg.forEach(function (r) { var m = month(r); if (months.indexOf(m) < 0) months.push(m); }); months.sort().reverse();
+    if (rMonth && months.indexOf(rMonth) < 0) rMonth = "";
+    var mName = function (m) { var x = m.split("-"); return new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "short", year: "2-digit" }); };
+    if (months.length > 1) h += '<div style="display:flex;gap:6px;overflow-x:auto;margin-top:10px;padding-bottom:2px">' + [""].concat(months).map(function (m) {
+      var on = rMonth === m;
+      return '<button type="button" data-rmonth="' + m + '" class="chip' + (on ? " ok" : "") + '" style="border:0;white-space:nowrap;padding:6px 12px;font:inherit;font-size:14px' + (on ? ";font-weight:800" : "") + '">' + esc(m ? mName(m) : t("all_months")) + "</button>";
+    }).join("") + "</div>";
+    if (rMonth) seg = seg.filter(function (r) { return month(r) === rMonth; });
+    if (!seg.length) return h + '<div class="empty">' + esc(t("seg_empty")) + "</div>";
+    if (rSeg === "rcpt") {
+      var counted = seg.filter(function (r) { var d = r.data || {}; return (r.status === "read" || r.status === "approved") && d.total != null && d.approve !== "pending" && d.approve !== "no"; });
+      var tot = counted.reduce(function (s, r) { return s + Number(r.data.total || 0); }, 0), vat = counted.reduce(function (s, r) { return s + Number(r.data.vat || 0); }, 0);
+      h += '<div class="grid2" style="margin-top:12px"><div class="card kpi"><div class="muted small">' + esc(t("sum_total")) + '</div><div class="n" style="font-size:24px">' + esc(money(tot)) +
+        '</div><div class="muted small">' + counted.length + " " + esc(t("sum_counted")) + '</div></div><div class="card kpi"><div class="muted small">' + esc(t("sum_vat")) +
+        '</div><div class="n" style="font-size:24px">' + esc(money(vat)) + "</div></div></div>";
+    }
     var groups = [], last = null;
-    list.forEach(function (r) { var k = dayLabel(new Date(r.at)); if (k !== last) { groups.push({ k: k, a: [] }); last = k; } groups[groups.length - 1].a.push(r); });
-    h += "<h2>" + esc(t("up_list")) + " (" + list.length + ")</h2>";
-    return h + groups.map(function (g) { return '<div class="muted small" style="margin:14px 2px 6px;font-weight:700">' + esc(g.k) + '</div><div class="card" style="padding:4px 14px">' + g.a.map(receiptRow).join("") + "</div>"; }).join("");
+    seg.slice().sort(function (a, b) { return month(a) === month(b) ? (a.at < b.at ? 1 : -1) : month(a) < month(b) ? 1 : -1; }).forEach(function (r) {
+      var k = month(r); if (k !== last) { groups.push({ k: k, a: [] }); last = k; } groups[groups.length - 1].a.push(r); });
+    return h + groups.map(function (g) {
+      var x = g.k.split("-"), name = new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" });
+      return '<div class="muted small" style="margin:16px 2px 6px;font-weight:700">' + esc(name) + '</div><div class="card" style="padding:4px 14px">' + g.a.map(receiptRow).join("") + "</div>"; }).join("");
+  }
+  var rSeg = load("team_rseg") || "rcpt", rMonth = "";
+  function rKind(r) {
+    var d = r.data || {}, k = d.kind || "";
+    if (d.invoice_missing || d.proof || /payment|order_conf|confirmation/.test(k)) return "proof";
+    if (r.hint === "doc" || (k && k !== "receipt")) return "docs";
+    return "rcpt";
   }
   function secWallet() {
     var slips = data.payslips || [];
@@ -1073,7 +1116,7 @@
   /* ---------------- demo data (never sent anywhere) ---------------- */
   var Demo = (function () {
     function d(n) { var x = new Date(); x.setDate(x.getDate() + n); return ymd(x); }
-    var demoReceipts = { owed: 62.4, list: [{ id: 9, at: new Date().toISOString(), paid: "company", status: "read", note: "📧 Your receipt from Anthropic", data: { merchant: "Anthropic", date: d(0), total: 91.57, vat: 14.62, vat_rate: 19, source: "email", approve: "pending", email: { from: "Anthropic", subject: "Your receipt from Anthropic" } } }, { id: 1, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Shell Stuttgart-Feuerbach", date: d(-1), total: 62.4, vat: 9.96, vat_rate: 19, number: "4711" } },
+    var demoReceipts = { owed: 62.4, list: [{ id: 10, at: new Date(Date.now() - 3 * 864e5).toISOString(), paid: "company", status: "read", hint: "receipt", data: { kind: "payment_confirmation", merchant: "PayPal · Ortel Mobile", total: 20, date: d(-3), invoice_missing: true } }, { id: 9, at: new Date().toISOString(), paid: "company", status: "read", note: "📧 Your receipt from Anthropic", data: { merchant: "Anthropic", date: d(0), total: 91.57, vat: 14.62, vat_rate: 19, source: "email", approve: "pending", email: { from: "Anthropic", subject: "Your receipt from Anthropic" } } }, { id: 1, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Shell Stuttgart-Feuerbach", date: d(-1), total: 62.4, vat: 9.96, vat_rate: 19, number: "4711" } },
       { id: 2, at: new Date().toISOString(), paid: "fuelcard", status: "read", data: { merchant: "Aral Flughafen", date: d(-3), total: 71.1, vat: 11.35, vat_rate: 19 } },
       { id: 3, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Waschpark Stuttgart", date: d(0), total: 14.9, vat: 2.38, vat_rate: 19, confirm: "pending" } },
       { id: 4, at: new Date().toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "sick_note", sick: { from: d(0), to: d(2) }, route: ["hr"], summary: "Arbeitsunfähigkeitsbescheinigung" } },
