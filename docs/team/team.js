@@ -25,7 +25,7 @@
       app: "Team", pin: "PIN eingeben", pin_sub: "Dein 4-stelliger PIN", mobile_no: "Deine Handynummer", phone_bad: "Bitte die Handynummer prüfen.", wrong: "Falscher PIN. Noch {n} Versuche.",
       locked: "Zu viele Versuche. Bitte später noch einmal.", offline: "Keine Verbindung. Bitte später noch einmal.",
       home: "Start", plan: "Plan", requests: "Anträge", chat: "HR-Chat", profile: "Profil",
-      hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
+      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
       leave_left: "Urlaub übrig", days: "Tage", hours_month: "Stunden diesen Monat", open_req: "Offene Anträge",
       ask_leave: "Urlaub", ask_sick: "Krank melden", ask_swap: "Schicht tauschen", ask_raise: "Gehalt", ask_doc: "Dokument",
       ask_payslip: "Lohnzettel", ask_other: "Sonstiges", ask_chat: "Frag HR",
@@ -65,7 +65,7 @@
       app: "Team", pin: "Enter your PIN", pin_sub: "Your 4-digit PIN", mobile_no: "Your mobile number", phone_bad: "Please check the mobile number.", wrong: "Wrong PIN. {n} tries left.",
       locked: "Too many tries. Please try later.", offline: "No connection. Please try later.",
       home: "Home", plan: "Schedule", requests: "Requests", chat: "HR chat", profile: "Profile",
-      hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
+      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
       leave_left: "Leave left", days: "days", hours_month: "Hours this month", open_req: "Open requests",
       ask_leave: "Leave", ask_sick: "Call in sick", ask_swap: "Swap shift", ask_raise: "Pay", ask_doc: "Document",
       ask_payslip: "Payslip", ask_other: "Other", ask_chat: "Ask HR",
@@ -105,7 +105,7 @@
       app: "Team", pin: "Βάλε το PIN", pin_sub: "Το 4ψήφιο PIN σου", mobile_no: "Το κινητό σου", phone_bad: "Έλεγξε τον αριθμό του κινητού.", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
       locked: "Πολλές προσπάθειες. Δοκίμασε αργότερα.", offline: "Χωρίς σύνδεση. Δοκίμασε αργότερα.",
       home: "Αρχική", plan: "Πρόγραμμα", requests: "Αιτήματα", chat: "Chat HR", profile: "Προφίλ",
-      hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
+      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
       leave_left: "Άδεια που απομένει", days: "μέρες", hours_month: "Ώρες αυτόν τον μήνα", open_req: "Ανοιχτά αιτήματα",
       ask_leave: "Άδεια", ask_sick: "Ασθένεια", ask_swap: "Αλλαγή βάρδιας", ask_raise: "Μισθός", ask_doc: "Έγγραφο",
       ask_payslip: "Μισθοδοσία", ask_other: "Άλλο", ask_chat: "Ρώτα το HR",
@@ -404,7 +404,7 @@
 
   function render() {
     if (tab === "chat") return chatScreen();
-    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen }[tab] || homeScreen;
+    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen }[tab] || homeScreen;
     app.innerHTML = '<main class="screen">' + body() + "</main>" + tabsHtml();
     bind();
   }
@@ -412,15 +412,15 @@
     return '<nav class="tabs" aria-label="Menu">' + ["home", "receipts", "requests", "chat", "profile"].map(function (k) {
       var n = k === "chat" ? data && data.unread : k === "receipts" ? receipts && receipts.to_confirm : 0;
       var badge = n > 0 ? '<span class="badge">' + n + "</span>" : "";
-      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu"));
+      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team"));
       return '<button type="button" data-tab="' + k + '"' + (cur ? ' aria-current="page"' : "") + ">" + ICON[k] + "<span>" + esc(t(k === "receipts" ? "up_tab" : k)) + "</span>" + badge + "</button>";
     }).join("") + "</nav>";
   }
   function tabsBadge() { var n = app.querySelector(".tabs"); if (n) { n.outerHTML = tabsHtml(); bindTabs(); } }
   function bindTabs() { app.querySelectorAll("[data-tab]").forEach(function (b) { b.onclick = function () { go(b.dataset.tab); }; }); }
-  function go(k) { tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts") loadReceipts(); }
+  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; } tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts") loadReceipts(); }
   function bind() {
-    bindTabs();
+    bindTabs(); bindTeam();
     app.querySelectorAll("[data-ask]").forEach(function (b) { b.onclick = function () { askSheet(b.dataset.ask); }; });
     app.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { go(b.dataset.go); }; });
     app.querySelectorAll("[data-q]").forEach(function (b) { b.onclick = function () { go("chat"); setTimeout(function () { sendChat(b.dataset.q); }, 50); }; });
@@ -497,11 +497,75 @@
     var tiles = [["plan", "my_plan", "plan"]].concat(CATS.map(function (c) { return [c, "c_" + c, c]; })).concat([["favs", "c_favs", "star"]]);
     var icon = { news: ICON.doc, company: ICON.home, benefits: ICON.raise, learning: ICON.requests, development: ICON.swap, guidelines: ICON.sick, plan: ICON.plan, star: ICON.star };
     return '<div class="top"><h1>' + esc(t("menu")) + '</h1><button class="back" aria-label="' + esc(t("search")) + '" data-go="search">' + ICON.search + "</button></div>" +
+      (profile().type === "inhaber" ? '<button class="card row tap" style="width:100%;text-align:left;border:0;margin-bottom:12px" data-go="team"><span class="grow t">' + esc(t("tm_title")) +
+        '<span class="muted small" style="display:block">' + esc(t("tm_owner")) + "</span></span>›</button>" : "") +
       '<div class="card" style="padding:4px 14px">' + tiles.map(function (x) {
         var n = x[0] === "plan" || x[0] === "favs" ? "" : posts().filter(function (p) { return (p.category || "news") === x[0]; }).length;
         return '<button class="row tap" style="width:100%;text-align:left" ' + (x[0] === "plan" ? 'data-tab="plan"' : 'data-cat="' + x[0] + '"') + '><span style="width:26px;display:grid;place-items:center">' + (icon[x[2]] || ICON.doc).replace("<svg ", '<svg width="24" height="24" ') +
           '</span><span class="grow t">' + esc(t(x[1])) + '</span><span class="muted small">' + (n || "") + ' ›</span></button>';
       }).join("") + "</div>";
+  }
+
+  /* ---------------- Team (owner only): everyone's data, new PIN / new phone without losing anything ---------------- */
+  var tmList = null, tmSel = null, tmPerson = null, tmPin = null;
+  function tmLoad() {
+    var p = tmSel ? rpc("team_owner_person", { p_token: token, p_driver: tmSel }).then(function (x) { tmPerson = x; })
+                  : rpc("team_owner_people", { p_token: token }).then(function (x) { tmList = x || []; });
+    p.then(function () { if (tab === "team") render(); }).catch(function (e) { toast(e.message || t("err")); });
+  }
+  function fmtDay(s) { return s ? new Date(String(s).slice(0, 10) + "T12:00:00").toLocaleDateString(loc()) : ""; }
+  function teamScreen() {
+    if (!tmSel) {
+      if (!tmList) { tmLoad(); return '<div class="top"><button class="back" aria-label="Back" data-go="menu">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("tm_title")) + '</h1></div><div class="empty">…</div>'; }
+      return '<div class="top"><button class="back" aria-label="Back" data-go="menu">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("tm_title")) + "</h1></div>" +
+        '<div class="card" style="padding:4px 14px">' + tmList.map(function (x) {
+          var badge = (x.receipts_open || 0) + (x.requests_open || 0);
+          return '<button class="row tap" style="width:100%;text-align:left" data-tm="' + esc(x.id) + '"><span class="grow t">' + esc(x.name) +
+            '<span class="muted small" style="display:block">' + esc([x.role || x.type || "", x.phone ? "+" + x.phone : ""].filter(Boolean).join(" · ")) + "</span></span>" +
+            (badge ? '<span class="chip wait">' + badge + "</span>" : "") + " ›</button>";
+        }).join("") + "</div>";
+    }
+    var P = tmPerson;
+    var h = '<div class="top"><button class="back" aria-label="Back" data-tm="">' + ICON.back + '</button><h1 style="flex:1">' + esc(P ? P.me.name : "…") + "</h1></div>";
+    if (!P) { tmLoad(); return h; }
+    var who = tmList && tmList.filter(function (x) { return x.id === tmSel; })[0];
+    h += '<div class="card"><div class="t">' + (P.me.phone ? "+" + esc(P.me.phone) : "–") + '</div><div class="muted small">' +
+      esc(who && who.last_seen ? t("tm_last", new Date(who.last_seen).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short" })) : t("tm_never")) + "</div>";
+    if (tmPin) h += '<div class="card" style="margin-top:10px;background:#e8f6ee"><div class="t" style="font-size:22px">' + esc(t("tm_pin_is", P.me.name.split(" ")[0]).replace("{p}", tmPin)) + '</div><div class="muted small">' + esc(t("tm_pin_tell")) + "</div></div>";
+    h += '<div class="grid2" style="margin-top:12px"><button class="btn" data-tm-pin="1">' + esc(t("tm_newpin")) + '</button><button class="btn ghost" data-tm-phone="1">' + esc(t("tm_phone")) + "</button></div>" +
+      '<div class="muted small" style="margin-top:8px">' + esc(t("tm_kept")) + "</div></div>";
+    var today = new Date().toISOString().slice(0, 10);
+    var nexts = (P.shifts || []).filter(function (s) { return s.day >= today; }).slice(0, 6);
+    h += "<h2>" + esc(t("tm_plan")) + '</h2><div class="card" style="padding:4px 14px">' + (nexts.length ? nexts.map(function (s) {
+      return '<div class="row"><span class="grow t">' + esc(fmtDay(s.day)) + '</span><span class="muted small">' + esc(s.start + (s.end && s.end !== s.start ? " – " + s.end : "") + (s.note ? " · " + s.note : "")) + "</span></div>"; }).join("") : '<div class="row muted">' + esc(t("tm_none")) + "</div>") + "</div>";
+    var docs = Object.entries ? Object.entries((P.profile && P.profile.documents) || {}) : [];
+    h += "<h2>" + esc(t("tm_docs")) + '</h2><div class="card" style="padding:4px 14px">' + (docs.length ? docs.map(function (d) {
+      var v = d[1] || {}, when = v.expires || v.signed || v.done || v.ends || "";
+      return '<div class="row"><span class="grow t">' + esc(t("dk_" + d[0]) !== "dk_" + d[0] ? t("dk_" + d[0]) : d[0].replace(/_/g, " ")) + '</span><span class="muted small">' + esc(fmtDay(when)) + "</span></div>"; }).join("") : '<div class="row muted">' + esc(t("tm_none")) + "</div>") + "</div>";
+    var rl = (P.receipts && P.receipts.list) || [];
+    h += "<h2>" + esc(t("tm_rcpt")) + " (" + rl.length + ')</h2><div class="card" style="padding:4px 14px">' + (rl.length ? rl.slice(0, 40).map(function (r) {
+      var d = r.data || {};
+      return '<div class="row"><span class="grow t">' + esc(d.merchant || r.note || "…") + '<span class="muted small" style="display:block">' + esc(fmtDay(d.date || r.at)) +
+        (d.approve === "pending" ? " · ?" : "") + (r.status === "rejected" ? " · ✕" : "") + '</span></span><span class="t">' + (d.total != null ? esc(Number(d.total).toLocaleString(loc(), { style: "currency", currency: "EUR" })) : "") + "</span></div>"; }).join("") : '<div class="row muted">' + esc(t("tm_none")) + "</div>") + "</div>";
+    var rq = (P.requests || []).filter(function (r) { return r.status === "open" || r.status === "with_owner"; });
+    if (rq.length) h += "<h2>" + esc(t("tm_req")) + '</h2><div class="card" style="padding:4px 14px">' + rq.map(function (r) {
+      return '<div class="row"><span class="grow t">' + esc(r.text || r.kind) + '</span><span class="muted small">' + esc(fmtDay(r.at)) + "</span></div>"; }).join("") + "</div>";
+    return h;
+  }
+  function bindTeam() {
+    app.querySelectorAll("[data-tm]").forEach(function (b) { b.onclick = function () { tmSel = b.dataset.tm || null; tmPerson = null; tmPin = null; if (!tmSel) tmList = null; window.scrollTo(0, 0); render(); }; });
+    app.querySelectorAll("[data-tm-pin]").forEach(function (b) { b.onclick = function () {
+      if (!tmPerson || !window.confirm(t("tm_newpin_q", tmPerson.me.name))) return;
+      b.disabled = true;
+      rpc("team_owner_reset", { p_token: token, p_driver: tmSel, p_phone: null, p_new_pin: true }).then(function (r) { tmPin = r.pin; render(); }).catch(function (e) { b.disabled = false; toast(e.message); });
+    }; });
+    app.querySelectorAll("[data-tm-phone]").forEach(function (b) { b.onclick = function () {
+      if (!tmPerson) return;
+      var v = window.prompt(t("tm_phone_q", tmPerson.me.name), tmPerson.me.phone ? "+" + tmPerson.me.phone : "");
+      if (!v) return;
+      rpc("team_owner_reset", { p_token: token, p_driver: tmSel, p_phone: v, p_new_pin: false }).then(function (r) { tmPerson.me.phone = r.phone; tmList = null; toast(t("saved")); render(); })
+        .catch(function (e) { toast(/phone/.test(e.message) ? t("phone_bad") : e.message); });
+    }; });
   }
 
   /* ---------------- Search ---------------- */
@@ -1017,7 +1081,7 @@
     var msgs = [], reqs = [{ id: 1, at: new Date(Date.now() - 2 * 864e5).toISOString(), kind: "leave", text: "Urlaub für Familienbesuch", details: { from: d(20), to: d(24) }, status: "with_owner", answer: "Danke, ich habe deinen Urlaub an den Chef weitergegeben. Du bekommst Bescheid, sobald er entschieden hat." }];
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
-      profile: { phone: "4915100000000", type: "minijob", start: "2026-09-01", hourly_wage: 13.9, days_per_week: 2, vacation_days_per_year: 10, role: "Fahrer",
+      profile: { phone: "4915100000000", type: /[?&]owner\b/.test(location.search) ? "inhaber" : "minijob", start: "2026-09-01", hourly_wage: 13.9, days_per_week: 2, vacation_days_per_year: 10, role: "Fahrer",
         documents: { fuehrerschein: { expires: "2031-04-30" }, p_schein: { expires: d(40) }, arbeitsvertrag: { signed: "2026-08-28" }, sofortmeldung: { done: "2026-08-31" } },
         duties: [{ id: "belege", due: d(3), done: false, title: { de: "Alle Belege des Vormonats hochladen", en: "Upload all receipts of last month", el: "Ανέβασε όλες τις αποδείξεις του προηγούμενου μήνα" } }] },
       shifts: [-6, -5, -1, 0, 2, 3, 9, 10].map(function (n, i) { return { id: i, day: d(n), start: n % 2 ? "06:00" : "15:00", end: n % 2 ? "12:00" : "21:30", break_min: n % 2 ? 0 : 30, note: n === 2 ? "Flughafen" : null }; }),
@@ -1032,6 +1096,9 @@
     return { rpc: function (fn, a) {
       return new Promise(function (ok) { setTimeout(function () {
         if (fn === "driver_login" || fn === "team_login") return ok({ token: "demo", driver: home.me });
+        if (fn === "team_owner_people") return ok([{ id: "demo", name: "Max Testfahrer", phone: "4915100000000", role: "Fahrer", last_seen: new Date().toISOString(), receipts_open: 1, requests_open: 1 }]);
+        if (fn === "team_owner_person") return ok({ me: { id: "demo", name: "Max Testfahrer", phone: "4915100000000" }, profile: home.profile, shifts: home.shifts, leave: home.leave, requests: reqs, receipts: demoReceipts });
+        if (fn === "team_owner_reset") return ok({ pin: a.p_new_pin ? "4821" : null, phone: a.p_phone ? a.p_phone.replace(/\D/g, "") : "4915100000000" });
         if (fn === "team_home") return ok(JSON.parse(JSON.stringify(home)));
         if (fn === "team_chat") return ok(msgs.slice());
         if (fn === "team_send") {
