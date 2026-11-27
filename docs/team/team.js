@@ -1261,7 +1261,7 @@
     if (open && k.link) b.push('<a class="btn dark" style="display:flex;align-items:center;justify-content:center;text-decoration:none" href="' + esc(k.link) + '" target="_blank" rel="noopener">' + esc(t("tk_open")) + "</a>");
     if (open && k.kind === "invoice" && k.answer !== "uploaded") b.push('<button class="btn' + (k.link ? " ghost" : "") + '" id="tkup">📷 ' + esc(t("tk_upload")) + "</button>");
     if (open && k.kind === "doc") b.push('<button class="btn" id="tkdoc">📷 ' + esc(t("tk_upload_doc")) + "</button>");
-    if (open && k.kind !== "invoice") b.push('<button class="btn ghost" id="tkdone">✓ ' + esc(t("tk_done")) + "</button>");
+    if (open) b.push('<button class="btn ghost" id="tkdone">✓ ' + esc(t("tk_done")) + "</button>");
     if (open && k.kind === "invoice") b.push('<button class="btn ghost" id="tknb">' + esc(t("tk_notbiz")) + "</button>");
     b.push('<button class="btn ghost" data-close>' + esc(open ? t("tk_later") : t("cancel")) + "</button>");
     openSheet('<h2 style="margin-top:0">' + esc(tx(k.title)) + "</h2>" + (facts.length ? '<p class="muted small">' + esc(facts.join(" · ")) + "</p>" : "") +
