@@ -669,7 +669,7 @@
           var badge = (x.receipts_open || 0) + (x.requests_open || 0);
           return '<button class="row tap" style="width:100%;text-align:left" data-tm="' + esc(x.id) + '"><span class="grow t">' + esc(x.name) +
             '<span class="muted small" style="display:block">' + esc([x.role || x.type || "", x.phone ? "+" + x.phone : ""].filter(Boolean).join(" · ")) + "</span></span>" +
-            (badge ? '<span class="chip wait">' + badge + "</span>" : "") + " ›</button>";
+            (x.docs_soon ? '<span class="chip bad" title="' + esc(t("documents")) + '">🪪 ' + x.docs_soon + "</span>" : "") + (badge ? '<span class="chip wait">' + badge + "</span>" : "") + " ›</button>";
         }).join("") + "</div>";
     }
     var P = tmPerson;
@@ -1548,7 +1548,7 @@
           { id: 51, at: new Date().toISOString(), driver: "Inhaber", paid: "company", status: "read", data: { merchant: "Werkstatt (Beispiel)", total: 289, vat: 46.14, date: d(-20), category: "repair", payment_status: "open", due_date: d(-2), flags: ["MwSt fehlt auf der Rechnung"] } }]));
         if (fn === "team_owner_bill_paid") return ok({ ok: true });
         if (fn === "team_owner_report_set") return ok([{ month: d(0).slice(0, 7), total: 62.4, status: a.p_status }]);
-        if (fn === "team_owner_people") return ok([{ id: "demo", name: "Max Testfahrer", phone: "4915100000000", role: "Fahrer", last_seen: new Date().toISOString(), receipts_open: 1, requests_open: 1 }]);
+        if (fn === "team_owner_people") return ok([{ id: "demo", name: "Max Testfahrer", phone: "4915100000000", role: "Fahrer", last_seen: new Date().toISOString(), receipts_open: 1, requests_open: 1, docs_soon: 1 }]);
         if (fn === "team_owner_appt_add") { home.shifts = (home.shifts || []).concat([{ day: a.p_day, start: a.p_start, end: a.p_end || a.p_start, note: "📅 " + a.p_title }]); return ok({ ok: true }); }
         if (fn === "team_owner_post") { home.posts = [{ id: Date.now() % 100000, at: new Date().toISOString(), title: a.p_title, body: a.p_body, pinned: a.p_pinned, category: "news" }].concat(home.posts || []); return ok(home); }
         if (fn === "team_owner_post_delete") { home.posts = (home.posts || []).filter(function (x) { return x.id !== a.p_id; }); return ok(home); }
