@@ -1,10 +1,10 @@
 {
- "versionCode": 80,
- "versionName": "3.72",
- "sha256": "e9d7ef119d8790253b2917930d444211f704a2df032c380a86d72bc17557c921",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-80.apk",
- "notes": "Neu: Abgelehnte Anfragen bleiben unter Entdecken (Markierung „Abgelehnt“) und können weiter angenommen werden, solange sie offen sind.",
- "notes_de": "Neu: Abgelehnte Anfragen bleiben unter Entdecken (Markierung „Abgelehnt“) und können weiter angenommen werden, solange sie offen sind.",
- "notes_en": "New: declined requests stay in Discover (tag “Declined”) and can still be accepted while they are open.",
- "notes_el": "Νέο: τα αιτήματα που απορρίπτεις μένουν στο Discover (σήμανση «Απορρίφθηκε») και μπορείς να τα δεχτείς όσο είναι ανοιχτά."
+ "versionCode": 81,
+ "versionName": "3.73",
+ "sha256": "13b266aa70495fa31126167be56e67f9ffa3e9a961828be775a85fc5d31d7ef8",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-81.apk",
+ "notes": "Neu: Karte „Noch zu erledigen“ auf der Startseite, Notfallkontakt in Sicherheit, und „Alles in Ordnung?“, wenn das Auto während einer Fahrt 8 Minuten steht.",
+ "notes_de": "Neu: Karte „Noch zu erledigen“ auf der Startseite, Notfallkontakt in Sicherheit, und „Alles in Ordnung?“, wenn das Auto während einer Fahrt 8 Minuten steht.",
+ "notes_en": "New: “Still to do” card on Home, emergency contact under Safety, and “Is everything OK?” when the car stands still for 8 minutes during a ride.",
+ "notes_el": "Νέο: κάρτα «Εκκρεμούν» στην αρχική, επαφή έκτακτης ανάγκης στην Ασφάλεια, και «Όλα καλά;» όταν το αμάξι μένει ακίνητο 8 λεπτά μέσα σε διαδρομή."
 }
