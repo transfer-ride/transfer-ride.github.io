@@ -1,10 +1,10 @@
 {
- "versionCode": 76,
- "versionName": "3.68",
- "sha256": "8aaf0f104687420b6cc5da01e6c142c8b9d07b9b830100d24a07f3fd3eea6ca2",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-76.apk",
- "notes": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke. Dazu: Modus 'Richtung Ziel'.",
- "notes_de": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke. Dazu: Modus 'Richtung Ziel'.",
- "notes_en": "A new request rings once as usual; still open after 10 minutes, it rings twice at full volume. Also: 'towards a destination' mode.",
- "notes_el": "Νέο αίτημα: χτυπάει μία φορά κανονικά· αν μείνει ανοιχτό 10 λεπτά, χτυπάει δύο φορές στη μέγιστη ένταση. Και: λειτουργία «Προς προορισμό»."
+ "versionCode": 77,
+ "versionName": "3.69",
+ "sha256": "9bdebd97ac61d5d4b771e97d77ce1da0228e9ddb7ceada538aad6d1f85d3dcd9",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-77.apk",
+ "notes": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke – jetzt auch, wenn die App schläft.",
+ "notes_de": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke – jetzt auch, wenn die App schläft.",
+ "notes_en": "A new request rings once as usual; still open after 10 minutes, it rings twice at full volume – now also while the app sleeps.",
+ "notes_el": "Νέο αίτημα: μία φορά κανονικά· αν μείνει ανοιχτό 10 λεπτά, δύο φορές στη μέγιστη ένταση – τώρα και όταν η εφαρμογή κοιμάται."
 }
