@@ -8,6 +8,8 @@
   var API = "https://qdrwssvwlpbloqnnyrzk.supabase.co/rest/v1/rpc/";
   var KEY = "sb_publishable_hLvHm_ujPZSNsEoxoiEdiw_2h7lTKjC";
   var DEMO = /[?&]demo\b/.test(location.search);
+  // Offline helper (network first; last good copy of the app's files only when there is no internet).
+  if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) try { navigator.serviceWorker.register("sw.js").catch(function () {}); } catch (e) {}
 
   /* ---------------- texts ---------------- */
   var T = {
