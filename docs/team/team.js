@@ -1649,6 +1649,8 @@
     } };
   })();
 
+  // Keyboard: Enter / Space on tappable rows that are not real buttons.
+  document.addEventListener("keydown", function (e) { var el = e.target; if ((e.key === "Enter" || e.key === " ") && el && el.getAttribute && el.getAttribute("role") === "button" && el.tagName !== "BUTTON") { e.preventDefault(); el.click(); } });
   // Pull down at the top of a screen to reload (the Android app has no reload button).
   (function () {
     var y0 = null, pulled = 0, tip = null;
