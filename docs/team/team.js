@@ -25,7 +25,7 @@
       app: "Team", pin: "PIN eingeben", pin_sub: "Dein 4-stelliger PIN", mobile_no: "Deine Handynummer", phone_bad: "Bitte die Handynummer prüfen.", wrong: "Falscher PIN. Noch {n} Versuche.",
       locked: "Zu viele Versuche. Bitte später noch einmal.", offline: "Keine Verbindung. Bitte später noch einmal.",
       home: "Start", plan: "Plan", requests: "Anträge", chat: "HR-Chat", profile: "Profil",
-      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", seg_rcpt: "Belege", seg_docs: "Unterlagen", seg_proof: "Nachweise", all_months: "Alle", sum_total: "Summe", sum_vat: "davon MwSt", sum_counted: "zählt", inv_missing: "Rechnung fehlt", inv_missing_top: "Hier fehlt noch die echte Rechnung", seg_empty: "Hier ist noch nichts.", dk_payment_confirmation: "Zahlungsnachweis", dk_order_confirmation: "Bestellbestätigung", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
+      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", seg_rcpt: "Belege", seg_docs: "Unterlagen", seg_proof: "Nachweise", all_months: "Alle", sum_total: "Summe", sum_vat: "davon MwSt", sum_counted: "zählt", inv_missing: "Rechnung fehlt", inv_missing_top: "Hier fehlt noch die echte Rechnung", seg_empty: "Hier ist noch nichts.", dk_payment_confirmation: "Zahlungsnachweis", dk_order_confirmation: "Bestellbestätigung", bl_title: "Zahlungen", bl_sub: "Offene Rechnungen und feste Monatskosten", bl_open: "Offen", bl_due: "fällig {n}", bl_late: "überfällig seit {n}", bl_paid_btn: "Bezahlt", bl_undo: "Zurück", bl_fixed: "Feste Monatskosten", bl_from: "ab {n}", bl_paid: "Zuletzt bezahlt", bl_none: "Keine offenen Rechnungen.", rp_title: "Berichte", rp_sub: "Ausgaben pro Monat und Kategorie", rp_months: "Pro Monat", rp_cats: "Nach Kategorie", rp_people: "Nach Person", rp_flags: "Zum Prüfen", rp_year: "Jahr {n}", rp_net: "netto", ex_title: "Monatsabrechnung", ex_open: "offen", ex_approved: "freigegeben", ex_paid: "ausgezahlt", ex_approve: "Freigeben", ex_pay: "Ausgezahlt", ex_none: "Keine eigenen Auslagen.", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
       leave_left: "Urlaub übrig", days: "Tage", hours_month: "Stunden diesen Monat", open_req: "Offene Anträge",
       ask_leave: "Urlaub", ask_sick: "Krank melden", ask_swap: "Schicht tauschen", ask_raise: "Gehalt", ask_doc: "Dokument",
       ask_payslip: "Lohnzettel", ask_other: "Sonstiges", ask_chat: "Frag HR",
@@ -65,7 +65,7 @@
       app: "Team", pin: "Enter your PIN", pin_sub: "Your 4-digit PIN", mobile_no: "Your mobile number", phone_bad: "Please check the mobile number.", wrong: "Wrong PIN. {n} tries left.",
       locked: "Too many tries. Please try later.", offline: "No connection. Please try later.",
       home: "Home", plan: "Schedule", requests: "Requests", chat: "HR chat", profile: "Profile",
-      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", seg_rcpt: "Receipts", seg_docs: "Documents", seg_proof: "Proofs", all_months: "All", sum_total: "Total", sum_vat: "VAT in it", sum_counted: "counted", inv_missing: "Invoice missing", inv_missing_top: "The real invoice is still missing", seg_empty: "Nothing here yet.", dk_payment_confirmation: "Proof of payment", dk_order_confirmation: "Order confirmation", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
+      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", seg_rcpt: "Receipts", seg_docs: "Documents", seg_proof: "Proofs", all_months: "All", sum_total: "Total", sum_vat: "VAT in it", sum_counted: "counted", inv_missing: "Invoice missing", inv_missing_top: "The real invoice is still missing", seg_empty: "Nothing here yet.", dk_payment_confirmation: "Proof of payment", dk_order_confirmation: "Order confirmation", bl_title: "Payments", bl_sub: "Open invoices and fixed monthly costs", bl_open: "Open", bl_due: "due {n}", bl_late: "overdue since {n}", bl_paid_btn: "Paid", bl_undo: "Undo", bl_fixed: "Fixed monthly costs", bl_from: "from {n}", bl_paid: "Recently paid", bl_none: "No open invoices.", rp_title: "Reports", rp_sub: "Spending per month and category", rp_months: "Per month", rp_cats: "By category", rp_people: "By person", rp_flags: "To check", rp_year: "Year {n}", rp_net: "net", ex_title: "Monthly expenses", ex_open: "open", ex_approved: "approved", ex_paid: "paid out", ex_approve: "Approve", ex_pay: "Paid out", ex_none: "No own expenses.", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
       leave_left: "Leave left", days: "days", hours_month: "Hours this month", open_req: "Open requests",
       ask_leave: "Leave", ask_sick: "Call in sick", ask_swap: "Swap shift", ask_raise: "Pay", ask_doc: "Document",
       ask_payslip: "Payslip", ask_other: "Other", ask_chat: "Ask HR",
@@ -105,7 +105,7 @@
       app: "Team", pin: "Βάλε το PIN", pin_sub: "Το 4ψήφιο PIN σου", mobile_no: "Το κινητό σου", phone_bad: "Έλεγξε τον αριθμό του κινητού.", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
       locked: "Πολλές προσπάθειες. Δοκίμασε αργότερα.", offline: "Χωρίς σύνδεση. Δοκίμασε αργότερα.",
       home: "Αρχική", plan: "Πρόγραμμα", requests: "Αιτήματα", chat: "Chat HR", profile: "Προφίλ",
-      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", seg_rcpt: "Αποδείξεις", seg_docs: "Δικαιολογητικά", seg_proof: "Αποδεικτικά", all_months: "Όλα", sum_total: "Σύνολο", sum_vat: "από αυτά ΦΠΑ", sum_counted: "μετράνε", inv_missing: "Λείπει τιμολόγιο", inv_missing_top: "Εδώ λείπει ακόμα το κανονικό τιμολόγιο", seg_empty: "Δεν υπάρχει τίποτα εδώ ακόμα.", dk_payment_confirmation: "Αποδεικτικό πληρωμής", dk_order_confirmation: "Επιβεβαίωση παραγγελίας", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
+      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", seg_rcpt: "Αποδείξεις", seg_docs: "Δικαιολογητικά", seg_proof: "Αποδεικτικά", all_months: "Όλα", sum_total: "Σύνολο", sum_vat: "από αυτά ΦΠΑ", sum_counted: "μετράνε", inv_missing: "Λείπει τιμολόγιο", inv_missing_top: "Εδώ λείπει ακόμα το κανονικό τιμολόγιο", seg_empty: "Δεν υπάρχει τίποτα εδώ ακόμα.", dk_payment_confirmation: "Αποδεικτικό πληρωμής", dk_order_confirmation: "Επιβεβαίωση παραγγελίας", bl_title: "Πληρωμές", bl_sub: "Ανοιχτά τιμολόγια και σταθερά μηνιαία", bl_open: "Ανοιχτά", bl_due: "λήγει {n}", bl_late: "έληξε {n}", bl_paid_btn: "Πληρώθηκε", bl_undo: "Αναίρεση", bl_fixed: "Σταθερά μηνιαία έξοδα", bl_from: "από {n}", bl_paid: "Πληρώθηκαν πρόσφατα", bl_none: "Κανένα ανοιχτό τιμολόγιο.", rp_title: "Αναφορές", rp_sub: "Έξοδα ανά μήνα και κατηγορία", rp_months: "Ανά μήνα", rp_cats: "Ανά κατηγορία", rp_people: "Ανά άτομο", rp_flags: "Για έλεγχο", rp_year: "Έτος {n}", rp_net: "καθαρά", ex_title: "Μηνιαία έξοδα", ex_open: "ανοιχτό", ex_approved: "εγκρίθηκε", ex_paid: "πληρώθηκε", ex_approve: "Έγκριση", ex_pay: "Πληρώθηκε", ex_none: "Δεν υπάρχουν έξοδα από δικά του χρήματα.", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
       leave_left: "Άδεια που απομένει", days: "μέρες", hours_month: "Ώρες αυτόν τον μήνα", open_req: "Ανοιχτά αιτήματα",
       ask_leave: "Άδεια", ask_sick: "Ασθένεια", ask_swap: "Αλλαγή βάρδιας", ask_raise: "Μισθός", ask_doc: "Έγγραφο",
       ask_payslip: "Μισθοδοσία", ask_other: "Άλλο", ask_chat: "Ρώτα το HR",
@@ -404,7 +404,7 @@
 
   function render() {
     if (tab === "chat") return chatScreen();
-    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen }[tab] || homeScreen;
+    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen, bills: billsScreen, reports: reportsScreen }[tab] || homeScreen;
     app.innerHTML = '<main class="screen">' + body() + "</main>" + tabsHtml();
     bind();
   }
@@ -412,15 +412,15 @@
     return '<nav class="tabs" aria-label="Menu">' + ["home", "receipts", "requests", "chat", "profile"].map(function (k) {
       var n = k === "chat" ? data && data.unread : k === "receipts" ? receipts && receipts.to_confirm : 0;
       var badge = n > 0 ? '<span class="badge">' + n + "</span>" : "";
-      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team"));
+      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team" || tab === "bills" || tab === "reports"));
       return '<button type="button" data-tab="' + k + '"' + (cur ? ' aria-current="page"' : "") + ">" + ICON[k] + "<span>" + esc(t(k === "receipts" ? "up_tab" : k)) + "</span>" + badge + "</button>";
     }).join("") + "</nav>";
   }
   function tabsBadge() { var n = app.querySelector(".tabs"); if (n) { n.outerHTML = tabsHtml(); bindTabs(); } }
   function bindTabs() { app.querySelectorAll("[data-tab]").forEach(function (b) { b.onclick = function () { go(b.dataset.tab); }; }); }
-  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; } tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts") loadReceipts(); }
+  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; } if (k === "bills" || k === "reports") ownAll = null; tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts") loadReceipts(); }
   function bind() {
-    bindTabs(); bindTeam();
+    bindTabs(); bindTeam(); bindOwner();
     app.querySelectorAll("[data-rseg]").forEach(function (b) { b.onclick = function () { rSeg = b.dataset.rseg; rMonth = ""; store("team_rseg", rSeg); render(); }; });
     app.querySelectorAll("[data-rmonth]").forEach(function (b) { b.onclick = function () { rMonth = b.dataset.rmonth; render(); }; });
     app.querySelectorAll("[data-ask]").forEach(function (b) { b.onclick = function () { askSheet(b.dataset.ask); }; });
@@ -500,7 +500,9 @@
     var icon = { news: ICON.doc, company: ICON.home, benefits: ICON.raise, learning: ICON.requests, development: ICON.swap, guidelines: ICON.sick, plan: ICON.plan, star: ICON.star };
     return '<div class="top"><h1>' + esc(t("menu")) + '</h1><button class="back" aria-label="' + esc(t("search")) + '" data-go="search">' + ICON.search + "</button></div>" +
       (profile().type === "inhaber" ? '<button class="card row tap" style="width:100%;text-align:left;border:0;margin-bottom:12px" data-go="team"><span class="grow t">' + esc(t("tm_title")) +
-        '<span class="muted small" style="display:block">' + esc(t("tm_owner")) + "</span></span>›</button>" : "") +
+        '<span class="muted small" style="display:block">' + esc(t("tm_owner")) + "</span></span>›</button>" +
+        '<div class="grid2" style="margin:0 0 12px"><button class="card row tap" style="border:0;text-align:left" data-go="bills"><span class="grow t">' + esc(t("bl_title")) + '<span class="muted small" style="display:block">' + esc(t("bl_sub")) + '</span></span></button>' +
+        '<button class="card row tap" style="border:0;text-align:left" data-go="reports"><span class="grow t">' + esc(t("rp_title")) + '<span class="muted small" style="display:block">' + esc(t("rp_sub")) + "</span></span></button></div>" : "") +
       '<div class="card" style="padding:4px 14px">' + tiles.map(function (x) {
         var n = x[0] === "plan" || x[0] === "favs" ? "" : posts().filter(function (p) { return (p.category || "news") === x[0]; }).length;
         return '<button class="row tap" style="width:100%;text-align:left" ' + (x[0] === "plan" ? 'data-tab="plan"' : 'data-cat="' + x[0] + '"') + '><span style="width:26px;display:grid;place-items:center">' + (icon[x[2]] || ICON.doc).replace("<svg ", '<svg width="24" height="24" ') +
@@ -540,6 +542,8 @@
     var nexts = (P.shifts || []).filter(function (s) { return s.day >= today; }).slice(0, 6);
     h += "<h2>" + esc(t("tm_plan")) + '</h2><div class="card" style="padding:4px 14px">' + (nexts.length ? nexts.map(function (s) {
       return '<div class="row"><span class="grow t">' + esc(fmtDay(s.day)) + '</span><span class="muted small">' + esc(s.start + (s.end && s.end !== s.start ? " – " + s.end : "") + (s.note ? " · " + s.note : "")) + "</span></div>"; }).join("") : '<div class="row muted">' + esc(t("tm_none")) + "</div>") + "</div>";
+    var reps = (P.receipts && P.receipts.reports) || [];
+    h += "<h2>" + esc(t("ex_title")) + '</h2><div class="card" style="padding:4px 14px">' + (reps.length ? reps.map(exRow(true)).join("") : '<div class="row muted">' + esc(t("ex_none")) + "</div>") + "</div>";
     var docs = Object.entries ? Object.entries((P.profile && P.profile.documents) || {}) : [];
     h += "<h2>" + esc(t("tm_docs")) + '</h2><div class="card" style="padding:4px 14px">' + (docs.length ? docs.map(function (d) {
       var v = d[1] || {}, when = v.expires || v.signed || v.done || v.ends || "";
@@ -567,6 +571,83 @@
       if (!v) return;
       rpc("team_owner_reset", { p_token: token, p_driver: tmSel, p_phone: v, p_new_pin: false }).then(function (r) { tmPerson.me.phone = r.phone; tmList = null; toast(t("saved")); render(); })
         .catch(function (e) { toast(/phone/.test(e.message) ? t("phone_bad") : e.message); });
+    }; });
+  }
+
+  // One month of an employee's own-money expenses: total + status; the owner can approve / mark paid out.
+  function exRow(owner) { return function (e) {
+    var x = e.month.split("-"), name = new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" });
+    var cls = { open: "wait", approved: "info", paid: "ok" }[e.status] || "";
+    var btn = !owner ? "" : e.status === "open" ? '<button class="chip info" style="border:0;font:inherit;margin-top:6px" data-ex="' + e.month + '" data-exs="approved">' + esc(t("ex_approve")) + "</button>"
+      : e.status === "approved" ? '<button class="chip ok" style="border:0;font:inherit;margin-top:6px" data-ex="' + e.month + '" data-exs="paid">' + esc(t("ex_pay")) + "</button>" : "";
+    return '<div class="row" style="align-items:flex-start"><span class="grow t">' + esc(name) + (btn ? "<br>" + btn : "") + '</span><span style="text-align:right"><b>' + esc(money(e.total)) +
+      '</b><br><span class="chip ' + cls + '">' + esc(t("ex_" + e.status)) + "</span></span></div>";
+  }; }
+
+  // Owner: all receipts (no photos) since a date, for Payments and Reports.
+  var ownAll = null, rpYear = new Date().getFullYear();
+  function ownLoad(from) {
+    rpc("team_owner_receipts", { p_token: token, p_from: from }).then(function (x) { ownAll = x || []; if (tab === "bills" || tab === "reports") render(); }).catch(function (e) { toast(e.message || t("err")); });
+  }
+  function counts(r) { var d = r.data || {}; return (r.status === "read" || r.status === "approved") && d.total != null && d.approve !== "pending" && d.approve !== "no"; }
+  function billsScreen() {
+    var h = '<div class="top"><button class="back" aria-label="Back" data-go="menu">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("bl_title")) + "</h1></div>";
+    if (!ownAll) { ownLoad(ymd(new Date(Date.now() - 400 * 864e5))); return h + '<div class="empty">…</div>'; }
+    var today = ymd(new Date());
+    var open = ownAll.filter(function (r) { var d = r.data || {}; return d.payment_status === "open" && !d.paid_at && r.status !== "rejected" && r.status !== "duplicate" && d.approve !== "pending" && d.approve !== "no"; })
+      .sort(function (a, b) { return String(a.data.due_date || "9") < String(b.data.due_date || "9") ? -1 : 1; });
+    h += "<h2>" + esc(t("bl_open")) + " (" + open.length + ')</h2><div class="card" style="padding:4px 14px">' + (open.length ? open.map(function (r) {
+      var d = r.data, late = d.due_date && d.due_date < today;
+      return '<div class="row" style="align-items:flex-start' + (late ? ';background:#fdecea;border-radius:10px;padding-left:8px;padding-right:8px' : "") + '"><span class="grow t">' + esc(d.merchant || r.note || "…") +
+        '<span class="muted small" style="display:block">' + esc(d.due_date ? t(late ? "bl_late" : "bl_due", fmtDay(d.due_date)) : fmtDay(d.date)) + '</span><button class="chip ok" style="border:0;font:inherit;margin-top:6px" data-bill="' + r.id + '" data-billv="1">' + esc(t("bl_paid_btn")) +
+        '</button></span><b>' + esc(money(d.total)) + "</b></div>"; }).join("") : '<div class="row muted">' + esc(t("bl_none")) + "</div>") + "</div>";
+    var fixed = profile().recurring || [];
+    if (fixed.length) h += "<h2>" + esc(t("bl_fixed")) + '</h2><div class="card" style="padding:4px 14px">' + fixed.map(function (c) {
+      return '<div class="row" style="align-items:flex-start"><span class="grow t">' + esc(c.merchant) + '<span class="muted small" style="display:block">' + esc(c.start ? t("bl_from", fmtDay(c.start)) : (c.start_rule || "")) +
+        "</span></span><b>" + esc(money(c.monthly)) + "</b></div>"; }).join("") + "</div>";
+    var paid = ownAll.filter(function (r) { return r.data && r.data.paid_at; }).sort(function (a, b) { return a.data.paid_at < b.data.paid_at ? 1 : -1; }).slice(0, 10);
+    if (paid.length) h += "<h2>" + esc(t("bl_paid")) + '</h2><div class="card" style="padding:4px 14px">' + paid.map(function (r) {
+      return '<div class="row"><span class="grow t">' + esc(r.data.merchant || "…") + '<span class="muted small" style="display:block">' + esc(fmtDay(r.data.paid_at)) + ' · <button style="border:0;background:none;color:inherit;text-decoration:underline;font:inherit;padding:0" data-bill="' + r.id + '" data-billv="0">' + esc(t("bl_undo")) +
+        "</button></span></span><b>" + esc(money(r.data.total)) + "</b></div>"; }).join("") + "</div>";
+    return h;
+  }
+  function bar(label, v, max, sub) {
+    var w = max > 0 ? Math.max(2, Math.round(v / max * 100)) : 0;
+    return '<div style="padding:8px 0;border-bottom:1px solid var(--line,#e5e9e7)"><div style="display:flex;justify-content:space-between;gap:8px"><span class="t">' + esc(label) + "</span><b>" + esc(money(v)) + "</b></div>" +
+      '<div style="height:8px;border-radius:4px;background:var(--soft,#eef2f0);margin-top:6px"><div style="height:8px;border-radius:4px;width:' + w + '%;background:var(--mint,#2fbf71)"></div></div>' + (sub ? '<div class="muted small" style="margin-top:4px">' + esc(sub) + "</div>" : "") + "</div>";
+  }
+  function reportsScreen() {
+    var h = '<div class="top"><button class="back" aria-label="Back" data-go="menu">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("rp_title")) + "</h1></div>";
+    if (!ownAll) { ownLoad(rpYear + "-01-01"); return h + '<div class="empty">…</div>'; }
+    var rows = ownAll.filter(function (r) { return counts(r) && String(r.data.date || r.at).slice(0, 4) === String(rpYear); });
+    var tot = 0, vat = 0, byM = {}, byC = {}, byP = {};
+    rows.forEach(function (r) { var d = r.data, v = Number(d.total) || 0, m = String(d.date || r.at).slice(0, 7);
+      tot += v; vat += Number(d.vat) || 0; byM[m] = (byM[m] || 0) + v; var c = d.category || "other"; byC[c] = (byC[c] || 0) + v; byP[r.driver] = (byP[r.driver] || 0) + v; });
+    h += '<div class="muted small">' + esc(t("rp_year", rpYear)) + "</div>" +
+      '<div class="grid2" style="margin-top:8px"><div class="card kpi"><div class="muted small">' + esc(t("sum_total")) + '</div><div class="n" style="font-size:24px">' + esc(money(tot)) + '</div><div class="muted small">' + rows.length + " " + esc(t("sum_counted")) + '</div></div>' +
+      '<div class="card kpi"><div class="muted small">' + esc(t("sum_vat")) + '</div><div class="n" style="font-size:24px">' + esc(money(vat)) + '</div><div class="muted small">' + esc(money(tot - vat)) + " " + esc(t("rp_net")) + "</div></div></div>";
+    var sortV = function (o) { return Object.keys(o).sort(function (a, b) { return o[b] - o[a]; }); };
+    var mk = Object.keys(byM).sort(), mmax = Math.max.apply(null, mk.map(function (k) { return byM[k]; }).concat([0]));
+    h += "<h2>" + esc(t("rp_months")) + '</h2><div class="card" style="padding:4px 14px">' + mk.map(function (k) { var x = k.split("-"); return bar(new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" }), byM[k], mmax); }).join("") + "</div>";
+    var ck = sortV(byC), cmax = ck.length ? byC[ck[0]] : 0;
+    h += "<h2>" + esc(t("rp_cats")) + '</h2><div class="card" style="padding:4px 14px">' + ck.map(function (k) { return bar(t("cat_" + k) !== "cat_" + k ? t("cat_" + k) : k, byC[k], cmax); }).join("") + "</div>";
+    var pk = sortV(byP);
+    if (pk.length > 1) h += "<h2>" + esc(t("rp_people")) + '</h2><div class="card" style="padding:4px 14px">' + pk.map(function (k) { return bar(k, byP[k], byP[pk[0]]); }).join("") + "</div>";
+    var fl = ownAll.filter(function (r) { return r.data && (r.data.flags || []).length && r.status !== "rejected" && String(r.data.date || r.at).slice(0, 4) === String(rpYear); });
+    if (fl.length) h += "<h2>" + esc(t("rp_flags")) + " (" + fl.length + ')</h2><div class="card" style="padding:4px 14px">' + fl.map(function (r) {
+      return '<div class="row" style="align-items:flex-start"><span class="grow t">' + esc(r.data.merchant || "…") + '<span class="muted small" style="display:block">' + esc(r.driver + " · " + fmtDay(r.data.date || r.at)) +
+        '</span><span class="small" style="display:block;color:var(--warn,#9a5b00)">⚠ ' + esc(r.data.flags.join(" · ")) + "</span></span><b>" + esc(money(r.data.total)) + "</b></div>"; }).join("") + "</div>";
+    return h;
+  }
+  function bindOwner() {
+    app.querySelectorAll("[data-bill]").forEach(function (b) { b.onclick = function () {
+      b.disabled = true;
+      rpc("team_owner_bill_paid", { p_token: token, p_id: +b.dataset.bill, p_paid: b.dataset.billv === "1" }).then(function () { ownAll = null; toast(t("saved")); render(); }).catch(function (e) { b.disabled = false; toast(e.message); });
+    }; });
+    app.querySelectorAll("[data-ex]").forEach(function (b) { b.onclick = function () {
+      b.disabled = true;
+      rpc("team_owner_report_set", { p_token: token, p_driver: tmSel, p_month: b.dataset.ex, p_status: b.dataset.exs }).then(function (reps) { if (tmPerson && tmPerson.receipts) tmPerson.receipts.reports = reps; toast(t("saved")); render(); })
+        .catch(function (e) { b.disabled = false; toast(e.message); });
     }; });
   }
 
@@ -867,6 +948,7 @@
     if (!receipts) { loadReceipts(); return h + '<div class="empty">…</div>'; }
     if (receipts.to_confirm > 0) h += '<div class="card" style="background:#e6f0fd;margin-top:14px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + '</b><div class="muted small">' + esc(t("confirm_tap")) + "</div></div>";
     if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed2")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
+    if ((receipts.reports || []).length) h += "<h2>" + esc(t("ex_title")) + '</h2><div class="card" style="padding:4px 14px">' + receipts.reports.slice(0, 6).map(exRow(false)).join("") + "</div>";
     var list = (receipts.list || []).filter(function (r) { return !(r.data && r.data.removed); });
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
     // Three kinds, each its own list: receipts (money spent), documents (licences, insurance, letters, sick notes),
@@ -1124,12 +1206,13 @@
       { id: 2, at: new Date().toISOString(), paid: "fuelcard", status: "read", data: { merchant: "Aral Flughafen", date: d(-3), total: 71.1, vat: 11.35, vat_rate: 19 } },
       { id: 3, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Waschpark Stuttgart", date: d(0), total: 14.9, vat: 2.38, vat_rate: 19, confirm: "pending" } },
       { id: 4, at: new Date().toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "sick_note", sick: { from: d(0), to: d(2) }, route: ["hr"], summary: "Arbeitsunfähigkeitsbescheinigung" } },
-      { id: 5, at: new Date(Date.now() - 864e5).toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "hu_report", hu_next: "2027-11", hu_result: "ohne Mängel", route: ["fleet"], summary: "HU-Prüfbericht, keine Mängel" } }], to_confirm: 1 };
+      { id: 5, at: new Date(Date.now() - 864e5).toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "hu_report", hu_next: "2027-11", hu_result: "ohne Mängel", route: ["fleet"], summary: "HU-Prüfbericht, keine Mängel" } }], to_confirm: 1, reports: [{ month: d(0).slice(0, 7), total: 62.4, status: "open" }, { month: d(-31).slice(0, 7), total: 41.2, status: "paid" }] };
     var msgs = [], reqs = [{ id: 1, at: new Date(Date.now() - 2 * 864e5).toISOString(), kind: "leave", text: "Urlaub für Familienbesuch", details: { from: d(20), to: d(24) }, status: "with_owner", answer: "Danke, ich habe deinen Urlaub an den Chef weitergegeben. Du bekommst Bescheid, sobald er entschieden hat." }];
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
       profile: { phone: "4915100000000", type: /[?&]owner\b/.test(location.search) ? "inhaber" : "minijob", start: "2026-09-01", hourly_wage: 13.9, days_per_week: 2, vacation_days_per_year: 10, role: "Fahrer",
         documents: { fuehrerschein: { expires: "2031-04-30" }, p_schein: { expires: d(40) }, arbeitsvertrag: { signed: "2026-08-28" }, sofortmeldung: { done: "2026-08-31" } },
+        recurring: [{ id: "miete", merchant: "Büromiete", monthly: 90, start: "2026-09-01" }],
         duties: [{ id: "belege", due: d(3), done: false, title: { de: "Alle Belege des Vormonats hochladen", en: "Upload all receipts of last month", el: "Ανέβασε όλες τις αποδείξεις του προηγούμενου μήνα" } }] },
       shifts: [-6, -5, -1, 0, 2, 3, 9, 10].map(function (n, i) { return { id: i, day: d(n), start: n % 2 ? "06:00" : "15:00", end: n % 2 ? "12:00" : "21:30", break_min: n % 2 ? 0 : 30, note: n === 2 ? "Flughafen" : null }; }),
       leave: [{ id: 1, from: d(20), to: d(24), kind: "urlaub", status: "requested" }, { id: 2, from: "2026-08-10", to: "2026-08-12", kind: "urlaub", status: "approved" }],
@@ -1143,6 +1226,11 @@
     return { rpc: function (fn, a) {
       return new Promise(function (ok) { setTimeout(function () {
         if (fn === "driver_login" || fn === "team_login") return ok({ token: "demo", driver: home.me });
+        if (fn === "team_owner_receipts") return ok(demoReceipts.list.map(function (r) { return Object.assign({ driver: "Max Testfahrer" }, r); }).concat([
+          { id: 50, at: new Date().toISOString(), driver: "Inhaber", paid: "company", status: "read", data: { merchant: "Kfz-Versicherung (Beispiel)", total: 412.5, date: d(-5), category: "other", payment_status: "open", due_date: d(4) } },
+          { id: 51, at: new Date().toISOString(), driver: "Inhaber", paid: "company", status: "read", data: { merchant: "Werkstatt (Beispiel)", total: 289, vat: 46.14, date: d(-20), category: "repair", payment_status: "open", due_date: d(-2), flags: ["MwSt fehlt auf der Rechnung"] } }]));
+        if (fn === "team_owner_bill_paid") return ok({ ok: true });
+        if (fn === "team_owner_report_set") return ok([{ month: d(0).slice(0, 7), total: 62.4, status: a.p_status }]);
         if (fn === "team_owner_people") return ok([{ id: "demo", name: "Max Testfahrer", phone: "4915100000000", role: "Fahrer", last_seen: new Date().toISOString(), receipts_open: 1, requests_open: 1 }]);
         if (fn === "team_owner_person") return ok({ me: { id: "demo", name: "Max Testfahrer", phone: "4915100000000" }, profile: home.profile, shifts: home.shifts, leave: home.leave, requests: reqs, receipts: demoReceipts });
         if (fn === "team_owner_reset") return ok({ pin: a.p_new_pin ? "4821" : null, phone: a.p_phone ? a.p_phone.replace(/\D/g, "") : "4915100000000" });
