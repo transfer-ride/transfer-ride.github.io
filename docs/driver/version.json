@@ -1,10 +1,10 @@
 {
- "versionCode": 75,
- "versionName": "3.67",
- "sha256": "425f39771d07592dda14b8f4501e38dc32b9da054ce69fa7fdb780a8b4b12e31",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-75.apk",
- "notes": "Neue Anfrage klingelt jetzt zweimal und mit voller Lautstärke; ist sie nach 10 Minuten noch offen, klingelt sie noch einmal. Dazu: Modus 'Richtung Ziel'.",
- "notes_de": "Neue Anfrage klingelt jetzt zweimal und mit voller Lautstärke; ist sie nach 10 Minuten noch offen, klingelt sie noch einmal. Dazu: Modus 'Richtung Ziel'.",
- "notes_en": "New requests now ring twice at full volume; still open after 10 minutes, they ring again. Also: 'towards a destination' mode.",
- "notes_el": "Τα νέα αιτήματα χτυπάνε δύο φορές στη μέγιστη ένταση· αν μείνουν ανοιχτά 10 λεπτά, ξαναχτυπάνε. Και: λειτουργία «Προς προορισμό»."
+ "versionCode": 76,
+ "versionName": "3.68",
+ "sha256": "8aaf0f104687420b6cc5da01e6c142c8b9d07b9b830100d24a07f3fd3eea6ca2",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-76.apk",
+ "notes": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke. Dazu: Modus 'Richtung Ziel'.",
+ "notes_de": "Neue Anfrage klingelt einmal normal; ist sie nach 10 Minuten noch offen, klingelt sie zweimal mit voller Lautstärke. Dazu: Modus 'Richtung Ziel'.",
+ "notes_en": "A new request rings once as usual; still open after 10 minutes, it rings twice at full volume. Also: 'towards a destination' mode.",
+ "notes_el": "Νέο αίτημα: χτυπάει μία φορά κανονικά· αν μείνει ανοιχτό 10 λεπτά, χτυπάει δύο φορές στη μέγιστη ένταση. Και: λειτουργία «Προς προορισμό»."
 }
