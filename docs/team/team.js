@@ -767,6 +767,8 @@
   // Counts as an expense only with a real invoice: proofs of payment / order confirmations wait for theirs.
   function isProof(d) { return !!(d.invoice_missing || d.proof || /payment|order_conf|confirmation/.test(d.kind || "")); }
   function counts(r) { var d = r.data || {}; return (r.status === "read" || r.status === "approved") && d.total != null && d.approve !== "pending" && d.approve !== "no" && !isProof(d); }
+  // Owner's own receipt (photo on this phone's list) → tap opens it.
+  function ownRc(id) { return ((receipts && receipts.list) || []).some(function (x) { return x.id === id; }); }
   function openBills() {
     return (ownAll || []).filter(function (r) { var d = r.data || {}; return d.payment_status === "open" && !d.paid_at && r.status !== "rejected" && r.status !== "duplicate" && d.approve !== "pending" && d.approve !== "no"; });
   }
@@ -779,7 +781,7 @@
     var week = ymd(new Date(Date.now() + 7 * 864e5));
     h += "<h2>" + esc(t("bl_open")) + " (" + open.length + ')</h2><div class="card" style="padding:4px 14px">' + (open.length ? open.map(function (r) {
       var d = r.data, late = d.due_date && d.due_date < today, soon = !late && d.due_date && d.due_date <= week;
-      return '<div class="row" style="align-items:flex-start' + (late ? ';background:var(--bad-soft);border-radius:10px;padding-left:8px;padding-right:8px' : soon ? ';background:var(--warn-soft);border-radius:10px;padding-left:8px;padding-right:8px' : "") + '"><span class="grow t">' + esc(d.merchant || r.note || "…") +
+      return '<div class="row" style="align-items:flex-start' + (late ? ';background:var(--bad-soft);border-radius:10px;padding-left:8px;padding-right:8px' : soon ? ';background:var(--warn-soft);border-radius:10px;padding-left:8px;padding-right:8px' : "") + '"><span class="grow t"' + (ownRc(r.id) ? ' role="button" tabindex="0" style="cursor:pointer;text-decoration:underline dotted" data-rimg="' + r.id + '"' : "") + '>' + esc(d.merchant || r.note || "…") +
         '<span class="muted small" style="display:block">' + esc(d.due_date ? t(late ? "bl_late" : "bl_due", fmtDay(d.due_date)) : fmtDay(d.date)) + '</span><button class="chip ok" style="border:0;font:inherit;margin-top:6px" data-bill="' + r.id + '" data-billv="1">' + esc(t("bl_paid_btn")) +
         '</button></span><b>' + esc(money(d.total)) + "</b></div>"; }).join("") : '<div class="row muted">' + esc(t("bl_none")) + "</div>") + "</div>";
     var fixed = profile().recurring || [];
@@ -859,8 +861,9 @@
     var sum = rows.reduce(function (a, r) { return a + (Number(r.data.total) || 0); }, 0);
     openSheet('<h2 style="margin-top:0">' + esc(title) + '</h2><p class="muted small">' + rows.length + " " + esc(t("sum_counted")) + " · " + esc(money(sum)) + '</p><div class="card" style="padding:4px 14px">' + rows.map(function (r) {
       var d = r.data;
-      return '<div class="row" style="align-items:flex-start"><span class="grow t">' + esc(d.merchant || r.note || "…") + '<span class="muted small" style="display:block;font-weight:400">' + esc([fmtDay(d.date || r.at), kind !== "p" ? r.driver : "", d.vat != null ? t("sum_vat") + " " + money(d.vat) : ""].filter(Boolean).join(" · ")) +
-        "</span></span><b>" + esc(money(d.total)) + "</b></div>"; }).join("") + '</div><button class="btn ghost" data-close style="margin-top:14px">OK</button>');
+      return '<div class="row" style="align-items:flex-start' + (ownRc(r.id) ? ";cursor:pointer" : "") + '"' + (ownRc(r.id) ? ' data-dimg="' + r.id + '"' : "") + '><span class="grow t">' + esc(d.merchant || r.note || "…") + '<span class="muted small" style="display:block;font-weight:400">' + esc([fmtDay(d.date || r.at), kind !== "p" ? r.driver : "", d.vat != null ? t("sum_vat") + " " + money(d.vat) : ""].filter(Boolean).join(" · ")) +
+        "</span></span><b>" + esc(money(d.total)) + "</b></div>"; }).join("") + '</div><button class="btn ghost" data-close style="margin-top:14px">OK</button>', function (s) {
+      s.querySelectorAll("[data-dimg]").forEach(function (b) { b.onclick = function () { closeSheet(); receiptView(+b.dataset.dimg); }; }); });
   }
   function bindOwner() {
     app.querySelectorAll("[data-drill]").forEach(function (b) { b.onclick = function () { drillSheet(b.dataset.drill); }; });
