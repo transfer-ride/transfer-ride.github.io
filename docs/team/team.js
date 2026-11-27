@@ -25,7 +25,7 @@
       app: "Team", pin: "PIN eingeben", pin_sub: "Dein 4-stelliger PIN", mobile_no: "Deine Handynummer", phone_bad: "Bitte die Handynummer prüfen.", wrong: "Falscher PIN. Noch {n} Versuche.",
       locked: "Zu viele Versuche. Bitte später noch einmal.", offline: "Keine Verbindung. Bitte später noch einmal.",
       home: "Start", plan: "Plan", requests: "Anträge", chat: "HR-Chat", profile: "Profil",
-      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", seg_rcpt: "Belege", seg_docs: "Unterlagen", seg_proof: "Nachweise", all_months: "Alle", sum_total: "Summe", sum_vat: "davon MwSt", sum_counted: "zählt", inv_missing: "Rechnung fehlt", inv_missing_top: "Hier fehlt noch die echte Rechnung", seg_empty: "Hier ist noch nichts.", dk_payment_confirmation: "Zahlungsnachweis", dk_order_confirmation: "Bestellbestätigung", bl_title: "Zahlungen", bl_sub: "Offene Rechnungen und feste Monatskosten", bl_open: "Offen", bl_due: "fällig {n}", bl_late: "überfällig seit {n}", bl_paid_btn: "Bezahlt", bl_undo: "Zurück", bl_fixed: "Feste Monatskosten", bl_from: "ab {n}", bl_paid: "Zuletzt bezahlt", bl_none: "Keine offenen Rechnungen.", rp_title: "Berichte", rp_sub: "Ausgaben pro Monat und Kategorie", rp_months: "Pro Monat", rp_cats: "Nach Kategorie", rp_people: "Nach Person", rp_flags: "Zum Prüfen", rp_year: "Jahr {n}", rp_net: "netto", ex_title: "Monatsabrechnung", ex_open: "offen", ex_approved: "freigegeben", ex_paid: "ausgezahlt", ex_approve: "Freigeben", ex_pay: "Ausgezahlt", ex_none: "Keine eigenen Auslagen.", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
+      tm_title: "Team", tm_owner: "Nur für dich als Inhaber", tm_last: "Zuletzt in der App: {n}", tm_never: "Noch nie angemeldet", tm_newpin: "Neuer PIN", tm_newpin_q: "{n} bekommt einen neuen PIN. Alte Handys werden abgemeldet, alle Daten bleiben. Weiter?", tm_pin_is: "Neuer PIN für {n}: {p}", tm_pin_tell: "Sag ihn persönlich weiter. Er wird nicht noch einmal angezeigt.", tm_phone: "Handynummer ändern", tm_phone_q: "Neue Handynummer für {n}:", tm_kept: "Alle Daten bleiben: Plan, Urlaub, Belege, Dokumente, Chat.", tm_plan: "Nächste Termine", tm_docs: "Dokumente", tm_rcpt: "Belege", tm_req: "Offene Anträge", tm_none: "Nichts", seg_rcpt: "Belege", seg_docs: "Unterlagen", seg_proof: "Nachweise", all_months: "Alle", sum_total: "Summe", sum_vat: "davon MwSt", sum_counted: "zählt", inv_missing: "Rechnung fehlt", inv_missing_top: "Hier fehlt noch die echte Rechnung", seg_empty: "Hier ist noch nichts.", dk_payment_confirmation: "Zahlungsnachweis", dk_order_confirmation: "Bestellbestätigung", bl_title: "Zahlungen", bl_sub: "Offene Rechnungen und feste Monatskosten", bl_open: "Offen", bl_due: "fällig {n}", bl_late: "überfällig seit {n}", bl_paid_btn: "Bezahlt", bl_undo: "Zurück", bl_fixed: "Feste Monatskosten", bl_from: "ab {n}", bl_paid: "Zuletzt bezahlt", bl_none: "Keine offenen Rechnungen.", rp_title: "Berichte", rp_sub: "Ausgaben pro Monat und Kategorie", rp_months: "Pro Monat", rp_cats: "Nach Kategorie", rp_people: "Nach Person", rp_flags: "Zum Prüfen", rp_year: "Jahr {n}", rp_net: "netto", ex_title: "Monatsabrechnung", ex_open: "offen", ex_approved: "freigegeben", ex_paid: "ausgezahlt", ex_approve: "Freigeben", ex_pay: "Ausgezahlt", ex_none: "Keine eigenen Auslagen.", tk_title: "Offene Aufgaben", tk_you: "Braucht dich", tk_me: "Mache ich", tk_closed: "Kürzlich erledigt", tk_upload: "Rechnung hochladen", tk_upload_doc: "Dokument hochladen", tk_done: "Erledigt", tk_notbiz: "Nicht geschäftlich", tk_notbiz_q: "Als nicht geschäftlich schließen? Dann wird nicht mehr danach gesucht.", tk_open: "Öffnen", tk_later: "Später", tk_checking: "Ich prüfe es", tk_none: "Keine offenen Aufgaben.", tk_all: "Alle ({n})", tk_dropped: "nicht geschäftlich", tk_since: "seit {n}", tk_agent_hint: "Hier musst du nichts tun. Ich melde mich, sobald es da ist.", vat_title: "MwSt pro Quartal", vat_in: "Vorsteuer", vat_due: "Voranmeldung bis {n}", vat_hint: "Vorsteuer aus den gezählten Belegen. Die Umsatzsteuer aus den Fahrten kommt dazu.", csv_btn: "Als CSV exportieren (für Buchhaltung)", csv_done: "CSV gespeichert", hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
       leave_left: "Urlaub übrig", days: "Tage", hours_month: "Stunden diesen Monat", open_req: "Offene Anträge",
       ask_leave: "Urlaub", ask_sick: "Krank melden", ask_swap: "Schicht tauschen", ask_raise: "Gehalt", ask_doc: "Dokument",
       ask_payslip: "Lohnzettel", ask_other: "Sonstiges", ask_chat: "Frag HR",
@@ -65,7 +65,7 @@
       app: "Team", pin: "Enter your PIN", pin_sub: "Your 4-digit PIN", mobile_no: "Your mobile number", phone_bad: "Please check the mobile number.", wrong: "Wrong PIN. {n} tries left.",
       locked: "Too many tries. Please try later.", offline: "No connection. Please try later.",
       home: "Home", plan: "Schedule", requests: "Requests", chat: "HR chat", profile: "Profile",
-      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", seg_rcpt: "Receipts", seg_docs: "Documents", seg_proof: "Proofs", all_months: "All", sum_total: "Total", sum_vat: "VAT in it", sum_counted: "counted", inv_missing: "Invoice missing", inv_missing_top: "The real invoice is still missing", seg_empty: "Nothing here yet.", dk_payment_confirmation: "Proof of payment", dk_order_confirmation: "Order confirmation", bl_title: "Payments", bl_sub: "Open invoices and fixed monthly costs", bl_open: "Open", bl_due: "due {n}", bl_late: "overdue since {n}", bl_paid_btn: "Paid", bl_undo: "Undo", bl_fixed: "Fixed monthly costs", bl_from: "from {n}", bl_paid: "Recently paid", bl_none: "No open invoices.", rp_title: "Reports", rp_sub: "Spending per month and category", rp_months: "Per month", rp_cats: "By category", rp_people: "By person", rp_flags: "To check", rp_year: "Year {n}", rp_net: "net", ex_title: "Monthly expenses", ex_open: "open", ex_approved: "approved", ex_paid: "paid out", ex_approve: "Approve", ex_pay: "Paid out", ex_none: "No own expenses.", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
+      tm_title: "Team", tm_owner: "Only for you as the owner", tm_last: "Last in the app: {n}", tm_never: "Never signed in", tm_newpin: "New PIN", tm_newpin_q: "{n} gets a new PIN. Old phones are signed out, all data stays. Continue?", tm_pin_is: "New PIN for {n}: {p}", tm_pin_tell: "Tell it in person. It is not shown again.", tm_phone: "Change mobile number", tm_phone_q: "New mobile number for {n}:", tm_kept: "All data stays: plan, leave, receipts, documents, chat.", tm_plan: "Next dates", tm_docs: "Documents", tm_rcpt: "Receipts", tm_req: "Open requests", tm_none: "Nothing", seg_rcpt: "Receipts", seg_docs: "Documents", seg_proof: "Proofs", all_months: "All", sum_total: "Total", sum_vat: "VAT in it", sum_counted: "counted", inv_missing: "Invoice missing", inv_missing_top: "The real invoice is still missing", seg_empty: "Nothing here yet.", dk_payment_confirmation: "Proof of payment", dk_order_confirmation: "Order confirmation", bl_title: "Payments", bl_sub: "Open invoices and fixed monthly costs", bl_open: "Open", bl_due: "due {n}", bl_late: "overdue since {n}", bl_paid_btn: "Paid", bl_undo: "Undo", bl_fixed: "Fixed monthly costs", bl_from: "from {n}", bl_paid: "Recently paid", bl_none: "No open invoices.", rp_title: "Reports", rp_sub: "Spending per month and category", rp_months: "Per month", rp_cats: "By category", rp_people: "By person", rp_flags: "To check", rp_year: "Year {n}", rp_net: "net", ex_title: "Monthly expenses", ex_open: "open", ex_approved: "approved", ex_paid: "paid out", ex_approve: "Approve", ex_pay: "Paid out", ex_none: "No own expenses.", tk_title: "Open tasks", tk_you: "Needs you", tk_me: "I do it", tk_closed: "Recently done", tk_upload: "Upload invoice", tk_upload_doc: "Upload document", tk_done: "Done", tk_notbiz: "Not business", tk_notbiz_q: "Close as not business? Then I stop looking for it.", tk_open: "Open", tk_later: "Later", tk_checking: "I am checking it", tk_none: "No open tasks.", tk_all: "All ({n})", tk_dropped: "not business", tk_since: "since {n}", tk_agent_hint: "Nothing to do for you. I tell you when it is here.", vat_title: "VAT per quarter", vat_in: "Input VAT", vat_due: "Return due {n}", vat_hint: "Input VAT from the counted receipts. The VAT on the rides comes on top.", csv_btn: "Export as CSV (for the accountant)", csv_done: "CSV saved", hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
       leave_left: "Leave left", days: "days", hours_month: "Hours this month", open_req: "Open requests",
       ask_leave: "Leave", ask_sick: "Call in sick", ask_swap: "Swap shift", ask_raise: "Pay", ask_doc: "Document",
       ask_payslip: "Payslip", ask_other: "Other", ask_chat: "Ask HR",
@@ -105,7 +105,7 @@
       app: "Team", pin: "Βάλε το PIN", pin_sub: "Το 4ψήφιο PIN σου", mobile_no: "Το κινητό σου", phone_bad: "Έλεγξε τον αριθμό του κινητού.", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
       locked: "Πολλές προσπάθειες. Δοκίμασε αργότερα.", offline: "Χωρίς σύνδεση. Δοκίμασε αργότερα.",
       home: "Αρχική", plan: "Πρόγραμμα", requests: "Αιτήματα", chat: "Chat HR", profile: "Προφίλ",
-      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", seg_rcpt: "Αποδείξεις", seg_docs: "Δικαιολογητικά", seg_proof: "Αποδεικτικά", all_months: "Όλα", sum_total: "Σύνολο", sum_vat: "από αυτά ΦΠΑ", sum_counted: "μετράνε", inv_missing: "Λείπει τιμολόγιο", inv_missing_top: "Εδώ λείπει ακόμα το κανονικό τιμολόγιο", seg_empty: "Δεν υπάρχει τίποτα εδώ ακόμα.", dk_payment_confirmation: "Αποδεικτικό πληρωμής", dk_order_confirmation: "Επιβεβαίωση παραγγελίας", bl_title: "Πληρωμές", bl_sub: "Ανοιχτά τιμολόγια και σταθερά μηνιαία", bl_open: "Ανοιχτά", bl_due: "λήγει {n}", bl_late: "έληξε {n}", bl_paid_btn: "Πληρώθηκε", bl_undo: "Αναίρεση", bl_fixed: "Σταθερά μηνιαία έξοδα", bl_from: "από {n}", bl_paid: "Πληρώθηκαν πρόσφατα", bl_none: "Κανένα ανοιχτό τιμολόγιο.", rp_title: "Αναφορές", rp_sub: "Έξοδα ανά μήνα και κατηγορία", rp_months: "Ανά μήνα", rp_cats: "Ανά κατηγορία", rp_people: "Ανά άτομο", rp_flags: "Για έλεγχο", rp_year: "Έτος {n}", rp_net: "καθαρά", ex_title: "Μηνιαία έξοδα", ex_open: "ανοιχτό", ex_approved: "εγκρίθηκε", ex_paid: "πληρώθηκε", ex_approve: "Έγκριση", ex_pay: "Πληρώθηκε", ex_none: "Δεν υπάρχουν έξοδα από δικά του χρήματα.", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
+      tm_title: "Ομάδα", tm_owner: "Μόνο για σένα ως ιδιοκτήτη", tm_last: "Τελευταία φορά στην εφαρμογή: {n}", tm_never: "Δεν έχει συνδεθεί ακόμα", tm_newpin: "Νέο PIN", tm_newpin_q: "Ο/Η {n} θα πάρει νέο PIN. Τα παλιά κινητά αποσυνδέονται, όλα τα δεδομένα μένουν. Συνέχεια;", tm_pin_is: "Νέο PIN για {n}: {p}", tm_pin_tell: "Πες το του προσωπικά. Δεν θα ξαναφανεί.", tm_phone: "Αλλαγή κινητού", tm_phone_q: "Νέο κινητό για {n}:", tm_kept: "Όλα τα δεδομένα μένουν: πρόγραμμα, άδειες, αποδείξεις, έγγραφα, chat.", tm_plan: "Επόμενα ραντεβού", tm_docs: "Έγγραφα", tm_rcpt: "Αποδείξεις", tm_req: "Ανοιχτά αιτήματα", tm_none: "Τίποτα", seg_rcpt: "Αποδείξεις", seg_docs: "Δικαιολογητικά", seg_proof: "Αποδεικτικά", all_months: "Όλα", sum_total: "Σύνολο", sum_vat: "από αυτά ΦΠΑ", sum_counted: "μετράνε", inv_missing: "Λείπει τιμολόγιο", inv_missing_top: "Εδώ λείπει ακόμα το κανονικό τιμολόγιο", seg_empty: "Δεν υπάρχει τίποτα εδώ ακόμα.", dk_payment_confirmation: "Αποδεικτικό πληρωμής", dk_order_confirmation: "Επιβεβαίωση παραγγελίας", bl_title: "Πληρωμές", bl_sub: "Ανοιχτά τιμολόγια και σταθερά μηνιαία", bl_open: "Ανοιχτά", bl_due: "λήγει {n}", bl_late: "έληξε {n}", bl_paid_btn: "Πληρώθηκε", bl_undo: "Αναίρεση", bl_fixed: "Σταθερά μηνιαία έξοδα", bl_from: "από {n}", bl_paid: "Πληρώθηκαν πρόσφατα", bl_none: "Κανένα ανοιχτό τιμολόγιο.", rp_title: "Αναφορές", rp_sub: "Έξοδα ανά μήνα και κατηγορία", rp_months: "Ανά μήνα", rp_cats: "Ανά κατηγορία", rp_people: "Ανά άτομο", rp_flags: "Για έλεγχο", rp_year: "Έτος {n}", rp_net: "καθαρά", ex_title: "Μηνιαία έξοδα", ex_open: "ανοιχτό", ex_approved: "εγκρίθηκε", ex_paid: "πληρώθηκε", ex_approve: "Έγκριση", ex_pay: "Πληρώθηκε", ex_none: "Δεν υπάρχουν έξοδα από δικά του χρήματα.", tk_title: "Εκκρεμότητες", tk_you: "Θέλει εσένα", tk_me: "Το κάνω εγώ", tk_closed: "Έκλεισαν πρόσφατα", tk_upload: "Ανέβασε το τιμολόγιο", tk_upload_doc: "Ανέβασε το έγγραφο", tk_done: "Έγινε", tk_notbiz: "Δεν είναι της δουλειάς", tk_notbiz_q: "Να κλείσει ως μη επαγγελματικό; Τότε σταματάω να το ψάχνω.", tk_open: "Άνοιγμα", tk_later: "Αργότερα", tk_checking: "Το ελέγχω", tk_none: "Καμία ανοιχτή εκκρεμότητα.", tk_all: "Όλες ({n})", tk_dropped: "όχι της δουλειάς", tk_since: "από {n}", tk_agent_hint: "Δεν χρειάζεται να κάνεις τίποτα. Θα σου πω μόλις έρθει.", vat_title: "ΦΠΑ ανά τρίμηνο", vat_in: "ΦΠΑ εξόδων (Vorsteuer)", vat_due: "Δήλωση έως {n}", vat_hint: "ΦΠΑ από τις αποδείξεις που μετράνε. Ο ΦΠΑ από τις διαδρομές προστίθεται.", csv_btn: "Εξαγωγή CSV (για τον λογιστή)", csv_done: "Το CSV αποθηκεύτηκε", hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
       leave_left: "Άδεια που απομένει", days: "μέρες", hours_month: "Ώρες αυτόν τον μήνα", open_req: "Ανοιχτά αιτήματα",
       ask_leave: "Άδεια", ask_sick: "Ασθένεια", ask_swap: "Αλλαγή βάρδιας", ask_raise: "Μισθός", ask_doc: "Έγγραφο",
       ask_payslip: "Μισθοδοσία", ask_other: "Άλλο", ask_chat: "Ρώτα το HR",
@@ -404,7 +404,7 @@
 
   function render() {
     if (tab === "chat") return chatScreen();
-    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen, bills: billsScreen, reports: reportsScreen }[tab] || homeScreen;
+    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen, bills: billsScreen, reports: reportsScreen, tasks: tasksScreen }[tab] || homeScreen;
     app.innerHTML = '<main class="screen">' + body() + "</main>" + tabsHtml();
     bind();
   }
@@ -412,13 +412,13 @@
     return '<nav class="tabs" aria-label="Menu">' + ["home", "receipts", "requests", "chat", "profile"].map(function (k) {
       var n = k === "chat" ? data && data.unread : k === "receipts" ? receipts && receipts.to_confirm : 0;
       var badge = n > 0 ? '<span class="badge">' + n + "</span>" : "";
-      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team" || tab === "bills" || tab === "reports"));
+      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team" || tab === "bills" || tab === "reports" || tab === "tasks"));
       return '<button type="button" data-tab="' + k + '"' + (cur ? ' aria-current="page"' : "") + ">" + ICON[k] + "<span>" + esc(t(k === "receipts" ? "up_tab" : k)) + "</span>" + badge + "</button>";
     }).join("") + "</nav>";
   }
   function tabsBadge() { var n = app.querySelector(".tabs"); if (n) { n.outerHTML = tabsHtml(); bindTabs(); } }
   function bindTabs() { app.querySelectorAll("[data-tab]").forEach(function (b) { b.onclick = function () { go(b.dataset.tab); }; }); }
-  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; } if (k === "bills" || k === "reports") ownAll = null; tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts") loadReceipts(); }
+  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; } if (k === "bills" || k === "reports") ownAll = null; tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts" || k === "tasks") loadReceipts(); }
   function bind() {
     bindTabs(); bindTeam(); bindOwner();
     app.querySelectorAll("[data-rseg]").forEach(function (b) { b.onclick = function () { rSeg = b.dataset.rseg; rMonth = ""; store("team_rseg", rSeg); render(); }; });
@@ -433,6 +433,8 @@
     var ck = app.querySelector("#check"); if (ck) ck.onclick = checkSheet;
     app.querySelectorAll("[data-wallet]").forEach(function (b) { b.onclick = function () { go("receipts"); }; });
     app.querySelectorAll("[data-receipt]").forEach(function (b) { b.onclick = function () { receiptSheet(); }; });
+    app.querySelectorAll("[data-task]").forEach(function (b) { b.onclick = function () { taskSheet(b.dataset.task); }; });
+    var csv = app.querySelector("#csv"); if (csv) csv.onclick = exportCsv;
     app.querySelectorAll("[data-rnew]").forEach(function (b) { b.onclick = function () { receiptSheet(b.dataset.rnew); }; });
     app.querySelectorAll("[data-rimg]").forEach(function (b) { b.onclick = function () { receiptView(+b.dataset.rimg); }; });
     app.querySelectorAll("[data-sec]").forEach(function (b) { b.onclick = function () { profSec = b.dataset.sec; render(); }; });
@@ -469,6 +471,10 @@
       return '<button class="card row tap" style="width:100%;margin-top:8px;border:0;text-align:left' + (late ? ';background:#fdecea' : '') + '" data-receipt="1"><span class="grow t">' + esc(w) +
         '<span class="muted small" style="display:block">' + esc(t("due_by", new Date(u.due + "T12:00:00").toLocaleDateString(loc()))) + "</span></span>›</button>";
     }).join("");
+    if (!receipts) loadReceipts();
+    var tko = openTasks(), mine = tko.filter(function (x) { return x.who === "owner" && x.answer !== "uploaded"; });
+    if (tko.length) h += '<h2 style="display:flex;justify-content:space-between;align-items:baseline">' + esc(t("tk_title")) + '<button class="small" style="border:0;background:none;color:var(--mint);font:inherit;font-weight:700" data-go="tasks">' + esc(t("tk_all", tko.length)) + ' ›</button></h2>' +
+      '<div class="card" style="padding:4px 14px">' + (mine.length ? mine : tko).slice(0, 3).map(taskRow).join("") + "</div>";
     if (receipts && receipts.to_confirm > 0) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0;background:#e6f0fd" data-wallet="1"><span class="grow t" style="text-align:left">' + esc(t("confirm_home", receipts.to_confirm)) + '</span><span class="chip info">' + receipts.to_confirm + "</span></button>";
     if (open) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0" data-go="requests"><span class="grow t" style="text-align:left">' + esc(t("open_req")) + '</span><span class="chip wait">' + open + "</span></button>";
     h += '<div class="actions">' + [["leave", "ask_leave", "leave"], ["sick", "ask_sick", "sick"], ["shift_swap", "ask_swap", "swap"]].map(function (k) {
@@ -589,7 +595,9 @@
   function ownLoad(from) {
     rpc("team_owner_receipts", { p_token: token, p_from: from }).then(function (x) { ownAll = x || []; if (tab === "bills" || tab === "reports") render(); }).catch(function (e) { toast(e.message || t("err")); });
   }
-  function counts(r) { var d = r.data || {}; return (r.status === "read" || r.status === "approved") && d.total != null && d.approve !== "pending" && d.approve !== "no"; }
+  // Counts as an expense only with a real invoice: proofs of payment / order confirmations wait for theirs.
+  function isProof(d) { return !!(d.invoice_missing || d.proof || /payment|order_conf|confirmation/.test(d.kind || "")); }
+  function counts(r) { var d = r.data || {}; return (r.status === "read" || r.status === "approved") && d.total != null && d.approve !== "pending" && d.approve !== "no" && !isProof(d); }
   function billsScreen() {
     var h = '<div class="top"><button class="back" aria-label="Back" data-go="menu">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("bl_title")) + "</h1></div>";
     if (!ownAll) { ownLoad(ymd(new Date(Date.now() - 400 * 864e5))); return h + '<div class="empty">…</div>'; }
@@ -633,11 +641,38 @@
     h += "<h2>" + esc(t("rp_cats")) + '</h2><div class="card" style="padding:4px 14px">' + ck.map(function (k) { return bar(t("cat_" + k) !== "cat_" + k ? t("cat_" + k) : k, byC[k], cmax); }).join("") + "</div>";
     var pk = sortV(byP);
     if (pk.length > 1) h += "<h2>" + esc(t("rp_people")) + '</h2><div class="card" style="padding:4px 14px">' + pk.map(function (k) { return bar(k, byP[k], byP[pk[0]]); }).join("") + "</div>";
+    var qv = [0, 0, 0, 0];
+    rows.forEach(function (r) { var m = +String(r.data.date || r.at).slice(5, 7), q = Math.floor((m - 1) / 3); qv[q] += Number(r.data.vat) || 0; });
+    var vdue = function (q) { var d = q < 3 ? new Date(rpYear, q * 3 + 3, 10, 12) : new Date(rpYear + 1, 0, 10, 12); while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1); return ymd(d); };
+    var today = ymd(new Date());
+    h += "<h2>" + esc(t("vat_title")) + '</h2><div class="card" style="padding:4px 14px">' + [0, 1, 2, 3].map(function (q) {
+      var due = vdue(q), soon = due >= today && (new Date(due) - new Date()) < 45 * 864e5;
+      return '<div class="row" style="align-items:flex-start' + (soon ? ";background:#fff4e5;border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow t">Q' + (q + 1) + " " + rpYear + '<span class="muted small" style="display:block">' + esc(t("vat_due", fmtDay(due))) + '</span></span><span style="text-align:right"><b>' + esc(money(qv[q])) +
+        '</b><br><span class="muted small">' + esc(t("vat_in")) + "</span></span></div>"; }).join("") + '<p class="muted small" style="margin:8px 0">' + esc(t("vat_hint")) + "</p></div>";
+    h += '<button class="btn ghost" id="csv" style="margin-top:14px;width:100%">⬇ ' + esc(t("csv_btn")) + "</button>";
     var fl = ownAll.filter(function (r) { return r.data && (r.data.flags || []).length && r.status !== "rejected" && String(r.data.date || r.at).slice(0, 4) === String(rpYear); });
     if (fl.length) h += "<h2>" + esc(t("rp_flags")) + " (" + fl.length + ')</h2><div class="card" style="padding:4px 14px">' + fl.map(function (r) {
       return '<div class="row" style="align-items:flex-start"><span class="grow t">' + esc(r.data.merchant || "…") + '<span class="muted small" style="display:block">' + esc(r.driver + " · " + fmtDay(r.data.date || r.at)) +
-        '</span><span class="small" style="display:block;color:var(--warn,#9a5b00)">⚠ ' + esc(r.data.flags.join(" · ")) + "</span></span><b>" + esc(money(r.data.total)) + "</b></div>"; }).join("") + "</div>";
+        '</span><span class="small" style="display:block;color:var(--warn,#9a5b00)">⚠ ' + esc(r.data.flags.map(flagTx).join(" · ")) + "</span></span><b>" + esc(money(r.data.total)) + "</b></div>"; }).join("") + "</div>";
     return h;
+  }
+  // The checks are written in German by the agent; shown in the reader's language.
+  var FLAG_TX = [[/^MwSt fehlt/, { el: "Λείπει ο ΦΠΑ στο τιμολόγιο", en: "VAT missing on the invoice" }], [/^Alkohol/, { el: "Αλκοόλ/καπνός στην απόδειξη", en: "Alcohol/tobacco on the receipt" }],
+    [/^Essen am Wochenende/, { el: "Φαγητό το Σαββατοκύριακο", en: "Food at the weekend" }], [/^ausländische MwSt/, { el: "Ξένος ΦΠΑ (δεν εκπίπτει)", en: "Foreign VAT (not deductible)" }],
+    [/^kein Datum/, { el: "Δεν διαβάζεται ημερομηνία", en: "No date readable" }], [/^älter als 30/, { el: "Παλαιότερη από 30 μέρες", en: "Older than 30 days" }],
+    [/^hoher Betrag/, { el: "Μεγάλο ποσό", en: "High amount" }], [/^an diesem Tag keine Schicht/, { el: "Καμία βάρδια εκείνη τη μέρα", en: "No shift that day" }],
+    [/^möglicherweise privat/, { el: "Ίσως ιδιωτικό", en: "Maybe private" }], [/^über dem Rahmen/, { el: "Πάνω από το όριο κατηγορίας", en: "Above the category limit" }], [/mehr als ein Tank/, { el: "Περισσότερα λίτρα από ένα ρεζερβουάρ", en: "More than one tank" }]];
+  function flagTx(f) { if (lang === "de") return f; for (var i = 0; i < FLAG_TX.length; i++) if (FLAG_TX[i][0].test(f)) return FLAG_TX[i][1][lang] || f; return f; }
+  // Owner: the counted receipts of the year as a CSV (semicolon, German decimals) for the accountant.
+  function exportCsv() {
+    var rows = (ownAll || []).filter(function (r) { return counts(r) && String(r.data.date || r.at).slice(0, 4) === String(rpYear); })
+      .sort(function (a, b) { return String(a.data.date || a.at) < String(b.data.date || b.at) ? -1 : 1; });
+    var q = function (v) { v = v == null ? "" : String(v); return /[;"\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+    var n = function (v) { return v == null || v === "" ? "" : Number(v).toFixed(2).replace(".", ","); };
+    var lines = [["Datum", "Lieferant", "Rechnungsnr", "Kategorie", "Brutto", "MwSt", "MwSt-Satz", "Netto", "Bezahlt", "Person", "Beleg-ID"].join(";")].concat(rows.map(function (r) {
+      var d = r.data; return [d.date || String(r.at).slice(0, 10), d.merchant, d.number, d.category, n(d.total), n(d.vat), d.vat_rate, n((Number(d.total) || 0) - (Number(d.vat) || 0)), r.paid, r.driver, r.id].map(q).join(";"); }));
+    var blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" }), a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = "ausgaben-" + rpYear + ".csv"; document.body.appendChild(a); a.click(); a.remove(); toast(t("csv_done"));
   }
   function bindOwner() {
     app.querySelectorAll("[data-bill]").forEach(function (b) { b.onclick = function () {
@@ -939,6 +974,52 @@
       '<br><span class="muted small">' + esc(t("uploaded_at", time) + (r.status === "filed" || r.paid === "none" ? "" : " · " + t("paid_" + r.paid))) + "</span></span>" +
       '<span style="text-align:right;white-space:nowrap"><b>' + esc(d.total != null && r.status !== "duplicate" ? money(d.total) : "") + '</b><br><span class="chip ' + cls + '">' + esc(d.invoice_missing && r.status !== "rejected" ? t("inv_missing") : st === "confirm" ? t("rs_confirm") : st === "approve" ? t("rs_approve") : d.approve === "no" ? t("ap_cancelled") : t("rs_" + st)) + "</span></span></button>";
   }
+  /* ---------------- Open tasks (invoice missing, letter to send, date to fill in) ---------------- */
+  // Written by the agent (hr_tasks). Each stays until done: by the agent (invoice found) or by the person (done / not business).
+  function tx(o) { return !o ? "" : typeof o === "string" ? o : o[lang] || o.de || o.el || o.en || ""; }
+  function allTasks() { return (receipts && receipts.tasks) || []; }
+  function openTasks() { return allTasks().filter(function (x) { return x.status === "open"; }); }
+  function taskRow(k) {
+    var sub = [k.vendor, k.amount != null ? money(k.amount) : "", k.due ? t("due_by", fmtDay(k.due)) : k.date ? fmtDay(k.date) : ""].filter(Boolean).join(" · ");
+    var late = k.status === "open" && k.due && k.due < ymd(new Date());
+    var chip = k.status === "done" ? ["ok", t("tk_done")] : k.status === "dropped" ? ["", t("tk_dropped")] : k.answer === "uploaded" ? ["info", t("tk_checking")] : k.who === "owner" ? ["wait", t("tk_you")] : ["info", t("tk_me")];
+    return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start;border:0;background:none;font:inherit;color:inherit' + (late ? ";background:#fdecea;border-radius:10px;padding-left:8px;padding-right:8px" : "") + '" data-task="' + esc(k.key) + '"><span class="grow"><span class="t">' + esc(tx(k.title)) + "</span>" +
+      (sub ? '<br><span class="muted small">' + esc(sub) + "</span>" : "") + '</span><span class="chip ' + chip[0] + '" style="white-space:nowrap">' + esc(chip[1]) + "</span></button>";
+  }
+  function tasksScreen() {
+    var h = '<div class="top"><button class="back" aria-label="Back" data-go="home">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("tk_title")) + "</h1></div>";
+    if (!receipts) return h + '<div class="empty">…</div>';
+    var op = openTasks(), you = op.filter(function (x) { return x.who === "owner" && x.answer !== "uploaded"; }), me = op.filter(function (x) { return you.indexOf(x) < 0; });
+    var closed = allTasks().filter(function (x) { return x.status !== "open"; });
+    if (!op.length) h += '<div class="empty">' + esc(t("tk_none")) + "</div>";
+    if (you.length) h += "<h2>" + esc(t("tk_you")) + " (" + you.length + ')</h2><div class="card" style="padding:4px 14px">' + you.map(taskRow).join("") + "</div>";
+    if (me.length) h += "<h2>" + esc(t("tk_me")) + " (" + me.length + ')</h2><div class="card" style="padding:4px 14px">' + me.map(taskRow).join("") + "</div>";
+    if (closed.length) h += "<h2>" + esc(t("tk_closed")) + '</h2><div class="card" style="padding:4px 14px;opacity:.8">' + closed.map(taskRow).join("") + "</div>";
+    return h;
+  }
+  function taskAnswer(key, a) {
+    return rpc("team_task_answer", { p_token: token, p_task: key, p_answer: a }).then(function (r) { receipts = r; closeSheet(); toast(t("saved")); render(); }).catch(function (e) { toast(e.message || t("err")); });
+  }
+  function taskSheet(key) {
+    var k = allTasks().filter(function (x) { return x.key === key; })[0]; if (!k) return;
+    var open = k.status === "open", facts = [k.vendor, k.amount != null ? money(k.amount) : "", k.date ? fmtDay(k.date) : "", k.due ? t("due_by", fmtDay(k.due)) : "", k.created_at ? t("tk_since", fmtDay(k.created_at)) : ""].filter(Boolean);
+    var b = [];
+    if (open && k.link) b.push('<a class="btn dark" style="display:flex;align-items:center;justify-content:center;text-decoration:none" href="' + esc(k.link) + '" target="_blank" rel="noopener">' + esc(t("tk_open")) + "</a>");
+    if (open && k.kind === "invoice" && k.answer !== "uploaded") b.push('<button class="btn' + (k.link ? " ghost" : "") + '" id="tkup">📷 ' + esc(t("tk_upload")) + "</button>");
+    if (open && k.kind === "doc") b.push('<button class="btn" id="tkdoc">📷 ' + esc(t("tk_upload_doc")) + "</button>");
+    if (open && k.kind !== "invoice") b.push('<button class="btn ghost" id="tkdone">✓ ' + esc(t("tk_done")) + "</button>");
+    if (open && k.kind === "invoice") b.push('<button class="btn ghost" id="tknb">' + esc(t("tk_notbiz")) + "</button>");
+    b.push('<button class="btn ghost" data-close>' + esc(open ? t("tk_later") : t("cancel")) + "</button>");
+    openSheet('<h2 style="margin-top:0">' + esc(tx(k.title)) + "</h2>" + (facts.length ? '<p class="muted small">' + esc(facts.join(" · ")) + "</p>" : "") +
+      (k.detail ? "<p>" + esc(tx(k.detail)) + "</p>" : "") + (open && k.who === "agent" && k.answer !== "uploaded" ? '<p class="muted small">' + esc(t("tk_agent_hint")) + "</p>" : "") +
+      '<div style="display:grid;gap:10px;margin-top:16px">' + b.join("") + "</div>", function (s) {
+      var up = s.querySelector("#tkup"); if (up) up.onclick = function () { closeSheet(); receiptSheet(null, { note: k.key + (k.vendor ? " " + k.vendor : ""), paid: "company", task: k.key }); };
+      var dc = s.querySelector("#tkdoc"); if (dc) dc.onclick = function () { closeSheet(); receiptSheet(null, { note: k.key, hint: "doc", task: k.key }); };
+      var dn = s.querySelector("#tkdone"); if (dn) dn.onclick = function () { dn.disabled = true; taskAnswer(k.key, "done"); };
+      var nb = s.querySelector("#tknb"); if (nb) nb.onclick = function () { if (confirm(t("tk_notbiz_q"))) { nb.disabled = true; taskAnswer(k.key, "not_business"); } };
+    });
+  }
+
   // The receipts tab: add new ones (camera or gallery) on top, then everything sent, newest first, by the day it was sent.
   function receiptsScreen() {
     var h = '<div class="top"><h1>' + esc(t("up_title")) + "</h1></div>";
@@ -946,17 +1027,19 @@
       '<button class="btn ghost" style="height:auto;padding:18px 8px" data-rnew="gal"><span style="font-size:28px">🖼️</span><br>' + esc(t("receipt_gallery")) + "</button></div>";
     h += '<p class="muted small" style="margin:10px 2px 0">' + esc(t("up_intro")) + "</p>";
     if (!receipts) { loadReceipts(); return h + '<div class="empty">…</div>'; }
+    // What still lacks its real invoice comes first: open tasks of the receipt hunt + uploaded proofs without an invoice.
+    var list = (receipts.list || []).filter(function (r) { return !(r.data && r.data.removed); });
+    var invT = openTasks().filter(function (x) { return x.kind === "invoice"; });
+    var missing = list.filter(function (r) { return r.data && r.data.invoice_missing && r.status !== "rejected"; });
+    if (missing.length || invT.length) h += '<h2>' + esc(t("inv_missing_top")) + ' (' + (missing.length + invT.length) + ')</h2><div class="card" style="padding:4px 14px;background:#fff4e5">' + invT.map(taskRow).join("") + missing.map(receiptRow).join("") + "</div>";
     if (receipts.to_confirm > 0) h += '<div class="card" style="background:#e6f0fd;margin-top:14px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + '</b><div class="muted small">' + esc(t("confirm_tap")) + "</div></div>";
     if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed2")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
     if ((receipts.reports || []).length) h += "<h2>" + esc(t("ex_title")) + '</h2><div class="card" style="padding:4px 14px">' + receipts.reports.slice(0, 6).map(exRow(false)).join("") + "</div>";
-    var list = (receipts.list || []).filter(function (r) { return !(r.data && r.data.removed); });
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
     // Three kinds, each its own list: receipts (money spent), documents (licences, insurance, letters, sick notes),
     // proofs (payment / order confirmations waiting for their real invoice). Proofs without an invoice stay on top.
     var cnt = { rcpt: 0, docs: 0, proof: 0 }; list.forEach(function (r) { rKinds(r).forEach(function (k) { cnt[k]++; }); });
     if (!cnt[rSeg]) rSeg = cnt.rcpt ? "rcpt" : cnt.docs ? "docs" : cnt.proof ? "proof" : "rcpt";
-    var missing = list.filter(function (r) { return r.data && r.data.invoice_missing && r.status !== "rejected"; });
-    if (missing.length) h += '<h2>' + esc(t("inv_missing_top")) + '</h2><div class="card" style="padding:4px 14px;background:#fff4e5">' + missing.map(receiptRow).join("") + "</div>";
     h += '<div class="seg" role="tablist" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:18px;padding:4px;border-radius:14px;background:var(--soft,#eef2f0)">' +
       ["rcpt", "docs", "proof"].map(function (k) {
         var on = rSeg === k;
@@ -976,7 +1059,7 @@
     if (rMonth) seg = seg.filter(function (r) { return month(r) === rMonth; });
     if (!seg.length) return h + '<div class="empty">' + esc(t("seg_empty")) + "</div>";
     if (rSeg === "rcpt") {
-      var counted = seg.filter(function (r) { var d = r.data || {}; return (r.status === "read" || r.status === "approved") && d.total != null && d.approve !== "pending" && d.approve !== "no"; });
+      var counted = seg.filter(counts);
       var tot = counted.reduce(function (s, r) { return s + Number(r.data.total || 0); }, 0), vat = counted.reduce(function (s, r) { return s + Number(r.data.vat || 0); }, 0);
       h += '<div class="grid2" style="margin-top:12px"><div class="card kpi"><div class="muted small">' + esc(t("sum_total")) + '</div><div class="n" style="font-size:24px">' + esc(money(tot)) +
         '</div><div class="muted small">' + counted.length + " " + esc(t("sum_counted")) + '</div></div><div class="card kpi"><div class="muted small">' + esc(t("sum_vat")) +
@@ -1085,8 +1168,9 @@
       return Array.prototype.map.call(new Uint8Array(buf), function (x) { return ("0" + x.toString(16)).slice(-2); }).join("");
     });
   }
-  function receiptSheet(mode) {
-    var imgs = [], paid = "fuelcard", hint = "receipt";
+  function receiptSheet(mode, pre) {
+    pre = pre || {};
+    var imgs = [], paid = pre.paid || "fuelcard", hint = pre.hint || "receipt";
     openSheet('<h2 style="margin-top:0">' + esc(t("up_title")) + '</h2><p class="muted small">' + esc(t("receipt_hint")) + "</p>" +
       '<input type="file" accept="image/*" capture="environment" id="rcam" style="display:none">' +
       '<input type="file" accept="image/*" multiple id="rgal" style="display:none">' +
@@ -1098,13 +1182,14 @@
       '<div id="rpaybox"><label class="f">' + esc(t("paid_how")) + '</label><div class="seg" id="rpaid" style="flex-wrap:wrap">' + ["fuelcard", "company", "cash", "card"].map(function (k) {
         return '<button type="button" data-p="' + k + '" aria-pressed="' + (k === paid) + '">' + esc(t("paid_" + k)) + "</button>"; }).join("") + "</div>" +
       '<p class="muted small" style="margin:6px 2px 0">' + esc(t("receipt_paid_hint")) + "</p></div>" +
-      '<label class="f" for="rnote">' + esc(t("receipt_note")) + '</label><input class="in" id="rnote">' +
+      '<label class="f" for="rnote">' + esc(t("receipt_note")) + '</label><input class="in" id="rnote" value="' + esc(pre.note || "") + '">' +
       '<div style="display:grid;gap:10px;margin-top:16px"><button class="btn" id="rsend" disabled>' + esc(t("send")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
       var cam = s.querySelector("#rcam"), gal = s.querySelector("#rgal"), send = s.querySelector("#rsend");
       s.querySelector("#rtake").onclick = function () { picking(); cam.click(); };
       s.querySelector("#rpick").onclick = function () { picking(); gal.click(); };
       s.querySelectorAll("[data-h]").forEach(function (b) { b.onclick = function () { hint = b.dataset.h; s.querySelectorAll("[data-h]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
         s.querySelector("#rpaybox").style.display = hint === "doc" ? "none" : ""; s.querySelector("#rdochint").style.display = hint === "doc" ? "" : "none"; }; });
+      if (hint === "doc") { s.querySelector("#rpaybox").style.display = "none"; s.querySelector("#rdochint").style.display = ""; }
       s.querySelectorAll("[data-p]").forEach(function (b) { b.onclick = function () { paid = b.dataset.p; s.querySelectorAll("[data-p]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); }; });
       function draw() {
         s.querySelector("#rprev").innerHTML = imgs.map(function (src, i) {
@@ -1139,6 +1224,7 @@
             }).then(function (r) { receipts = r.receipts; if (r.duplicate) dups++; else sent++; });
           });
         }, Promise.resolve()).then(function () {
+          if (pre.task && sent) rpc("team_task_answer", { p_token: token, p_task: pre.task, p_answer: "uploaded" }).then(function (r) { receipts = r; render(); }).catch(function () {});
           closeSheet();
           toast(dups ? t("receipts_done_dup", sent).replace("{d}", dups) : list.length > 1 ? t("receipts_done", sent) : t("receipt_sent"));
           go("receipts");
@@ -1207,6 +1293,12 @@
       { id: 3, at: new Date().toISOString(), paid: "cash", status: "read", data: { merchant: "Waschpark Stuttgart", date: d(0), total: 14.9, vat: 2.38, vat_rate: 19, confirm: "pending" } },
       { id: 4, at: new Date().toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "sick_note", sick: { from: d(0), to: d(2) }, route: ["hr"], summary: "Arbeitsunfähigkeitsbescheinigung" } },
       { id: 5, at: new Date(Date.now() - 864e5).toISOString(), paid: "none", status: "filed", hint: "doc", data: { kind: "hu_report", hu_next: "2027-11", hu_result: "ohne Mängel", route: ["fleet"], summary: "HU-Prüfbericht, keine Mängel" } }], to_confirm: 1, reports: [{ month: d(0).slice(0, 7), total: 62.4, status: "open" }, { month: d(-31).slice(0, 7), total: 41.2, status: "paid" }] };
+    demoReceipts.tasks = [
+      { key: "inv-demo-rental", kind: "invoice", who: "owner", status: "open", vendor: "Autovermietung", date: d(-40), created_at: d(-2), title: { de: "Mietwagen: Rechnung fehlt", en: "Rental car: invoice missing", el: "Ενοικίαση αυτοκινήτου: λείπει το τιμολόγιο" }, detail: { de: "Einmal im Kundenkonto anmelden, dann lade ich die Rechnung.", en: "Sign in to the customer account once, then I fetch the invoice.", el: "Συνδέσου μία φορά στον λογαριασμό, μετά το κατεβάζω εγώ." }, link: "https://example.com/" },
+      { key: "inv-demo-printer", kind: "invoice", who: "agent", status: "open", vendor: "Online-Shop", amount: 233.85, date: d(-1), created_at: d(-1), title: { de: "Drucker: Rechnung folgt", en: "Printer: invoice to follow", el: "Εκτυπωτής: περιμένει τιμολόγιο" }, detail: { de: "Die Rechnung kommt nach dem Versand.", en: "The invoice comes after shipping.", el: "Το τιμολόγιο βγαίνει μετά την αποστολή." } },
+      { key: "todo-demo-vat", kind: "todo", who: "owner", status: "open", due: d(20), created_at: d(-1), title: { de: "MwSt-Voranmeldung senden", en: "Send the VAT return", el: "Στείλε τη δήλωση ΦΠΑ" }, detail: { de: "Den Entwurf mache ich. Du sendest ihn.", en: "I prepare the draft. You send it.", el: "Το σχέδιο το ετοιμάζω εγώ. Το στέλνεις εσύ." } },
+      { key: "doc-demo-dates", kind: "doc", who: "owner", status: "open", created_at: d(-3), title: { de: "Ablaufdatum fehlt: Führerschein", en: "Expiry date missing: licence", el: "Λείπει η ημερομηνία λήξης: δίπλωμα" } },
+      { key: "inv-demo-old", kind: "invoice", who: "agent", status: "done", vendor: "Paketdienst", amount: 10.49, created_at: d(-5), done_at: d(-1), title: { de: "Paketmarke: Rechnung", en: "Parcel label: invoice", el: "Ετικέτα δέματος: τιμολόγιο" } }];
     var msgs = [], reqs = [{ id: 1, at: new Date(Date.now() - 2 * 864e5).toISOString(), kind: "leave", text: "Urlaub für Familienbesuch", details: { from: d(20), to: d(24) }, status: "with_owner", answer: "Danke, ich habe deinen Urlaub an den Chef weitergegeben. Du bekommst Bescheid, sobald er entschieden hat." }];
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
@@ -1243,6 +1335,7 @@
           return ok(msgs.slice());
         }
         if (fn === "team_receipts") return ok(demoReceipts);
+        if (fn === "team_task_answer") { demoReceipts.tasks.forEach(function (x) { if (x.key === a.p_task) { x.answer = a.p_answer; if (a.p_answer === "done") x.status = "done"; if (a.p_answer === "not_business") x.status = "dropped"; if (a.p_answer === "uploaded") x.who = "agent"; } }); return ok(demoReceipts); }
         if (fn === "team_receipt_add") { var dup = demoReceipts.list.some(function (x) { return x.sha === a.p_sha; }); demoReceipts.list.unshift({ id: demoReceipts.list.length + 10, at: new Date().toISOString(), paid: a.p_paid, note: a.p_note, status: dup ? "duplicate" : "new", hint: a.p_hint, data: {}, sha: a.p_sha }); return ok({ duplicate: dup, duplicate_at: new Date().toISOString(), receipts: demoReceipts }); }
         if (fn === "team_receipt_image") return ok(null);
         if (fn === "team_receipt_approve") { demoReceipts.list.forEach(function (x) { if (x.id === a.p_id) { x.data.approve = a.p_ok ? "yes" : "no"; if (!a.p_ok) x.status = "rejected"; } }); demoReceipts.to_confirm = Math.max(0, demoReceipts.to_confirm - 1); return ok(demoReceipts); }
