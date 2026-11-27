@@ -1,10 +1,10 @@
 {
- "versionCode": 73,
- "versionName": "3.65",
- "sha256": "ea2da783f74812320a1c16fc37511b6c7ad1de514f7ab1bd05c0b6125e84d066",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-73.apk",
- "notes": "Neu wie bei Uber: Pause für neue Anfragen (auf 'Bereit' tippen). Fahrt geändert: neues Ziel und alter → neuer Preis direkt auf der Fahrt. Während der Fahrt im Chat nur Kurzantworten.",
- "notes_de": "Neu wie bei Uber: Pause für neue Anfragen (auf 'Bereit' tippen). Fahrt geändert: neues Ziel und alter → neuer Preis direkt auf der Fahrt. Während der Fahrt im Chat nur Kurzantworten.",
- "notes_en": "New, like Uber: pause new requests (tap 'Ready'). Trip changed: new drop-off and old → new fare right on the ride. While driving the chat shows only quick replies.",
- "notes_el": "Νέα όπως στο Uber: παύση νέων αιτημάτων (πάτα στο «Έτοιμος»). Αλλαγή διαδρομής: νέος προορισμός και παλιά → νέα τιμή πάνω στη διαδρομή. Όσο οδηγείς, στο chat μόνο γρήγορες απαντήσεις."
+ "versionCode": 75,
+ "versionName": "3.67",
+ "sha256": "425f39771d07592dda14b8f4501e38dc32b9da054ce69fa7fdb780a8b4b12e31",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-75.apk",
+ "notes": "Neue Anfrage klingelt jetzt zweimal und mit voller Lautstärke; ist sie nach 10 Minuten noch offen, klingelt sie noch einmal. Dazu: Modus 'Richtung Ziel'.",
+ "notes_de": "Neue Anfrage klingelt jetzt zweimal und mit voller Lautstärke; ist sie nach 10 Minuten noch offen, klingelt sie noch einmal. Dazu: Modus 'Richtung Ziel'.",
+ "notes_en": "New requests now ring twice at full volume; still open after 10 minutes, they ring again. Also: 'towards a destination' mode.",
+ "notes_el": "Τα νέα αιτήματα χτυπάνε δύο φορές στη μέγιστη ένταση· αν μείνουν ανοιχτά 10 λεπτά, ξαναχτυπάνε. Και: λειτουργία «Προς προορισμό»."
 }
