@@ -1,10 +1,10 @@
 {
- "versionCode": 83,
- "versionName": "3.75",
- "sha256": "109b819cd400db10461ee1e0944698257972e6ee7dd95eb394c9b3188633b8b4",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-83.apk",
- "notes": "Glätte-Warnung, Akku-Hinweis, Tagesbilanz beim Offline-Gehen, Fahrten als CSV",
- "notes_de": "Glätte-Warnung, Akku-Hinweis, Tagesbilanz beim Offline-Gehen, Fahrten als CSV",
- "notes_en": "Black ice warning, low battery note, today's summary when going offline, rides as CSV",
- "notes_el": "Προειδοποίηση πάγου, μπαταρίας, σύνοψη ημέρας στο offline, διαδρομές σε CSV"
+ "versionCode": 84,
+ "versionName": "3.76",
+ "sha256": "23006af4faa503463152cbc58ad7f25d66e8d431f7ae31d664555036753c9404",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-84.apk",
+ "notes": "Warnung bei sich überschneidenden Fahrten, Ton bei zu schnell",
+ "notes_de": "Warnung bei sich überschneidenden Fahrten, Ton bei zu schnell",
+ "notes_en": "Warning when rides overlap, beep when too fast",
+ "notes_el": "Προειδοποίηση όταν συμπίπτουν διαδρομές, ήχος όταν πας γρήγορα"
 }
