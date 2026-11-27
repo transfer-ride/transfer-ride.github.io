@@ -840,7 +840,7 @@
       var o = (receipts.list || []).filter(function (x) { return x.id === r.dup_of; })[0], od = (o && o.data) || {};
       d = Object.assign({}, od, d); 
     }
-    var dt = function (x) { return x ? parse(x).toLocaleDateString(loc()) : ""; }, kind = d.kind || "receipt", isDoc = kind !== "receipt";
+    var dt = function (x) { return x ? parse(x).toLocaleDateString(loc()) : ""; }, kind = d.kind || "receipt", isDoc = kind !== "receipt" && !(d.total != null && r.paid !== "none");
     var facts = r.status === "filed" ? [d.sick && d.sick.from ? t("sick_from_to", dt(d.sick.from) + " – " + dt(d.sick.to || d.sick.from)) : "", d.expires ? t("valid_until", dt(d.expires)) : "",
         d.hu_next ? t("hu_next", parse(d.hu_next + "-15").toLocaleDateString(loc(), { month: "long", year: "numeric" })) : "", d.hu_result || "",
         d.deadline ? t("deadline", dt(d.deadline)) : "", d.signed ? t("signed_on", dt(d.signed)) : "", !d.sick && !d.expires && !d.signed ? dt(d.date) : ""].filter(Boolean)
@@ -871,7 +871,7 @@
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
     // Three kinds, each its own list: receipts (money spent), documents (licences, insurance, letters, sick notes),
     // proofs (payment / order confirmations waiting for their real invoice). Proofs without an invoice stay on top.
-    var cnt = { rcpt: 0, docs: 0, proof: 0 }; list.forEach(function (r) { cnt[rKind(r)]++; });
+    var cnt = { rcpt: 0, docs: 0, proof: 0 }; list.forEach(function (r) { rKinds(r).forEach(function (k) { cnt[k]++; }); });
     if (!cnt[rSeg]) rSeg = cnt.rcpt ? "rcpt" : cnt.docs ? "docs" : cnt.proof ? "proof" : "rcpt";
     var missing = list.filter(function (r) { return r.data && r.data.invoice_missing && r.status !== "rejected"; });
     if (missing.length) h += '<h2>' + esc(t("inv_missing_top")) + '</h2><div class="card" style="padding:4px 14px;background:#fff4e5">' + missing.map(receiptRow).join("") + "</div>";
@@ -882,7 +882,7 @@
           ';background:' + (on ? "var(--card,#fff)" : "transparent") + ';color:inherit;box-shadow:' + (on ? "0 1px 3px rgba(0,0,0,.12)" : "none") + '">' + esc(t("seg_" + k)) +
           '<span class="muted small" style="display:block;font-weight:600">' + cnt[k] + "</span></button>";
       }).join("") + "</div>";
-    var seg = list.filter(function (r) { return rKind(r) === rSeg; });
+    var seg = list.filter(function (r) { return rKinds(r).indexOf(rSeg) >= 0; });
     var month = function (r) { return String((r.data && r.data.date) || r.at).slice(0, 7); };
     var months = []; seg.forEach(function (r) { var m = month(r); if (months.indexOf(m) < 0) months.push(m); }); months.sort().reverse();
     if (rMonth && months.indexOf(rMonth) < 0) rMonth = "";
@@ -908,12 +908,16 @@
       return '<div class="muted small" style="margin:16px 2px 6px;font-weight:700">' + esc(name) + '</div><div class="card" style="padding:4px 14px">' + g.a.map(receiptRow).join("") + "</div>"; }).join("");
   }
   var rSeg = load("team_rseg") || "rcpt", rMonth = "";
-  function rKind(r) {
+  // Anything with an amount spent is a receipt (incl. the car invoice, which counts in ELSTER as an asset).
+  // Vehicle invoices also show under documents, because they are papers of the car too.
+  function rKinds(r) {
     var d = r.data || {}, k = d.kind || "";
-    if (d.invoice_missing || d.proof || /payment|order_conf|confirmation/.test(k)) return "proof";
-    if (r.hint === "doc" || (k && k !== "receipt")) return "docs";
-    return "rcpt";
+    if (d.invoice_missing || d.proof || /payment|order_conf|confirmation/.test(k)) return ["proof"];
+    if (d.total != null && r.paid !== "none") return /car|vehicle/.test(k) || d.category === "vehicle" ? ["rcpt", "docs"] : ["rcpt"];
+    if (r.hint === "doc" || (k && k !== "receipt")) return ["docs"];
+    return ["rcpt"];
   }
+  function rKind(r) { return rKinds(r)[0]; }
   function secWallet() {
     var slips = data.payslips || [];
     return "<h2>" + esc(t("movements")) + "</h2>" + (slips.length ? '<div class="card" style="padding:4px 14px">' + slips.map(function (s) {
