@@ -627,7 +627,7 @@
   }
 
   /* ---------------- Notices for the owner (Lisa's Mac notifications, also here) ---------------- */
-  var IB_TX = { el: [["Beleg prüfen", "Έλεγξε απόδειξη"], ["Beleg doppelt", "Διπλή απόδειξη"], ["Fristen", "Προθεσμίες"], ["Pflicht offen", "Υποχρέωση ανοιχτή"], ["dringend", "Επείγον"], ["krank", "άρρωστος/η"], ["Arbeitsvertrag hochgeladen", "Ανέβηκε σύμβαση εργασίας"], ["hochgeladen", "ανέβηκε"], ["gültig bis", "ισχύει έως"], ["Frist", "προθεσμία"], ["Inhaber", "Ιδιοκτήτης"]],
+  var IB_TX = { el: [["Beleg prüfen", "Έλεγξε απόδειξη"], ["Beleg doppelt", "Διπλή απόδειξη"], ["Fristen", "Προθεσμίες"], ["Pflicht offen", "Υποχρέωση ανοιχτή"], ["dringend", "Επείγον"], ["krank", "άρρωστος/η"], ["Arbeitsvertrag hochgeladen", "Ανέβηκε σύμβαση εργασίας"], ["hochgeladen", "ανέβηκε"], ["gültig bis", "ισχύει έως"], ["Frist", "προθεσμία"], ["Inhaber", "Ιδιοκτήτης"], ["Überfällig", "Ληξιπρόθεσμο"], ["In ", "Σε "], [" Tagen", " μέρες"]],
     en: [["Beleg prüfen", "Check receipt"], ["Beleg doppelt", "Duplicate receipt"], ["Fristen", "Deadlines"], ["Pflicht offen", "Duty open"], ["dringend", "Urgent"], ["krank", "sick"], ["Arbeitsvertrag hochgeladen", "Employment contract uploaded"], ["hochgeladen", "uploaded"], ["gültig bis", "valid until"], ["Frist", "deadline"], ["Inhaber", "Owner"]] };
   function ibTx(x) {
     x = String(x || ""); if (lang === "de") return x;
