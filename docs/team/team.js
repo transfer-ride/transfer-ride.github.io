@@ -682,7 +682,7 @@
     h += '<div class="card"><div class="t">' + (P.me.phone ? "+" + esc(P.me.phone) : "–") + '</div><div class="muted small">' +
       esc(who && who.last_seen ? t("tm_last", new Date(who.last_seen).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short", hourCycle: "h23" })) : t("tm_never")) + "</div>";
     if (tmPin) h += '<div class="card" style="margin-top:10px;background:var(--mint-soft)"><div class="t" style="font-size:22px">' + esc(t("tm_pin_is", P.me.name.split(" ")[0]).replace("{p}", tmPin)) + '</div><div class="muted small">' + esc(t("tm_pin_tell")) + "</div></div>";
-    h += '<div class="grid2" style="margin-top:12px"><button class="btn" data-tm-pin="1">' + esc(t("tm_newpin")) + '</button><button class="btn ghost" data-tm-phone="1">' + esc(t("tm_phone")) + "</button></div>" +
+    h += '<div class="grid2" style="margin-top:12px"><button class="btn ghost" data-tm-pin="1">' + esc(t("tm_newpin")) + '</button><button class="btn ghost" data-tm-phone="1">' + esc(t("tm_phone")) + "</button></div>" +
       '<div class="muted small" style="margin-top:8px">' + esc(t("tm_kept")) + "</div></div><!--REQ-->";
     var today = new Date().toISOString().slice(0, 10);
     var nexts = (P.shifts || []).filter(function (s) { return s.day >= today; }).slice(0, 6);
