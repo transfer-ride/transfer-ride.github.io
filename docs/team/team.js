@@ -22,10 +22,10 @@
       check: "Für Kontrollen", check_sub: "Zoll · Polizei · Ordnungsamt", check_note: "Zeig diese Seite bei einer Kontrolle. Ausweis oder Pass zusätzlich vorzeigen.", show_contract: "Arbeitsvertrag anzeigen", no_contract: "Der Vertrag ist noch nicht hinterlegt. Frag den Chef.", doc_ph: "Arbeitsbescheinigung, Vertrag, …",
       sec_space: "Mein Bereich", sec_cal: "Kalender", sec_wallet: "Geld", sec_dev: "Entwicklung", sec_docs: "Dokumente", sec_set: "Einstellungen", schedule: "Plan", prefs: "Wünsche", worked: "Gearbeitete Stunden", prefs_sub: "Wann arbeitest du am liebsten? Der Chef sieht das beim Planen.", can: "kann", cannot: "nicht", save: "Speichern", saved: "Gespeichert", movements: "Zahlungen", read_on: "Gelesen am {n}", unread: "Neu", support: "Hilfe", policy: "Nutzungsregeln", policy_text: "Transfer Team ist nur für Mitarbeiter von Transfer. Melde dich nicht auf fremden Geräten an, gib deinen PIN nicht weiter. Was du hier siehst, sind deine persönlichen Daten: bitte nicht weitergeben. Fragen an den HR-Assistenten werden auf dem Rechner der Personalverwaltung beantwortet; Entscheidungen trifft der Chef.", other_docs: "Weitere Dokumente",
       menu: "Menü", search: "Suche", search_ph: "Suchen: Urlaub, Schicht, Regeln …", no_hits: "Nichts gefunden.", c_news: "Neuigkeiten", c_company: "Über Transfer", c_benefits: "Vorteile", c_learning: "Lernen", c_development: "Entwicklung", c_guidelines: "Richtlinien", c_favs: "Favoriten", no_favs: "Tippe bei einem Beitrag auf ☆, um ihn hier zu sammeln.", full_plan: "Ganzer Plan", my_plan: "Mein Plan",
-      app: "Team", pin: "PIN eingeben", pin_sub: "Derselbe PIN wie in der Fahrer-App", wrong: "Falscher PIN. Noch {n} Versuche.",
+      app: "Team", pin: "PIN eingeben", pin_sub: "Dein 4-stelliger PIN", mobile_no: "Deine Handynummer", phone_bad: "Bitte die Handynummer prüfen.", wrong: "Falscher PIN. Noch {n} Versuche.",
       locked: "Zu viele Versuche. Bitte später noch einmal.", offline: "Keine Verbindung. Bitte später noch einmal.",
       home: "Start", plan: "Plan", requests: "Anträge", chat: "HR-Chat", profile: "Profil",
-      hello: "Hallo {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
+      hello: "Hallo {n}", duties: "Zu erledigen", due_by: "bis {n}", next_shift: "Deine nächste Schicht", no_shift: "Keine Schicht geplant", today: "Heute", tomorrow: "Morgen",
       leave_left: "Urlaub übrig", days: "Tage", hours_month: "Stunden diesen Monat", open_req: "Offene Anträge",
       ask_leave: "Urlaub", ask_sick: "Krank melden", ask_swap: "Schicht tauschen", ask_raise: "Gehalt", ask_doc: "Dokument",
       ask_payslip: "Lohnzettel", ask_other: "Sonstiges", ask_chat: "Frag HR",
@@ -62,10 +62,10 @@
       check: "For checks", check_sub: "Customs · police · public order office", check_note: "Show this page at a check. Also show your ID card or passport.", show_contract: "Show employment contract", no_contract: "The contract is not stored yet. Ask the boss.", doc_ph: "Employment certificate, contract, …",
       sec_space: "My space", sec_cal: "Calendar", sec_wallet: "Money", sec_dev: "Development", sec_docs: "Documents", sec_set: "Settings", schedule: "Schedule", prefs: "Wishes", worked: "Worked hours", prefs_sub: "When do you like to work? The boss sees this when planning.", can: "can", cannot: "no", save: "Save", saved: "Saved", movements: "Payments", read_on: "Read on {n}", unread: "New", support: "Help", policy: "Usage rules", policy_text: "Transfer Team is only for Transfer staff. Do not sign in on other people's devices and do not share your PIN. What you see here is your personal data: please keep it to yourself. HR assistant questions are answered on the HR computer; the boss makes the decisions.", other_docs: "Other documents",
       menu: "Menu", search: "Search", search_ph: "Search: leave, shift, rules …", no_hits: "Nothing found.", c_news: "News", c_company: "About Transfer", c_benefits: "Benefits", c_learning: "Learning", c_development: "Development", c_guidelines: "Guidelines", c_favs: "Favourites", no_favs: "Tap ☆ on a post to keep it here.", full_plan: "Full schedule", my_plan: "My schedule",
-      app: "Team", pin: "Enter your PIN", pin_sub: "The same PIN as in the driver app", wrong: "Wrong PIN. {n} tries left.",
+      app: "Team", pin: "Enter your PIN", pin_sub: "Your 4-digit PIN", mobile_no: "Your mobile number", phone_bad: "Please check the mobile number.", wrong: "Wrong PIN. {n} tries left.",
       locked: "Too many tries. Please try later.", offline: "No connection. Please try later.",
       home: "Home", plan: "Schedule", requests: "Requests", chat: "HR chat", profile: "Profile",
-      hello: "Hi {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
+      hello: "Hi {n}", duties: "To do", due_by: "by {n}", next_shift: "Your next shift", no_shift: "No shift planned", today: "Today", tomorrow: "Tomorrow",
       leave_left: "Leave left", days: "days", hours_month: "Hours this month", open_req: "Open requests",
       ask_leave: "Leave", ask_sick: "Call in sick", ask_swap: "Swap shift", ask_raise: "Pay", ask_doc: "Document",
       ask_payslip: "Payslip", ask_other: "Other", ask_chat: "Ask HR",
@@ -102,10 +102,10 @@
       check: "Για ελέγχους", check_sub: "Zoll · Αστυνομία · Ordnungsamt", check_note: "Δείξε αυτή τη σελίδα σε έλεγχο. Δείξε επίσης ταυτότητα ή διαβατήριο.", show_contract: "Εμφάνιση σύμβασης εργασίας", no_contract: "Η σύμβαση δεν έχει καταχωριστεί ακόμα. Ρώτα το αφεντικό.", doc_ph: "Βεβαίωση εργασίας, σύμβαση, …",
       sec_space: "Ο χώρος μου", sec_cal: "Ημερολόγιο", sec_wallet: "Χρήματα", sec_dev: "Εξέλιξη", sec_docs: "Έγγραφα", sec_set: "Ρυθμίσεις", schedule: "Πρόγραμμα", prefs: "Προτιμήσεις", worked: "Ώρες εργασίας", prefs_sub: "Πότε προτιμάς να δουλεύεις; Το αφεντικό το βλέπει όταν φτιάχνει το πρόγραμμα.", can: "μπορώ", cannot: "όχι", save: "Αποθήκευση", saved: "Αποθηκεύτηκε", movements: "Πληρωμές", read_on: "Διαβάστηκε {n}", unread: "Νέο", support: "Βοήθεια", policy: "Κανόνες χρήσης", policy_text: "Το Transfer Team είναι μόνο για το προσωπικό του Transfer. Μη συνδέεσαι σε ξένες συσκευές και μη δίνεις το PIN σου. Όσα βλέπεις εδώ είναι προσωπικά σου στοιχεία: κράτα τα για σένα. Τις ερωτήσεις στον βοηθό HR τις απαντά ο υπολογιστής του HR· τις αποφάσεις τις παίρνει το αφεντικό.", other_docs: "Άλλα έγγραφα",
       menu: "Μενού", search: "Αναζήτηση", search_ph: "Αναζήτηση: άδεια, βάρδια, κανόνες …", no_hits: "Δεν βρέθηκε τίποτα.", c_news: "Νέα", c_company: "Για το Transfer", c_benefits: "Παροχές", c_learning: "Εκπαίδευση", c_development: "Εξέλιξη", c_guidelines: "Κανόνες", c_favs: "Αγαπημένα", no_favs: "Πάτα ☆ σε μια ανάρτηση για να τη βρίσκεις εδώ.", full_plan: "Όλο το πρόγραμμα", my_plan: "Το πρόγραμμά μου",
-      app: "Team", pin: "Βάλε το PIN", pin_sub: "Το ίδιο PIN με την εφαρμογή οδηγού", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
+      app: "Team", pin: "Βάλε το PIN", pin_sub: "Το 4ψήφιο PIN σου", mobile_no: "Το κινητό σου", phone_bad: "Έλεγξε τον αριθμό του κινητού.", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
       locked: "Πολλές προσπάθειες. Δοκίμασε αργότερα.", offline: "Χωρίς σύνδεση. Δοκίμασε αργότερα.",
       home: "Αρχική", plan: "Πρόγραμμα", requests: "Αιτήματα", chat: "Chat HR", profile: "Προφίλ",
-      hello: "Γεια σου {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
+      hello: "Γεια σου {n}", duties: "Υποχρεώσεις", due_by: "έως {n}", next_shift: "Η επόμενη βάρδια σου", no_shift: "Καμία βάρδια", today: "Σήμερα", tomorrow: "Αύριο",
       leave_left: "Άδεια που απομένει", days: "μέρες", hours_month: "Ώρες αυτόν τον μήνα", open_req: "Ανοιχτά αιτήματα",
       ask_leave: "Άδεια", ask_sick: "Ασθένεια", ask_swap: "Αλλαγή βάρδιας", ask_raise: "Μισθός", ask_doc: "Έγγραφο",
       ask_payslip: "Μισθοδοσία", ask_other: "Άλλο", ask_chat: "Ρώτα το HR",
@@ -338,7 +338,9 @@
     var pin = "";
     app.innerHTML = '<div class="pin"><div class="wordmark" style="font-size:34px">TRANSFER<i></i></div>' +
       '<div class="muted" style="margin-top:4px">' + esc(t("app")) + '</div>' +
-      '<h2 style="margin-top:34px">' + esc(t("pin")) + '</h2><div class="muted small">' + esc(t("pin_sub")) + "</div>" +
+      '<label style="display:block;margin-top:28px;text-align:left"><span class="muted small">' + esc(t("mobile_no")) + '</span>' +
+      '<input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="0151 2345678" value="' + esc(load("team_phone") || "") + '" style="display:block;width:100%;margin-top:4px;padding:12px 14px;font:inherit;font-size:18px;border:1px solid var(--line,#d6ddd9);border-radius:12px;background:transparent;color:inherit"></label>' +
+      '<h2 style="margin-top:22px">' + esc(t("pin")) + '</h2><div class="muted small">' + esc(t("pin_sub")) + "</div>" +
       '<div class="dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>' +
       '<div class="err" role="alert">' + esc(msg || "") + '</div><div class="keys"></div>' +
       '<div class="langs"></div></div>';
@@ -355,10 +357,13 @@
       dots();
       if (pin.length === 4) submit(pin);
     }
-    document.onkeydown = function (e) { if (/^[0-9]$/.test(e.key)) press(e.key); else if (e.key === "Backspace") press("⌫"); };
+    document.onkeydown = function (e) { if (e.target && e.target.id === "ph") return; if (/^[0-9]$/.test(e.key)) press(e.key); else if (e.key === "Backspace") press("⌫"); };
     function submit(p) {
-      rpc("driver_login", { p_pin: p }).then(function (o) {
-        if (o && o.error) { pin = ""; dots(); app.querySelector(".err").textContent = o.error === "locked" ? t("locked") : t("wrong", o.left); return; }
+      // Mobile number + PIN (each employee their own). Without a number: the old PIN-only sign-in.
+      var ph = (app.querySelector("#ph").value || "").trim();
+      store("team_phone", ph || null);
+      rpc(ph ? "team_login" : "driver_login", ph ? { p_phone: ph, p_pin: p } : { p_pin: p }).then(function (o) {
+        if (o && o.error) { pin = ""; dots(); app.querySelector(".err").textContent = o.error === "locked" ? t("locked") : o.error === "phone" ? t("phone_bad") : t("wrong", o.left); return; }
         token = o.token; store("team_token", token); document.onkeydown = null; start();
       }).catch(function (e) { pin = ""; dots(); var box = app.querySelector(".err"); box.innerHTML = esc(e.network ? t("offline") : (e.message || t("err"))) + why(); });
     }
@@ -455,6 +460,13 @@
           : '<div class="big">' + esc(t("no_shift")) + "</div>") + '<div style="margin-top:12px;color:var(--mint);font-weight:700">' + esc(t("full_plan")) + " ›</div></section>";
     h += '<div class="grid2"><div class="card kpi"><div class="muted small">' + esc(t("leave_left")) + '</div><div class="n">' + (left == null ? "—" : left.toLocaleString(loc())) + '</div><div class="muted small">' + esc(t("days")) + "</div></div>" +
       '<div class="card kpi"><div class="muted small">' + esc(t("hours_month")) + '</div><div class="n">' + (Math.round(monthMinutes() / 6) / 10).toLocaleString(loc()) + '</div><div class="muted small">' + esc(t("h")) + "</div></div></div>";
+    // Duties (e.g. monthly receipts): stay here until done. Tap = upload.
+    var dut = ((p && p.duties) || []).filter(function (u) { return !u.done; });
+    if (dut.length) h += "<h2>" + esc(t("duties")) + "</h2>" + dut.map(function (u) {
+      var late = u.due < new Date().toISOString().slice(0, 10), w = (u.title && (u.title[lang] || u.title.de)) || u.id;
+      return '<button class="card row tap" style="width:100%;margin-top:8px;border:0;text-align:left' + (late ? ';background:#fdecea' : '') + '" data-receipt="1"><span class="grow t">' + esc(w) +
+        '<span class="muted small" style="display:block">' + esc(t("due_by", new Date(u.due + "T12:00:00").toLocaleDateString(loc()))) + "</span></span>›</button>";
+    }).join("");
     if (receipts && receipts.to_confirm > 0) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0;background:#e6f0fd" data-wallet="1"><span class="grow t" style="text-align:left">' + esc(t("confirm_home", receipts.to_confirm)) + '</span><span class="chip info">' + receipts.to_confirm + "</span></button>";
     if (open) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0" data-go="requests"><span class="grow t" style="text-align:left">' + esc(t("open_req")) + '</span><span class="chip wait">' + open + "</span></button>";
     h += '<div class="actions">' + [["leave", "ask_leave", "leave"], ["sick", "ask_sick", "sick"], ["shift_swap", "ask_swap", "swap"]].map(function (k) {
@@ -1006,7 +1018,8 @@
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
       profile: { phone: "4915100000000", type: "minijob", start: "2026-09-01", hourly_wage: 13.9, days_per_week: 2, vacation_days_per_year: 10, role: "Fahrer",
-        documents: { fuehrerschein: { expires: "2031-04-30" }, p_schein: { expires: d(40) }, arbeitsvertrag: { signed: "2026-08-28" }, sofortmeldung: { done: "2026-08-31" } } },
+        documents: { fuehrerschein: { expires: "2031-04-30" }, p_schein: { expires: d(40) }, arbeitsvertrag: { signed: "2026-08-28" }, sofortmeldung: { done: "2026-08-31" } },
+        duties: [{ id: "belege", due: d(3), done: false, title: { de: "Alle Belege des Vormonats hochladen", en: "Upload all receipts of last month", el: "Ανέβασε όλες τις αποδείξεις του προηγούμενου μήνα" } }] },
       shifts: [-6, -5, -1, 0, 2, 3, 9, 10].map(function (n, i) { return { id: i, day: d(n), start: n % 2 ? "06:00" : "15:00", end: n % 2 ? "12:00" : "21:30", break_min: n % 2 ? 0 : 30, note: n === 2 ? "Flughafen" : null }; }),
       leave: [{ id: 1, from: d(20), to: d(24), kind: "urlaub", status: "requested" }, { id: 2, from: "2026-08-10", to: "2026-08-12", kind: "urlaub", status: "approved" }],
       requests: reqs,
@@ -1018,7 +1031,7 @@
     };
     return { rpc: function (fn, a) {
       return new Promise(function (ok) { setTimeout(function () {
-        if (fn === "driver_login") return ok({ token: "demo", driver: home.me });
+        if (fn === "driver_login" || fn === "team_login") return ok({ token: "demo", driver: home.me });
         if (fn === "team_home") return ok(JSON.parse(JSON.stringify(home)));
         if (fn === "team_chat") return ok(msgs.slice());
         if (fn === "team_send") {
