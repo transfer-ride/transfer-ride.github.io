@@ -471,14 +471,14 @@
     var dut = ((p && p.duties) || []).filter(function (u) { return !u.done; });
     if (dut.length) h += "<h2>" + esc(t("duties")) + "</h2>" + dut.map(function (u) {
       var late = u.due < new Date().toISOString().slice(0, 10), w = (u.title && (u.title[lang] || u.title.de)) || u.id;
-      return '<button class="card row tap" style="width:100%;margin-top:8px;border:0;text-align:left' + (late ? ';background:#fdecea' : '') + '" data-receipt="1"><span class="grow t">' + esc(w) +
+      return '<button class="card row tap" style="width:100%;margin-top:8px;border:0;text-align:left' + (late ? ';background:var(--bad-soft)' : '') + '" data-receipt="1"><span class="grow t">' + esc(w) +
         '<span class="muted small" style="display:block">' + esc(t("due_by", new Date(u.due + "T12:00:00").toLocaleDateString(loc()))) + "</span></span>›</button>";
     }).join("");
     if (!receipts) loadReceipts();
     var tko = openTasks(), mine = tko.filter(function (x) { return x.who === "owner" && x.answer !== "uploaded"; });
     if (tko.length) h += '<h2 style="display:flex;justify-content:space-between;align-items:baseline">' + esc(t("tk_title")) + '<button class="small" style="border:0;background:none;color:var(--mint);font:inherit;font-weight:700" data-go="tasks">' + esc(t("tk_all", tko.length)) + ' ›</button></h2>' +
       '<div class="card" style="padding:4px 14px">' + (mine.length ? mine : tko).slice(0, 3).map(taskRow).join("") + "</div>";
-    if (receipts && receipts.to_confirm > 0) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0;background:#e6f0fd" data-wallet="1"><span class="grow t" style="text-align:left">' + esc(t("confirm_home", receipts.to_confirm)) + '</span><span class="chip info">' + receipts.to_confirm + "</span></button>";
+    if (receipts && receipts.to_confirm > 0) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0;background:var(--blue-soft)" data-wallet="1"><span class="grow t" style="text-align:left">' + esc(t("confirm_home", receipts.to_confirm)) + '</span><span class="chip info">' + receipts.to_confirm + "</span></button>";
     if (open) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0" data-go="requests"><span class="grow t" style="text-align:left">' + esc(t("open_req")) + '</span><span class="chip wait">' + open + "</span></button>";
     h += '<div class="actions">' + [["leave", "ask_leave", "leave"], ["sick", "ask_sick", "sick"], ["shift_swap", "ask_swap", "swap"]].map(function (k) {
       return '<button class="action" data-ask="' + k[0] + '">' + ICON[k[2]] + esc(t(k[1])) + "</button>"; }).join("") +
@@ -499,7 +499,7 @@
       out.push({ n: n, txt: (n < 0 ? t("doc_gone") : t("doc_soon", n)).replace("{d}", names[k] || k.replace(/_/g, " ")) }); });
     out.sort(function (a, b) { return a.n - b.n; });
     return out.map(function (x) {
-      return '<button class="card row tap" style="width:100%;margin-top:12px;border:0;text-align:left;background:' + (x.n < 0 || x.n <= 14 ? "#fdecea" : "#fff4e5") + '" data-tab="profile"><span class="grow t">⚠ ' + esc(x.txt) +
+      return '<button class="card row tap" style="width:100%;margin-top:12px;border:0;text-align:left;background:' + (x.n < 0 || x.n <= 14 ? "var(--bad-soft)" : "var(--warn-soft)") + '" data-tab="profile"><span class="grow t">⚠ ' + esc(x.txt) +
         '<span class="muted small" style="display:block;font-weight:400">' + esc(t("doc_hint")) + "</span></span>›</button>"; }).join("");
   }
   // Owner: what needs him today (invoices due / overdue, things waiting in the team).
@@ -587,7 +587,7 @@
       var ts = v.tasks || [];
       if (ts.length) h += "<h2>" + esc(t("vh_tasks")) + " (" + ts.length + ')</h2><div class="card" style="padding:4px 14px">' + ts.map(function (x) {
         var n = days(x.deadline), late = n != null && n < 0, cls = x.priority === "critical" ? "bad" : x.priority === "high" ? "wait" : "";
-        return '<div class="row" style="align-items:flex-start' + (late ? ";background:#fdecea;border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow t">' + esc(x.title) +
+        return '<div class="row" style="align-items:flex-start' + (late ? ";background:var(--bad-soft);border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow t">' + esc(x.title) +
           '<span class="muted small" style="display:block;font-weight:400">' + esc([x.deadline ? (late ? t("bl_late", fmtDay(x.deadline)) : t("due_by", fmtDay(x.deadline))) : "", x.due_km ? Number(x.due_km).toLocaleString(loc()) + " km" : ""].filter(Boolean).join(" · ")) +
           '</span></span><span class="chip ' + cls + '" style="white-space:nowrap">' + esc(t("pr_" + x.priority) !== "pr_" + x.priority ? t("pr_" + x.priority) : x.priority) + "</span></div>"; }).join("") + "</div>";
     });
@@ -621,7 +621,7 @@
     var who = tmList && tmList.filter(function (x) { return x.id === tmSel; })[0];
     h += '<div class="card"><div class="t">' + (P.me.phone ? "+" + esc(P.me.phone) : "–") + '</div><div class="muted small">' +
       esc(who && who.last_seen ? t("tm_last", new Date(who.last_seen).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short", hourCycle: "h23" })) : t("tm_never")) + "</div>";
-    if (tmPin) h += '<div class="card" style="margin-top:10px;background:#e8f6ee"><div class="t" style="font-size:22px">' + esc(t("tm_pin_is", P.me.name.split(" ")[0]).replace("{p}", tmPin)) + '</div><div class="muted small">' + esc(t("tm_pin_tell")) + "</div></div>";
+    if (tmPin) h += '<div class="card" style="margin-top:10px;background:var(--mint-soft)"><div class="t" style="font-size:22px">' + esc(t("tm_pin_is", P.me.name.split(" ")[0]).replace("{p}", tmPin)) + '</div><div class="muted small">' + esc(t("tm_pin_tell")) + "</div></div>";
     h += '<div class="grid2" style="margin-top:12px"><button class="btn" data-tm-pin="1">' + esc(t("tm_newpin")) + '</button><button class="btn ghost" data-tm-phone="1">' + esc(t("tm_phone")) + "</button></div>" +
       '<div class="muted small" style="margin-top:8px">' + esc(t("tm_kept")) + "</div></div>";
     var today = new Date().toISOString().slice(0, 10);
@@ -630,10 +630,10 @@
       return '<div class="row"><span class="grow t">' + esc(fmtDay(s.day)) + '</span><span class="muted small">' + esc(s.start + (s.end && s.end !== s.start ? " – " + s.end : "") + (s.note ? " · " + s.note : "")) + "</span></div>"; }).join("") : '<div class="row muted">' + esc(t("tm_none")) + "</div>") + "</div>";
     var reps = (P.receipts && P.receipts.reports) || [];
     h += "<h2>" + esc(t("ex_title")) + '</h2><div class="card" style="padding:4px 14px">' + (reps.length ? reps.map(exRow(true)).join("") : '<div class="row muted">' + esc(t("ex_none")) + "</div>") + "</div>";
-    var docs = Object.entries ? Object.entries((P.profile && P.profile.documents) || {}) : [];
-    h += "<h2>" + esc(t("tm_docs")) + '</h2><div class="card" style="padding:4px 14px">' + (docs.length ? docs.map(function (d) {
-      var v = d[1] || {}, when = v.expires || v.signed || v.done || v.ends || "";
-      return '<div class="row"><span class="grow t">' + esc(t("dk_" + d[0]) !== "dk_" + d[0] ? t("dk_" + d[0]) : d[0].replace(/_/g, " ")) + '</span><span class="muted small">' + esc(fmtDay(when)) + "</span></div>"; }).join("") : '<div class="row muted">' + esc(t("tm_none")) + "</div>") + "</div>";
+    h += "<h2>" + esc(t("tm_docs")) + "</h2>" + docList(P.profile || {});
+    var ptk = ((P.receipts && P.receipts.tasks) || []).filter(function (x) { return x.status === "open"; });
+    if (ptk.length) h += "<h2>" + esc(t("tk_title")) + " (" + ptk.length + ')</h2><div class="card" style="padding:4px 14px">' + ptk.map(function (k) {
+      return '<div class="row"><span class="grow t">' + esc(tx(k.title)) + '</span><span class="muted small">' + esc(k.due ? t("due_by", fmtDay(k.due)) : "") + "</span></div>"; }).join("") + "</div>";
     var rl = (P.receipts && P.receipts.list) || [];
     h += "<h2>" + esc(t("tm_rcpt")) + " (" + rl.length + ')</h2><div class="card" style="padding:4px 14px">' + (rl.length ? rl.slice(0, 40).map(function (r) {
       var d = r.data || {};
@@ -691,7 +691,7 @@
     var week = ymd(new Date(Date.now() + 7 * 864e5));
     h += "<h2>" + esc(t("bl_open")) + " (" + open.length + ')</h2><div class="card" style="padding:4px 14px">' + (open.length ? open.map(function (r) {
       var d = r.data, late = d.due_date && d.due_date < today, soon = !late && d.due_date && d.due_date <= week;
-      return '<div class="row" style="align-items:flex-start' + (late ? ';background:#fdecea;border-radius:10px;padding-left:8px;padding-right:8px' : soon ? ';background:#fff4e5;border-radius:10px;padding-left:8px;padding-right:8px' : "") + '"><span class="grow t">' + esc(d.merchant || r.note || "…") +
+      return '<div class="row" style="align-items:flex-start' + (late ? ';background:var(--bad-soft);border-radius:10px;padding-left:8px;padding-right:8px' : soon ? ';background:var(--warn-soft);border-radius:10px;padding-left:8px;padding-right:8px' : "") + '"><span class="grow t">' + esc(d.merchant || r.note || "…") +
         '<span class="muted small" style="display:block">' + esc(d.due_date ? t(late ? "bl_late" : "bl_due", fmtDay(d.due_date)) : fmtDay(d.date)) + '</span><button class="chip ok" style="border:0;font:inherit;margin-top:6px" data-bill="' + r.id + '" data-billv="1">' + esc(t("bl_paid_btn")) +
         '</button></span><b>' + esc(money(d.total)) + "</b></div>"; }).join("") : '<div class="row muted">' + esc(t("bl_none")) + "</div>") + "</div>";
     var fixed = profile().recurring || [];
@@ -707,7 +707,7 @@
   function bar(label, v, max, sub) {
     var w = max > 0 ? Math.max(2, Math.round(v / max * 100)) : 0;
     return '<div style="padding:8px 0;border-bottom:1px solid var(--line,#e5e9e7)"><div style="display:flex;justify-content:space-between;gap:8px"><span class="t">' + esc(label) + "</span><b>" + esc(money(v)) + "</b></div>" +
-      '<div style="height:8px;border-radius:4px;background:var(--soft,#eef2f0);margin-top:6px"><div style="height:8px;border-radius:4px;width:' + w + '%;background:var(--mint,#2fbf71)"></div></div>' + (sub ? '<div class="muted small" style="margin-top:4px">' + esc(sub) + "</div>" : "") + "</div>";
+      '<div style="height:8px;border-radius:4px;background:var(--raised);margin-top:6px"><div style="height:8px;border-radius:4px;width:' + w + '%;background:var(--mint,#2fbf71)"></div></div>' + (sub ? '<div class="muted small" style="margin-top:4px">' + esc(sub) + "</div>" : "") + "</div>";
   }
   function reportsScreen() {
     var h = '<div class="top"><button class="back" aria-label="Back" data-go="menu">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("rp_title")) + "</h1></div>";
@@ -734,7 +734,7 @@
     var today = ymd(new Date());
     h += "<h2>" + esc(t("vat_title")) + '</h2><div class="card" style="padding:4px 14px">' + [0, 1, 2, 3].map(function (q) {
       var due = vdue(q), soon = due >= today && (new Date(due) - new Date()) < 45 * 864e5;
-      return '<div class="row" style="align-items:flex-start' + (soon ? ";background:#fff4e5;border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow t">Q' + (q + 1) + " " + rpYear + '<span class="muted small" style="display:block">' + esc(t("vat_due", fmtDay(due))) + '</span></span><span style="text-align:right"><b>' + esc(money(qv[q])) +
+      return '<div class="row" style="align-items:flex-start' + (soon ? ";background:var(--warn-soft);border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow t">Q' + (q + 1) + " " + rpYear + '<span class="muted small" style="display:block">' + esc(t("vat_due", fmtDay(due))) + '</span></span><span style="text-align:right"><b>' + esc(money(qv[q])) +
         '</b><br><span class="muted small">' + esc(t("vat_in")) + "</span></span></div>"; }).join("") + '<p class="muted small" style="margin:8px 0">' + esc(t("vat_hint")) + "</p></div>";
     h += '<button class="btn ghost" id="csv" style="margin-top:14px;width:100%">⬇ ' + esc(t("csv_btn")) + "</button>";
     var fl = ownAll.filter(function (r) { return r.data && (r.data.flags || []).length && r.status !== "rejected" && String(r.data.date || r.at).slice(0, 4) === String(rpYear); });
@@ -938,7 +938,7 @@
       '<button class="btn dark" id="check" style="margin:0 0 14px;height:auto;padding:12px 16px;display:flex;flex-direction:column;align-items:center;gap:2px">' +
         '<span>🪪 ' + esc(t("check")) + '</span><span style="font-weight:500;opacity:.7;font-size:13px">' + esc(t("check_sub")) + "</span></button>" +
       '<div class="quick" style="padding:0;margin:0 0 6px">' + secs.map(function (x) {
-        return '<button type="button" data-sec="' + x[0] + '" style="' + (profSec === x[0] ? "background:var(--ink);color:#fff;border-color:var(--ink);font-weight:700" : "") + '">' + esc(t(x[1])) + "</button>"; }).join("") + "</div>";
+        return '<button type="button" data-sec="' + x[0] + '" style="' + (profSec === x[0] ? "background:var(--ink-bg);color:#fff;border-color:var(--ink-bg);font-weight:700" : "") + '">' + esc(t(x[1])) + "</button>"; }).join("") + "</div>";
     return h + ({ space: secSpace, cal: secCal, wallet: secWallet, dev: secDev, docs: secDocs, set: secSet }[profSec] || secSpace)(p);
   }
   function rowsHtml(rows) { return rows.length ? '<div class="card" style="padding:4px 14px">' + rows.join("") + "</div>" : ""; }
@@ -982,8 +982,8 @@
     for (var i = 0; i < lead; i++) cells += "<span></span>";
     for (var d = 1; d <= days; d++) {
       var k = ymd(new Date(m.getFullYear(), m.getMonth(), d)), sh = byDay[k], lv = leaveOn(k);
-      var bg = sh ? "var(--mint)" : lv ? (lv.kind === "krank" ? "#fde7e5" : "var(--mint-soft)") : "transparent";
-      cells += '<span style="aspect-ratio:1;display:grid;place-items:center;border-radius:12px;background:' + bg + ';' + (k === today ? "outline:2px solid var(--ink);" : "") + 'font-weight:' + (sh ? 800 : 500) + '">' + d + "</span>";
+      var bg = sh ? "var(--mint)" : lv ? (lv.kind === "krank" ? "var(--bad-soft)" : "var(--mint-soft)") : "transparent";
+      cells += '<span style="aspect-ratio:1;display:grid;place-items:center;border-radius:12px;background:' + bg + ';' + (k === today ? "outline:2px solid var(--ink);" : "") + 'font-weight:' + (sh ? 800 : 500) + (sh ? ";color:#0b0f0d" : "") + '">' + d + "</span>";
     }
     var wd = []; for (var j = 0; j < 7; j++) wd.push('<span class="muted small" style="text-align:center">' + esc(dayName(new Date(2024, 0, 1 + j), "narrow")) + "</span>");
     h += '<div class="card" style="margin-top:14px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><button class="back" data-mon="-1" aria-label="‹">‹</button><b>' +
@@ -996,7 +996,7 @@
     var pr = (data.prefs && data.prefs.days) || {}, rows = "";
     for (var j = 0; j < 7; j++) {
       var name = dayName(new Date(2024, 0, 1 + j), "short"), v = pr[j] || { ok: true, from: "06:00", to: "22:00" };
-      rows += '<div class="row" data-pd="' + j + '"><label class="grow t" style="display:flex;align-items:center;gap:8px;min-width:64px"><input type="checkbox" ' + (v.ok ? "checked" : "") + ' style="width:22px;height:22px;accent-color:#1f8f52">' + esc(name) + "</label>" +
+      rows += '<div class="row" data-pd="' + j + '"><label class="grow t" style="display:flex;align-items:center;gap:8px;min-width:64px"><input type="checkbox" ' + (v.ok ? "checked" : "") + ' style="width:22px;height:22px;accent-color:var(--deep)">' + esc(name) + "</label>" +
         '<input class="in" type="time" value="' + esc(v.from) + '" style="width:96px;padding:8px 6px"><span class="muted">–</span><input class="in" type="time" value="' + esc(v.to) + '" style="width:96px;padding:8px 6px"></div>';
     }
     return '<p class="muted small" style="margin:14px 2px">' + esc(t("prefs_sub")) + '</p><div class="card" style="padding:4px 12px">' + rows + "</div>" +
@@ -1056,7 +1056,7 @@
       (facts.length ? '<br><span class="small">' + esc(facts.join(" · ")) + "</span>" : "") +
       (fresh[r.id] && onReceipt ? '<br><span class="small">' + esc(t("on_receipt") + ": " + onReceipt + (d.liters ? " · " + d.liters + " l" : "")) + "</span>" : "") +
       (d.source === "email" ? '<br><span class="small" style="font-weight:700">' + esc(t("mail_from") + (d.email && d.email.subject ? ": " + d.email.subject : "")) + "</span>" : "") +
-      (r.status === "duplicate" ? '<br><span class="small" style="color:var(--bad,#b3261e)">' + esc(t("dup_hint")) + "</span>" : "") +
+      (r.status === "duplicate" ? '<br><span class="small" style="color:var(--danger)">' + esc(t("dup_hint")) + "</span>" : "") +
       (isDoc && d.summary && r.status === "filed" ? '<br><span class="small">' + esc(d.summary) + "</span>" : "") +
       (route ? '<br><span class="small" style="font-weight:700">→ ' + esc(t("goes_to", route)) + "</span>" : "") +
       '<br><span class="muted small">' + esc(t("uploaded_at", time) + (r.status === "filed" || r.paid === "none" ? "" : " · " + t("paid_" + r.paid))) + "</span></span>" +
@@ -1071,7 +1071,7 @@
     var sub = [k.vendor, k.amount != null ? money(k.amount) : "", k.due ? t("due_by", fmtDay(k.due)) : k.date ? fmtDay(k.date) : ""].filter(Boolean).join(" · ");
     var late = k.status === "open" && k.due && k.due < ymd(new Date());
     var chip = k.status === "done" ? ["ok", t("tk_done")] : k.status === "dropped" ? ["", t("tk_dropped")] : k.answer === "uploaded" ? ["info", t("tk_checking")] : k.who === "owner" ? ["wait", t("tk_you")] : ["info", t("tk_me")];
-    return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start;border:0;background:none;font:inherit;color:inherit' + (late ? ";background:#fdecea;border-radius:10px;padding-left:8px;padding-right:8px" : "") + '" data-task="' + esc(k.key) + '"><span class="grow"><span class="t">' + esc(tx(k.title)) + "</span>" +
+    return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start;border:0;background:none;font:inherit;color:inherit' + (late ? ";background:var(--bad-soft);border-radius:10px;padding-left:8px;padding-right:8px" : "") + '" data-task="' + esc(k.key) + '"><span class="grow"><span class="t">' + esc(tx(k.title)) + "</span>" +
       (sub ? '<br><span class="muted small">' + esc(sub) + "</span>" : "") + '</span><span class="chip ' + chip[0] + '" style="white-space:nowrap">' + esc(chip[1]) + "</span></button>";
   }
   function tasksScreen() {
@@ -1119,8 +1119,8 @@
     var list = (receipts.list || []).filter(function (r) { return !(r.data && r.data.removed); });
     var invT = openTasks().filter(function (x) { return x.kind === "invoice"; });
     var missing = list.filter(function (r) { return r.data && r.data.invoice_missing && r.status !== "rejected"; });
-    if (missing.length || invT.length) h += '<h2>' + esc(t("inv_missing_top")) + ' (' + (missing.length + invT.length) + ')</h2><div class="card" style="padding:4px 14px;background:#fff4e5">' + invT.map(taskRow).join("") + missing.map(receiptRow).join("") + "</div>";
-    if (receipts.to_confirm > 0) h += '<div class="card" style="background:#e6f0fd;margin-top:14px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + '</b><div class="muted small">' + esc(t("confirm_tap")) + "</div></div>";
+    if (missing.length || invT.length) h += '<h2>' + esc(t("inv_missing_top")) + ' (' + (missing.length + invT.length) + ')</h2><div class="card" style="padding:4px 14px;background:var(--warn-soft)">' + invT.map(taskRow).join("") + missing.map(receiptRow).join("") + "</div>";
+    if (receipts.to_confirm > 0) h += '<div class="card" style="background:var(--blue-soft);margin-top:14px"><b>' + esc(t("confirm_home", receipts.to_confirm)) + '</b><div class="muted small">' + esc(t("confirm_tap")) + "</div></div>";
     if (receipts.owed > 0) h += '<div class="card" style="background:var(--mint-soft);margin-top:14px"><div class="muted small">' + esc(t("owed2")) + '</div><div style="font-size:28px;font-weight:900">' + esc(money(receipts.owed)) + "</div></div>";
     if ((receipts.reports || []).length) h += "<h2>" + esc(t("ex_title")) + '</h2><div class="card" style="padding:4px 14px">' + receipts.reports.slice(0, 6).map(exRow(false)).join("") + "</div>";
     if (!list.length) return h + '<div class="empty">' + esc(t("no_receipts")) + "</div>";
@@ -1128,11 +1128,11 @@
     // proofs (payment / order confirmations waiting for their real invoice). Proofs without an invoice stay on top.
     var cnt = { rcpt: 0, docs: 0, proof: 0 }; list.forEach(function (r) { rKinds(r).forEach(function (k) { cnt[k]++; }); });
     if (!cnt[rSeg]) rSeg = cnt.rcpt ? "rcpt" : cnt.docs ? "docs" : cnt.proof ? "proof" : "rcpt";
-    h += '<div class="seg" role="tablist" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:18px;padding:4px;border-radius:14px;background:var(--soft,#eef2f0)">' +
+    h += '<div class="seg" role="tablist" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:18px;padding:4px;border-radius:14px;background:var(--raised)">' +
       ["rcpt", "docs", "proof"].map(function (k) {
         var on = rSeg === k;
         return '<button type="button" role="tab" aria-selected="' + on + '" data-rseg="' + k + '" style="padding:10px 4px;border-radius:10px;border:0;font:inherit;font-weight:' + (on ? 800 : 600) +
-          ';background:' + (on ? "var(--card,#fff)" : "transparent") + ';color:inherit;box-shadow:' + (on ? "0 1px 3px rgba(0,0,0,.12)" : "none") + '">' + esc(t("seg_" + k)) +
+          ';background:' + (on ? "var(--card)" : "transparent") + ';color:inherit;box-shadow:' + (on ? "0 1px 3px rgba(0,0,0,.12)" : "none") + '">' + esc(t("seg_" + k)) +
           '<span class="muted small" style="display:block;font-weight:600">' + cnt[k] + "</span></button>";
       }).join("") + "</div>";
     var seg = list.filter(function (r) { return rKinds(r).indexOf(rSeg) >= 0; });
@@ -1179,7 +1179,7 @@
     var slips = data.payslips || [];
     return "<h2>" + esc(t("movements")) + "</h2>" + (slips.length ? '<div class="card" style="padding:4px 14px">' + slips.map(function (s) {
       var m = s.month.split("-"), name = new Date(+m[0], +m[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" });
-      return '<button class="row tap" style="width:100%;text-align:left" data-slip="' + esc(s.month) + '"><span class="grow"><span class="t">' + esc(name) + '</span><br><span class="muted small">' + esc(s.data && s.data.hours != null ? s.data.hours + " " + t("h") : "") + "</span></span><b>" + esc(money(s.data && (s.data.net != null ? s.data.net : s.data.gross))) + "</b></button>";
+      return '<button class="row tap" style="width:100%;text-align:left" data-slip="' + esc(s.month) + '"><span class="grow"><span class="t">' + esc(name) + '</span><br><span class="muted small">' + esc(s.data && s.data.hours != null ? Number(s.data.hours).toLocaleString(loc()) + " " + t("h") : "") + "</span></span><b>" + esc(money(s.data && (s.data.net != null ? s.data.net : s.data.gross))) + "</b></button>";
     }).join("") + "</div>" : '<div class="empty">' + esc(t("no_payslips")) + "</div>") +
       '<button class="btn ghost" style="margin-top:12px" data-ask="payslip">' + esc(t("ask_payslip")) + "</button>" +
       "<h2>" + esc(t("receipts")) + '</h2><button class="card row tap" style="width:100%;border:0" data-go="receipts"><span class="grow t" style="text-align:left">' + esc(t("my_receipts")) +

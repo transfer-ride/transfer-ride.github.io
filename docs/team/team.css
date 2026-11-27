@@ -13,6 +13,11 @@
   --warn: #b86e00;
   --warn-soft: #fff1dc;
   --blue: #2f80ed;
+  --ink-bg: #0b0f0d;     /* dark surfaces (hero, dark buttons, toast) stay dark in both themes */
+  --card: #ffffff;
+  --bad-soft: #fdecea;
+  --blue-soft: #e6f0fd;
+  color-scheme: light;
   --r: 18px;
   --gutter: 16px;
   --safe-b: env(safe-area-inset-bottom, 0px);
@@ -53,7 +58,7 @@ h2 { font-size: 20px; font-weight: 800; margin: 26px 0 10px; }
 /* Cards and rows */
 .card { background: var(--panel); border-radius: var(--r); padding: 16px; }
 .card + .card { margin-top: 12px; }
-.hero { background: var(--ink); color: #fff; border-radius: 24px; padding: 20px; }
+.hero { background: var(--ink-bg); color: #fff; border-radius: 24px; padding: 20px; }
 .hero .muted { color: rgba(255,255,255,.65); }
 .hero .big { font-size: 26px; font-weight: 900; margin-top: 4px; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
@@ -61,13 +66,14 @@ h2 { font-size: 20px; font-weight: 800; margin: 26px 0 10px; }
 .kpi .n { font-size: 26px; font-weight: 900; }
 .row { display: flex; align-items: center; gap: 12px; padding: 14px 2px; border-bottom: 1px solid var(--line); }
 .row:last-child { border-bottom: 0; }
+.card.row { padding: 14px 16px; border-bottom: 0; }
 .row .grow { flex: 1; min-width: 0; }
 .row .t { font-weight: 700; }
 .chip { display: inline-block; border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 700; background: var(--raised); white-space: nowrap; }
 .chip.ok { background: var(--mint-soft); color: var(--deep); }
 .chip.wait { background: var(--warn-soft); color: var(--warn); }
-.chip.bad { background: #fde7e5; color: var(--danger); }
-.chip.info { background: #e6f0fd; color: var(--blue); }
+.chip.bad { background: var(--bad-soft); color: var(--danger); }
+.chip.info { background: var(--blue-soft); color: var(--blue); }
 
 .actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
 .action { background: var(--panel); border-radius: 16px; padding: 14px 8px; display: flex; flex-direction: column; align-items: center;
@@ -76,7 +82,7 @@ h2 { font-size: 20px; font-weight: 800; margin: 26px 0 10px; }
 .action:active, .row.tap:active, .btn:active { transform: scale(.98); }
 
 .btn { display: block; width: 100%; height: 54px; border-radius: 16px; background: var(--mint); color: var(--ink); font-weight: 800; font-size: 17px; }
-.btn.dark { background: var(--ink); color: #fff; }
+.btn.dark { background: var(--ink-bg); color: #fff; }
 .btn.ghost { background: var(--raised); }
 .btn[disabled] { opacity: .45; }
 .link { color: var(--deep); font-weight: 700; }
@@ -123,13 +129,13 @@ textarea.in { min-height: 96px; resize: vertical; }
 /* Chat */
 .chat { display: flex; flex-direction: column; height: 100dvh; max-width: 640px; margin: 0 auto; }
 .chat-head { display: flex; align-items: center; gap: 12px; padding: calc(var(--safe-t) + 12px) var(--gutter) 12px; border-bottom: 1px solid var(--line); }
-.avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--ink); display: grid; place-items: center; flex: none; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--ink-bg); display: grid; place-items: center; flex: none; }
 .avatar i { width: 16px; height: 16px; border-radius: 50%; background: var(--mint); }
 .msgs { flex: 1; overflow-y: auto; padding: 14px var(--gutter); display: flex; flex-direction: column; gap: 8px; }
 .msg { max-width: 82%; padding: 10px 14px; border-radius: 18px; white-space: pre-wrap; word-wrap: break-word; line-height: 1.38; }
 .msg.me { align-self: flex-end; background: var(--mint); border-bottom-right-radius: 6px; }
 .msg.them { align-self: flex-start; background: var(--raised); border-bottom-left-radius: 6px; }
-.msg.owner { background: #e6f0fd; }
+.msg.owner { background: var(--blue-soft); }
 .msg .who { display: block; font-size: 11px; color: var(--muted); margin-bottom: 2px; font-weight: 700; }
 .msg .at { display: block; font-size: 11px; color: var(--muted); margin-top: 4px; text-align: right; }
 .typing { align-self: flex-start; color: var(--muted); font-size: 14px; padding: 4px 6px; }
@@ -137,11 +143,11 @@ textarea.in { min-height: 96px; resize: vertical; }
 .quick button { flex: none; border: 1px solid var(--line); border-radius: 18px; padding: 8px 12px; font-size: 14px; background: var(--bg); }
 .composer { display: flex; gap: 8px; padding: 8px var(--gutter) calc(10px + var(--safe-b)); border-top: 1px solid var(--line); background: var(--bg); }
 .composer textarea { flex: 1; border: 1px solid var(--line); border-radius: 22px; padding: 11px 16px; max-height: 120px; resize: none; }
-.composer button { width: 48px; height: 48px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; flex: none; }
+.composer button { width: 48px; height: 48px; border-radius: 50%; background: var(--ink-bg); color: #fff; display: grid; place-items: center; flex: none; }
 .back { width: 42px; height: 42px; border-radius: 50%; background: var(--raised); display: grid; place-items: center; flex: none; }
 .back svg { width: 22px; height: 22px; }
 
-.toast { position: fixed; left: 50%; top: calc(var(--safe-t) + 14px); transform: translateX(-50%); background: var(--ink); color: #fff;
+.toast { position: fixed; left: 50%; top: calc(var(--safe-t) + 14px); transform: translateX(-50%); background: var(--ink-bg); color: #fff;
   padding: 12px 18px; border-radius: 999px; z-index: 60; max-width: calc(100% - 32px); text-align: center; font-weight: 600; }
 .empty { text-align: center; color: var(--muted); padding: 28px 10px; }
 .post .t { font-weight: 800; font-size: 17px; }
@@ -150,3 +156,23 @@ textarea.in { min-height: 96px; resize: vertical; }
 .spin { width: 22px; height: 22px; margin: 2px 12px 0 0; border-radius: 50%; border: 3px solid var(--mint-soft); border-top-color: var(--mint); animation: spin 0.9s linear infinite; flex: none; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .spin { animation-duration: 3s; } }
+
+/* Dark theme: follows the phone's setting. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ink: #eef2ef; --bg: #0e1311; --panel: #19211d; --raised: #243029; --line: #2e3933; --muted: #9ba7a1;
+    --mint-soft: #15352a; --deep: #5be39a; --danger: #ff7a6e; --warn: #f2a64a; --warn-soft: #3b2b12;
+    --blue: #6aa6ff; --ink-bg: #26332d; --card: #2c3832; --bad-soft: #3e1d1a; --blue-soft: #16263d;
+  }
+  .tabs { background: rgba(14, 19, 17, .96); }
+  .msg.me { color: #0b0f0d; }
+  .sheet { background: var(--panel); }
+  .btn { color: #0b0f0d; }
+  .btn.dark { background: var(--mint); color: #0b0f0d; }
+  .btn.ghost { color: var(--ink); }
+  .langs button[aria-pressed="true"] { color: #0b0f0d; }
+  .sheet .card { background: var(--raised); }
+  .scrim { background: rgba(0,0,0,.6); }
+  img { opacity: .95; }
+}
