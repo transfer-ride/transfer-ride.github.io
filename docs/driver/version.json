@@ -1,10 +1,10 @@
 {
- "versionCode": 79,
- "versionName": "3.71",
- "sha256": "b1936d64a86b3b5efa4838e704f36a6d4e6c0873a4d779a1e16bcdd3c506f5bc",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-79.apk",
- "notes": "Neu: Ansagen bei Fahrt-Ereignissen (neue Anfrage, Storno) und bei Geräteproblemen (kein Internet, GPS), Stimme 30 % leiser, Stimme testen – in den Einstellungen.",
- "notes_de": "Neu: Ansagen bei Fahrt-Ereignissen (neue Anfrage, Storno) und bei Geräteproblemen (kein Internet, GPS), Stimme 30 % leiser, Stimme testen – in den Einstellungen.",
- "notes_en": "New: spoken trip events (new request, cancellation) and device issues (no internet, GPS), voice 30 % softer, test voice – in Settings.",
- "notes_el": "Νέο: φωνητικές ανακοινώσεις για γεγονότα διαδρομής (νέο αίτημα, ακύρωση) και προβλήματα συσκευής (internet, GPS), φωνή 30 % πιο σιγά, δοκιμή φωνής – στις Ρυθμίσεις."
+ "versionCode": 80,
+ "versionName": "3.72",
+ "sha256": "e9d7ef119d8790253b2917930d444211f704a2df032c380a86d72bc17557c921",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-80.apk",
+ "notes": "Neu: Abgelehnte Anfragen bleiben unter Entdecken (Markierung „Abgelehnt“) und können weiter angenommen werden, solange sie offen sind.",
+ "notes_de": "Neu: Abgelehnte Anfragen bleiben unter Entdecken (Markierung „Abgelehnt“) und können weiter angenommen werden, solange sie offen sind.",
+ "notes_en": "New: declined requests stay in Discover (tag “Declined”) and can still be accepted while they are open.",
+ "notes_el": "Νέο: τα αιτήματα που απορρίπτεις μένουν στο Discover (σήμανση «Απορρίφθηκε») και μπορείς να τα δεχτείς όσο είναι ανοιχτά."
 }
