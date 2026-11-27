@@ -1313,7 +1313,7 @@
   function receiptsScreen() {
     var h = '<div class="top"><h1>' + esc(t("up_title")) + "</h1></div>";
     h += '<div class="grid2" style="margin-top:0"><button class="btn dark" style="height:auto;padding:18px 8px" data-rnew="cam"><span style="font-size:28px">📷</span><br>' + esc(t("receipt_take")) + '</button>' +
-      '<button class="btn ghost" style="height:auto;padding:18px 8px" data-rnew="gal"><span style="font-size:28px">🖼️</span><br>' + esc(t("receipt_gallery")) + "</button></div>";
+      '<button class="btn ghost" style="height:auto;padding:18px 8px" data-rnew="gal"><span style="font-size:28px">🖼️</span><br>' + esc((/; wv\)/.test(navigator.userAgent) ? t("receipt_gallery").replace(/ \/ PDF$/, "") : t("receipt_gallery"))) + "</button></div>";
     h += '<p class="muted small" style="margin:10px 2px 0">' + esc(t("up_intro")) + "</p>";
     if (!receipts) { loadReceipts(); return h + '<div class="empty">…</div>'; }
     // What still lacks its real invoice comes first: open tasks of the receipt hunt + uploaded proofs without an invoice.
@@ -1495,7 +1495,7 @@
     openSheet('<h2 style="margin-top:0">' + esc(t("up_title")) + '</h2><p class="muted small">' + esc(t("receipt_hint")) + "</p>" +
       '<input type="file" accept="image/*" capture="environment" id="rcam" style="display:none">' +
       '<input type="file" accept="image/*,application/pdf" multiple id="rgal" style="display:none">' +
-      '<div class="two"><button class="btn dark" id="rtake">📷 ' + esc(t("receipt_take")) + '</button><button class="btn ghost" id="rpick">🖼️ ' + esc(t("receipt_gallery")) + "</button></div>" +
+      '<div class="two"><button class="btn dark" id="rtake">📷 ' + esc(t("receipt_take")) + '</button><button class="btn ghost" id="rpick">🖼️ ' + esc((/; wv\)/.test(navigator.userAgent) ? t("receipt_gallery").replace(/ \/ PDF$/, "") : t("receipt_gallery"))) + "</button></div>" +
       '<div id="rprev" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px"></div>' +
       '<label class="f">' + esc(t("up_what")) + '</label><div class="seg" id="rhint">' + ["receipt", "doc"].map(function (k) {
         return '<button type="button" data-h="' + k + '" aria-pressed="' + (k === hint) + '">' + esc(t("up_" + k)) + "</button>"; }).join("") + "</div>" +
