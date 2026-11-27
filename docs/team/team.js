@@ -743,9 +743,9 @@
         "</button></span></span><b>" + esc(money(r.data.total)) + "</b></div>"; }).join("") + "</div>";
     return h;
   }
-  function bar(label, v, max, sub) {
+  function bar(label, v, max, sub, drill) {
     var w = max > 0 ? Math.max(2, Math.round(v / max * 100)) : 0;
-    return '<div style="padding:8px 0;border-bottom:1px solid var(--line,#e5e9e7)"><div style="display:flex;justify-content:space-between;gap:8px"><span class="t">' + esc(label) + "</span><b>" + esc(money(v)) + "</b></div>" +
+    return '<div ' + (drill ? 'role="button" tabindex="0" class="tap" data-drill="' + esc(drill) + '" ' : "") + 'style="padding:8px 0;border-bottom:1px solid var(--line,#e5e9e7)' + (drill ? ";cursor:pointer" : "") + '"><div style="display:flex;justify-content:space-between;gap:8px"><span class="t">' + esc(label) + "</span><b>" + esc(money(v)) + "</b></div>" +
       '<div style="height:8px;border-radius:4px;background:var(--raised);margin-top:6px"><div style="height:8px;border-radius:4px;width:' + w + '%;background:var(--mint,#2fbf71)"></div></div>' + (sub ? '<div class="muted small" style="margin-top:4px">' + esc(sub) + "</div>" : "") + "</div>";
   }
   function reportsScreen() {
@@ -762,11 +762,11 @@
       '<div class="card kpi"><div class="muted small">' + esc(t("sum_vat")) + '</div><div class="n" style="font-size:24px">' + esc(money(vat)) + '</div><div class="muted small">' + esc(money(tot - vat)) + " " + esc(t("rp_net")) + "</div></div></div>";
     var sortV = function (o) { return Object.keys(o).sort(function (a, b) { return o[b] - o[a]; }); };
     var mk = Object.keys(byM).sort(), mmax = Math.max.apply(null, mk.map(function (k) { return byM[k]; }).concat([0]));
-    if (mk.length) h += "<h2>" + esc(t("rp_months")) + '</h2><div class="card" style="padding:4px 14px">' + mk.map(function (k) { var x = k.split("-"); return bar(new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" }), byM[k], mmax); }).join("") + "</div>";
+    if (mk.length) h += "<h2>" + esc(t("rp_months")) + '</h2><div class="card" style="padding:4px 14px">' + mk.map(function (k) { var x = k.split("-"); return bar(new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" }), byM[k], mmax, "", "m:" + k); }).join("") + "</div>";
     var ck = sortV(byC), cmax = ck.length ? byC[ck[0]] : 0;
-    if (ck.length) h += "<h2>" + esc(t("rp_cats")) + '</h2><div class="card" style="padding:4px 14px">' + ck.map(function (k) { return bar(t("cat_" + k) !== "cat_" + k ? t("cat_" + k) : k, byC[k], cmax); }).join("") + "</div>";
+    if (ck.length) h += "<h2>" + esc(t("rp_cats")) + '</h2><div class="card" style="padding:4px 14px">' + ck.map(function (k) { return bar(t("cat_" + k) !== "cat_" + k ? t("cat_" + k) : k, byC[k], cmax, "", "c:" + k); }).join("") + "</div>";
     var pk = sortV(byP);
-    if (pk.length > 1) h += "<h2>" + esc(t("rp_people")) + '</h2><div class="card" style="padding:4px 14px">' + pk.map(function (k) { return bar(k, byP[k], byP[pk[0]]); }).join("") + "</div>";
+    if (pk.length > 1) h += "<h2>" + esc(t("rp_people")) + '</h2><div class="card" style="padding:4px 14px">' + pk.map(function (k) { return bar(k, byP[k], byP[pk[0]], "", "p:" + k); }).join("") + "</div>";
     var qv = [0, 0, 0, 0];
     rows.forEach(function (r) { var m = +String(r.data.date || r.at).slice(5, 7), q = Math.floor((m - 1) / 3); qv[q] += Number(r.data.vat) || 0; });
     var vdue = function (q) { var d = q < 3 ? new Date(rpYear, q * 3 + 3, 10, 12) : new Date(rpYear + 1, 0, 10, 12); while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1); return ymd(d); };
@@ -800,7 +800,21 @@
     var blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" }), a = document.createElement("a");
     a.href = URL.createObjectURL(blob); a.download = "ausgaben-" + rpYear + ".csv"; document.body.appendChild(a); a.click(); a.remove(); toast(t("csv_done"));
   }
+  // Reports: tap a month / category / person → the receipts behind the number.
+  function drillSheet(key) {
+    var kind = key.slice(0, 1), val = key.slice(2);
+    var rows = (ownAll || []).filter(function (r) { if (!counts(r) || String(r.data.date || r.at).slice(0, 4) !== String(rpYear)) return false;
+      return kind === "m" ? String(r.data.date || r.at).slice(0, 7) === val : kind === "c" ? (r.data.category || "other") === val : r.driver === val; })
+      .sort(function (a, b) { return Number(b.data.total) - Number(a.data.total); });
+    var title = kind === "m" ? (function () { var x = val.split("-"); return new Date(+x[0], +x[1] - 1, 1).toLocaleDateString(loc(), { month: "long", year: "numeric" }); })() : kind === "c" ? (t("cat_" + val) !== "cat_" + val ? t("cat_" + val) : val) : val;
+    var sum = rows.reduce(function (a, r) { return a + (Number(r.data.total) || 0); }, 0);
+    openSheet('<h2 style="margin-top:0">' + esc(title) + '</h2><p class="muted small">' + rows.length + " " + esc(t("sum_counted")) + " · " + esc(money(sum)) + '</p><div class="card" style="padding:4px 14px">' + rows.map(function (r) {
+      var d = r.data;
+      return '<div class="row" style="align-items:flex-start"><span class="grow t">' + esc(d.merchant || r.note || "…") + '<span class="muted small" style="display:block;font-weight:400">' + esc([fmtDay(d.date || r.at), kind !== "p" ? r.driver : "", d.vat != null ? t("sum_vat") + " " + money(d.vat) : ""].filter(Boolean).join(" · ")) +
+        "</span></span><b>" + esc(money(d.total)) + "</b></div>"; }).join("") + '</div><button class="btn ghost" data-close style="margin-top:14px">OK</button>');
+  }
   function bindOwner() {
+    app.querySelectorAll("[data-drill]").forEach(function (b) { b.onclick = function () { drillSheet(b.dataset.drill); }; });
     app.querySelectorAll("[data-rpy]").forEach(function (b) { b.onclick = function () { rpYear += +b.dataset.rpy; render(); }; });
     app.querySelectorAll("[data-bill]").forEach(function (b) { b.onclick = function () {
       b.disabled = true;
