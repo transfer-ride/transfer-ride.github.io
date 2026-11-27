@@ -1067,9 +1067,11 @@
     var box = document.getElementById("msgs"); if (!box) return;
     if (!chat.length) { box.innerHTML = '<div class="empty">' + esc(t("chat_empty")) + "</div>"; return; }
     var last = chat[chat.length - 1];
+    var lastDay = "";
     box.innerHTML = chat.map(function (m) {
-      var me = m.sender === "employee";
-      return '<div class="msg ' + (me ? "me" : "them" + (m.sender === "owner" ? " owner" : "")) + '">' + (me ? "" : '<span class="who">' + esc(m.sender === "owner" ? t("owner") : t("agent")) + "</span>") +
+      var me = m.sender === "employee", dk = String(new Date(m.at).toDateString()), sep = "";
+      if (dk !== lastDay) { lastDay = dk; sep = '<div class="muted small" style="align-self:center;margin:8px 0 2px;font-weight:700">' + esc(dayLabel(new Date(m.at))) + "</div>"; }
+      return sep + '<div class="msg ' + (me ? "me" : "them" + (m.sender === "owner" ? " owner" : "")) + '">' + (me ? "" : '<span class="who">' + esc(m.sender === "owner" ? t("owner") : t("agent")) + "</span>") +
         esc(m.body) + '<span class="at">' + esc(clock(m.at)) + "</span></div>";
     }).join("") + (last.sender === "employee" ? '<div class="typing">' + esc(t("typing")) + "</div>" : "");
     if (scroll) box.scrollTop = box.scrollHeight;
