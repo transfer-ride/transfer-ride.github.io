@@ -866,6 +866,7 @@
 
   /* ---------------- Search ---------------- */
   function searchScreen() {
+    if (!receipts) loadReceipts();
     return '<div class="top"><button class="back" aria-label="Back" data-go="home">' + ICON.back + '</button><input class="in" id="q" type="search" placeholder="' + esc(t("search_ph")) + '" value="' + esc(query) + '" style="flex:1"></div><div id="hits">' + hits() + "</div>";
   }
   function hits() {
@@ -875,9 +876,16 @@
     (data.requests || []).forEach(function (r) { if ((r.text + " " + (r.answer || "")).toLowerCase().indexOf(q) >= 0) out.push('<button class="card row tap" style="width:100%;text-align:left;border:0" data-req="' + r.id + '"><span class="grow t">' + esc(r.text) + "</span>" + chip(r.status) + "</button>"); });
     var words = { plan: [t("plan"), t("my_plan"), "schicht", "shift", "βάρδια"], requests: [t("requests"), "urlaub", "leave", "άδεια", "krank", "sick"], chat: [t("chat"), "hr", "frage"], profile: [t("profile"), t("payslips"), "lohn", "pay", "dokument"] };
     Object.keys(words).forEach(function (k) { if (words[k].some(function (w) { return String(w).toLowerCase().indexOf(q) >= 0; })) out.unshift('<button class="card row tap" style="width:100%;text-align:left;border:0" data-tab="' + k + '"><span class="grow t">' + esc(t(k === "plan" ? "my_plan" : k)) + "</span>›</button>"); });
+    // own receipts / documents (shop, note, amount) and open tasks
+    var rh = ((receipts && receipts.list) || []).filter(function (r) { var d = r.data || {}; return !d.removed && [d.merchant, r.note, d.number, d.summary, d.total != null ? Number(d.total).toFixed(2).replace(".", ",") : ""].join(" ").toLowerCase().indexOf(q.replace(".", ",")) >= 0; }).slice(0, 15);
+    if (rh.length) out.push('<div class="card" style="padding:4px 14px;margin-top:12px">' + rh.map(receiptRow).join("") + "</div>");
+    var th = allTasks().filter(function (k) { return (tx(k.title) + " " + (k.vendor || "") + " " + tx(k.detail)).toLowerCase().indexOf(q) >= 0; });
+    if (th.length) out.push('<div class="card" style="padding:4px 14px;margin-top:12px">' + th.map(taskRow).join("") + "</div>");
     return out.length ? out.join("") : '<div class="empty">' + esc(t("no_hits")) + "</div>";
   }
   function bindHits() {
+    app.querySelectorAll("#hits [data-rimg]").forEach(function (b) { b.onclick = function () { receiptView(+b.dataset.rimg); }; });
+    app.querySelectorAll("#hits [data-task]").forEach(function (b) { b.onclick = function () { taskSheet(b.dataset.task); }; });
     app.querySelectorAll("#hits [data-tab]").forEach(function (b) { b.onclick = function () { go(b.dataset.tab); }; });
     app.querySelectorAll("#hits [data-req]").forEach(function (b) { b.onclick = function () { reqSheet(+b.dataset.req); }; });
     app.querySelectorAll("#hits [data-fav]").forEach(function (b) { b.onclick = function () { toggleFav(b.dataset.fav); var r = app.querySelector("#hits"); r.innerHTML = hits(); bindHits(); }; });
