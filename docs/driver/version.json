@@ -1,10 +1,10 @@
 {
- "versionCode": 81,
- "versionName": "3.73",
- "sha256": "13b266aa70495fa31126167be56e67f9ffa3e9a961828be775a85fc5d31d7ef8",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-81.apk",
- "notes": "Neu: Karte „Noch zu erledigen“ auf der Startseite, Notfallkontakt in Sicherheit, und „Alles in Ordnung?“, wenn das Auto während einer Fahrt 8 Minuten steht.",
- "notes_de": "Neu: Karte „Noch zu erledigen“ auf der Startseite, Notfallkontakt in Sicherheit, und „Alles in Ordnung?“, wenn das Auto während einer Fahrt 8 Minuten steht.",
- "notes_en": "New: “Still to do” card on Home, emergency contact under Safety, and “Is everything OK?” when the car stands still for 8 minutes during a ride.",
- "notes_el": "Νέο: κάρτα «Εκκρεμούν» στην αρχική, επαφή έκτακτης ανάγκης στην Ασφάλεια, και «Όλα καλά;» όταν το αμάξι μένει ακίνητο 8 λεπτά μέσα σε διαδρομή."
+ "versionCode": 82,
+ "versionName": "3.74",
+ "sha256": "74748c6cde6781f46ceca2f298acf1da235cc849c5752d01e40dabeb307d7e7c",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-82.apk",
+ "notes": "Neu: Datum wählen unter Entdecken, kleine Routenskizze bei jeder Fahrt, und unter Einnahmen: Online heute und Euro pro Stunde.",
+ "notes_de": "Neu: Datum wählen unter Entdecken, kleine Routenskizze bei jeder Fahrt, und unter Einnahmen: Online heute und Euro pro Stunde.",
+ "notes_en": "New: pick a date in Discover, a small route sketch on every ride, and in Earnings: online today and euros per hour.",
+ "notes_el": "Νέο: επιλογή ημερομηνίας στο Discover, μικρό σχέδιο διαδρομής σε κάθε διαδρομή, και στα Κέρδη: χρόνος online σήμερα και ευρώ ανά ώρα."
 }
