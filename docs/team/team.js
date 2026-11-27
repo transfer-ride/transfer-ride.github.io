@@ -625,6 +625,13 @@
   }
 
   /* ---------------- Notices for the owner (Lisa's Mac notifications, also here) ---------------- */
+  var IB_TX = { el: [["Beleg prüfen", "Έλεγξε απόδειξη"], ["Beleg doppelt", "Διπλή απόδειξη"], ["Fristen", "Προθεσμίες"], ["Pflicht offen", "Υποχρέωση ανοιχτή"], ["dringend", "Επείγον"], ["krank", "άρρωστος/η"], ["Arbeitsvertrag hochgeladen", "Ανέβηκε σύμβαση εργασίας"], ["hochgeladen", "ανέβηκε"], ["gültig bis", "ισχύει έως"], ["Frist", "προθεσμία"], ["Inhaber", "Ιδιοκτήτης"]],
+    en: [["Beleg prüfen", "Check receipt"], ["Beleg doppelt", "Duplicate receipt"], ["Fristen", "Deadlines"], ["Pflicht offen", "Duty open"], ["dringend", "Urgent"], ["krank", "sick"], ["Arbeitsvertrag hochgeladen", "Employment contract uploaded"], ["hochgeladen", "uploaded"], ["gültig bis", "valid until"], ["Frist", "deadline"], ["Inhaber", "Owner"]] };
+  function ibTx(x) {
+    x = String(x || ""); if (lang === "de") return x;
+    x = x.split(" – ").map(function (part, i) { return i ? part.split(", ").map(flagTx).join(", ") : part; }).join(" – ");
+    (IB_TX[lang] || []).forEach(function (p) { x = x.split(p[0]).join(p[1]); }); return x;
+  }
   function inboxUnread() { var seen = load("team_ib_seen") || ""; return (profile().inbox || []).filter(function (x) { return x.at > seen; }).length; }
   function inboxScreen() {
     var list = profile().inbox || [], seen = load("team_ib_seen") || "";
@@ -633,8 +640,8 @@
     if (!list.length) return h + '<div class="empty">' + esc(t("ib_none")) + "</div>";
     return h + '<div class="card" style="padding:4px 14px">' + list.map(function (x) {
       var nw = x.at > seen;
-      return '<div class="row" style="align-items:flex-start' + (nw ? ";background:var(--mint-soft);border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow"><span class="t">' + esc(String(x.title || "").replace(/^Transfer Team · /, "").replace(/^Lisa \(HR\): /, "")) +
-        '</span><span class="small" style="display:block;margin-top:2px;white-space:pre-wrap">' + esc(x.text || "") + '</span><span class="muted small">' + esc(new Date(x.at).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short", hourCycle: "h23" })) + "</span></span></div>"; }).join("") + "</div>";
+      return '<div class="row" style="align-items:flex-start' + (nw ? ";background:var(--mint-soft);border-radius:10px;padding-left:8px;padding-right:8px" : "") + '"><span class="grow"><span class="t">' + esc(ibTx(String(x.title || "").replace(/^Transfer Team · /, "").replace(/^Lisa \(HR\): /, ""))) +
+        '</span><span class="small" style="display:block;margin-top:2px;white-space:pre-wrap">' + esc(ibTx(x.text)) + '</span><span class="muted small">' + esc(new Date(x.at).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short", hourCycle: "h23" })) + "</span></span></div>"; }).join("") + "</div>";
   }
 
   /* ---------------- Vehicles (owner only): read from the fleet agent's files, nothing to edit here ---------------- */
