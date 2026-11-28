@@ -1,10 +1,10 @@
 {
- "versionCode": 90,
- "versionName": "3.82",
- "sha256": "4eac3a2876ff762a8fa4f8113942f7a82a3a69672e37e229929739a7731b7ba8",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-90.apk",
- "notes": "Abholzeit geändert: alte Zeit durchgestrichen. Zurück-Knopf in der Wegbeschreibung. Live-Standort vom Fahrgast anfragen.",
- "notes_de": "Abholzeit geändert: alte Zeit durchgestrichen. Zurück-Knopf in der Wegbeschreibung. Live-Standort vom Fahrgast anfragen.",
- "notes_en": "Changed pick-up time shown struck through. Back button in directions. Ask passenger for live location.",
- "notes_el": "Αλλαγμένη ώρα παραλαβής διαγραμμένη. Κουμπί Επιστροφή στις οδηγίες. Ζήτα live θέση από τον επιβάτη."
+ "versionCode": 91,
+ "versionName": "3.83",
+ "sha256": "ee22dad67f462bacdc0b6618c0f8726d409112f1b19caf68c5ee0cfcbec831a4",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-91.apk",
+ "notes": "Fahrt vor Ort startet sofort die Navigation; geänderter Endpreis wird übernommen",
+ "notes_de": "Fahrt vor Ort startet sofort die Navigation; geänderter Endpreis wird übernommen",
+ "notes_en": "On-the-spot ride starts directions at once; changed final price is kept",
+ "notes_el": "Η διαδρομή επιτόπου ξεκινά αμέσως πλοήγηση· η αλλαγμένη τιμή κρατιέται"
 }
