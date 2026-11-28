@@ -1,10 +1,10 @@
 {
- "versionCode": 86,
- "versionName": "3.78",
- "sha256": "3af0f8ca5ff4967b99727ed0c0485270ae8122ca8c75b7decc4d03280c3a0b88",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-86.apk",
- "notes": "Namensschild für Abholung (Flughafen, Bahnhof); Pausen-Erinnerung nach 4:30 Std.; Stoßzeit-Hinweis; € pro km",
- "notes_de": "Namensschild für Abholung (Flughafen, Bahnhof); Pausen-Erinnerung nach 4:30 Std.; Stoßzeit-Hinweis; € pro km",
- "notes_en": "Name sign for pick-ups (airport, station); break reminder after 4:30 h; rush-hour strip; € per km",
- "notes_el": "Ταμπέλα με όνομα για παραλαβές (αεροδρόμιο, σταθμός)· υπενθύμιση διαλείμματος μετά από 4:30 ώρ.· ένδειξη ώρας αιχμής· € ανά km"
+ "versionCode": 87,
+ "versionName": "3.79",
+ "sha256": "9652f920c0be0281fc2facb7b2cabb678bae6e0c7306256a0cca467280fff9b5",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-87.apk",
+ "notes": "Klarere Navigation: Uber-Hinweis mit zwei großen Knöpfen, Anweisungen auf ganzem Bildschirm, Fahrtkarte und Zeitleiste als eine Fläche; Entfernung zur Abholung über die Straße; klarere Sterne",
+ "notes_de": "Klarere Navigation: Uber-Hinweis mit zwei großen Knöpfen, Anweisungen auf ganzem Bildschirm, Fahrtkarte und Zeitleiste als eine Fläche; Entfernung zur Abholung über die Straße; klarere Sterne",
+ "notes_en": "Clearer navigation: Uber reminder with two big buttons, directions full screen, ride card and time line as one panel; road distance to the pick-up; clearer stars",
+ "notes_el": "Πιο καθαρή πλοήγηση: υπενθύμιση Uber με δύο μεγάλα κουμπιά, οδηγίες σε όλη την οθόνη, κάρτα διαδρομής και χρόνος σε ένα κομμάτι· απόσταση ως την παραλαβή από τον δρόμο· πιο καθαρά αστέρια"
 }
