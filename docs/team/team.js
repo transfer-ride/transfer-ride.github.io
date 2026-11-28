@@ -27,7 +27,7 @@
       app: "Team", forgot: "PIN vergessen?", forgot_txt: "Sag es dem Chef. Er gibt dir in der App einen neuen PIN (oder trägt eine neue Handynummer ein). Alle deine Daten bleiben.", pin: "PIN eingeben", pin_sub: "Dein 4-stelliger PIN", mobile_no: "Deine Handynummer", phone_bad: "Bitte die Handynummer prüfen.", wrong: "Falscher PIN. Noch {n} Versuche.",
       locked: "Zu viele Versuche. Bitte später noch einmal.", offline: "Keine Verbindung. Bitte später noch einmal.",
       home: "Start", plan: "Plan", requests: "Anträge", chat: "HR-Chat", profile: "Profil",
-      bn_title: "Boni", bn_sub: "Was du zusätzlich bekommen kannst", bn_home: "Bring einen Fahrer mit: bis zu 200 € in Tankgutscheinen", bn_home_vz: "Boni bis 50 € im Monat + 200 € für jeden Fahrer, den du mitbringst",
+      cs_title: "Auto-Zeiten", cs_sub: "Freie Autos – wähle, wann du fahren möchtest", cs_home: "Freie Auto-Zeiten: wähle, wann du fahren möchtest", cs_home_n: "{n} freies Zeitfenster für ein Auto|{n} freie Zeitfenster für Autos", cs_note: "Das ist ein Wunsch, noch keine feste Zusage. Wir wägen alle Bedürfnisse ab, und die Firma entscheidet. Du bekommst eine Nachricht, sobald entschieden ist.", cs_none: "Gerade sind keine Autos frei. Schau später wieder rein.", cs_pick: "Zeit wünschen", cs_take: "Für mich nehmen", cs_offer: "+ Auto anbieten", cs_cancel_slot: "Zeitfenster löschen", cs_cancel_q: "Dieses Zeitfenster löschen? Alle Wünsche dafür werden abgesagt.", cs_vehicle: "Auto", cs_from: "Von", cs_to: "Bis", cs_note_f: "Notiz (freiwillig)", cs_note_ph: "z. B. ich möchte am Flughafen fahren", cs_send_wish: "Wunsch senden", cs_save: "Anbieten", cs_taken: "schon vergeben", cs_mine_ok: "deine Zeit", cs_wishes_n: "{n} Wunsch|{n} Wünsche", cs_mine: "Meine Wünsche", cs_all: "Wünsche der Fahrer", st_wish: "Wunsch – offen", st_ok: "Bestätigt", st_no: "Nicht möglich", cs_withdraw: "Zurückziehen", cs_withdraw_q: "Diesen Wunsch zurückziehen?", cs_yes: "Zusagen", cs_no: "Absagen", cs_no_q: "Diesen Wunsch absagen? Der Fahrer bekommt eine Nachricht.", cs_sent: "Wunsch gesendet – die Firma entscheidet", cs_taken_toast: "Für dich eingetragen", cs_offered: "Zeitfenster angeboten", cs_time: "Bitte eine Zeit innerhalb des Zeitfensters wählen.", cs_overlap: "Für diese Zeit hast du schon einen Wunsch.", cs_owner_hint: "Du hast immer Vorrang: Nimmst du ein Auto selbst, werden überschneidende Wünsche abgesagt. Die Fahrer sehen nur, dass die Firma anders entschieden hat.", ow_cs: "{n} neuer Auto-Wunsch|{n} neue Auto-Wünsche", cs_you: "Du", bn_title: "Boni", bn_sub: "Was du zusätzlich bekommen kannst", bn_home: "Bring einen Fahrer mit: bis zu 200 € in Tankgutscheinen", bn_home_vz: "Boni bis 50 € im Monat + 200 € für jeden Fahrer, den du mitbringst",
       bn_how: "Alle Boni gibt es als Gutscheine für Kraftstoff oder Ladestrom, ohne Steuer und Abgaben (§ 8 EStG). Keine Barauszahlung. Insgesamt höchstens 50 € pro Monat.", bn_contract: "So steht es in deinem Arbeitsvertrag. Verbindlich ist nur der Vertrag.", bn_owner: "Du siehst alle Boni. Jeder Mitarbeiter sieht nur die aus seinem Vertrag.",
       bn_ref_t: "Freund als Fahrer empfehlen", bn_ref_a: "bis 200 €", bn_ref_d: "Trag deinen Freund hier ein, bevor er sich bewirbt. Er war noch nie bei uns, wird in Vollzeit eingestellt und ist nach 3 Monaten noch in Vollzeit dabei. Dann bekommst du 4 Monate lang jeden Monat einen Gutschein über 50 €, solange ihr beide bei uns arbeitet. Für mehrere Freunde gibt es den Bonus mehrmals.",
       bn_rev_t: "Umsatz-Bonus", bn_rev_a: "25 €", bn_rev_d: "Für jeden Monat mit mindestens 7.200 € Umsatz (was die Fahrgäste bezahlt haben, mit MwSt, vor der Uber-Provision, ohne Trinkgeld).",
@@ -76,7 +76,7 @@
       app: "Team", forgot: "Forgot your PIN?", forgot_txt: "Tell the boss. He gives you a new PIN in the app (or enters a new mobile number). All your data stays.", pin: "Enter your PIN", pin_sub: "Your 4-digit PIN", mobile_no: "Your mobile number", phone_bad: "Please check the mobile number.", wrong: "Wrong PIN. {n} tries left.",
       locked: "Too many tries. Please try later.", offline: "No connection. Please try later.",
       home: "Home", plan: "Schedule", requests: "Requests", chat: "HR chat", profile: "Profile",
-      bn_title: "Bonuses", bn_sub: "What you can earn on top", bn_home: "Bring a driver: up to €200 in fuel vouchers", bn_home_vz: "Bonuses up to €50 a month + €200 for every driver you bring",
+      cs_title: "Car times", cs_sub: "Free cars – pick when you would like to drive", cs_home: "Free car times: pick when you would like to drive", cs_home_n: "{n} free time window for a car|{n} free time windows for cars", cs_note: "This is a wish, not a firm promise yet. We weigh all needs and the company decides. You get a message as soon as it is decided.", cs_none: "No cars are free right now. Check again later.", cs_pick: "Pick a time", cs_take: "Take it myself", cs_offer: "+ Offer a car", cs_cancel_slot: "Delete time window", cs_cancel_q: "Delete this time window? All wishes for it are declined.", cs_vehicle: "Car", cs_from: "From", cs_to: "To", cs_note_f: "Note (optional)", cs_note_ph: "e.g. I would like to drive at the airport", cs_send_wish: "Send wish", cs_save: "Offer", cs_taken: "already taken", cs_mine_ok: "your time", cs_wishes_n: "{n} wish|{n} wishes", cs_mine: "My wishes", cs_all: "Drivers' wishes", st_wish: "Wish – open", st_ok: "Confirmed", st_no: "Not possible", cs_withdraw: "Withdraw", cs_withdraw_q: "Withdraw this wish?", cs_yes: "Confirm", cs_no: "Decline", cs_no_q: "Decline this wish? The driver gets a message.", cs_sent: "Wish sent – the company decides", cs_taken_toast: "Booked for you", cs_offered: "Time window offered", cs_time: "Please pick a time inside the time window.", cs_overlap: "You already have a wish for this time.", cs_owner_hint: "You always come first: if you take a car yourself, overlapping wishes are declined. Drivers only see that the company decided otherwise.", ow_cs: "{n} new car wish|{n} new car wishes", cs_you: "You", bn_title: "Bonuses", bn_sub: "What you can earn on top", bn_home: "Bring a driver: up to €200 in fuel vouchers", bn_home_vz: "Bonuses up to €50 a month + €200 for every driver you bring",
       bn_how: "All bonuses come as vouchers for fuel or charging, free of tax and contributions (sec. 8 EStG). No cash. At most €50 a month in total.", bn_contract: "This is what your employment contract says. Only the contract is binding.", bn_owner: "You see all bonuses. Each employee sees only the ones in their contract.",
       bn_ref_t: "Recommend a friend as a driver", bn_ref_a: "up to €200", bn_ref_d: "Add your friend here before they apply. They have never worked for us, are hired full-time and are still full-time after 3 months. Then you get a €50 voucher every month for 4 months, as long as you both work for us. Several friends, several bonuses.",
       bn_rev_t: "Revenue bonus", bn_rev_a: "€25", bn_rev_d: "For every month with at least €7,200 revenue (what passengers paid, incl. VAT, before the Uber fee, without tips).",
@@ -125,7 +125,7 @@
       app: "Team", forgot: "Ξέχασες το PIN;", forgot_txt: "Πες το στο αφεντικό. Σου δίνει νέο PIN από την εφαρμογή (ή βάζει νέο κινητό). Όλα τα δεδομένα σου μένουν.", pin: "Βάλε το PIN", pin_sub: "Το 4ψήφιο PIN σου", mobile_no: "Το κινητό σου", phone_bad: "Έλεγξε τον αριθμό του κινητού.", wrong: "Λάθος PIN. Απομένουν {n} προσπάθειες.",
       locked: "Πολλές προσπάθειες. Δοκίμασε αργότερα.", offline: "Χωρίς σύνδεση. Δοκίμασε αργότερα.",
       home: "Αρχική", plan: "Πρόγραμμα", requests: "Αιτήματα", chat: "Chat HR", profile: "Προφίλ",
-      bn_title: "Μπόνους", bn_sub: "Τι μπορείς να κερδίσεις επιπλέον", bn_home: "Φέρε έναν φίλο οδηγό: έως 200 € σε κουπόνια καυσίμων", bn_home_vz: "Μπόνους έως 50 € τον μήνα + 200 € για κάθε οδηγό που φέρνεις",
+      cs_title: "Ώρες αυτοκινήτου", cs_sub: "Ελεύθερα αυτοκίνητα – διάλεξε πότε θέλεις να οδηγήσεις", cs_home: "Ελεύθερες ώρες αυτοκινήτου: διάλεξε πότε θέλεις να οδηγήσεις", cs_home_n: "{n} ελεύθερο χρονικό παράθυρο για αυτοκίνητο|{n} ελεύθερα χρονικά παράθυρα για αυτοκίνητα", cs_note: "Αυτό είναι επιθυμία, όχι ακόμα σίγουρη κράτηση. Αξιολογούμε όλες τις ανάγκες και αποφασίζει η εταιρεία. Θα πάρεις μήνυμα μόλις αποφασιστεί.", cs_none: "Αυτή τη στιγμή δεν υπάρχει ελεύθερο αυτοκίνητο. Δες ξανά αργότερα.", cs_pick: "Διάλεξε ώρα", cs_take: "Το παίρνω εγώ", cs_offer: "+ Διάθεση αυτοκινήτου", cs_cancel_slot: "Διαγραφή παραθύρου", cs_cancel_q: "Να διαγραφεί αυτό το χρονικό παράθυρο; Όλες οι επιθυμίες γι' αυτό απορρίπτονται.", cs_vehicle: "Αυτοκίνητο", cs_from: "Από", cs_to: "Έως", cs_note_f: "Σημείωση (προαιρετικά)", cs_note_ph: "π.χ. θέλω να οδηγήσω στο αεροδρόμιο", cs_send_wish: "Αποστολή επιθυμίας", cs_save: "Διάθεση", cs_taken: "ήδη πιασμένο", cs_mine_ok: "η ώρα σου", cs_wishes_n: "{n} επιθυμία|{n} επιθυμίες", cs_mine: "Οι επιθυμίες μου", cs_all: "Επιθυμίες οδηγών", st_wish: "Επιθυμία – ανοιχτή", st_ok: "Επιβεβαιώθηκε", st_no: "Δεν γίνεται", cs_withdraw: "Ανάκληση", cs_withdraw_q: "Να ανακληθεί αυτή η επιθυμία;", cs_yes: "Έγκριση", cs_no: "Απόρριψη", cs_no_q: "Να απορριφθεί αυτή η επιθυμία; Ο οδηγός θα πάρει μήνυμα.", cs_sent: "Η επιθυμία στάλθηκε – αποφασίζει η εταιρεία", cs_taken_toast: "Καταχωρήθηκε για σένα", cs_offered: "Το παράθυρο διατέθηκε", cs_time: "Διάλεξε ώρα μέσα στο χρονικό παράθυρο.", cs_overlap: "Έχεις ήδη επιθυμία γι' αυτή την ώρα.", cs_owner_hint: "Εσύ έχεις πάντα προτεραιότητα: αν πάρεις εσύ ένα αυτοκίνητο, οι επιθυμίες που πέφτουν πάνω απορρίπτονται. Οι οδηγοί βλέπουν μόνο ότι η εταιρεία αποφάσισε αλλιώς.", ow_cs: "{n} νέα επιθυμία αυτοκινήτου|{n} νέες επιθυμίες αυτοκινήτου", cs_you: "Εσύ", bn_title: "Μπόνους", bn_sub: "Τι μπορείς να κερδίσεις επιπλέον", bn_home: "Φέρε έναν φίλο οδηγό: έως 200 € σε κουπόνια καυσίμων", bn_home_vz: "Μπόνους έως 50 € τον μήνα + 200 € για κάθε οδηγό που φέρνεις",
       bn_how: "Όλα τα μπόνους δίνονται ως κουπόνια για καύσιμα ή φόρτιση, χωρίς φόρο και εισφορές (§ 8 EStG). Όχι σε μετρητά. Συνολικά έως 50 € τον μήνα.", bn_contract: "Έτσι γράφει η σύμβασή σου. Δεσμευτική είναι μόνο η σύμβαση.", bn_owner: "Εσύ βλέπεις όλα τα μπόνους. Κάθε υπάλληλος βλέπει μόνο όσα έχει η σύμβασή του.",
       bn_ref_t: "Πρότεινε έναν φίλο για οδηγό", bn_ref_a: "έως 200 €", bn_ref_d: "Γράψε τον φίλο σου εδώ πριν κάνει αίτηση. Δεν έχει δουλέψει ποτέ σε εμάς, προσλαμβάνεται με πλήρη απασχόληση και μετά από 3 μήνες δουλεύει ακόμα πλήρη απασχόληση. Τότε παίρνεις για 4 μήνες ένα κουπόνι 50 € κάθε μήνα, όσο δουλεύετε και οι δύο σε εμάς. Για κάθε φίλο, ξανά μπόνους.",
       bn_rev_t: "Μπόνους τζίρου", bn_rev_a: "25 €", bn_rev_d: "Για κάθε μήνα με τουλάχιστον 7.200 € τζίρο (ό,τι πλήρωσαν οι επιβάτες, με ΦΠΑ, πριν την προμήθεια της Uber, χωρίς φιλοδωρήματα).",
@@ -330,6 +330,7 @@
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>',
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
     receipt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>',
+    car: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M3 17v-4l2-5h14l2 5v4"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/><path d="M3 13h18"/></svg>',
     gift: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v9h14v-9M12 8c-1.5-3-5-3.5-5.5-1.5S9 8 12 8zm0 0c1.5-3 5-3.5 5.5-1.5S15 8 12 8z"/></svg>',
     star: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
     profile: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
@@ -635,7 +636,7 @@
 
   function render() {
     if (tab === "chat") return chatScreen();
-    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen, bills: billsScreen, reports: reportsScreen, tasks: tasksScreen, cars: carsScreen, inbox: inboxScreen, bonus: bonusScreen }[tab] || homeScreen;
+    var body = { home: homeScreen, plan: planScreen, menu: menuScreen, receipts: receiptsScreen, requests: requestsScreen, profile: profileScreen, search: searchScreen, team: teamScreen, bills: billsScreen, reports: reportsScreen, tasks: tasksScreen, cars: carsScreen, inbox: inboxScreen, bonus: bonusScreen, slots: slotsScreen }[tab] || homeScreen;
     app.innerHTML = '<main class="screen">' + (stale ? '<div class="card small" style="background:var(--warn-soft);color:var(--warn);font-weight:700;margin-bottom:12px">⚠ ' + esc(t("stale")) + "</div>" : "") + body() + "</main>" + tabsHtml();
     bind();
   }
@@ -643,7 +644,7 @@
     return '<nav class="tabs" aria-label="Menu">' + ["home", "receipts", "requests", "chat", "profile"].map(function (k) {
       var n = k === "chat" ? data && data.unread : k === "receipts" ? receipts && receipts.to_confirm : 0;
       var badge = n > 0 ? '<span class="badge">' + n + "</span>" : "";
-      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team" || tab === "bills" || tab === "reports" || tab === "tasks" || tab === "cars" || tab === "inbox" || tab === "bonus"));
+      var cur = tab === k || (k === "home" && (tab === "plan" || tab === "search" || tab === "menu" || tab === "team" || tab === "bills" || tab === "reports" || tab === "tasks" || tab === "cars" || tab === "inbox" || tab === "bonus" || tab === "slots"));
       return '<button type="button" data-tab="' + k + '"' + (cur ? ' aria-current="page"' : "") + ">" + ICON[k] + "<span>" + esc(t(k === "receipts" ? "up_tab" : k)) + "</span>" + badge + "</button>";
     }).join("") + "</nav>";
   }
@@ -651,7 +652,7 @@
   function typing() { var a = document.activeElement; return !!(a && app.contains(a) && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)); }
   function tabsBadge() { var n = app.querySelector(".tabs"); if (n) { n.outerHTML = tabsHtml(); bindTabs(); } }
   function bindTabs() { app.querySelectorAll("[data-tab]").forEach(function (b) { b.onclick = function () { go(b.dataset.tab); }; }); }
-  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; tmCache = {}; tmView = "home"; } if (k === "bills" || k === "reports") ownAll = null; tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts" || k === "tasks") loadReceipts(); }
+  function go(k) { if (k === "team") { tmList = null; tmSel = null; tmPerson = null; tmPin = null; tmCache = {}; tmView = "home"; } if (k === "bills" || k === "reports") ownAll = null; tab = k; store("team_tab", k); clearInterval(chatTimer); chatTimer = null; window.scrollTo(0, 0); render(); if (k === "receipts" || k === "tasks") loadReceipts(); if (k === "slots") loadCars(); }
   function bind() {
     bindTabs(); bindTeam(); bindOwner();
     app.querySelectorAll("[data-rseg]").forEach(function (b) { b.onclick = function () { rSeg = b.dataset.rseg; rMonth = ""; store("team_rseg", rSeg); render(); }; });
@@ -659,6 +660,7 @@
     var rqi = app.querySelector("#rq"); if (rqi) rqi.oninput = function () { rQuery = rqi.value; var y = window.scrollY; render(); window.scrollTo(0, y); var n = app.querySelector("#rq"); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } };
     app.querySelectorAll("[data-ask]").forEach(function (b) { b.onclick = function () { askSheet(b.dataset.ask); }; });
     app.querySelectorAll("[data-refer]").forEach(function (b) { b.onclick = referSheet; });
+    bindCars();
     app.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { go(b.dataset.go); }; });
     app.querySelectorAll("[data-q]").forEach(function (b) { b.onclick = function () { go("chat"); setTimeout(function () { sendChat(b.dataset.q); }, 50); }; });
     app.querySelectorAll("[data-view]").forEach(function (b) { b.onclick = function () { planView = b.dataset.view; render(); }; });
@@ -723,6 +725,7 @@
       '<div class="card" style="padding:4px 14px">' + (mine.length ? mine : tko).slice(0, 3).map(taskRow).join("") + "</div>";
     if (receipts && receipts.to_confirm > 0) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0;background:var(--blue-soft)" data-wallet="1"><span class="grow t" style="text-align:left">' + esc(t("confirm_home", receipts.to_confirm)) + '</span><span class="chip info">' + receipts.to_confirm + "</span></button>";
     if (open) h += '<button class="card row tap" style="width:100%;margin-top:12px;border:0" data-go="requests"><span class="grow t" style="text-align:left">' + esc(t("open_req")) + '</span><span class="chip wait">' + open + "</span></button>";
+    h += carsHome();
     h += bonusHome();
     h += '<div class="actions">' + [["leave", "ask_leave", "leave"], ["sick", "ask_sick", "sick"], ["shift_swap", "ask_swap", "swap"]].map(function (k) {
       return '<button class="action" data-ask="' + k[0] + '">' + ICON[k[2]] + esc(t(k[1])) + "</button>"; }).join("") +
@@ -770,6 +773,9 @@
     if (cu) rows.push('<button class="row tap" style="width:100%;text-align:left" data-go="cars"><span class="grow t">' + esc(t("ow_cars", cu)) + '</span><span class="chip bad">' + cu + "</span> ›</button>");
     var tl = openTasks().filter(function (x) { return x.due && x.due < today && (x.who === "owner" || /^own-/.test(x.key)); }).length;
     if (tl) rows.push('<button class="row tap" style="width:100%;text-align:left" data-go="tasks"><span class="grow t" style="color:var(--danger)">' + esc(t("ow_tasks_late", tl)) + '</span><span class="chip bad">' + tl + "</span> ›</button>");
+    var csn = carsData && carsData.all ? carsData.all.filter(function (w) { return w.status === "wish"; }).length : 0;
+    if (!carsData) loadCars();
+    if (csn) rows.push('<button class="row tap" style="width:100%;text-align:left" data-go="slots"><span class="grow t">' + esc(t("ow_cs", csn)) + '</span><span class="chip wait">' + csn + "</span> ›</button>");
     var ibn = inboxUnread();
     if (ibn) rows.push('<button class="row tap" style="width:100%;text-align:left" data-go="inbox"><span class="grow t">' + esc(t("ow_inbox", ibn)) + '</span><span class="chip info">' + ibn + "</span> ›</button>");
     if (team) rows.push('<button class="row tap" style="width:100%;text-align:left" data-go="team"><span class="grow t">' + esc(t("ow_team", team)) + '</span><span class="chip wait">' + team + "</span> ›</button>");
@@ -827,6 +833,7 @@
     var icon = { news: ICON.doc, company: ICON.home, benefits: ICON.raise, learning: ICON.requests, development: ICON.swap, guidelines: ICON.sick, plan: ICON.plan, star: ICON.star };
     return '<div class="top"><h1>' + esc(t("menu")) + '</h1><button class="back" aria-label="' + esc(t("search")) + '" data-go="search">' + ICON.search + "</button></div>" +
       menuTiles() +
+      '<button class="card row tap" style="width:100%;margin:0 0 12px;border:0;text-align:left" data-go="slots"><span style="width:26px;display:grid;place-items:center;color:var(--deep)">' + ICON.car + '</span><span class="grow t">' + esc(t("cs_title")) + '<span class="muted small" style="display:block">' + esc(t("cs_sub")) + "</span></span> ›</button>" +
       '<button class="card row tap" style="width:100%;margin:0 0 12px;border:0;text-align:left" data-go="bonus"><span style="width:26px;display:grid;place-items:center;color:var(--deep)">' + ICON.gift + '</span><span class="grow t">' + esc(t("bn_title")) + '<span class="muted small" style="display:block">' + esc(t("bn_sub")) + "</span></span> ›</button>" +
       '<div class="card" style="padding:4px 14px">' + tiles.map(function (x) {
         var n = x[0] === "plan" || x[0] === "favs" ? "" : posts().filter(function (p) { return (p.category || "news") === x[0]; }).length;
@@ -850,6 +857,120 @@
     return '<div class="' + (tiles.length > 1 ? "grid2" : "") + '" style="margin:0 0 12px">' + tiles.map(function (x) {
       return '<button class="card tap" style="border:0;text-align:left;display:flex;flex-direction:column;gap:4px;min-height:92px;position:relative' + (tiles.length > 1 ? "" : ";width:100%;min-height:0") + '" data-go="' + x[0] + '"><span class="t" style="font-weight:800;font-size:17px;padding-right:30px">' + esc(t(x[1])) + "</span>" +
         '<span class="muted small">' + esc(t(x[2])) + "</span>" + (x[3] ? '<span class="chip wait" style="position:absolute;top:10px;right:10px">' + x[3] + "</span>" : "") + "</button>"; }).join("") + "</div>";
+  }
+
+  /* ---------------- Car times: the company offers a car for a window, the employee wishes a time ----------------
+     A wish is never a promise: the company weighs the needs and decides (the note says so). The owner may take
+     a car himself; that is confirmed at once and overlapping wishes are declined (only he sees why). */
+  var carsData = null, carsBusy = false;
+  function loadCars() {
+    if (carsBusy || !token) return; carsBusy = true;
+    rpc("team_cars", { p_token: token }).then(function (d) { carsBusy = false; carsData = d; if (!typing() && !sheet && (tab === "slots" || tab === "home")) { var y = window.scrollY; render(); window.scrollTo(0, y); } })
+      .catch(function () { carsBusy = false; });
+  }
+  function csWhen(a, b) {
+    var f = new Date(a), e = new Date(b), o = { hour: "2-digit", minute: "2-digit", hourCycle: "h23" };
+    var day = f.toLocaleDateString(loc(), { weekday: "short", day: "2-digit", month: "2-digit" });
+    var same = ymd(f) === ymd(e);
+    return day + " " + f.toLocaleTimeString(loc(), o) + " – " + (same ? "" : e.toLocaleDateString(loc(), { weekday: "short", day: "2-digit", month: "2-digit" }) + " ") + e.toLocaleTimeString(loc(), o);
+  }
+  function csLocal(d) { d = new Date(d); return ymd(d) + "T" + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0"); }
+  function csChip(st) { return '<span class="chip ' + (st === "ok" ? "ok" : st === "no" ? "bad" : "wait") + '">' + esc(t("st_" + st)) + "</span>"; }
+  function csErr(e) { return e && e.code === "KB409" ? t("cs_overlap") : e && e.code === "KB422" ? t("cs_time") : (e && e.message) || t("err"); }
+  function carsHome() {
+    if (!carsData) { loadCars(); return ""; }
+    var own = !!carsData.owner, n = (carsData.slots || []).length;
+    if (own || !n) return "";
+    return '<button class="card row tap" style="width:100%;margin-top:12px;border:0;text-align:left;background:var(--blue-soft)" data-go="slots"><span style="width:28px;display:grid;place-items:center">' + ICON.car +
+      '</span><span class="grow t">' + esc(t("cs_home_n", n)) + "</span> ›</button>";
+  }
+  function slotsScreen() {
+    var h = '<div class="top"><button class="back" aria-label="Back" data-go="home">' + ICON.back + '</button><h1 style="flex:1">' + esc(t("cs_title")) + "</h1></div>";
+    if (!carsData) { loadCars(); return h + '<div class="empty">…</div>'; }
+    var own = !!carsData.owner, slots = carsData.slots || [], mine = carsData.mine || [], all = carsData.all || [];
+    h += '<div class="card small" style="background:var(--warn-soft);color:var(--warn);font-weight:700;line-height:1.45;margin-bottom:12px">ⓘ ' + esc(t(own ? "cs_owner_hint" : "cs_note")) + "</div>";
+    if (own) h += '<button class="btn" style="width:100%;margin-bottom:12px" id="csoffer">' + esc(t("cs_offer")) + "</button>";
+    if (!slots.length) h += '<div class="empty">' + esc(t("cs_none")) + "</div>";
+    h += slots.map(function (sl) {
+      var taken = (sl.taken || []).map(function (x) { return '<span class="chip ' + (x.mine ? "ok" : "info") + '" style="margin:4px 6px 0 0">' + esc(csWhen(x.from, x.to).replace(/^\S+ \S+ /, "")) + " · " + esc(t(x.mine ? "cs_mine_ok" : "cs_taken")) + "</span>"; }).join("");
+      return '<section class="card" style="margin-bottom:12px"><div style="display:flex;gap:12px;align-items:flex-start"><span style="width:40px;height:40px;border-radius:12px;background:var(--blue-soft);display:grid;place-items:center;flex:none">' + ICON.car + "</span>" +
+        '<span class="grow"><span class="t" style="display:block;font-weight:800;font-size:17px">' + esc(sl.vehicle) + "</span>" +
+        '<span style="display:block;font-weight:700;margin-top:2px">' + esc(csWhen(sl.from, sl.to)) + "</span>" +
+        (sl.note ? '<span class="small muted" style="display:block;margin-top:4px">' + esc(sl.note) + "</span>" : "") +
+        (taken ? '<span style="display:block;margin-top:4px">' + taken + "</span>" : "") +
+        (own && sl.wishes ? '<span class="chip wait" style="margin-top:6px;display:inline-block">' + esc(t("cs_wishes_n", sl.wishes)) + "</span>" : "") + "</span></div>" +
+        '<div style="display:grid;gap:8px;margin-top:12px' + (own ? ";grid-template-columns:1fr 1fr" : "") + '"><button class="btn" data-cspick="' + sl.id + '">' + esc(t(own ? "cs_take" : "cs_pick")) + "</button>" +
+        (own ? '<button class="btn ghost" data-csdel="' + sl.id + '">' + esc(t("cs_cancel_slot")) + "</button>" : "") + "</div></section>";
+    }).join("");
+    if (own && all.length) h += "<h2>" + esc(t("cs_all")) + '</h2><div class="card" style="padding:4px 14px">' + all.map(function (w) {
+      return '<div class="row" style="flex-wrap:wrap;align-items:flex-start"><span class="grow t">' + esc(w.self ? t("cs_you") : w.name) + " · " + esc(w.vehicle) +
+        '<span class="small" style="display:block;font-weight:600">' + esc(csWhen(w.from, w.to)) + "</span>" + (w.note ? '<span class="muted small" style="display:block">' + esc(w.note) + "</span>" : "") + "</span>" + csChip(w.status) +
+        (w.self ? "" : '<span style="display:flex;gap:8px;width:100%;margin-top:8px">' + (w.status === "wish" ? '<button class="btn" style="flex:1;padding:10px" data-csyes="' + w.id + '">' + esc(t("cs_yes")) + "</button>" : "") +
+          '<button class="btn ghost" style="flex:1;padding:10px" data-csno="' + w.id + '">' + esc(t("cs_no")) + "</button></span>") + "</div>"; }).join("") + "</div>";
+    var mineShown = mine.filter(function (w) { return !own || w.status !== "ok"; });
+    if (!own && mineShown.length) h += "<h2>" + esc(t("cs_mine")) + '</h2><div class="card" style="padding:4px 14px">' + mineShown.map(function (w) {
+      var open = (w.status === "wish" || w.status === "ok") && new Date(w.to) > new Date();
+      return '<div class="row" style="flex-wrap:wrap;align-items:flex-start"><span class="grow t">' + esc(w.vehicle) + '<span class="small" style="display:block;font-weight:600">' + esc(csWhen(w.from, w.to)) + "</span>" +
+        (w.answer ? '<span class="muted small" style="display:block">' + esc(w.answer) + "</span>" : "") + "</span>" + csChip(w.status) +
+        (open ? '<button class="btn ghost" style="width:100%;margin-top:8px;padding:10px" data-cswd="' + w.id + '">' + esc(t("cs_withdraw")) + "</button>" : "") + "</div>"; }).join("") + "</div>";
+    return h;
+  }
+  function csDone(d, msg) { carsData = d; closeSheet(); if (msg) toast(msg); render(); }
+  function bindCars() {
+    var of = app.querySelector("#csoffer"); if (of) of.onclick = csOfferSheet;
+    app.querySelectorAll("[data-cspick]").forEach(function (b) { b.onclick = function () { csPickSheet(+b.dataset.cspick); }; });
+    app.querySelectorAll("[data-csdel]").forEach(function (b) { b.onclick = function () { if (!window.confirm(t("cs_cancel_q"))) return; b.disabled = true;
+      rpc("team_car_slot_cancel", { p_token: token, p_slot: +b.dataset.csdel }).then(function (d) { csDone(d); }).catch(function (e) { b.disabled = false; toast(csErr(e)); }); }; });
+    app.querySelectorAll("[data-cswd]").forEach(function (b) { b.onclick = function () { if (!window.confirm(t("cs_withdraw_q"))) return; b.disabled = true;
+      rpc("team_car_wish_withdraw", { p_token: token, p_wish: +b.dataset.cswd }).then(function (d) { csDone(d); }).catch(function (e) { b.disabled = false; toast(csErr(e)); }); }; });
+    app.querySelectorAll("[data-csyes]").forEach(function (b) { b.onclick = function () { b.disabled = true;
+      rpc("team_car_decide", { p_token: token, p_wish: +b.dataset.csyes, p_ok: true, p_note: null }).then(function (d) { csDone(d, t("st_ok")); }).catch(function (e) { b.disabled = false; toast(csErr(e)); }); }; });
+    app.querySelectorAll("[data-csno]").forEach(function (b) { b.onclick = function () { if (!window.confirm(t("cs_no_q"))) return; b.disabled = true;
+      rpc("team_car_decide", { p_token: token, p_wish: +b.dataset.csno, p_ok: false, p_note: null }).then(function (d) { csDone(d, t("st_no")); }).catch(function (e) { b.disabled = false; toast(csErr(e)); }); }; });
+  }
+  function csTimes(from, to, min, max) {
+    var mn = min ? ' min="' + csLocal(min) + '"' : "", mx = max ? ' max="' + csLocal(max) + '"' : "";
+    return '<label class="f" for="csf">' + esc(t("cs_from")) + '</label><input class="in" id="csf" type="datetime-local" step="900" value="' + csLocal(from) + '"' + mn + mx + ">" +
+      '<label class="f" for="cst">' + esc(t("cs_to")) + '</label><input class="in" id="cst" type="datetime-local" step="900" value="' + csLocal(to) + '"' + mn + mx + ">";
+  }
+  function csPickSheet(id) {
+    var sl = (carsData.slots || []).filter(function (x) { return x.id === id; })[0]; if (!sl) return;
+    var own = !!carsData.owner, now = new Date(), from = new Date(Math.max(new Date(sl.from), Math.ceil(now / 9e5) * 9e5));
+    openSheet('<h2 style="margin-top:0">' + esc(sl.vehicle) + '</h2><p class="small" style="margin:0 2px 6px;font-weight:700">' + esc(csWhen(sl.from, sl.to)) + "</p>" +
+      (own ? "" : '<p class="small" style="margin:0 2px 8px;color:var(--warn);font-weight:700;line-height:1.45">ⓘ ' + esc(t("cs_note")) + "</p>") +
+      csTimes(from, sl.to, from, sl.to) +
+      '<label class="f" for="csn">' + esc(t("cs_note_f")) + '</label><textarea class="in" id="csn" maxlength="300" placeholder="' + esc(t("cs_note_ph")) + '"></textarea>' +
+      '<p class="small" id="cse" style="color:var(--danger);margin:6px 2px 0"></p>' +
+      '<div style="display:grid;gap:10px;margin-top:12px"><button class="btn" id="csgo">' + esc(t(own ? "cs_take" : "cs_send_wish")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
+      s.querySelector("#csgo").onclick = function () {
+        var b = this, f = s.querySelector("#csf").value, e = s.querySelector("#cst").value;
+        var fd = f && new Date(f), ed = e && new Date(e);
+        if (!fd || !ed || ed <= fd || fd < new Date(sl.from) - 6e4 || ed > new Date(sl.to) || ed <= new Date()) { s.querySelector("#cse").textContent = t("cs_time"); return; }
+        b.disabled = true;
+        rpc("team_car_wish", { p_token: token, p_slot: id, p_from: fd.toISOString(), p_to: ed.toISOString(), p_note: s.querySelector("#csn").value.trim() || null })
+          .then(function (d) { csDone(d, t(own ? "cs_taken_toast" : "cs_sent")); }).catch(function (er) { b.disabled = false; s.querySelector("#cse").textContent = csErr(er); });
+      };
+    });
+  }
+  function csOfferSheet() {
+    var vs = (profile().vehicles || []).filter(function (v) { return v.status !== "sold"; });
+    var d0 = new Date(); d0.setDate(d0.getDate() + 1); d0.setHours(8, 0, 0, 0); var d1 = new Date(d0); d1.setHours(18);
+    openSheet('<h2 style="margin-top:0">' + esc(t("cs_offer").replace(/^\+\s*/, "")) + "</h2>" +
+      '<label class="f" for="csv">' + esc(t("cs_vehicle")) + "</label>" + (vs.length ? '<select class="in" id="csv">' + vs.map(function (v) { return "<option>" + esc(v.name || v.model || v.id) + "</option>"; }).join("") + "</select>" : '<input class="in" id="csv" autocomplete="off">') +
+      csTimes(d0, d1, new Date(), null) +
+      '<label class="f" for="csn">' + esc(t("cs_note_f")) + '</label><textarea class="in" id="csn" maxlength="300"></textarea>' +
+      '<p class="small" id="cse" style="color:var(--danger);margin:6px 2px 0"></p>' +
+      '<div style="display:grid;gap:10px;margin-top:12px"><button class="btn" id="csgo">' + esc(t("cs_save")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
+      s.querySelector("#csgo").onclick = function () {
+        var b = this, v = s.querySelector("#csv").value.trim(), f = s.querySelector("#csf").value, e = s.querySelector("#cst").value;
+        var fd = f && new Date(f), ed = e && new Date(e);
+        if (!v) { s.querySelector("#csv").focus(); return; }
+        if (!fd || !ed || ed <= fd || ed <= new Date()) { s.querySelector("#cse").textContent = t("cs_time"); return; }
+        b.disabled = true;
+        rpc("team_car_slot_put", { p_token: token, p_vehicle: v, p_from: fd.toISOString(), p_to: ed.toISOString(), p_note: s.querySelector("#csn").value.trim() || null })
+          .then(function (d) { csDone(d, t("cs_offered")); }).catch(function (er) { b.disabled = false; s.querySelector("#cse").textContent = csErr(er); });
+      };
+    });
   }
 
   /* ---------------- Bonuses (from the employment contracts; vouchers only, max 50 € a month) ---------------- */
@@ -2090,6 +2211,20 @@
     };
     return { rpc: function (fn, a) {
       return new Promise(function (ok) { setTimeout(function () {
+        if (/^team_car/.test(fn)) {
+          var own = /[?&]owner\b/.test(location.search), C = window.__dcars || (window.__dcars = { n: 3, slots: [{ id: 1, vehicle: "E 300 de", from: new Date(Date.now() + 864e5).setHours(8, 0, 0, 0), to: new Date(Date.now() + 864e5).setHours(18, 0, 0, 0), note: "Werkstatt erst ab Montag" }], wishes: [{ id: 2, slot: 1, from: new Date(Date.now() + 864e5).setHours(9, 0, 0, 0), to: new Date(Date.now() + 864e5).setHours(13, 0, 0, 0), status: "wish", name: "Ana", self: false }] });
+          var S = function (id) { return C.slots.filter(function (x) { return x.id === id; })[0]; };
+          if (fn === "team_car_slot_put") C.slots.push({ id: ++C.n, vehicle: a.p_vehicle, from: a.p_from, to: a.p_to, note: a.p_note });
+          if (fn === "team_car_slot_cancel") C.slots = C.slots.filter(function (x) { return x.id !== a.p_slot; });
+          if (fn === "team_car_wish") C.wishes.push({ id: ++C.n, slot: a.p_slot, from: a.p_from, to: a.p_to, note: a.p_note, status: own ? "ok" : "wish", name: "Max", self: true });
+          if (fn === "team_car_wish_withdraw") C.wishes.forEach(function (w) { if (w.id === a.p_wish) w.status = "withdrawn"; });
+          if (fn === "team_car_decide") C.wishes.forEach(function (w) { if (w.id === a.p_wish) w.status = a.p_ok ? "ok" : "no"; });
+          var J = function (w) { var s = S(w.slot) || {}; return { id: w.id, slot: w.slot, vehicle: s.vehicle, from: new Date(w.from).toISOString(), to: new Date(w.to).toISOString(), note: w.note, status: w.status, name: w.name, self: w.self }; };
+          return ok({ owner: own, slots: C.slots.map(function (s) { return { id: s.id, vehicle: s.vehicle, from: new Date(s.from).toISOString(), to: new Date(s.to).toISOString(), note: s.note,
+              taken: C.wishes.filter(function (w) { return w.slot === s.id && w.status === "ok"; }).map(function (w) { return { from: new Date(w.from).toISOString(), to: new Date(w.to).toISOString(), mine: w.self }; }),
+              wishes: C.wishes.filter(function (w) { return w.slot === s.id && w.status === "wish"; }).length }; }),
+            mine: C.wishes.filter(function (w) { return w.self && w.status !== "withdrawn"; }).map(J), all: own ? C.wishes.filter(function (w) { return w.status === "wish" || w.status === "ok"; }).map(J) : null });
+        }
         if (fn === "driver_login" || fn === "team_login") return ok({ token: "demo", driver: home.me, set_pin: /[?&]firstpin\b/.test(location.search) });
         if (fn === "team_owner_receipts") return ok(demoReceipts.list.map(function (r) { return Object.assign({ driver: "Max Testfahrer" }, r); }).concat([
           { id: 50, at: new Date().toISOString(), driver: "Inhaber", paid: "company", status: "read", data: { merchant: "Kfz-Versicherung (Beispiel)", total: 412.5, date: d(-5), category: "other", payment_status: "open", due_date: d(4) } },
