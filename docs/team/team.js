@@ -49,7 +49,7 @@
       role: "Aufgabe", phone: "Telefon", expires: "gültig bis", expired: "abgelaufen", in_days: "noch {n} Tag|noch {n} Tage", signed: "unterschrieben",
       no_docs: "Keine Dokumente eingetragen.", no_payslips: "Noch keine Lohnzettel.", gross: "Brutto", net: "Netto", hours: "Stunden",
       language: "Sprache", signout: "Abmelden", install: "Zum Startbildschirm hinzufügen",
-      install_ios: "In Safari: Teilen-Symbol → „Zum Home-Bildschirm“.", demo: "Beispieldaten",
+      install_ios: "In Safari: Teilen-Symbol → „Zum Home-Bildschirm“.", ig_title: "Transfer Team aufs iPhone", ig_sub: "Einmal einrichten, dann öffnet es sich wie eine App – mit eigenem Symbol und ohne Browserleiste.", ig_1: "Tippe unten auf {s} Teilen (bei neuem iOS erst auf ⋯).", ig_2: "Wähle {a} „Zum Home-Bildschirm“ (eventuell nach unten scrollen).", ig_3: "„Als Web-App öffnen“ anlassen und oben rechts auf „Hinzufügen“ tippen.", ig_4: "Jetzt Transfer Team auf dem Home-Bildschirm öffnen und mit Handynummer + PIN anmelden.", ig_safari: "Bitte diesen Link in Safari öffnen (nur dort geht es):", ig_copy: "Link kopieren", ig_copied: "Kopiert – in Safari einfügen", ig_later: "Erst mal im Browser weiter", demo: "Beispieldaten",
       t_minijob: "Minijob", t_teilzeit: "Teilzeit", t_vollzeit: "Vollzeit", t_kurzfristig: "Kurzfristig", t_freelance: "Freiberuflich", t_inhaber: "Inhaber",
       err: "Das ging nicht. Bitte noch einmal.", too_many: "Zu viele Nachrichten. Bitte etwas später.", signed_out: "Abgemeldet. Bitte PIN eingeben."
     },
@@ -89,7 +89,7 @@
       role: "Role", phone: "Phone", expires: "valid until", expired: "expired", in_days: "{n} day left|{n} days left", signed: "signed",
       no_docs: "No documents entered.", no_payslips: "No payslips yet.", gross: "Gross", net: "Net", hours: "Hours",
       language: "Language", signout: "Sign out", install: "Add to home screen",
-      install_ios: "In Safari: Share icon → “Add to Home Screen”.", demo: "Sample data",
+      install_ios: "In Safari: Share icon → “Add to Home Screen”.", ig_title: "Transfer Team on your iPhone", ig_sub: "Set it up once, then it opens like an app – with its own icon and no browser bar.", ig_1: "Tap {s} Share at the bottom (on newer iOS first tap ⋯).", ig_2: "Choose {a} “Add to Home Screen” (scroll down if needed).", ig_3: "Leave “Open as Web App” on and tap “Add” at the top right.", ig_4: "Now open Transfer Team from the home screen and sign in with your mobile number + PIN.", ig_safari: "Please open this link in Safari (it only works there):", ig_copy: "Copy link", ig_copied: "Copied – paste it in Safari", ig_later: "Continue in the browser for now", demo: "Sample data",
       t_minijob: "Minijob", t_teilzeit: "Part-time", t_vollzeit: "Full-time", t_kurzfristig: "Short-term", t_freelance: "Freelance", t_inhaber: "Owner",
       err: "That did not work. Please try again.", too_many: "Too many messages. Please wait a bit.", signed_out: "Signed out. Please enter your PIN."
     },
@@ -129,7 +129,7 @@
       role: "Θέση", phone: "Τηλέφωνο", expires: "ισχύει έως", expired: "έληξε", in_days: "απομένει {n} μέρα|απομένουν {n} μέρες", signed: "υπογράφηκε",
       no_docs: "Δεν έχουν καταχωριστεί έγγραφα.", no_payslips: "Δεν υπάρχουν εκκαθαριστικά ακόμα.", gross: "Μικτά", net: "Καθαρά", hours: "Ώρες",
       language: "Γλώσσα", signout: "Αποσύνδεση", install: "Προσθήκη στην αρχική οθόνη",
-      install_ios: "Στο Safari: εικονίδιο κοινοποίησης → «Προσθήκη στην οθόνη αφετηρίας».", demo: "Δείγμα",
+      install_ios: "Στο Safari: εικονίδιο κοινοποίησης → «Προσθήκη στην οθόνη αφετηρίας».", ig_title: "Το Transfer Team στο iPhone σου", ig_sub: "Το ρυθμίζεις μία φορά και μετά ανοίγει σαν εφαρμογή – με δικό του εικονίδιο, χωρίς τη μπάρα του browser.", ig_1: "Πάτα κάτω το {s} Κοινοποίηση (σε νέο iOS πρώτα το ⋯).", ig_2: "Διάλεξε {a} «Προσθήκη στην οθόνη αφετηρίας» (ίσως χρειαστεί να κατέβεις λίγο).", ig_3: "Άφησε ανοιχτό το «Άνοιγμα ως εφαρμογή Ιστού» και πάτα πάνω δεξιά «Προσθήκη».", ig_4: "Άνοιξε τώρα το Transfer Team από την αρχική οθόνη και συνδέσου με κινητό + PIN.", ig_safari: "Άνοιξε αυτόν τον σύνδεσμο στο Safari (μόνο εκεί γίνεται):", ig_copy: "Αντιγραφή συνδέσμου", ig_copied: "Αντιγράφηκε – επικόλλησέ τον στο Safari", ig_later: "Συνέχεια στον browser προς το παρόν", demo: "Δείγμα",
       t_minijob: "Minijob", t_teilzeit: "Μερική", t_vollzeit: "Πλήρης", t_kurzfristig: "Βραχυπρόθεσμη", t_freelance: "Ελεύθερος επαγγελματίας", t_inhaber: "Ιδιοκτήτης",
       err: "Δεν έγινε. Δοκίμασε ξανά.", too_many: "Πολλά μηνύματα. Περίμενε λίγο.", signed_out: "Αποσυνδέθηκες. Βάλε το PIN."
     }
@@ -339,6 +339,35 @@
       .sort(function (a, b) { return (a.day + a.start) < (b.day + b.start) ? -1 : 1; })[0];
   }
   function leaveOn(day) { return (data.leave || []).filter(function (l) { return l.status !== "rejected" && l.from <= day && l.to >= day; })[0]; }
+
+  /* ---------------- iPhone: put it on the home screen first ---------------- */
+  // An iPhone cannot install an app from outside the App Store, so the site itself becomes the "app": Safari → Share →
+  // Add to Home Screen. The home-screen copy has its own storage, so the guide comes BEFORE the sign-in.
+  function iosBrowser() {
+    var ua = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    var app2 = navigator.standalone || (window.matchMedia && matchMedia("(display-mode: standalone)").matches);
+    return ios && !app2 && !/[?&]demo\b/.test(location.search) && !load("team_ig_skip");
+  }
+  function installScreen() {
+    var ua = navigator.userAgent, notSafari = /CriOS|FxiOS|EdgiOS|OPiOS|FBAN|FBAV|Instagram|Line\/|GSA\//.test(ua);
+    var SH = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>';
+    var AD = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg>';
+    function step(n, txt) { return '<li style="display:flex;gap:12px;align-items:flex-start;text-align:left;margin:0 0 14px"><span style="flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink-bg,#0b0f0d);color:#fff;font-weight:800;display:grid;place-items:center">' + n + '</span><span style="padding-top:3px;line-height:1.4">' + txt + "</span></li>"; }
+    var link = location.origin + location.pathname;
+    app.innerHTML = '<div class="pin" style="max-width:420px"><div class="wordmark" style="font-size:34px">TRANSFER<i></i></div>' +
+      '<img src="../assets/icon-192.png" alt="" width="72" height="72" style="border-radius:16px;margin:18px auto 0;display:block;box-shadow:0 4px 14px rgba(0,0,0,.15)">' +
+      '<h2 style="margin-top:14px">' + esc(t("ig_title")) + '</h2><p class="muted small" style="margin:6px auto 18px;line-height:1.4">' + esc(t("ig_sub")) + "</p>" +
+      (notSafari ? '<div class="card" style="text-align:left"><div class="small" style="margin-bottom:8px">' + esc(t("ig_safari")) + '</div><div class="small" style="word-break:break-all;font-weight:700">' + esc(link) + '</div><button class="btn" id="igcopy" style="margin-top:10px">' + esc(t("ig_copy")) + "</button></div>" : "") +
+      '<ol style="list-style:none;padding:0;margin:8px 0 0">' +
+        step(1, esc(t("ig_1")).replace("{s}", SH)) + step(2, esc(t("ig_2")).replace("{a}", AD)) + step(3, esc(t("ig_3"))) + step(4, esc(t("ig_4"))) + "</ol>" +
+      '<div style="font-size:30px;margin-top:4px" aria-hidden="true">↓</div>' +
+      '<button type="button" id="iglater" class="muted small" style="margin-top:18px;text-decoration:underline">' + esc(t("ig_later")) + "</button>" +
+      '<div class="langs"></div></div>';
+    langButtons(app.querySelector(".langs"), installScreen);
+    var c = app.querySelector("#igcopy");
+    if (c) c.onclick = function () { (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(function () { c.textContent = t("ig_copied"); }).catch(function () { prompt("", link); }); };
+    app.querySelector("#iglater").onclick = function () { store("team_ig_skip", "1"); pinScreen(); };
+  }
 
   /* ---------------- PIN ---------------- */
   function pinScreen(msg) {
@@ -1705,5 +1734,5 @@
       if (tip) { var x = tip; tip = null; if (!go2) x.remove(); else { x.textContent = "↻ …"; refresh().then(function () { return loadReceipts(); }).then(function () { if (tab === "team") { tmList = null; tmPerson = null; } if (tab === "bills" || tab === "reports") ownAll = null; if (!sheet) render(); }).catch(function () {}).then(function () { x.remove(); }); } }
     }, { passive: true });
   })();
-  if (token) start(); else pinScreen();
+  if (token) start(); else if (iosBrowser()) installScreen(); else pinScreen();
 })();
