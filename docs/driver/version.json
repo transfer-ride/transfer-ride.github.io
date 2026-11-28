@@ -1,10 +1,10 @@
 {
- "versionCode": 89,
- "versionName": "3.81",
- "sha256": "1eb226d76935c51e2f568308867b16d9f026c8a97b2113b791642360c326c3b4",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-89.apk",
- "notes": "Weiße Pfeile an allen Abbiegungen der Route, größer und mit dunklem Rand",
- "notes_de": "Weiße Pfeile an allen Abbiegungen der Route, größer und mit dunklem Rand",
- "notes_en": "White arrows at every turn of the route, bigger and with a dark rim",
- "notes_el": "Λευκά βελάκια σε όλες τις στροφές της διαδρομής, μεγαλύτερα και με σκούρο περίγραμμα"
+ "versionCode": 90,
+ "versionName": "3.82",
+ "sha256": "4eac3a2876ff762a8fa4f8113942f7a82a3a69672e37e229929739a7731b7ba8",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-90.apk",
+ "notes": "Abholzeit geändert: alte Zeit durchgestrichen. Zurück-Knopf in der Wegbeschreibung. Live-Standort vom Fahrgast anfragen.",
+ "notes_de": "Abholzeit geändert: alte Zeit durchgestrichen. Zurück-Knopf in der Wegbeschreibung. Live-Standort vom Fahrgast anfragen.",
+ "notes_en": "Changed pick-up time shown struck through. Back button in directions. Ask passenger for live location.",
+ "notes_el": "Αλλαγμένη ώρα παραλαβής διαγραμμένη. Κουμπί Επιστροφή στις οδηγίες. Ζήτα live θέση από τον επιβάτη."
 }
