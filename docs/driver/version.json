@@ -1,10 +1,10 @@
 {
- "versionCode": 87,
- "versionName": "3.79",
- "sha256": "9652f920c0be0281fc2facb7b2cabb678bae6e0c7306256a0cca467280fff9b5",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-87.apk",
- "notes": "Klarere Navigation: Uber-Hinweis mit zwei großen Knöpfen, Anweisungen auf ganzem Bildschirm, Fahrtkarte und Zeitleiste als eine Fläche; Entfernung zur Abholung über die Straße; klarere Sterne",
- "notes_de": "Klarere Navigation: Uber-Hinweis mit zwei großen Knöpfen, Anweisungen auf ganzem Bildschirm, Fahrtkarte und Zeitleiste als eine Fläche; Entfernung zur Abholung über die Straße; klarere Sterne",
- "notes_en": "Clearer navigation: Uber reminder with two big buttons, directions full screen, ride card and time line as one panel; road distance to the pick-up; clearer stars",
- "notes_el": "Πιο καθαρή πλοήγηση: υπενθύμιση Uber με δύο μεγάλα κουμπιά, οδηγίες σε όλη την οθόνη, κάρτα διαδρομής και χρόνος σε ένα κομμάτι· απόσταση ως την παραλαβή από τον δρόμο· πιο καθαρά αστέρια"
+ "versionCode": 88,
+ "versionName": "3.80",
+ "sha256": "eebae8e348c5cc186fd7a7af5c4fffc38d2f84809ba827341abf85fe9d2de5b0",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-88.apk",
+ "notes": "Navigation: Auto bleibt auf der Straße (nicht mehr daneben), weißer Pfeil an der nächsten Abbiegung, Route in Grün, Pfeil fährt flüssiger mit",
+ "notes_de": "Navigation: Auto bleibt auf der Straße (nicht mehr daneben), weißer Pfeil an der nächsten Abbiegung, Route in Grün, Pfeil fährt flüssiger mit",
+ "notes_en": "Navigation: the car stays on the road (no longer beside it), white arrow at the next turn, route in green, smoother car arrow",
+ "notes_el": "Πλοήγηση: το αυτοκίνητο μένει πάνω στον δρόμο (όχι πια δίπλα), λευκό βελάκι στην επόμενη στροφή, διαδρομή σε πράσινο, πιο ομαλή κίνηση του βέλους"
 }
