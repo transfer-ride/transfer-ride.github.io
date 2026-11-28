@@ -1,10 +1,10 @@
 {
- "versionCode": 84,
- "versionName": "3.76",
- "sha256": "23006af4faa503463152cbc58ad7f25d66e8d431f7ae31d664555036753c9404",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-84.apk",
- "notes": "Warnung bei sich überschneidenden Fahrten, Ton bei zu schnell",
- "notes_de": "Warnung bei sich überschneidenden Fahrten, Ton bei zu schnell",
- "notes_en": "Warning when rides overlap, beep when too fast",
- "notes_el": "Προειδοποίηση όταν συμπίπτουν διαδρομές, ήχος όταν πας γρήγορα"
+ "versionCode": 86,
+ "versionName": "3.78",
+ "sha256": "3af0f8ca5ff4967b99727ed0c0485270ae8122ca8c75b7decc4d03280c3a0b88",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-86.apk",
+ "notes": "Namensschild für Abholung (Flughafen, Bahnhof); Pausen-Erinnerung nach 4:30 Std.; Stoßzeit-Hinweis; € pro km",
+ "notes_de": "Namensschild für Abholung (Flughafen, Bahnhof); Pausen-Erinnerung nach 4:30 Std.; Stoßzeit-Hinweis; € pro km",
+ "notes_en": "Name sign for pick-ups (airport, station); break reminder after 4:30 h; rush-hour strip; € per km",
+ "notes_el": "Ταμπέλα με όνομα για παραλαβές (αεροδρόμιο, σταθμός)· υπενθύμιση διαλείμματος μετά από 4:30 ώρ.· ένδειξη ώρας αιχμής· € ανά km"
 }
