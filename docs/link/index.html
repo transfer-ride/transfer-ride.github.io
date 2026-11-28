@@ -179,6 +179,22 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
 .ios .inapp button { appearance: none; min-height: 44px; width: 100%; border: 0; border-radius: 12px; background: var(--mint); color: #000; font: 700 15px "Archivo", sans-serif; cursor: pointer; }
 @media (max-height: 620px) { .ios p { display: none; } }
 
+/* After the guide: a big arrow at the browser's own share button */
+.point { position: fixed; inset: 0; z-index: 35; background: rgba(0, 0, 0, .6); cursor: pointer; }
+.point .pa { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 8px; max-width: 220px; text-align: center; }
+.point .pt { background: #fff; color: #000; font-weight: 700; font-size: 17px; line-height: 1.25; padding: 10px 14px; border-radius: 14px; box-shadow: 0 6px 24px rgba(0, 0, 0, .4); }
+.point svg { width: 64px; height: 64px; fill: var(--mint); filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); animation: bdown 1s ease-in-out infinite; }
+.point .pa.up { flex-direction: column-reverse; }
+.point .pa.up svg { transform: rotate(180deg); animation-name: bup; }
+.point .bc { left: 50%; bottom: max(4px, env(safe-area-inset-bottom)); transform: translateX(-50%); }
+.point .br { right: 4px; bottom: max(4px, env(safe-area-inset-bottom)); align-items: flex-end; text-align: right; }
+.point .br svg { margin-right: 6px; }
+.point .tr { right: 4px; top: max(4px, env(safe-area-inset-top)); align-items: flex-end; text-align: right; }
+.point .tr svg { margin-right: 10px; }
+@keyframes bdown { 50% { translate: 0 12px; } }
+@keyframes bup { 50% { translate: 0 -12px; } }
+@media (prefers-reduced-motion: reduce) { .point svg { animation: none; } }
+
 /* Jobs banner */
 .jobs { position: relative; margin: 0; padding: clamp(10px, 1.8svh, 18px) 14px; border-radius: 22px; background: var(--panel);
   isolation: isolate; overflow: hidden; animation: fade .6s cubic-bezier(.16, .84, .3, 1) 1.32s both; }
@@ -347,6 +363,8 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
   </ol>
   <button class="done" type="button" id="ios-ok" data-t="igOk"></button>
 </section>
+
+<div class="point" id="point" hidden role="dialog" aria-live="polite"><div class="pa" id="pa"><span class="pt" id="pt"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v11.2l3.6-3.6 2.8 2.8L12 21.8l-8.4-8.4 2.8-2.8 3.6 3.6V3Z"/></svg></div></div>
 
 <section class="sheet" id="sheet" hidden aria-labelledby="sheet-title" role="dialog" aria-modal="true">
   <h2 id="sheet-title" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)" data-t="map">Freie Fahrzeuge live</h2>
@@ -700,14 +718,16 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
   }
   Object.assign(T.de, {
     igT: "Transfer aufs iPhone", igP: "Im App Store gibt es Transfer noch nicht. So kommt es auf Ihren Home-Bildschirm und öffnet sich wie eine App.",
-    ig1s: "Unten in Safari auf Teilen tippen. Nicht zu sehen? Erst auf ⋯ tippen.", ig1c: "Oben rechts in Chrome, neben der Adresse, auf Teilen tippen.",
+    ig1s: "Unten in Safari auf Teilen tippen. Nicht zu sehen? Erst auf ⋯ tippen.", ig1n: "Unten rechts in Safari auf ⋯ tippen, dann auf Teilen.", ig1p: "Oben rechts auf Teilen tippen.",
+    ptS: "Hier auf Teilen tippen", ptN: "Hier auf ⋯ tippen, dann auf Teilen", ptC: "Hier auf Teilen tippen", ptP: "Hier auf Teilen tippen", ig1c: "Oben rechts in Chrome, neben der Adresse, auf Teilen tippen.",
     ig2: "Nach unten wischen und dies wählen:", igAdd: "Zum Home-Bildschirm", ig3: "Oben rechts auf „Hinzufügen“ tippen.", igAddBtn: "Hinzufügen",
     ig4: "Fertig. Transfer liegt jetzt auf Ihrem Home-Bildschirm.", igOk: "Verstanden",
     igIn: "Das geht nur in Safari. Bitte kopieren Sie den Link und öffnen Sie ihn dort.", igCopy: "Link kopieren", igCopied: "Kopiert, jetzt in Safari einfügen"
   });
   Object.assign(T.en, {
     igT: "Transfer on your iPhone", igP: "Transfer is not in the App Store yet. This puts it on your home screen, and it opens like an app.",
-    ig1s: "Tap Share at the bottom of Safari. Can’t see it? Tap ⋯ first.", ig1c: "Tap Share at the top right of Chrome, next to the address.",
+    ig1s: "Tap Share at the bottom of Safari. Can’t see it? Tap ⋯ first.", ig1n: "Tap ⋯ at the bottom right of Safari, then Share.", ig1p: "Tap Share at the top right.",
+    ptS: "Tap Share here", ptN: "Tap ⋯ here, then Share", ptC: "Tap Share here", ptP: "Tap Share here", ig1c: "Tap Share at the top right of Chrome, next to the address.",
     ig2: "Scroll down and choose this:", igAdd: "Add to Home Screen", ig3: "Tap “Add” at the top right.", igAddBtn: "Add",
     ig4: "Done. Transfer is now on your home screen.", igOk: "Got it",
     igIn: "This only works in Safari. Please copy the link and open it there.", igCopy: "Copy link", igCopied: "Copied, now paste it in Safari"
@@ -715,17 +735,41 @@ h1 i { transform: scale(0); animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) .
 
   var ua = navigator.userAgent;
   var ios = document.getElementById("ios"), inApp = /FBAN|FBAV|Instagram|Line\/|GSA\/|Snapchat|TikTok|WhatsApp/.test(ua);
-  function iosText() { document.getElementById("ig-1").textContent = t(/CriOS/.test(ua) ? "ig1c" : "ig1s"); }
+  // Which browser is this? Its share button sits in a different place:
+  // Safari up to 18 = bottom middle; Safari 26+ = bottom right under ⋯; Chrome on iPhone and any iPad = top right.
+  function where() {
+    var f = (location.search.match(/[?&]arrow=(\w+)/) || [])[1];
+    if (f) return f;
+    var ipad = /iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    if (ipad) return "pad";
+    if (/CriOS/.test(ua)) return "chrome";
+    if (/FxiOS|EdgiOS/.test(ua)) return "new";
+    var v = +((ua.match(/Version\/(\d+)/) || [])[1] || 0);
+    return v >= 26 ? "new" : "safari";
+  }
+  var SPOT = { safari: ["bc", "ptS", "ig1s"], "new": ["br", "ptN", "ig1n"], chrome: ["tr", "ptC", "ig1c"], pad: ["tr", "ptP", "ig1p"] };
+  function spot() { return SPOT[where()] || SPOT.safari; }
+  function iosText() { document.getElementById("ig-1").textContent = t(spot()[2]); }
+  var point = document.getElementById("point");
+  function showPoint() {
+    var sp = spot(), pa = document.getElementById("pa");
+    pa.className = "pa " + sp[0] + (sp[0] === "tr" ? " up" : "");
+    document.getElementById("pt").textContent = t(sp[1]);
+    point.hidden = false;
+  }
+  point.addEventListener("click", function () { point.hidden = true; });
   function openIos() {
     iosText(); document.getElementById("ios-inapp").hidden = !inApp;
     ios.hidden = false; document.body.style.overflow = "hidden"; document.getElementById("ios-ok").focus({ preventScroll: true });
     if (location.hash !== "#iphone") history.replaceState(null, "", "#iphone");
   }
-  function closeIos() { ios.hidden = true; document.body.style.overflow = ""; if (location.hash === "#iphone") history.replaceState(null, "", location.pathname); document.getElementById("app-ios").focus({ preventScroll: true }); }
+  function closeIos() { ios.hidden = true; document.body.style.overflow = ""; if (location.hash === "#iphone") history.replaceState(null, "", location.pathname + location.search); document.getElementById("app-ios").focus({ preventScroll: true }); }
   document.getElementById("app-ios").addEventListener("click", openIos);
-  document.getElementById("ios-ok").addEventListener("click", closeIos);
+  // "Verstanden" closes the guide and points at the share button (only where it makes sense: an iPhone/iPad browser, not inside an app).
+  document.getElementById("ios-ok").addEventListener("click", function () { var go = !inApp && (isApple() || /[?&]arrow=/.test(location.search)); closeIos(); if (go) showPoint(); });
+  function isApple() { return /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1); }
   document.getElementById("ios-x").addEventListener("click", closeIos);
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !ios.hidden) closeIos(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") { if (!ios.hidden) closeIos(); point.hidden = true; } });
   document.getElementById("ios-copy").addEventListener("click", function () {
     var b = this, url = "https://transfer-ride.github.io/link/#iphone";
     (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { b.textContent = t("igCopied"); }, function () { prompt("", url); });
