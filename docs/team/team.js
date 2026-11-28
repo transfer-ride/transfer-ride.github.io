@@ -48,7 +48,7 @@
       type: "Art", start: "Seit", wage: "Stundenlohn", salary: "Monatsgehalt", per_week: "Tage pro Woche", leave_year: "Urlaub pro Jahr",
       role: "Aufgabe", phone: "Telefon", expires: "gültig bis", expired: "abgelaufen", in_days: "noch {n} Tag|noch {n} Tage", signed: "unterschrieben",
       no_docs: "Keine Dokumente eingetragen.", no_payslips: "Noch keine Lohnzettel.", gross: "Brutto", net: "Netto", hours: "Stunden",
-      language: "Sprache", signout: "Abmelden", install: "Zum Startbildschirm hinzufügen",
+      language: "Sprache", signout: "Abmelden", cp_btn: "PIN ändern", cp_old: "Jetziger PIN", cp_new: "Neuer PIN (4 Ziffern)", cp_new2: "Neuer PIN noch einmal", cp_save: "PIN speichern", cp_ok: "PIN geändert. Ab jetzt gilt der neue – auch in der Fahrer-App.", cp_wrong: "Der jetzige PIN stimmt nicht.", cp_taken: "Diesen PIN hat schon jemand. Bitte einen anderen wählen.", cp_4: "Der neue PIN muss aus 4 Ziffern bestehen.", cp_same: "Die zwei neuen PINs sind nicht gleich.", install: "Zum Startbildschirm hinzufügen",
       install_ios: "In Safari: Teilen-Symbol → „Zum Home-Bildschirm“.", ig_title: "Transfer Team aufs iPhone", ig_sub: "Einmal einrichten, dann öffnet es sich wie eine App – mit eigenem Symbol und ohne Browserleiste.", ig_1: "Tippe unten auf {s} Teilen (bei neuem iOS erst auf ⋯).", ig_2: "Wähle {a} „Zum Home-Bildschirm“ (eventuell nach unten scrollen).", ig_3: "„Als Web-App öffnen“ anlassen und oben rechts auf „Hinzufügen“ tippen.", ig_4: "Jetzt Transfer Team auf dem Home-Bildschirm öffnen und mit Handynummer + PIN anmelden.", ig_safari: "Bitte diesen Link in Safari öffnen (nur dort geht es):", ig_copy: "Link kopieren", ig_copied: "Kopiert – in Safari einfügen", ig_later: "Erst mal im Browser weiter", demo: "Beispieldaten",
       t_minijob: "Minijob", t_teilzeit: "Teilzeit", t_vollzeit: "Vollzeit", t_kurzfristig: "Kurzfristig", t_freelance: "Freiberuflich", t_inhaber: "Inhaber",
       err: "Das ging nicht. Bitte noch einmal.", too_many: "Zu viele Nachrichten. Bitte etwas später.", signed_out: "Abgemeldet. Bitte PIN eingeben."
@@ -88,7 +88,7 @@
       type: "Type", start: "Since", wage: "Hourly wage", salary: "Monthly salary", per_week: "Days a week", leave_year: "Leave a year",
       role: "Role", phone: "Phone", expires: "valid until", expired: "expired", in_days: "{n} day left|{n} days left", signed: "signed",
       no_docs: "No documents entered.", no_payslips: "No payslips yet.", gross: "Gross", net: "Net", hours: "Hours",
-      language: "Language", signout: "Sign out", install: "Add to home screen",
+      language: "Language", signout: "Sign out", cp_btn: "Change PIN", cp_old: "Current PIN", cp_new: "New PIN (4 digits)", cp_new2: "New PIN again", cp_save: "Save PIN", cp_ok: "PIN changed. The new one counts from now on – also in the driver app.", cp_wrong: "The current PIN is not right.", cp_taken: "Someone already has this PIN. Please pick another one.", cp_4: "The new PIN must be 4 digits.", cp_same: "The two new PINs are not the same.", install: "Add to home screen",
       install_ios: "In Safari: Share icon → “Add to Home Screen”.", ig_title: "Transfer Team on your iPhone", ig_sub: "Set it up once, then it opens like an app – with its own icon and no browser bar.", ig_1: "Tap {s} Share at the bottom (on newer iOS first tap ⋯).", ig_2: "Choose {a} “Add to Home Screen” (scroll down if needed).", ig_3: "Leave “Open as Web App” on and tap “Add” at the top right.", ig_4: "Now open Transfer Team from the home screen and sign in with your mobile number + PIN.", ig_safari: "Please open this link in Safari (it only works there):", ig_copy: "Copy link", ig_copied: "Copied – paste it in Safari", ig_later: "Continue in the browser for now", demo: "Sample data",
       t_minijob: "Minijob", t_teilzeit: "Part-time", t_vollzeit: "Full-time", t_kurzfristig: "Short-term", t_freelance: "Freelance", t_inhaber: "Owner",
       err: "That did not work. Please try again.", too_many: "Too many messages. Please wait a bit.", signed_out: "Signed out. Please enter your PIN."
@@ -128,7 +128,7 @@
       type: "Είδος", start: "Από", wage: "Ωρομίσθιο", salary: "Μηνιαίος μισθός", per_week: "Μέρες την εβδομάδα", leave_year: "Άδεια τον χρόνο",
       role: "Θέση", phone: "Τηλέφωνο", expires: "ισχύει έως", expired: "έληξε", in_days: "απομένει {n} μέρα|απομένουν {n} μέρες", signed: "υπογράφηκε",
       no_docs: "Δεν έχουν καταχωριστεί έγγραφα.", no_payslips: "Δεν υπάρχουν εκκαθαριστικά ακόμα.", gross: "Μικτά", net: "Καθαρά", hours: "Ώρες",
-      language: "Γλώσσα", signout: "Αποσύνδεση", install: "Προσθήκη στην αρχική οθόνη",
+      language: "Γλώσσα", signout: "Αποσύνδεση", cp_btn: "Αλλαγή PIN", cp_old: "Τωρινό PIN", cp_new: "Νέο PIN (4 ψηφία)", cp_new2: "Νέο PIN ξανά", cp_save: "Αποθήκευση PIN", cp_ok: "Το PIN άλλαξε. Από τώρα ισχύει το νέο – και στην εφαρμογή οδηγού.", cp_wrong: "Το τωρινό PIN δεν είναι σωστό.", cp_taken: "Αυτό το PIN το έχει ήδη κάποιος άλλος. Διάλεξε άλλο.", cp_4: "Το νέο PIN πρέπει να έχει 4 ψηφία.", cp_same: "Τα δύο νέα PIN δεν είναι ίδια.", install: "Προσθήκη στην αρχική οθόνη",
       install_ios: "Στο Safari: εικονίδιο κοινοποίησης → «Προσθήκη στην οθόνη αφετηρίας».", ig_title: "Το Transfer Team στο iPhone σου", ig_sub: "Το ρυθμίζεις μία φορά και μετά ανοίγει σαν εφαρμογή – με δικό του εικονίδιο, χωρίς τη μπάρα του browser.", ig_1: "Πάτα κάτω το {s} Κοινοποίηση (σε νέο iOS πρώτα το ⋯).", ig_2: "Διάλεξε {a} «Προσθήκη στην οθόνη αφετηρίας» (ίσως χρειαστεί να κατέβεις λίγο).", ig_3: "Άφησε ανοιχτό το «Άνοιγμα ως εφαρμογή Ιστού» και πάτα πάνω δεξιά «Προσθήκη».", ig_4: "Άνοιξε τώρα το Transfer Team από την αρχική οθόνη και συνδέσου με κινητό + PIN.", ig_safari: "Άνοιξε αυτόν τον σύνδεσμο στο Safari (μόνο εκεί γίνεται):", ig_copy: "Αντιγραφή συνδέσμου", ig_copied: "Αντιγράφηκε – επικόλλησέ τον στο Safari", ig_later: "Συνέχεια στον browser προς το παρόν", demo: "Δείγμα",
       t_minijob: "Minijob", t_teilzeit: "Μερική", t_vollzeit: "Πλήρης", t_kurzfristig: "Βραχυπρόθεσμη", t_freelance: "Ελεύθερος επαγγελματίας", t_inhaber: "Ιδιοκτήτης",
       err: "Δεν έγινε. Δοκίμασε ξανά.", too_many: "Πολλά μηνύματα. Περίμενε λίγο.", signed_out: "Αποσυνδέθηκες. Βάλε το PIN."
@@ -474,6 +474,7 @@
     app.querySelectorAll("[data-slip]").forEach(function (b) { b.onclick = function () { slipSheet(b.dataset.slip); }; });
     app.querySelectorAll("[data-req]").forEach(function (b) { b.onclick = function () { reqSheet(+b.dataset.req); }; });
     var so = app.querySelector("#signout"); if (so) so.onclick = function () { signOut(false); };
+    var cp = app.querySelector("#cpin"); if (cp) cp.onclick = pinSheet;
     var ck = app.querySelector("#check"); if (ck) ck.onclick = checkSheet;
     app.querySelectorAll("[data-wallet]").forEach(function (b) { b.onclick = function () { go("receipts"); }; });
     app.querySelectorAll("[data-receipt]").forEach(function (b) { b.onclick = function () { receiptSheet(); }; });
@@ -1023,6 +1024,22 @@
     return h;
   }
 
+  // Own PIN (v36 team_change_pin): old + new twice. Unique across everyone (the driver app signs in with the PIN alone).
+  function pinSheet() {
+    function f(id, lab) { return '<label class="f" for="' + id + '">' + esc(t(lab)) + '</label><input class="in" id="' + id + '" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off">'; }
+    openSheet('<h2 style="margin-top:0">' + esc(t("cp_btn")) + "</h2>" + f("cpo", "cp_old") + f("cpn", "cp_new") + f("cpn2", "cp_new2") +
+      '<p class="err small" id="cperr" role="alert" style="min-height:1.2em"></p><div style="display:grid;gap:10px;margin-top:8px"><button class="btn" id="cpsave">' + esc(t("cp_save")) + '</button><button class="btn ghost" data-close>' + esc(t("cancel")) + "</button></div>", function (s) {
+      var err = s.querySelector("#cperr"), b = s.querySelector("#cpsave");
+      b.onclick = function () {
+        var o = s.querySelector("#cpo").value.trim(), n = s.querySelector("#cpn").value.trim(), n2 = s.querySelector("#cpn2").value.trim();
+        if (!/^\d{4}$/.test(n)) { err.textContent = t("cp_4"); return; }
+        if (n !== n2) { err.textContent = t("cp_same"); return; }
+        b.disabled = true; err.textContent = "";
+        rpc("team_change_pin", { p_token: token, p_old: o, p_new: n }).then(function () { closeSheet(); toast(t("cp_ok")); })
+          .catch(function (e) { b.disabled = false; var m = String(e.message || ""); err.textContent = /wrong/i.test(m) ? t("cp_wrong") : /taken/i.test(m) ? t("cp_taken") : /4 digits/.test(m) ? t("cp_4") : (m || t("err")); });
+      };
+    });
+  }
   function openSheet(inner, after) {
     closeSheet();
     var s = el('<div><div class="scrim"></div><div class="sheet" role="dialog" aria-modal="true"><div class="grab"></div>' + inner + "</div></div>");
@@ -1434,6 +1451,7 @@
       '<a class="row tap" style="color:inherit;text-decoration:none" href="https://wa.me/4915777104912" target="_blank" rel="noopener"><span class="grow t">WhatsApp</span>›</a></div>';
     h += "<h2>" + esc(t("policy")) + '</h2><div class="card"><p style="margin:0;line-height:1.45">' + esc(t("policy_text")) + "</p></div>";
     if (/iPhone|iPad/.test(navigator.userAgent) && !navigator.standalone) h += '<div class="card"><b>' + esc(t("install")) + '</b><div class="muted small">' + esc(t("install_ios")) + "</div></div>";
+    h += '<div class="card" style="padding:4px 14px"><button class="row tap" style="width:100%;text-align:left" id="cpin"><span class="grow t">🔑 ' + esc(t("cp_btn")) + "</span>›</button></div>";
     return h + '<div style="margin-top:18px"><button class="btn ghost" id="signout">' + esc(t("signout")) + '</button></div><p class="muted small" style="text-align:center;margin-top:18px">© Transfer</p>';
   }
   // For a road check (customs/FKS, police, Ordnungsamt): proof of employment, in German for the officer.
@@ -1691,6 +1709,7 @@
         if (fn === "team_owner_post_delete") { home.posts = (home.posts || []).filter(function (x) { return x.id !== a.p_id; }); return ok(home); }
         if (fn === "team_owner_request_decide") { reqs.forEach(function (x) { if (x.id === a.p_request) { x.decision = a.p_decision; x.status = "done"; } }); return ok({ me: { id: "demo", name: "Max Testfahrer", phone: "4915100000000" }, profile: home.profile, shifts: home.shifts, leave: home.leave, requests: reqs, receipts: demoReceipts }); }
         if (fn === "team_owner_person") return ok({ me: { id: "demo", name: "Max Testfahrer", phone: "4915100000000" }, profile: home.profile, shifts: home.shifts, leave: home.leave, requests: reqs, receipts: demoReceipts });
+        if (fn === "team_change_pin") return ok(a.p_old === "0000" ? Promise.reject(new Error("wrong PIN")) : { ok: true });
         if (fn === "team_owner_reset") return ok({ pin: a.p_new_pin ? "4821" : null, phone: a.p_phone ? a.p_phone.replace(/\D/g, "") : "4915100000000" });
         if (fn === "team_home") return ok(JSON.parse(JSON.stringify(home)));
         if (fn === "team_chat") return ok(msgs.slice());
