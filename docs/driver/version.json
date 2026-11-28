@@ -1,10 +1,10 @@
 {
- "versionCode": 88,
- "versionName": "3.80",
- "sha256": "eebae8e348c5cc186fd7a7af5c4fffc38d2f84809ba827341abf85fe9d2de5b0",
- "url": "https://transfer-ride.github.io/driver/transfer-fahrer-88.apk",
- "notes": "Navigation: Auto bleibt auf der Straße (nicht mehr daneben), weißer Pfeil an der nächsten Abbiegung, Route in Grün, Pfeil fährt flüssiger mit",
- "notes_de": "Navigation: Auto bleibt auf der Straße (nicht mehr daneben), weißer Pfeil an der nächsten Abbiegung, Route in Grün, Pfeil fährt flüssiger mit",
- "notes_en": "Navigation: the car stays on the road (no longer beside it), white arrow at the next turn, route in green, smoother car arrow",
- "notes_el": "Πλοήγηση: το αυτοκίνητο μένει πάνω στον δρόμο (όχι πια δίπλα), λευκό βελάκι στην επόμενη στροφή, διαδρομή σε πράσινο, πιο ομαλή κίνηση του βέλους"
+ "versionCode": 89,
+ "versionName": "3.81",
+ "sha256": "1eb226d76935c51e2f568308867b16d9f026c8a97b2113b791642360c326c3b4",
+ "url": "https://transfer-ride.github.io/driver/transfer-fahrer-89.apk",
+ "notes": "Weiße Pfeile an allen Abbiegungen der Route, größer und mit dunklem Rand",
+ "notes_de": "Weiße Pfeile an allen Abbiegungen der Route, größer und mit dunklem Rand",
+ "notes_en": "White arrows at every turn of the route, bigger and with a dark rim",
+ "notes_el": "Λευκά βελάκια σε όλες τις στροφές της διαδρομής, μεγαλύτερα και με σκούρο περίγραμμα"
 }
