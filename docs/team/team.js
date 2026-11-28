@@ -48,8 +48,8 @@
       type: "Art", start: "Seit", wage: "Stundenlohn", salary: "Monatsgehalt", per_week: "Tage pro Woche", leave_year: "Urlaub pro Jahr",
       role: "Aufgabe", phone: "Telefon", expires: "gültig bis", expired: "abgelaufen", in_days: "noch {n} Tag|noch {n} Tage", signed: "unterschrieben",
       no_docs: "Keine Dokumente eingetragen.", no_payslips: "Noch keine Lohnzettel.", gross: "Brutto", net: "Netto", hours: "Stunden",
-      language: "Sprache", signout: "Abmelden", cp_btn: "PIN ändern", cp_old: "Jetziger PIN", cp_new: "Neuer PIN (4 Ziffern)", cp_new2: "Neuer PIN noch einmal", cp_save: "PIN speichern", cp_ok: "PIN geändert. Ab jetzt gilt der neue – auch in der Fahrer-App.", cp_wrong: "Der jetzige PIN stimmt nicht.", cp_taken: "Diesen PIN hat schon jemand. Bitte einen anderen wählen.", cp_4: "Der neue PIN muss aus 4 Ziffern bestehen.", cp_same: "Die zwei neuen PINs sind nicht gleich.", install: "Zum Startbildschirm hinzufügen",
-      install_ios: "In Safari: Teilen-Symbol → „Zum Home-Bildschirm“.", ig_title: "Transfer Team aufs iPhone", ig_sub: "Einmal einrichten, dann öffnet es sich wie eine App – mit eigenem Symbol und ohne Browserleiste.", ig_1: "Tippe unten auf {s} Teilen (bei neuem iOS erst auf ⋯).", ig_2: "Wähle {a} „Zum Home-Bildschirm“ (eventuell nach unten scrollen).", ig_3: "„Als Web-App öffnen“ anlassen und oben rechts auf „Hinzufügen“ tippen.", ig_4: "Jetzt Transfer Team auf dem Home-Bildschirm öffnen und mit Handynummer + PIN anmelden.", ig_safari: "Bitte diesen Link in Safari öffnen (nur dort geht es):", ig_copy: "Link kopieren", ig_copied: "Kopiert – in Safari einfügen", ig_later: "Erst mal im Browser weiter", demo: "Beispieldaten",
+      language: "Sprache", signout: "Abmelden", cp_btn: "PIN ändern", ob_title: "Bevor du anfängst", ob_sub: "Das brauchen wir bis zu deinem ersten Tag ({d}). Tippe auf einen Punkt.", ob_form: "Personalfragebogen ausfüllen", ob_form_sub: "Hier in der App – oder den Papierbogen ausfüllen und ein Foto hochladen", ob_contract: "Arbeitsvertrag unterschreiben (auf Papier, mit dem Chef)", ob_id: "Ausweis oder Pass dem Chef zeigen (keine Kopie hochladen)", ob_done_n: "{n} von {m} erledigt", ob_up: "Foto hochladen", ob_paper: "Papierbogen ausgefüllt? Foto hochladen", ob_save: "Speichern (später weiter)", ob_send: "Fertig – absenden", ob_sent: "Abgeschickt. Danke! Lisa prüft es.", ob_saved: "Gespeichert", ob_decl: "Ich versichere, dass alle Angaben wahr und vollständig sind, und melde jede Änderung sofort.", ob_wa: "Freiwillig: Ich möchte in die WhatsApp-Gruppe des Arbeitgebers (meine Nummer ist dort sichtbar).", ob_need_decl: "Bitte die Erklärung unten bestätigen.", ob_privacy: "Deine Angaben sehen nur der Chef und das HR-Team. Sie werden nur für dein Arbeitsverhältnis genutzt (Lohn, Sozialversicherung, Finanzamt).", ob_view: "Personalfragebogen", ob_empty: "Noch nichts ausgefüllt.", yes: "ja", no: "nein", phone_need: "Bitte zuerst deine Handynummer eingeben.", sp_title: "Wähle deinen eigenen PIN", sp_sub: "Den PIN, den du bekommen hast, gibt es nur für die erste Anmeldung. Ab jetzt meldest du dich mit Handynummer + deinem PIN an.", sp_old: "PIN, den du bekommen hast", cp_old: "Jetziger PIN", cp_new: "Neuer PIN (4 Ziffern)", cp_new2: "Neuer PIN noch einmal", cp_save: "PIN speichern", cp_ok: "PIN geändert. Ab jetzt gilt der neue – auch in der Fahrer-App.", cp_wrong: "Der jetzige PIN stimmt nicht.", cp_taken: "Diesen PIN hat schon jemand. Bitte einen anderen wählen.", cp_4: "Der neue PIN muss aus 4 Ziffern bestehen.", cp_same: "Die zwei neuen PINs sind nicht gleich.", install: "Zum Startbildschirm hinzufügen",
+      install_ios: "In Safari: Teilen-Symbol → „Zum Home-Bildschirm“.", ig_title: "Transfer Team aufs iPhone", ig_sub: "Einmal einrichten, dann öffnet es sich wie eine App – mit eigenem Symbol und ohne Browserleiste.", ig_1: "Tippe auf das Teilen-Symbol {s} – in Safari unten (bei neuem iOS erst ⋯), in Chrome oben rechts neben der Adresse.", ig_sym: "Achte auf dieses Symbol:", ig_1s: "Tippe in Safari unten auf das Teilen-Symbol (Quadrat mit Pfeil nach oben). Siehst du es nicht? Erst auf ⋯ tippen.", ig_1c: "Tippe in Chrome oben rechts neben der Adresse auf das Teilen-Symbol (Quadrat mit Pfeil nach oben).", ig_2b: "Es geht ein Menü auf. Scrolle nach unten und tippe auf „Zum Home-Bildschirm“ (Quadrat mit +).", ig_3b: "Oben rechts auf „Hinzufügen“ tippen.", ig_4b: "Fertig! Auf deinem Home-Bildschirm ist jetzt Transfer Team. Öffne es dort und melde dich mit Handynummer + PIN an.", ig_add_label: "Zum Home-Bildschirm", ig_add_btn: "Hinzufügen", ig_2: "Wähle {a} „Zum Home-Bildschirm“ (eventuell nach unten scrollen).", ig_3: "„Als Web-App öffnen“ anlassen und oben rechts auf „Hinzufügen“ tippen.", ig_4: "Jetzt Transfer Team auf dem Home-Bildschirm öffnen und mit Handynummer + PIN anmelden.", ig_safari: "Bitte diesen Link in Safari oder Chrome öffnen (hier geht es nicht):", ig_copy: "Link kopieren", ig_copied: "Kopiert – in Safari einfügen", ig_later: "Erst mal im Browser weiter", demo: "Beispieldaten",
       t_minijob: "Minijob", t_teilzeit: "Teilzeit", t_vollzeit: "Vollzeit", t_kurzfristig: "Kurzfristig", t_freelance: "Freiberuflich", t_inhaber: "Inhaber",
       err: "Das ging nicht. Bitte noch einmal.", too_many: "Zu viele Nachrichten. Bitte etwas später.", signed_out: "Abgemeldet. Bitte PIN eingeben."
     },
@@ -88,8 +88,8 @@
       type: "Type", start: "Since", wage: "Hourly wage", salary: "Monthly salary", per_week: "Days a week", leave_year: "Leave a year",
       role: "Role", phone: "Phone", expires: "valid until", expired: "expired", in_days: "{n} day left|{n} days left", signed: "signed",
       no_docs: "No documents entered.", no_payslips: "No payslips yet.", gross: "Gross", net: "Net", hours: "Hours",
-      language: "Language", signout: "Sign out", cp_btn: "Change PIN", cp_old: "Current PIN", cp_new: "New PIN (4 digits)", cp_new2: "New PIN again", cp_save: "Save PIN", cp_ok: "PIN changed. The new one counts from now on – also in the driver app.", cp_wrong: "The current PIN is not right.", cp_taken: "Someone already has this PIN. Please pick another one.", cp_4: "The new PIN must be 4 digits.", cp_same: "The two new PINs are not the same.", install: "Add to home screen",
-      install_ios: "In Safari: Share icon → “Add to Home Screen”.", ig_title: "Transfer Team on your iPhone", ig_sub: "Set it up once, then it opens like an app – with its own icon and no browser bar.", ig_1: "Tap {s} Share at the bottom (on newer iOS first tap ⋯).", ig_2: "Choose {a} “Add to Home Screen” (scroll down if needed).", ig_3: "Leave “Open as Web App” on and tap “Add” at the top right.", ig_4: "Now open Transfer Team from the home screen and sign in with your mobile number + PIN.", ig_safari: "Please open this link in Safari (it only works there):", ig_copy: "Copy link", ig_copied: "Copied – paste it in Safari", ig_later: "Continue in the browser for now", demo: "Sample data",
+      language: "Language", signout: "Sign out", cp_btn: "Change PIN", ob_title: "Before you start", ob_sub: "We need this by your first day ({d}). Tap an item.", ob_form: "Fill in the personnel questionnaire", ob_form_sub: "Here in the app – or fill in the paper form and upload a photo", ob_contract: "Sign the employment contract (on paper, with the boss)", ob_id: "Show your ID card or passport to the boss (do not upload a copy)", ob_done_n: "{n} of {m} done", ob_up: "Upload photo", ob_paper: "Filled in the paper form? Upload a photo", ob_save: "Save (continue later)", ob_send: "Done – send", ob_sent: "Sent. Thank you! Lisa checks it.", ob_saved: "Saved", ob_decl: "I confirm that all information is true and complete, and I report any change at once.", ob_wa: "Voluntary: I want to join the employer’s WhatsApp group (my number is visible there).", ob_need_decl: "Please confirm the declaration below.", ob_privacy: "Only the boss and the HR team see your details. They are used only for your job (pay, social security, tax office).", ob_view: "Personnel questionnaire", ob_empty: "Nothing filled in yet.", yes: "yes", no: "no", phone_need: "Please enter your mobile number first.", sp_title: "Choose your own PIN", sp_sub: "The PIN you were given is only for the first sign-in. From now on you sign in with your mobile number + your PIN.", sp_old: "PIN you were given", cp_old: "Current PIN", cp_new: "New PIN (4 digits)", cp_new2: "New PIN again", cp_save: "Save PIN", cp_ok: "PIN changed. The new one counts from now on – also in the driver app.", cp_wrong: "The current PIN is not right.", cp_taken: "Someone already has this PIN. Please pick another one.", cp_4: "The new PIN must be 4 digits.", cp_same: "The two new PINs are not the same.", install: "Add to home screen",
+      install_ios: "In Safari: Share icon → “Add to Home Screen”.", ig_title: "Transfer Team on your iPhone", ig_sub: "Set it up once, then it opens like an app – with its own icon and no browser bar.", ig_1: "Tap the share symbol {s} – in Safari at the bottom (on newer iOS first ⋯), in Chrome at the top right next to the address.", ig_sym: "Look for this symbol:", ig_1s: "In Safari, tap the share symbol at the bottom (square with an arrow pointing up). Don’t see it? Tap ⋯ first.", ig_1c: "In Chrome, tap the share symbol at the top right next to the address (square with an arrow pointing up).", ig_2b: "A menu opens. Scroll down and tap “Add to Home Screen” (square with +).", ig_3b: "Tap “Add” at the top right.", ig_4b: "Done! Transfer Team is now on your home screen. Open it there and sign in with your mobile number + PIN.", ig_add_label: "Add to Home Screen", ig_add_btn: "Add", ig_2: "Choose {a} “Add to Home Screen” (scroll down if needed).", ig_3: "Leave “Open as Web App” on and tap “Add” at the top right.", ig_4: "Now open Transfer Team from the home screen and sign in with your mobile number + PIN.", ig_safari: "Please open this link in Safari or Chrome (it does not work in here):", ig_copy: "Copy link", ig_copied: "Copied – paste it in Safari", ig_later: "Continue in the browser for now", demo: "Sample data",
       t_minijob: "Minijob", t_teilzeit: "Part-time", t_vollzeit: "Full-time", t_kurzfristig: "Short-term", t_freelance: "Freelance", t_inhaber: "Owner",
       err: "That did not work. Please try again.", too_many: "Too many messages. Please wait a bit.", signed_out: "Signed out. Please enter your PIN."
     },
@@ -128,8 +128,8 @@
       type: "Είδος", start: "Από", wage: "Ωρομίσθιο", salary: "Μηνιαίος μισθός", per_week: "Μέρες την εβδομάδα", leave_year: "Άδεια τον χρόνο",
       role: "Θέση", phone: "Τηλέφωνο", expires: "ισχύει έως", expired: "έληξε", in_days: "απομένει {n} μέρα|απομένουν {n} μέρες", signed: "υπογράφηκε",
       no_docs: "Δεν έχουν καταχωριστεί έγγραφα.", no_payslips: "Δεν υπάρχουν εκκαθαριστικά ακόμα.", gross: "Μικτά", net: "Καθαρά", hours: "Ώρες",
-      language: "Γλώσσα", signout: "Αποσύνδεση", cp_btn: "Αλλαγή PIN", cp_old: "Τωρινό PIN", cp_new: "Νέο PIN (4 ψηφία)", cp_new2: "Νέο PIN ξανά", cp_save: "Αποθήκευση PIN", cp_ok: "Το PIN άλλαξε. Από τώρα ισχύει το νέο – και στην εφαρμογή οδηγού.", cp_wrong: "Το τωρινό PIN δεν είναι σωστό.", cp_taken: "Αυτό το PIN το έχει ήδη κάποιος άλλος. Διάλεξε άλλο.", cp_4: "Το νέο PIN πρέπει να έχει 4 ψηφία.", cp_same: "Τα δύο νέα PIN δεν είναι ίδια.", install: "Προσθήκη στην αρχική οθόνη",
-      install_ios: "Στο Safari: εικονίδιο κοινοποίησης → «Προσθήκη στην οθόνη αφετηρίας».", ig_title: "Το Transfer Team στο iPhone σου", ig_sub: "Το ρυθμίζεις μία φορά και μετά ανοίγει σαν εφαρμογή – με δικό του εικονίδιο, χωρίς τη μπάρα του browser.", ig_1: "Πάτα κάτω το {s} Κοινοποίηση (σε νέο iOS πρώτα το ⋯).", ig_2: "Διάλεξε {a} «Προσθήκη στην οθόνη αφετηρίας» (ίσως χρειαστεί να κατέβεις λίγο).", ig_3: "Άφησε ανοιχτό το «Άνοιγμα ως εφαρμογή Ιστού» και πάτα πάνω δεξιά «Προσθήκη».", ig_4: "Άνοιξε τώρα το Transfer Team από την αρχική οθόνη και συνδέσου με κινητό + PIN.", ig_safari: "Άνοιξε αυτόν τον σύνδεσμο στο Safari (μόνο εκεί γίνεται):", ig_copy: "Αντιγραφή συνδέσμου", ig_copied: "Αντιγράφηκε – επικόλλησέ τον στο Safari", ig_later: "Συνέχεια στον browser προς το παρόν", demo: "Δείγμα",
+      language: "Γλώσσα", signout: "Αποσύνδεση", cp_btn: "Αλλαγή PIN", ob_title: "Πριν ξεκινήσεις", ob_sub: "Τα χρειαζόμαστε μέχρι την πρώτη σου μέρα ({d}). Πάτα σε κάθε σημείο.", ob_form: "Συμπλήρωσε το ερωτηματολόγιο προσωπικού", ob_form_sub: "Εδώ στην εφαρμογή – ή συμπλήρωσε το χαρτί και ανέβασε φωτογραφία", ob_contract: "Υπογραφή σύμβασης εργασίας (σε χαρτί, με το αφεντικό)", ob_id: "Δείξε ταυτότητα ή διαβατήριο στο αφεντικό (μην ανεβάσεις αντίγραφο)", ob_done_n: "{n} από {m} έτοιμα", ob_up: "Ανέβασε φωτογραφία", ob_paper: "Συμπλήρωσες το χαρτί; Ανέβασε φωτογραφία", ob_save: "Αποθήκευση (συνεχίζω αργότερα)", ob_send: "Έτοιμο – αποστολή", ob_sent: "Στάλθηκε. Ευχαριστούμε! Η Lisa το ελέγχει.", ob_saved: "Αποθηκεύτηκε", ob_decl: "Βεβαιώνω ότι όλα τα στοιχεία είναι αληθινά και πλήρη και θα ενημερώνω αμέσως για κάθε αλλαγή.", ob_wa: "Προαιρετικά: θέλω να μπω στην ομάδα WhatsApp του εργοδότη (ο αριθμός μου φαίνεται εκεί).", ob_need_decl: "Επιβεβαίωσε τη δήλωση στο τέλος.", ob_privacy: "Τα στοιχεία σου τα βλέπουν μόνο το αφεντικό και το HR. Χρησιμοποιούνται μόνο για τη δουλειά σου (μισθός, ασφάλιση, εφορία).", ob_view: "Ερωτηματολόγιο προσωπικού", ob_empty: "Δεν έχει συμπληρωθεί τίποτα ακόμα.", yes: "ναι", no: "όχι", phone_need: "Γράψε πρώτα τον αριθμό του κινητού σου.", sp_title: "Διάλεξε το δικό σου PIN", sp_sub: "Το PIN που σου έδωσαν είναι μόνο για την πρώτη σύνδεση. Από εδώ και πέρα μπαίνεις με το κινητό σου + το δικό σου PIN.", sp_old: "PIN που σου έδωσαν", cp_old: "Τωρινό PIN", cp_new: "Νέο PIN (4 ψηφία)", cp_new2: "Νέο PIN ξανά", cp_save: "Αποθήκευση PIN", cp_ok: "Το PIN άλλαξε. Από τώρα ισχύει το νέο – και στην εφαρμογή οδηγού.", cp_wrong: "Το τωρινό PIN δεν είναι σωστό.", cp_taken: "Αυτό το PIN το έχει ήδη κάποιος άλλος. Διάλεξε άλλο.", cp_4: "Το νέο PIN πρέπει να έχει 4 ψηφία.", cp_same: "Τα δύο νέα PIN δεν είναι ίδια.", install: "Προσθήκη στην αρχική οθόνη",
+      install_ios: "Στο Safari: εικονίδιο κοινοποίησης → «Προσθήκη στην οθόνη αφετηρίας».", ig_title: "Το Transfer Team στο iPhone σου", ig_sub: "Το ρυθμίζεις μία φορά και μετά ανοίγει σαν εφαρμογή – με δικό του εικονίδιο, χωρίς τη μπάρα του browser.", ig_1: "Πάτα το σύμβολο κοινοποίησης {s} – στο Safari κάτω (σε νέο iOS πρώτα το ⋯), στο Chrome πάνω δεξιά δίπλα στη διεύθυνση.", ig_sym: "Ψάξε αυτό το σύμβολο:", ig_1s: "Στο Safari πάτα κάτω το σύμβολο κοινοποίησης (τετράγωνο με βελάκι προς τα πάνω). Δεν το βλέπεις; Πάτα πρώτα το ⋯.", ig_1c: "Στο Chrome πάτα πάνω δεξιά, δίπλα στη διεύθυνση, το σύμβολο κοινοποίησης (τετράγωνο με βελάκι προς τα πάνω).", ig_2b: "Ανοίγει ένα μενού. Κατέβα λίγο και πάτα «Προσθήκη στην οθόνη αφετηρίας» (τετράγωνο με +).", ig_3b: "Πάτα πάνω δεξιά «Προσθήκη».", ig_4b: "Έτοιμο! Στην αρχική οθόνη του κινητού υπάρχει τώρα το Transfer Team. Άνοιξέ το από εκεί και συνδέσου με κινητό + PIN.", ig_add_label: "Προσθήκη στην οθόνη αφετηρίας", ig_add_btn: "Προσθήκη", ig_2: "Διάλεξε {a} «Προσθήκη στην οθόνη αφετηρίας» (ίσως χρειαστεί να κατέβεις λίγο).", ig_3: "Άφησε ανοιχτό το «Άνοιγμα ως εφαρμογή Ιστού» και πάτα πάνω δεξιά «Προσθήκη».", ig_4: "Άνοιξε τώρα το Transfer Team από την αρχική οθόνη και συνδέσου με κινητό + PIN.", ig_safari: "Άνοιξε αυτόν τον σύνδεσμο στο Safari ή στο Chrome (εδώ μέσα δεν γίνεται):", ig_copy: "Αντιγραφή συνδέσμου", ig_copied: "Αντιγράφηκε – επικόλλησέ τον στο Safari", ig_later: "Συνέχεια στον browser προς το παρόν", demo: "Δείγμα",
       t_minijob: "Minijob", t_teilzeit: "Μερική", t_vollzeit: "Πλήρης", t_kurzfristig: "Βραχυπρόθεσμη", t_freelance: "Ελεύθερος επαγγελματίας", t_inhaber: "Ιδιοκτήτης",
       err: "Δεν έγινε. Δοκίμασε ξανά.", too_many: "Πολλά μηνύματα. Περίμενε λίγο.", signed_out: "Αποσυνδέθηκες. Βάλε το PIN."
     }
@@ -232,7 +232,7 @@
   function cacheGet(k) { if (DEMO) return null; try { return JSON.parse(localStorage.getItem("team_c_" + k) || "null"); } catch (e) { return null; } }
   function cacheClear() { ["home", "rc"].forEach(function (k) { store("team_c_" + k, null); }); }
   var lang = load("team_lang") || ((navigator.language || "de").slice(0, 2) in T ? (navigator.language || "de").slice(0, 2) : "de");
-  var token = DEMO ? "demo" : load("team_token");
+  var token = DEMO && !/[?&]firstpin\b/.test(location.search) ? "demo" : load("team_token");
   var data = null, tab = load("team_tab") || "home", chat = [], chatTimer = null, homeTimer = null, sheet = null, planView = "week";
   // "one|many" texts pick the form by n (1 → first, else second).
   function t(k, n) { var s = (T[lang] && T[lang][k]) || T.de[k] || k; if (s.indexOf("|") > 0 && n != null) s = s.split("|")[Number(n) === 1 ? 0 : 1]; return n == null ? s : s.replace("{n}", n); }
@@ -340,33 +340,160 @@
   }
   function leaveOn(day) { return (data.leave || []).filter(function (l) { return l.status !== "rejected" && l.from <= day && l.to >= day; })[0]; }
 
+  /* ---------------- Before you start: Personalfragebogen + documents (v38) ---------------- */
+  // Field list = the paper Personalfragebogen (hr/vertraege/…/KORB_Personalfragebogen.pdf), sections 1–8.
+  // [key, German (official), English, Greek, type]  type: t text, d date, n number, e e-mail, yn yes/no, or "a|b|c" choice.
+  var OBF = [
+    ["1", "Persönliche Angaben", "Personal details", "Προσωπικά στοιχεία"],
+    ["surname", "Nachname", "Surname", "Επώνυμο", "t"], ["first_names", "Vorname(n)", "First name(s)", "Όνομα/ονόματα", "t"],
+    ["birth_name", "Geburtsname (falls abweichend)", "Birth name (if different)", "Επώνυμο γέννησης (αν διαφέρει)", "t"],
+    ["gender", "Geschlecht", "Gender", "Φύλο", "m|f|d"], ["street", "Straße, Hausnr.", "Street, no.", "Οδός, αριθμός", "t"],
+    ["zip_city", "PLZ, Ort", "Postcode, city", "ΤΚ, πόλη", "t"], ["birth_date", "Geburtsdatum", "Date of birth", "Ημερομηνία γέννησης", "d"],
+    ["birth_place", "Geburtsort, -land", "Place, country of birth", "Τόπος, χώρα γέννησης", "t"], ["nationality", "Staatsangehörigkeit", "Nationality", "Υπηκοότητα", "t"],
+    ["email", "E-Mail (privat)", "E-mail (private)", "Email (προσωπικό)", "e"], ["uber_email", "E-Mail des Uber-Driver-Kontos", "Uber Driver account e-mail", "Email λογαριασμού Uber Driver", "e"],
+    ["2", "Steuer und Sozialversicherung", "Tax and social security", "Εφορία και ασφάλιση"],
+    ["tax_id", "Steuer-ID (11 Ziffern)", "Tax ID (11 digits)", "Steuer-ID (11 ψηφία)", "t"], ["tax_class", "Steuerklasse", "Tax class", "Φορολογική κλάση", "t"],
+    ["religion", "Konfession (Kirchensteuer)", "Religion (church tax)", "Θρήσκευμα (φόρος εκκλησίας)", "t"], ["child_allow", "Kinderfreibeträge", "Child allowances", "Αφορολόγητο παιδιών", "t"],
+    ["sv_nr", "Sozialversicherungsnr. (oder „noch keine“)", "Social security no. (or “none yet”)", "Αριθμός κοινωνικής ασφάλισης (ή «δεν έχω ακόμα»)", "t"],
+    ["job_kind", "Beschäftigung ist", "This job is", "Αυτή η δουλειά είναι", "Haupt|Neben"],
+    ["health", "Gesetzliche Krankenkasse", "Health insurer", "Ταμείο υγείας (Krankenkasse)", "t"], ["health_since", "Versichert seit", "Insured since", "Ασφαλισμένη/ος από", "d"],
+    ["health_type", "Versicherungsart", "Insurance type", "Είδος ασφάλισης", "selbst|familienversichert|privat"],
+    ["children", "Eigene Kinder?", "Own children?", "Δικά σου παιδιά;", "yn"], ["children_u25", "davon unter 25 J.", "of which under 25", "από αυτά κάτω των 25", "n"],
+    ["disabled", "Schwerbehindert (freiwillig)", "Severely disabled (voluntary)", "Αναπηρία (προαιρετικά)", "yn"],
+    ["3", "Bankverbindung", "Bank details", "Τράπεζα"],
+    ["iban", "IBAN", "IBAN", "IBAN", "t"], ["holder", "Kontoinhaber", "Account holder", "Δικαιούχος", "t"], ["bank", "Bank", "Bank", "Τράπεζα", "t"], ["bic", "BIC", "BIC", "BIC", "t"],
+    ["4", "Ausbildung", "Education", "Σπουδές"],
+    ["school", "Höchster Schulabschluss", "Highest school level", "Ανώτερο απολυτήριο", "ohne|Haupt-/Volksschule|Mittlere Reife|Abitur/Fachabitur|unbekannt"],
+    ["voc", "Höchste Berufsausbildung", "Highest vocational qualification", "Ανώτερη επαγγελματική εκπαίδευση", "ohne|Berufsausbildung|Meister/Techniker|Bachelor|Master/Diplom|Promotion"],
+    ["5", "Weitere Beschäftigungen und Status", "Other jobs and status", "Άλλες δουλειές και κατάσταση"],
+    ["other_job", "Weitere Beschäftigung?", "Other employment?", "Άλλη δουλειά;", "yn"], ["other_employer", "Arbeitgeber dort", "Employer there", "Εργοδότης εκεί", "t"],
+    ["other_type", "Art dort", "Type there", "Είδος εκεί", "Minijob|Teilzeit|Vollzeit"], ["other_hours", "Std./Woche dort", "Hours/week there", "Ώρες/εβδομάδα εκεί", "n"],
+    ["other_gross", "Brutto/Monat dort (€)", "Gross/month there (€)", "Μικτά/μήνα εκεί (€)", "n"], ["other_this_year", "Beschäftigungen im lfd. Jahr (von–bis)", "Other jobs this year (from–to)", "Άλλες δουλειές φέτος (από–έως)", "t"],
+    ["pension", "Altersrente", "Old-age pension", "Σύνταξη γήρατος", "yn"], ["student", "Student/in (eingeschrieben)", "Enrolled student", "Φοιτήτρια/ής", "yn"],
+    ["alg", "Bezug ALG I / Bürgergeld", "Unemployment benefit", "Επίδομα ανεργίας / Bürgergeld", "yn"], ["before", "Schon einmal bei uns beschäftigt?", "Worked for us before?", "Έχεις δουλέψει ξανά σε εμάς;", "yn"],
+    ["6", "Fahrerlaubnisse", "Driving licences", "Άδειες οδήγησης"],
+    ["dl_no", "Führerschein-Nr.", "Licence no.", "Αριθμός διπλώματος", "t"], ["dl_classes", "Klassen", "Classes", "Κατηγορίες", "t"], ["dl_country", "Ausgestellt in", "Issued in", "Εκδόθηκε σε", "t"],
+    ["dl_points", "Punkte Flensburg", "Penalty points", "Πόντοι Flensburg", "n"], ["ps_no", "P-Schein-Nr.", "Passenger licence no.", "Αριθμός P-Schein", "t"],
+    ["ps_until", "P-Schein gültig bis", "P-Schein valid until", "P-Schein ισχύει έως", "d"], ["ps_auth", "Ausstellende Behörde", "Issuing authority", "Αρχή έκδοσης", "t"],
+    ["7", "Nur Nicht-EU/EWR/Schweiz", "Non-EU/EEA/Swiss only", "Μόνο εκτός ΕΕ/ΕΟΧ/Ελβετίας"],
+    ["permit", "Aufenthaltstitel (Art)", "Residence permit (type)", "Άδεια διαμονής (είδος)", "t"], ["permit_until", "Gültig bis", "Valid until", "Ισχύει έως", "d"],
+    ["work_ok", "Erwerbstätigkeit erlaubt", "Work permitted", "Επιτρέπεται εργασία", "yn"],
+    ["8", "Nur Minijob", "Minijob only", "Μόνο Minijob"],
+    ["rv_exempt", "Befreiung von der Rentenversicherung beantragt", "Exemption from pension insurance requested", "Αίτηση απαλλαγής από τη σύνταξη (RV)", "yn"],
+    ["rv_date", "Datum Antrag", "Date of request", "Ημερομηνία αίτησης", "d"]
+  ];
+  var OBD = [["fuehrerschein", "Führerschein (beidseitig)", "Driving licence (both sides)", "Δίπλωμα (και οι δύο πλευρές)"], ["p_schein", "P-Schein", "P-Schein (passenger licence)", "P-Schein (άδεια μεταφοράς επιβατών)"],
+    ["sv", "SV-Ausweis / Rentenversicherungsnachweis", "Social security card / proof", "Κάρτα κοινωνικής ασφάλισης (SV-Ausweis)"], ["kk", "Mitgliedsbescheinigung Krankenkasse", "Health insurer certificate", "Βεβαίωση ταμείου υγείας"],
+    ["steuer_id", "Nachweis Steuer-ID", "Tax ID letter", "Βεβαίωση Steuer-ID"], ["rv", "Befreiungsantrag Rentenversicherung (Minijob)", "Pension exemption form (Minijob)", "Αίτηση απαλλαγής RV (Minijob)"]];
+  function obLab(x) { return lang === "de" ? x[1] : (lang === "el" ? x[3] : x[2]) + (lang !== "de" ? " · " + x[1] : ""); }
+  var onb = null;
+  function onbLoad() { if (onb || onbLoad.busy) return; onbLoad.busy = true; rpc("team_onboarding_get", { p_token: token }).then(function (o) { onb = o || { data: {} }; onbLoad.busy = false; if (tab === "home" && !sheet) render(); }).catch(function () { onbLoad.busy = false; }); }
+  function onbUploaded(k) { return ((receipts && receipts.list) || []).some(function (r) { return String(r.note || "").indexOf("onb:" + k) === 0 && r.status !== "rejected"; }); }
+  function onboardingCard(p) {
+    if (!p || p.type === "inhaber" || !(p.status === "planned" || (p.start && p.start > ymd(new Date())))) return "";
+    onbLoad();
+    var docs = p.documents || {}, items = [];
+    items.push({ k: "form", done: !!(onb && onb.submitted_at) || onbUploaded("form"), t: t("ob_form"), sub: t("ob_form_sub") });
+    OBD.forEach(function (x) { if (x[0] === "rv" && p.type !== "minijob") return; items.push({ k: x[0], done: onbUploaded(x[0]), t: obLab(x) }); });
+    items.push({ k: "contract", done: !!(docs.arbeitsvertrag && docs.arbeitsvertrag.signed), t: t("ob_contract"), info: 1 });
+    items.push({ k: "id", done: !!(docs.ausweis && docs.ausweis.seen), t: t("ob_id"), info: 1 });
+    var n = items.filter(function (x) { return x.done; }).length;
+    if (n === items.length) return "";
+    return '<section class="card" style="border:2px solid var(--mint,#3ecf8e)"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><h2 style="margin:0">📝 ' + esc(t("ob_title")) + '</h2><span class="chip info">' + esc(t("ob_done_n", n).replace("{m}", items.length)) + "</span></div>" +
+      '<p class="muted small" style="margin:6px 0 8px">' + esc(t("ob_sub").replace("{d}", p.start ? parse(p.start).toLocaleDateString(loc()) : "—")) + "</p>" +
+      items.map(function (x) {
+        return '<button class="row tap" style="width:100%;text-align:left;align-items:flex-start"' + (x.info || x.done ? "" : ' data-onb="' + x.k + '"') + '><span style="font-size:20px;width:28px">' + (x.done ? "✅" : x.info ? "🤝" : "⬜") + '</span><span class="grow"><span class="t"' + (x.done ? ' style="opacity:.6;text-decoration:line-through"' : "") + ">" + esc(x.t) + "</span>" +
+          (x.sub && !x.done ? '<span class="muted small" style="display:block">' + esc(x.sub) + "</span>" : "") + "</span>" + (x.info || x.done ? "" : "›") + "</button>"; }).join("") + "</section>";
+  }
+  function onbOpen(k) {
+    if (k === "form") return onbForm();
+    var x = OBD.filter(function (y) { return y[0] === k; })[0];
+    receiptSheet("gal", { hint: "doc", note: "onb:" + k + " " + (x ? x[1] : k) });
+  }
+  function onbForm() {
+    var d = Object.assign({}, (onb && onb.data) || {});
+    function field(x) {
+      var v = d[x[0]] == null ? "" : String(d[x[0]]), id = "ob_" + x[0], lab = '<label class="f" for="' + id + '">' + esc(obLab(x)) + "</label>";
+      if (x[4] === "yn" || x[4].indexOf("|") > 0) {
+        var opts = x[4] === "yn" ? [["ja", t("yes")], ["nein", t("no")]] : x[4].split("|").map(function (o) { return [o, o]; });
+        return lab + '<div class="seg" data-obk="' + x[0] + '" style="flex-wrap:wrap">' + opts.map(function (o) { return '<button type="button" data-v="' + esc(o[0]) + '" aria-pressed="' + (v === o[0]) + '">' + esc(o[1]) + "</button>"; }).join("") + "</div>";
+      }
+      var ty = x[4] === "d" ? "date" : x[4] === "e" ? "email" : "text", im = x[4] === "n" ? ' inputmode="decimal"' : "";
+      return lab + '<input class="in" id="' + id + '" data-obi="' + x[0] + '" type="' + ty + '"' + im + ' value="' + esc(v) + '" autocomplete="off">';
+    }
+    var h = '<h2 style="margin-top:0">' + esc(t("ob_form")) + '</h2><p class="muted small">' + esc(t("ob_privacy")) + "</p>" +
+      '<button class="btn ghost" id="obpaper" style="width:100%">📷 ' + esc(t("ob_paper")) + "</button>";
+    OBF.forEach(function (x) { h += x.length === 4 ? '<h3 style="margin:22px 0 4px">' + esc(x[0] + ". " + obLab(x)) + "</h3>" : field(x); });
+    h += '<label style="display:flex;gap:10px;align-items:flex-start;margin-top:20px"><input type="checkbox" id="obdecl"' + (d.declaration ? " checked" : "") + ' style="width:22px;height:22px;flex:none"><span class="small">' + esc(t("ob_decl")) + "</span></label>" +
+      '<label style="display:flex;gap:10px;align-items:flex-start;margin-top:10px"><input type="checkbox" id="obwa"' + (d.whatsapp ? " checked" : "") + ' style="width:22px;height:22px;flex:none"><span class="small">' + esc(t("ob_wa")) + "</span></label>" +
+      '<p class="err small" id="oberr" role="alert"></p><div style="display:grid;gap:10px;margin-top:8px"><button class="btn" id="obsend">' + esc(t("ob_send")) + '</button><button class="btn ghost" id="obsave">' + esc(t("ob_save")) + "</button></div>";
+    openSheet(h, function (s) {
+      s.querySelectorAll("[data-obk]").forEach(function (g) { g.querySelectorAll("button").forEach(function (b) { b.onclick = function () {
+        var on = b.getAttribute("aria-pressed") !== "true"; g.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); b.setAttribute("aria-pressed", String(on)); }; }); });
+      function collect() {
+        s.querySelectorAll("[data-obi]").forEach(function (i) { var v = i.value.trim(); if (v) d[i.dataset.obi] = v; else delete d[i.dataset.obi]; });
+        s.querySelectorAll("[data-obk]").forEach(function (g) { var b = g.querySelector('[aria-pressed="true"]'); if (b) d[g.dataset.obk] = b.dataset.v; else delete d[g.dataset.obk]; });
+        d.declaration = s.querySelector("#obdecl").checked; d.whatsapp = s.querySelector("#obwa").checked; d.lang = lang;
+      }
+      function save(submit, btn) {
+        collect();
+        if (submit && !d.declaration) { s.querySelector("#oberr").textContent = t("ob_need_decl"); return; }
+        btn.disabled = true;
+        rpc("team_onboarding_save", { p_token: token, p_data: d, p_submit: !!submit }).then(function (o) { onb = o; closeSheet(); toast(t(submit ? "ob_sent" : "ob_saved")); render(); })
+          .catch(function (e) { btn.disabled = false; s.querySelector("#oberr").textContent = e.message || t("err"); });
+      }
+      s.querySelector("#obsend").onclick = function () { save(true, this); };
+      s.querySelector("#obsave").onclick = function () { save(false, this); };
+      s.querySelector("#obpaper").onclick = function () { collect(); rpc("team_onboarding_save", { p_token: token, p_data: d, p_submit: false }).catch(function () {}); receiptSheet("cam", { hint: "doc", note: "onb:form Personalfragebogen (Papier)" }); };
+    });
+  }
+  // Owner: the questionnaire of one person (Team → person).
+  function onbOwnerSheet(id, name) {
+    rpc("team_owner_onboarding", { p_token: token, p_driver: id }).then(function (o) {
+      var d = (o && o.data) || {}, rows = OBF.filter(function (x) { return x.length > 4 && d[x[0]] != null && d[x[0]] !== ""; });
+      openSheet('<h2 style="margin-top:0">' + esc(t("ob_view")) + " · " + esc(name) + "</h2>" + (o && o.submitted_at ? '<p class="muted small">✅ ' + esc(new Date(o.submitted_at).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short", hourCycle: "h23" })) + "</p>" : "") +
+        (rows.length ? '<div class="card" style="padding:4px 14px">' + rows.map(function (x) { return '<div class="row" style="align-items:flex-start"><span class="muted small" style="width:45%">' + esc(x[1]) + '</span><b style="flex:1;text-align:right;word-break:break-word">' + esc(d[x[0]]) + "</b></div>"; }).join("") +
+          '<div class="row"><span class="muted small" style="width:45%">WhatsApp-Gruppe</span><b style="flex:1;text-align:right">' + (d.whatsapp ? "ja" : "nein") + "</b></div></div>" : '<div class="empty">' + esc(t("ob_empty")) + "</div>") +
+        '<div style="margin-top:14px"><button class="btn ghost" data-close>OK</button></div>');
+    }).catch(function (e) { toast(e.message); });
+  }
+
   /* ---------------- iPhone: put it on the home screen first ---------------- */
   // An iPhone cannot install an app from outside the App Store, so the site itself becomes the "app": Safari → Share →
   // Add to Home Screen. The home-screen copy has its own storage, so the guide comes BEFORE the sign-in.
   function iosBrowser() {
     var ua = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
     var app2 = navigator.standalone || (window.matchMedia && matchMedia("(display-mode: standalone)").matches);
-    return ios && !app2 && !/[?&]demo\b/.test(location.search) && !load("team_ig_skip");
+    return ios && !app2 && !/[?&]demo\b/.test(location.search);
   }
   function installScreen() {
-    var ua = navigator.userAgent, notSafari = /CriOS|FxiOS|EdgiOS|OPiOS|FBAN|FBAV|Instagram|Line\/|GSA\//.test(ua);
-    var SH = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>';
-    var AD = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg>';
-    function step(n, txt) { return '<li style="display:flex;gap:12px;align-items:flex-start;text-align:left;margin:0 0 14px"><span style="flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink-bg,#0b0f0d);color:#fff;font-weight:800;display:grid;place-items:center">' + n + '</span><span style="padding-top:3px;line-height:1.4">' + txt + "</span></li>"; }
+    var ua = navigator.userAgent, notSafari = /FBAN|FBAV|Instagram|Line\/|GSA\/|Snapchat|TikTok/.test(ua), chrome = /CriOS/.test(ua);
+    var BLUE = "#0a84ff";
+    function share(sz) { return '<svg width="' + sz + '" height="' + sz + '" viewBox="0 0 24 24" fill="none" stroke="' + BLUE + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>'; }
+    function plus(sz) { return '<svg width="' + sz + '" height="' + sz + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg>'; }
+    // Each step: number, text, and a big picture of exactly what to look for on the iPhone.
+    function step(n, txt, pic) {
+      return '<li style="margin:0 0 22px;text-align:left"><div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:32px;height:32px;border-radius:50%;background:var(--ink-bg,#0b0f0d);color:#fff;font-weight:800;font-size:17px;display:grid;place-items:center">' + n +
+        '</span><span style="padding-top:4px;line-height:1.4;font-size:17px">' + txt + "</span></div>" + (pic ? '<div style="margin:12px 0 0 44px">' + pic + "</div>" : "") + "</li>";
+    }
+    var picShare = chrome
+      ? '<div style="display:flex;align-items:center;gap:10px;background:#f2f2f7;border-radius:14px;padding:10px 14px;color:#111"><span style="flex:1;background:#fff;border-radius:10px;padding:8px 10px;font-size:13px;color:#666">transfer-ride.github.io</span><span style="display:grid;place-items:center;width:64px;height:64px;border-radius:16px;background:#fff;border:3px solid ' + BLUE + ';animation:igp 1.4s ease-in-out infinite">' + share(36) + "</span></div>"
+      : '<div style="display:flex;justify-content:space-around;align-items:center;background:#f2f2f7;border-radius:14px;padding:10px 6px;color:#999;font-size:22px"><span>‹</span><span>›</span><span style="display:grid;place-items:center;width:64px;height:64px;border-radius:16px;background:#fff;border:3px solid ' + BLUE + ';animation:igp 1.4s ease-in-out infinite">' + share(36) + '</span><span>▢</span><span style="display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:2px dashed #bbb;color:#555">⋯</span></div>';
+    var picAdd = '<div style="background:#f2f2f7;border-radius:14px;padding:6px;color:#111"><div style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:4px;opacity:.45;font-size:15px"><span>' + (lang === "el" ? "Αντιγραφή" : lang === "de" ? "Kopieren" : "Copy") + '</span><span>⧉</span></div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:10px;padding:14px;border:3px solid ' + BLUE + ';font-size:16px;font-weight:700;animation:igp 1.4s ease-in-out infinite"><span>' + esc(t("ig_add_label")) + '</span><span style="color:#111">' + plus(30) + "</span></div></div>";
+    var picOk = '<div style="display:flex;align-items:center;gap:10px;justify-content:space-between;background:#f2f2f7;border-radius:14px;padding:12px 14px;color:#111;font-size:15px"><span style="opacity:.5">' + esc(t("cancel")) + '</span><b>Transfer Team</b><span style="color:' + BLUE + ';font-weight:800;font-size:17px;border:3px solid ' + BLUE + ';border-radius:10px;padding:4px 10px;animation:igp 1.4s ease-in-out infinite">' + esc(t("ig_add_btn")) + "</span></div>";
+    var picIcon = '<div style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;background:linear-gradient(160deg,#5b8def,#a46bd9);border-radius:16px;padding:14px 22px"><img src="../assets/icon-192.png" alt="" width="60" height="60" style="border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.25)"><span style="color:#fff;font-size:12px;font-weight:600">Transfer Team</span></div>';
     var link = location.origin + location.pathname;
-    app.innerHTML = '<div class="pin" style="max-width:420px"><div class="wordmark" style="font-size:34px">TRANSFER<i></i></div>' +
-      '<img src="../assets/icon-192.png" alt="" width="72" height="72" style="border-radius:16px;margin:18px auto 0;display:block;box-shadow:0 4px 14px rgba(0,0,0,.15)">' +
-      '<h2 style="margin-top:14px">' + esc(t("ig_title")) + '</h2><p class="muted small" style="margin:6px auto 18px;line-height:1.4">' + esc(t("ig_sub")) + "</p>" +
-      (notSafari ? '<div class="card" style="text-align:left"><div class="small" style="margin-bottom:8px">' + esc(t("ig_safari")) + '</div><div class="small" style="word-break:break-all;font-weight:700">' + esc(link) + '</div><button class="btn" id="igcopy" style="margin-top:10px">' + esc(t("ig_copy")) + "</button></div>" : "") +
+    app.innerHTML = '<style>@keyframes igp{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}@media (prefers-reduced-motion:reduce){[style*="igp"]{animation:none!important}}</style>' +
+      '<div class="pin" style="max-width:440px"><div class="wordmark" style="font-size:30px">TRANSFER<i></i></div>' +
+      '<h2 style="margin-top:14px">' + esc(t("ig_title")) + '</h2><p class="muted" style="margin:6px auto 20px;line-height:1.4">' + esc(t("ig_sub")) + "</p>" +
+      (notSafari ? '<div class="card" style="text-align:left"><div style="margin-bottom:8px">' + esc(t("ig_safari")) + '</div><div class="small" style="word-break:break-all;font-weight:700">' + esc(link) + '</div><button class="btn" id="igcopy" style="margin-top:10px">' + esc(t("ig_copy")) + "</button></div>" : "") +
       '<ol style="list-style:none;padding:0;margin:8px 0 0">' +
-        step(1, esc(t("ig_1")).replace("{s}", SH)) + step(2, esc(t("ig_2")).replace("{a}", AD)) + step(3, esc(t("ig_3"))) + step(4, esc(t("ig_4"))) + "</ol>" +
-      '<div style="font-size:30px;margin-top:4px" aria-hidden="true">↓</div>' +
-      '<button type="button" id="iglater" class="muted small" style="margin-top:18px;text-decoration:underline">' + esc(t("ig_later")) + "</button>" +
+        step(1, esc(t(chrome ? "ig_1c" : "ig_1s")), picShare) + step(2, esc(t("ig_2b")), picAdd) + step(3, esc(t("ig_3b")), picOk) + step(4, esc(t("ig_4b")), picIcon) + "</ol>" +
       '<div class="langs"></div></div>';
     langButtons(app.querySelector(".langs"), installScreen);
     var c = app.querySelector("#igcopy");
     if (c) c.onclick = function () { (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(function () { c.textContent = t("ig_copied"); }).catch(function () { prompt("", link); }); };
-    app.querySelector("#iglater").onclick = function () { store("team_ig_skip", "1"); pinScreen(); };
   }
 
   /* ---------------- PIN ---------------- */
@@ -400,12 +527,31 @@
     function submit(p) {
       // Mobile number + PIN (each employee their own). Without a number: the old PIN-only sign-in.
       var ph = (app.querySelector("#ph").value || "").trim();
-      store("team_phone", ph || null);
-      rpc(ph ? "team_login" : "driver_login", ph ? { p_phone: ph, p_pin: p } : { p_pin: p }).then(function (o) {
+      if (!ph) { pin = ""; dots(); app.querySelector(".err").textContent = t("phone_need"); app.querySelector("#ph").focus(); return; }
+      store("team_phone", ph);
+      rpc("team_login", { p_phone: ph, p_pin: p }).then(function (o) {
         if (o && o.error) { pin = ""; dots(); app.querySelector(".err").textContent = o.error === "locked" ? t("locked") : o.error === "phone" ? t("phone_bad") : t("wrong", o.left); return; }
-        token = o.token; store("team_token", token); document.onkeydown = null; start();
+        token = o.token; store("team_token", token); document.onkeydown = null;
+        if (o.set_pin) { store("team_set_pin", "1"); setPinScreen(p); } else start();
       }).catch(function (e) { pin = ""; dots(); var box = app.querySelector(".err"); box.innerHTML = esc(e.network ? t("offline") : (e.message || t("err"))) + why(); });
     }
+  }
+  // First sign-in with a start PIN (v37 set_pin): the employee picks their own before anything else.
+  function setPinScreen(oldPin) {
+    stopTimers();
+    function f(id, lab) { return '<label class="f" for="' + id + '" style="text-align:left">' + esc(t(lab)) + '</label><input class="in" id="' + id + '" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" style="font-size:22px;letter-spacing:8px;text-align:center">'; }
+    app.innerHTML = '<div class="pin" style="max-width:380px"><div class="wordmark" style="font-size:30px">TRANSFER<i></i></div><h2 style="margin-top:22px">🔑 ' + esc(t("sp_title")) + '</h2><p class="muted small" style="line-height:1.4">' + esc(t("sp_sub")) + "</p>" +
+      (oldPin ? "" : f("spo", "sp_old")) + f("spn", "cp_new") + f("spn2", "cp_new2") +
+      '<p class="err" id="sperr" role="alert" style="min-height:1.2em"></p><button class="btn" id="spsave" style="margin-top:6px">' + esc(t("cp_save")) + "</button></div>";
+    var b = app.querySelector("#spsave"), err = app.querySelector("#sperr");
+    b.onclick = function () {
+      var o = oldPin || app.querySelector("#spo").value.trim(), n = app.querySelector("#spn").value.trim(), n2 = app.querySelector("#spn2").value.trim();
+      if (!/^\d{4}$/.test(n)) { err.textContent = t("cp_4"); return; }
+      if (n !== n2) { err.textContent = t("cp_same"); return; }
+      b.disabled = true; err.textContent = "";
+      rpc("team_change_pin", { p_token: token, p_old: o, p_new: n }).then(function () { store("team_set_pin", null); toast(t("cp_ok")); start(); })
+        .catch(function (e) { b.disabled = false; var m = String(e.message || ""); err.textContent = /wrong/i.test(m) ? t("cp_wrong") : /taken/i.test(m) ? t("cp_taken") : /signed in/i.test(m) ? (signOut(true), "") : (m || t("err")); });
+    };
   }
   function langButtons(box, redraw) {
     [["de", "DE"], ["en", "EN"], ["el", "EL"]].forEach(function (x) {
@@ -418,7 +564,7 @@
     });
   }
   function signOut(expired) {
-    store("team_token", null); token = null; data = null; chat = []; receipts = null; cacheClear();
+    store("team_token", null); store("team_set_pin", null); token = null; data = null; chat = []; receipts = null; cacheClear();
     pinScreen(expired ? t("signed_out") : "");
   }
 
@@ -475,6 +621,8 @@
     app.querySelectorAll("[data-req]").forEach(function (b) { b.onclick = function () { reqSheet(+b.dataset.req); }; });
     var so = app.querySelector("#signout"); if (so) so.onclick = function () { signOut(false); };
     var cp = app.querySelector("#cpin"); if (cp) cp.onclick = pinSheet;
+    app.querySelectorAll("[data-onb]").forEach(function (b) { b.onclick = function () { onbOpen(b.dataset.onb); }; });
+    app.querySelectorAll("[data-tm-onb]").forEach(function (b) { b.onclick = function () { onbOwnerSheet(tmSel, tmPerson ? tmPerson.me.name : ""); }; });
     var ck = app.querySelector("#check"); if (ck) ck.onclick = checkSheet;
     app.querySelectorAll("[data-wallet]").forEach(function (b) { b.onclick = function () { go("receipts"); }; });
     app.querySelectorAll("[data-receipt]").forEach(function (b) { b.onclick = function () { receiptSheet(); }; });
@@ -510,6 +658,7 @@
     var ns = nextShift(), left = leaveLeft(), open = (data.requests || []).filter(function (r) { return r.status === "open" || r.status === "with_owner"; }).length;
     var h = '<div class="top"><div><div class="muted small">' + esc(new Date().toLocaleDateString(loc(), { weekday: "long", day: "numeric", month: "long" })) + "</div>" +
       "<h1>" + esc(t("hello", first)) + "</h1></div>" + (DEMO ? '<span class="chip info">' + esc(t("demo")) + "</span>" : "") + '<span style="display:flex;gap:8px"><button class="back" aria-label="' + esc(t("menu")) + '" data-go="menu">' + ICON.menu + '</button><button class="back" aria-label="' + esc(t("search")) + '" data-go="search">' + ICON.search + "</button></span></div>";
+    h += onboardingCard(p);
     h += '<section class="hero" data-go="plan" role="button" tabindex="0"><div class="muted">' + esc(t("next_shift")) + "</div>" +
       (ns ? '<div class="big">' + esc(dateLabel(ns.day)) + "</div><div>" + esc(ns.start + " – " + ns.end) + (ns.note ? " · " + esc(ns.note) : "") + "</div>"
           : '<div class="big">' + esc(t("no_shift")) + "</div>") + '<div style="margin-top:12px;color:var(--mint);font-weight:700">' + esc(t("full_plan")) + " ›</div></section>";
@@ -739,7 +888,7 @@
       esc(who && who.last_seen ? t("tm_last", new Date(who.last_seen).toLocaleString(loc(), { dateStyle: "short", timeStyle: "short", hourCycle: "h23" })) : t("tm_never")) + "</div>";
     if (tmPin) h += '<div class="card" style="margin-top:10px;background:var(--mint-soft)"><div class="t" style="font-size:22px">' + esc(t("tm_pin_is", P.me.name.split(" ")[0]).replace("{p}", tmPin)) + '</div><div class="muted small">' + esc(t("tm_pin_tell")) + "</div></div>";
     h += '<div class="grid2" style="margin-top:12px"><button class="btn ghost" data-tm-pin="1">' + esc(t("tm_newpin")) + '</button><button class="btn ghost" data-tm-phone="1">' + esc(t("tm_phone")) + "</button></div>" +
-      '<div class="muted small" style="margin-top:8px">' + esc(t("tm_kept")) + "</div></div><!--REQ-->";
+      '<div class="muted small" style="margin-top:8px">' + esc(t("tm_kept")) + '</div><button class="btn ghost" style="margin-top:10px;width:100%" data-tm-onb="1">📋 ' + esc(t("ob_view")) + "</button></div><!--REQ-->";
     var today = new Date().toISOString().slice(0, 10);
     var nexts = (P.shifts || []).filter(function (s) { return s.day >= today; }).slice(0, 6);
     h += "<h2>" + esc(t("tm_plan")) + '</h2><div class="card" style="padding:4px 14px">' + (nexts.length ? nexts.map(function (s) {
@@ -1043,7 +1192,7 @@
   function openSheet(inner, after) {
     closeSheet();
     var s = el('<div><div class="scrim"></div><div class="sheet" role="dialog" aria-modal="true"><div class="grab"></div>' + inner + "</div></div>");
-    document.body.appendChild(s); sheet = s;
+    document.body.appendChild(s); sheet = s; document.documentElement.classList.add("sheet-open");
     s.querySelector(".scrim").onclick = closeSheet;
     var c = s.querySelector("[data-close]"); if (c) c.onclick = closeSheet;
     if (after) after(s);
@@ -1059,6 +1208,7 @@
   function closeSheet(e) {
     if (e && e.type === "click" && Date.now() < pickedAt) { console.log("sheet: tap ignored after picker"); return; }
     if (sheet) { console.log("sheet: closed"); sheet.remove(); sheet = null; }
+    document.documentElement.classList.remove("sheet-open");
   }
 
   function askSheet(kind) {
@@ -1466,12 +1616,11 @@
       ["Beschäftigt seit", d(p.start)],
       ["Art der Beschäftigung", types[p.type] || p.type || "—"],
       ["Tätigkeit", p.role || "Fahrer im Mietwagenverkehr (§ 49 Abs. 4 PBefG)"],
-      ["Arbeitszeit", p.hours_per_week ? p.hours_per_week + " Std./Woche" : p.days_per_week ? p.days_per_week + " Tage/Woche" : "—"],
+      ["Arbeitszeit", "nach Arbeitsvertrag, flexible Einteilung; Aufzeichnungen beim Arbeitgeber (§ 17 MiLoG)"],
       ["Sofortmeldung (SV)", docs.sofortmeldung && docs.sofortmeldung.done ? "erfolgt am " + d(docs.sofortmeldung.done) : "—"],
       ["Arbeitsvertrag", docs.arbeitsvertrag && docs.arbeitsvertrag.signed ? "unterschrieben am " + d(docs.arbeitsvertrag.signed) : "—"],
       ["Führerschein", docs.fuehrerschein && docs.fuehrerschein.expires ? "gültig bis " + d(docs.fuehrerschein.expires) : "—"],
-      ["P-Schein", docs.p_schein && docs.p_schein.expires ? "gültig bis " + d(docs.p_schein.expires) : "—"],
-      ["Dienstplan heute", shift.length ? shift.map(function (s) { return s.start + "–" + s.end; }).join(", ") : "—"]
+      ["P-Schein", docs.p_schein && docs.p_schein.expires ? "gültig bis " + d(docs.p_schein.expires) : "—"]
     ];
     openSheet('<div style="display:flex;justify-content:space-between;align-items:center"><div class="wordmark" style="font-size:18px">TRANSFER<i></i></div><span class="chip ok">' + esc(new Date().toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })) + "</span></div>" +
       '<h2 style="margin:14px 0 2px">Nachweis über das Beschäftigungsverhältnis</h2>' + (lang !== "de" ? '<p class="muted small" style="margin:0 0 10px">' + esc(t("check_note")) + "</p>" : "") +
@@ -1678,7 +1827,7 @@
     var msgs = [], reqs = [{ id: 1, at: new Date(Date.now() - 2 * 864e5).toISOString(), kind: "leave", text: "Urlaub für Familienbesuch", details: { from: d(20), to: d(24) }, status: "with_owner", answer: "Danke, ich habe deinen Urlaub an den Chef weitergegeben. Du bekommst Bescheid, sobald er entschieden hat." }];
     var home = {
       me: { id: "demo", name: "Max Testfahrer" },
-      profile: { phone: "4915100000000", type: /[?&]owner\b/.test(location.search) ? "inhaber" : "minijob", start: "2026-09-01", hourly_wage: 13.9, days_per_week: 2, vacation_days_per_year: 10, role: "Fahrer",
+      profile: { phone: "4915100000000", type: /[?&]owner\b/.test(location.search) ? "inhaber" : "minijob", start: /[?&]onb\b/.test(location.search) ? "2027-03-01" : "2026-09-01", status: /[?&]onb\b/.test(location.search) ? "planned" : "active", hourly_wage: 13.9, days_per_week: 2, vacation_days_per_year: 10, role: "Fahrer",
         inbox: /[?&]owner\b/.test(location.search) ? [{ at: new Date().toISOString(), title: "Transfer Team · Beleg prüfen", text: "Inhaber: Werkstatt (Beispiel), 289,00 € – MwSt fehlt" }, { at: new Date(Date.now() - 864e5).toISOString(), title: "Lisa (HR): Fristen", text: "P-Schein läuft in 40 Tagen ab" }] : undefined,
         vehicles: /[?&]owner\b/.test(location.search) ? [{ id: "v1", name: "Beispielwagen", model: "Kombi Hybrid", year: 2023, km: 129237, km_date: d(0), hu_due: d(90).slice(0, 7), service_last: d(-410), service_last_km: 104518, service_months: 12, service_km: 26000,
           insurer: "Versicherung (Beispiel)", ins_ends: d(330), ins_cancel_by: d(300), ins_month: 60.79, first_aid: d(400), tyres: "winter", tyres_changed: d(0),
@@ -1697,7 +1846,7 @@
     };
     return { rpc: function (fn, a) {
       return new Promise(function (ok) { setTimeout(function () {
-        if (fn === "driver_login" || fn === "team_login") return ok({ token: "demo", driver: home.me });
+        if (fn === "driver_login" || fn === "team_login") return ok({ token: "demo", driver: home.me, set_pin: /[?&]firstpin\b/.test(location.search) });
         if (fn === "team_owner_receipts") return ok(demoReceipts.list.map(function (r) { return Object.assign({ driver: "Max Testfahrer" }, r); }).concat([
           { id: 50, at: new Date().toISOString(), driver: "Inhaber", paid: "company", status: "read", data: { merchant: "Kfz-Versicherung (Beispiel)", total: 412.5, date: d(-5), category: "other", payment_status: "open", due_date: d(4) } },
           { id: 51, at: new Date().toISOString(), driver: "Inhaber", paid: "company", status: "read", data: { merchant: "Werkstatt (Beispiel)", total: 289, vat: 46.14, date: d(-20), category: "repair", payment_status: "open", due_date: d(-2), flags: ["MwSt fehlt auf der Rechnung"] } }]));
@@ -1709,6 +1858,9 @@
         if (fn === "team_owner_post_delete") { home.posts = (home.posts || []).filter(function (x) { return x.id !== a.p_id; }); return ok(home); }
         if (fn === "team_owner_request_decide") { reqs.forEach(function (x) { if (x.id === a.p_request) { x.decision = a.p_decision; x.status = "done"; } }); return ok({ me: { id: "demo", name: "Max Testfahrer", phone: "4915100000000" }, profile: home.profile, shifts: home.shifts, leave: home.leave, requests: reqs, receipts: demoReceipts }); }
         if (fn === "team_owner_person") return ok({ me: { id: "demo", name: "Max Testfahrer", phone: "4915100000000" }, profile: home.profile, shifts: home.shifts, leave: home.leave, requests: reqs, receipts: demoReceipts });
+        if (fn === "team_onboarding_get") return ok(Demo.onb || { data: {} });
+        if (fn === "team_onboarding_save") { Demo.onb = { data: a.p_data, submitted_at: a.p_submit ? new Date().toISOString() : (Demo.onb && Demo.onb.submitted_at) || null }; return ok(Demo.onb); }
+        if (fn === "team_owner_onboarding") return ok(Demo.onb || { data: { surname: "Muster", first_names: "Max", health: "TK", whatsapp: true }, submitted_at: new Date().toISOString() });
         if (fn === "team_change_pin") return ok(a.p_old === "0000" ? Promise.reject(new Error("wrong PIN")) : { ok: true });
         if (fn === "team_owner_reset") return ok({ pin: a.p_new_pin ? "4821" : null, phone: a.p_phone ? a.p_phone.replace(/\D/g, "") : "4915100000000" });
         if (fn === "team_home") return ok(JSON.parse(JSON.stringify(home)));
@@ -1753,5 +1905,5 @@
       if (tip) { var x = tip; tip = null; if (!go2) x.remove(); else { x.textContent = "↻ …"; refresh().then(function () { return loadReceipts(); }).then(function () { if (tab === "team") { tmList = null; tmPerson = null; } if (tab === "bills" || tab === "reports") ownAll = null; if (!sheet) render(); }).catch(function () {}).then(function () { x.remove(); }); } }
     }, { passive: true });
   })();
-  if (token) start(); else if (iosBrowser()) installScreen(); else pinScreen();
+  if (iosBrowser()) installScreen(); else if (token && load("team_set_pin")) setPinScreen(null); else if (token) start(); else pinScreen();
 })();
