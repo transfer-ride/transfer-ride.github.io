@@ -40,9 +40,9 @@
       from: "Von", to: "Bis", date: "Datum", msg: "Nachricht", send: "Senden", cancel: "Abbrechen", sent: "Gesendet",
       which_doc: "Welches Dokument?", which_month: "Welcher Monat?", why: "Kurz, worum es geht",
       sick_note: "Ab dem 4. Krankheitstag brauchst du eine AU vom Arzt.",
-      chat_title: "HR-Assistent", chat_sub: "Versteht jede Sprache · antwortet sofort",
+      chat_title: "Lisa · KI-Assistentin", chat_sub: "Künstliche Intelligenz · kann Fehler machen", ai_note: "Lisa ist eine KI (künstliche Intelligenz), kein Mensch, und kann Fehler machen. Verbindlich sind nur die Entscheidungen des Chefs und dein Vertrag – prüfe wichtige Angaben.",
       chat_empty: "Schreib in deiner Sprache – Deutsch, Englisch, Griechisch, Türkisch, Arabisch, Rumänisch oder jede andere. Frag alles zu Schichten, Urlaub, Lohn, Dokumenten oder Regeln. Über Geld, Urlaub und Verträge entscheidet der Chef.",
-      typing: "HR-Assistent schreibt …", owner: "Chef", agent: "HR-Assistent", ph: "Nachricht schreiben …",
+      typing: "Lisa schreibt …", owner: "Chef", agent: "Lisa (KI)", ph: "Nachricht schreiben …",
       q1: "Wie viel Urlaub habe ich noch?", q2: "Wann ist meine nächste Schicht?", q3: "Wann kommt der Lohn?",
       personal: "Persönlich", contract: "Vertrag", documents: "Dokumente", payslips: "Lohnzettel", settings: "Einstellungen",
       type: "Art", start: "Seit", wage: "Stundenlohn", salary: "Monatsgehalt", per_week: "Tage pro Woche", leave_year: "Urlaub pro Jahr",
@@ -80,9 +80,9 @@
       from: "From", to: "To", date: "Date", msg: "Message", send: "Send", cancel: "Cancel", sent: "Sent",
       which_doc: "Which document?", which_month: "Which month?", why: "In short, what it is about",
       sick_note: "From the 4th day of sickness you need a doctor's note (AU).",
-      chat_title: "HR assistant", chat_sub: "Understands every language · answers at once",
+      chat_title: "Lisa · AI assistant", chat_sub: "Artificial intelligence · can make mistakes", ai_note: "Lisa is an AI (artificial intelligence), not a person, and can make mistakes. Only the boss's decisions and your contract are binding – check important details.",
       chat_empty: "Write in your own language – English, German, Greek, Turkish, Arabic, Romanian or any other. Ask anything about shifts, leave, pay, documents or rules. The boss decides about money, leave and contracts.",
-      typing: "HR assistant is typing …", owner: "Boss", agent: "HR assistant", ph: "Write a message …",
+      typing: "Lisa is typing …", owner: "Boss", agent: "Lisa (AI)", ph: "Write a message …",
       q1: "How much leave do I have left?", q2: "When is my next shift?", q3: "When is payday?",
       personal: "Personal", contract: "Contract", documents: "Documents", payslips: "Payslips", settings: "Settings",
       type: "Type", start: "Since", wage: "Hourly wage", salary: "Monthly salary", per_week: "Days a week", leave_year: "Leave a year",
@@ -120,9 +120,9 @@
       from: "Από", to: "Έως", date: "Ημερομηνία", msg: "Μήνυμα", send: "Αποστολή", cancel: "Άκυρο", sent: "Στάλθηκε",
       which_doc: "Ποιο έγγραφο;", which_month: "Ποιος μήνας;", why: "Με λίγα λόγια, για τι πρόκειται",
       sick_note: "Από την 4η μέρα ασθένειας χρειάζεσαι βεβαίωση γιατρού (AU).",
-      chat_title: "Βοηθός HR", chat_sub: "Καταλαβαίνει κάθε γλώσσα · απαντά αμέσως",
+      chat_title: "Lisa · Βοηθός AI", chat_sub: "Τεχνητή νοημοσύνη · μπορεί να κάνει λάθη", ai_note: "Η Lisa είναι AI (τεχνητή νοημοσύνη), όχι άνθρωπος, και μπορεί να κάνει λάθη. Δεσμευτικές είναι μόνο οι αποφάσεις του αφεντικού και η σύμβασή σου – έλεγξε τα σημαντικά.",
       chat_empty: "Γράψε στη γλώσσα σου – ελληνικά, γερμανικά, αγγλικά, τουρκικά, αραβικά, ρουμανικά ή όποια άλλη. Ρώτα ό,τι θες για βάρδιες, άδειες, μισθό, έγγραφα ή κανόνες. Για χρήματα, άδειες και συμβάσεις αποφασίζει το αφεντικό.",
-      typing: "Ο βοηθός HR γράφει …", owner: "Αφεντικό", agent: "Βοηθός HR", ph: "Γράψε μήνυμα …",
+      typing: "Η Lisa γράφει …", owner: "Αφεντικό", agent: "Lisa (AI)", ph: "Γράψε μήνυμα …",
       q1: "Πόση άδεια μου μένει;", q2: "Πότε είναι η επόμενη βάρδια μου;", q3: "Πότε πληρωνόμαστε;",
       personal: "Προσωπικά", contract: "Σύμβαση", documents: "Έγγραφα", payslips: "Εκκαθαριστικά", settings: "Ρυθμίσεις",
       type: "Είδος", start: "Από", wage: "Ωρομίσθιο", salary: "Μηνιαίος μισθός", per_week: "Μέρες την εβδομάδα", leave_year: "Άδεια τον χρόνο",
@@ -1274,7 +1274,7 @@
   /* ---------------- Chat ---------------- */
   function chatScreen() {
     app.innerHTML = '<div class="chat"><header class="chat-head"><button class="back" aria-label="Back" data-go="home">' + ICON.back + '</button><div class="avatar" aria-hidden="true"><i></i></div><div class="grow"><b>' + esc(t("chat_title")) +
-      '</b><div class="muted small">' + esc(t("chat_sub")) + '</div></div></header><div class="msgs" id="msgs"></div>' +
+      '</b><div class="muted small">' + esc(t("chat_sub")) + '</div></div></header><div class="small" role="note" style="margin:8px var(--gutter) 0;padding:8px 12px;border-radius:12px;background:var(--warn-soft);line-height:1.35">ⓘ ' + esc(t("ai_note")) + '</div><div class="msgs" id="msgs"></div>' +
       '<div class="quick">' + ["q1", "q2", "q3"].map(function (q) { return '<button type="button" data-qq="' + q + '">' + esc(t(q)) + "</button>"; }).join("") + "</div>" +
       '<form class="composer" id="form"><textarea id="box" rows="1" placeholder="' + esc(t("ph")) + '" aria-label="' + esc(t("msg")) + '"></textarea><button type="submit" aria-label="' + esc(t("send")) + '">' + ICON.send + "</button></form></div>";
     app.querySelector("[data-go]").onclick = function () { go("home"); };
